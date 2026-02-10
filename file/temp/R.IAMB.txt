@@ -1,0 +1,26 @@
+
+CURSO: Sistemas de Información Geográfica aplicados a Estudios Ambientales - IAMB
+
+Módulo 1 - Introducción y conceptos básicos
+Objetivo: Introducir los elementos y principios para la elaboración de Estudios Ambientales.
+
+1.1. Introducción, conceptos básicos de SIG y georreferenciación
+https://github.com/rcfdtools/R.TSIG/blob/main/activity/GISBasic/Readme.md
+
+1.2. Sistemas de información geográfica y los estudios ambientales
+(Principios de EIA, gestión ambiental, definiciones ambientes, impacto y EIA.)
+https://github.com/rcfdtools/R.TSIG/blob/main/activity/TSIG_Taller12.pdf
+
+1.3. Componente normativo
+(Ley 99, Decreto 1753)
+
+
+Módulo 2 - Características de los estudios ambientales
+Objetivo: Detallar los elementos que se deben contemplar y que deben formar parte de un Estudio Ambiental.
+(A partir de cartografía nacional 1:500k, 1:100k, 1:25k)
+
+2.1. Vectores linea base - Medio abiótico - Geología
+
+
+2.2. 
+
