@@ -19,8 +19,45 @@ Módulo 2 - Características de los estudios ambientales
 Objetivo: Detallar los elementos que se deben contemplar y que deben formar parte de un Estudio Ambiental.
 (A partir de cartografía nacional 1:500k, 1:100k, 1:25k)
 
-2.1. Vectores linea base - Medio abiótico - Geología
+2.1. Linea base - Vectores
+
+2.1.1. Proyecto
+(AreaProyecto, AreaInfluencia)
+
+2.1.2. Medio abiótico - Geología
+(UnidadGeologica, ContactoGeologico, EstructuraFallaLineam)
+
+2.1.3. Medio abiótico - Suelos
+(Suelo, PuntoMuestreoSuelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo)
+
+2.1.4. Medio abiótico - Hidrología
+(CuencaHidrografica, OcupacionCauce, CaptacionAguaSuperPT, VertimientoPT, PuntoMuestreoAguaSuper, UsosyUsuariosRecursoHidrico)
+
+2.1.5. Medio abiótico - Atmósfera
+(CalidadAire)
+
+2.1.6. Medio abiótico - Clima
+(EstacionMeteorologica, Isoyeta, Isoterma, ZonificacionClimatica)
+
+2.1.7. Medio biótico
+(Ecosistema)
+
+2.1.8. Medio marino - Offshore
+(ReporteSismos, EcosistemaMarino)
+
+2.1.9. Medio socioeconómico
+(Departamento, Municipio, UnidadTerritorial, Predios)
+
+2.1.10. Gestión del riesgo
+(AmenazaSismica, AmenazaTsunami, AmenazaVolcanica)
 
 
-2.2. 
+2.2. Linea base - Tablas
+(Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB)
+
+
+2.3. Linea base - Raster
+(ImaSatReg, DTM, DSM, MDPendiente, MDPrec, MDTemp, MDPM10Diario, MDPM10Anual)
+
+
 
