@@ -49,17 +49,17 @@ https://github.com/rcfdtools/R.SIGE/blob/main/activity/CNEStation/Readme.md
 (Ecosistema)
 www.colombiaenmapas.gov.co >>> Áreas de importancia especial y ecosistemas estratégicos
 
-2.9. Vectores - Medio socioeconómico
+2.8. Vectores - Medio socioeconómico
 (Departamento, Municipio, UnidadTerritorial, Predios)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/CountyLimit/Readme.md
 
-2.10. Vectores - Gestión del riesgo
+2.9. Vectores - Gestión del riesgo
 (AmenazaSismica, AmenazaTsunami, AmenazaVolcanica)
 
-2.11. Tablas
+2.10. Tablas
 (Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB)
 
-2.12. Raster
+2.11. Raster
 (ImaSatReg, DTM, DSM, MDPendiente)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/RemoteSensingDL/Readme.md
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/DEMSatellite/Readme.md
