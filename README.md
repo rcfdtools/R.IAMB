@@ -17,7 +17,7 @@ Bienvenid@, en este curso, los participantes obtendrán el conocimiento general 
 * Buscar, seleccionar y filtrar entidades espaciales y atributos de forma fácil y precisa. El participante además podrá ejecutar procesos de cálculo y difusión de atributos a partir de expresiones sencillas en SQL y Python. 
 * Obtener los conocimientos necesarios para el análisis de información por medio de búsquedas simples y complejas, proximidad, sobreimposición y unión de datos espaciales con bases de datos externas.
 * Descargar, procesar y analizar modelos de terreno e imágenes ráster a partir de sensores remotos e información satelital.
-* Utilizar los componentes geográficos de las herramientas de modelación hidrológica HEC-HMS para la delimitación de cuencas.
+* Utilizar los componentes geográficos de la herramienta de modelación hidrológica HEC-HMS para la delimitación de cuencas.
 
 
 ## Participantes, metodología, requerimientos y evaluación
