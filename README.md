@@ -4,7 +4,7 @@
 # CURSO: Sistemas de Información Geográfica aplicados a Estudios Ambientales - IAMB
 Keywords: `sig` `gis` `anla` `environmental-impact-assessment` `eia` `daa` `ica` `hazard`
 
-Bienvenid@, en este curso, los participantes obtendrán el conocimiento general y particular del uso de los sistemas de información geográfica aplicados al desarrollo de estudios ambientales mediante la utilización de herramientas de dominio público. Además, desarrollará las habilidades necesarias para diseñar, crear, representar y editar sistemas geográficos, así como el uso avanzado de las funciones de geo-procesamiento, manejo de datos relacionales y automatización usando Python. El desarrollo de los diferentes talleres y clases del curso se ejemplifica a través de un caso de estudio. 
+Bienvenid@, en este curso, los participantes obtendrán el conocimiento general y particular del uso de los sistemas de información geográfica aplicados al desarrollo de estudios ambientales, mediante la utilización de herramientas de dominio público. Además, desarrollará las habilidades necesarias para diseñar, crear, representar y editar sistemas geográficos, así como el uso avanzado de las funciones de geo-procesamiento, manejo de datos relacionales y automatización usando Python. El desarrollo de los diferentes talleres y clases del curso se ejemplifica a través de un caso de estudio. 
 
 <div align="center"><img src="file/graph/Gemini_Generated_Image_7fazvu7fazvu7faz_rounded.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/001434620896d2dc">https://gemini.google.com</a></sub><br><br></div>
 
@@ -85,3 +85,68 @@ En _Microsoft Windows / Panel de control / Region / Formats / Additional setting
 
 ## :large_blue_circle: Módulo 1 - Introducción y conceptos básicos
 
+Objetivo: Introducir los elementos y principios de SIG para la elaboración de Estudios Ambientales.
+
+<div align="center">
+
+| Actividad                                                           | Descripción |
+|:--------------------------------------------------------------------|:------------|
+| 1.1. Introducción, conceptos básicos de SIG y georreferenciación    |             |
+| 1.2. Sistemas de información geográfica y los estudios ambientales  |             |
+
+</div>
+
+
+## :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
+
+Objetivo: Detallar los elementos de línea base que se deben contemplar y que deben formar parte de un Estudio Ambiental.
+
+<div align="center">
+
+| Actividad                                   | Descripción                                                             |
+|:--------------------------------------------|:------------------------------------------------------------------------|
+| 2.1. Vectores - Proyecto o caso de estudio  | AreaProyecto, AreaInfluencia                                            |
+| 2.2. Vectores - Medio abiótico - Geología   | UnidadGeologica, ContactoGeologico, EstructuraFallaLineam               |
+| 2.3. Vectores - Medio abiótico - Suelos     | Suelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo            |
+| 2.4. Vectores - Medio abiótico - Hidrología | CuencaHidrografica, OcupacionCauce                                      |
+| 2.5. Vectores - Medio abiótico - Atmósfera  | CalidadAire                                                             |
+| 2.6. Vectores - Medio abiótico - Clima      | EstacionMeteorologica                                                   |
+| 2.7. Vectores - Medio biótico               | Ecosistema                                                              |
+| 2.8. Vectores - Medio socioeconómico        | Departamento, Municipio, UnidadTerritorial, Predios                     |
+| 2.9. Vectores - Gestión del riesgo          | AmenazaSismica, AmenazaTsunami, AmenazaVolcanica                        |
+| 2.10. Tablas                                | Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB |
+| 2.11. Raster                                | ImaSatReg, DTM, DSM, MDPendiente                                        |
+|                                             |                                                                         |
+
+</div>
+
+
+## :large_blue_circle: Módulo 3 - Análisis ambiental
+
+Objetivo: 
+
+<div align="center">
+
+| Actividad                                                              | Descripción                                    |
+|:-----------------------------------------------------------------------|:-----------------------------------------------|
+| 3.1. Digitalización de vectores                                        |                                                |
+| 3.2. Estudio geográfico de embalses o reservorios                      |                                                |
+| 3.3. Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI y otros índices   |                                                |
+| 3.4. Generación de mapas ráster interpolados, isolíneas y zonificación |                                                |
+| 3.5. Análisis hidro-climatológico ERA5 Land Monthly                    |                                                |
+| 3.6. Análisis de amenazas naturales                                    |                                                |
+| 3.7. Análisis de impactos ambientales                                  | Por desarrollos y redensificación urbanística. |
+
+</div>
+
+
+##
+
+_R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
+
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
+
+| [:sun_with_face: Iniciar curso](activity/M01A00/Readme.md) | [:infinity: Otros cursos y herramientas](https://github.com/rcfdtools) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [:notebook: Referencias](file/ref/Readme.md) | [:label: Abreviaturas y definiciones](file/ref/Definitions.md) |
+|-------------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------------|
+
+<div align="center"><img alt="rcfdtools" src="file/graph/R.IAMB.svg" height="46px"></div>

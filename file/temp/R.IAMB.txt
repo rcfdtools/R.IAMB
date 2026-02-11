@@ -4,7 +4,7 @@ CURSO: Sistemas de Información Geográfica aplicados a Estudios Ambientales - I
 Módulo 1 - Introducción y conceptos básicos
 Objetivo: Introducir los elementos y principios para la elaboración de Estudios Ambientales.
 
-1.1. Introducción, conceptos básicos y georreferenciación
+1.1. Introducción, conceptos básicos de SIG y georreferenciación
 https://github.com/rcfdtools/R.TSIG/blob/main/activity/GISBasic/Readme.md
 
 1.2. Sistemas de información geográfica y los estudios ambientales
@@ -21,17 +21,16 @@ Objetivo: Detallar los elementos que se deben contemplar y que deben formar part
 (AreaProyecto, AreaInfluencia)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/SZH/Readme.md
 
-2.1. Vectores - Medio abiótico - Geología
+2.2. Vectores - Medio abiótico - Geología
 (UnidadGeologica, ContactoGeologico, EstructuraFallaLineam)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Geology/Readme.md
 
 2.3. Vectores - Medio abiótico - Suelos
-(Suelo, PuntoMuestreoSuelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo)
+(Suelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo)
 Análisis con POT Cundinamarca o Nacional https://github.com/rcfdtools/R.SIGE/blob/main/activity/LandUseAnalysis/Readme.md
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/LandUseIGAC/Readme.md
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/LandSoil/Readme.md
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/MoorLand/Readme.md
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/ThermicLevel/Readme.md
 
 2.4. Vectores - Medio abiótico - Hidrología
 (CuencaHidrografica, OcupacionCauce)
@@ -43,7 +42,7 @@ https://www.ambientebogota.gov.co/calidad-del-aire
 http://rmcab.ambientebogota.gov.co/home/map
 
 2.6. Vectores - Medio abiótico - Clima
-(EstacionMeteorologica, Isoyeta, Isoterma, ZonificacionClimatica)
+(EstacionMeteorologica)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/CNEStation/Readme.md
 
 2.7. Vectores - Medio biótico
@@ -78,8 +77,9 @@ https://github.com/rcfdtools/R.SIGE/blob/main/activity/Reservoir/Readme.md
 3.3. Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI y otros índices
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/RemoteSensingNDVI/Readme.md
 
-3.4. Generación de mapas ráster interpolados
-(MDPrec, MDTemp, MDPM10Diario, MDPM10Anual)
+3.4. Generación de mapas ráster interpolados, isolíneas y zonificación
+(MDPrec, MDTemp, MDPM10Diario, MDPM10Anual, Isoyeta, Isoterma, ZonificacionClimatica)
+https://github.com/rcfdtools/R.SIGE/blob/main/activity/ThermicLevel/Readme.md
 
 3.5. Análisis hidro-climatológico ERA5 Land Monthly
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/RemoteSensingERA5/Readme.md
