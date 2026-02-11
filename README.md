@@ -2,7 +2,7 @@
 <div align="center"><sub><i>COURSE - Geographic Information Systems applied to Environmental Studies - IAMB</i></sub></div>
 
 # CURSO: Sistemas de Información Geográfica aplicados a Estudios Ambientales - IAMB
-Keywords: `sig` `gis` `anla` `environmental-impact-assessment` `eia` `daa` `ica` `hazard`
+Keywords: `gis` `hazard` `geographic-data` `geographical-information-system` `hazard-detection` `hazard-assessment` `eia` `environmental-impact-assessment` `sig` `anla` `daa` `ica`
 
 Bienvenid@, en este curso, los participantes obtendrán el conocimiento general y particular del uso de los sistemas de información geográfica aplicados al desarrollo de estudios ambientales, mediante la utilización de herramientas de dominio público. Además, desarrollará las habilidades necesarias para diseñar, crear, representar y editar sistemas geográficos, así como el uso avanzado de las funciones de geo-procesamiento, manejo de datos relacionales y automatización usando Python. El desarrollo de los diferentes talleres y clases del curso se ejemplifica a través de un caso de estudio. 
 
