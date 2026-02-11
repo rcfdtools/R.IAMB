@@ -2,4 +2,86 @@
 <div align="center"><sub><i>COURSE - Geographic Information Systems applied to Environmental Studies - IAMB</i></sub></div>
 
 # CURSO: Sistemas de Información Geográfica aplicados a Estudios Ambientales - IAMB
+Keywords: `sig` `gis` `anla` `environmental-impact-assessment` `eia` `daa` `ica` `hazard`
+
+Bienvenid@, en este curso, los participantes obtendrán el conocimiento general y particular del uso de los sistemas de información geográfica aplicados al desarrollo de estudios ambientales mediante la utilización de herramientas de dominio público. Además, desarrollará las habilidades necesarias para diseñar, crear, representar y editar sistemas geográficos, así como el uso avanzado de las funciones de geo-procesamiento, manejo de datos relacionales y automatización usando Python. El desarrollo de los diferentes talleres y clases del curso se ejemplifica a través de un caso de estudio. 
+
+<div align="center"><img src="file/graph/Gemini_Generated_Image_7fazvu7fazvu7faz_rounded.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/001434620896d2dc">https://gemini.google.com</a></sub><br><br></div>
+
+
+## Objetivos del curso
+
+* Ofrecer a los participantes el conocimiento detallado de los SIG mediante el manejo de herramientas computacionales públicas.
+* Diseñar, crear y editar un sistema de información geográfico a partir de procesos de digitalización directa o desde medios digitales. 
+* Obtener habilidades en el manejo de la representación gráfica de elementos geográficos.
+* Buscar, seleccionar y filtrar entidades espaciales y atributos de forma fácil y precisa. El participante además podrá ejecutar procesos de cálculo y difusión de atributos a partir de expresiones sencillas en SQL y Python. 
+* Obtener los conocimientos necesarios para el análisis de información por medio de búsquedas simples y complejas, proximidad, sobreimposición y unión de datos espaciales con bases de datos externas.
+* Descargar, procesar y analizar modelos de terreno e imágenes ráster a partir de sensores remotos e información satelital.
+* Utilizar los componentes geográficos de las herramientas de modelación hidrológica HEC-HMS para la delimitación de cuencas.
+
+
+## Participantes, metodología, requerimientos y evaluación
+
+Los contenidos presentados en este curso taller, están dirigidos a estudiantes y profesionales de diferentes disciplinas, que requieran aprender y/o fortalecer sus conocimientos en el manejo de herramientas SIG en Estudios ambientales, tales como:
+
+* Ingenieros.
+* Especialistas.
+* Funcionarios públicos.
+* Gestores territoriales.
+
+> Es requerido un nivel básico del idioma inglés debido a que utilizaremos las interfaces de usuario en este idioma.  
+> Como prerrequisito, los estudiantes requieren de conocimientos básicos en programación de computadores.
+
+
+### Metodología académica
+
+* Mediante el desarrollo de talleres prácticos, presentar a los participantes, diferentes conceptos y aplicaciones de Sistemas de Información Geográfica en el desarrollo de Estudios Ambientales.
+* Al inicio de cada clase, el instructor realizará una presentación y demostración general de los conceptos y las herramientas computacionales a utilizar y luego los estudiantes desarrollarán los contenidos de cada taller, actividad o ejercicio.
+* Antes de cada clase, es recomendable que los participantes den lectura a las guías de clase para así comprender mejor las explicaciones recibidas en aula.
+
+
+### Evaluación
+
+Se entiende por evaluación del aprendizaje el proceso que valora el logro de los objetivos, el avance del estudiante en su proceso formativo y sus resultados obtenidos, durante y al final de las asignaturas y actividades académicas en las que se inscribió, para un determinado período académico.
+
+La evaluación del desempeño de los estudiantes valora el cumplimiento de los objetivos propuestos y los compromisos adquiridos en la asignatura. Se realiza el seguimiento del avance de cada estudiante, verificando tanto los conocimientos adquiridos como las competencias o habilidades desarrolladas.
+
+* Asistencia: 10%
+* Quices: 40%
+* Examen: 50% _(si el promedio de calificaciones de todo el semestre es ≥ a 4.5 y su asistencia a clases es ≥ al 90% no presenta examen final)_.
+
+> Acorde con el _Literal b_ del Artículo 46 del reglamento estudiantil de posgrado, los estudiantes de posgrado deben _"Asistir y participar cumplida y activamente en todas las actividades académicas contempladas en el plan de estudios"_.
+
+
+## Software requerido, repositorio de proyecto y estructura de directorios
+
+Para el desarrollo del curso y las actividades del proyecto final, son requeridas las siguientes herramientas y estructura de directorios:
+
+<div align="center">
+
+| Requerimiento                                                                            | Descripción                                                                                             |
+|:-----------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://www.office.com/)                                          | Microsoft 365 (Word, Excel, OneDrive, Teams).                                                           |
+| [:toolbox:Herramienta](https://notepad-plus-plus.org/)                                   | Notepad++ (editor de texto).                                                                            |
+| [:toolbox:Herramienta](https://qgis.org/)                                                | QGIS 3.44 o superior.                                                                                   |
+| [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/)                 | HEC-HMS 4.13 o superior.                                                                                |
+| [:toolbox:Herramienta](https://www.7-zip.org/)                                           | 7-Zip File Manager (descompresor de archivos).                                                          |
+| [:construction_worker:Usuario USGS](https://ers.cr.usgs.gov/register/contact)            | Cuenta de usuario en el USGS - United States Geological Survey (Satellital images).                     |
+| [:construction_worker:Usuario Copernicus](https://dataspace.copernicus.eu/)              | Cuenta de usuario en el European Union's Earth observation program (ERA5 data).                         |
+| [:construction_worker:Usuario OpenTopography](https://portal.opentopography.org/newUser) | Cuenta de usuario en OpenTopography (high-resolution topographic data as LiDAR, radar, photogrammetry). |
+| [:open_file_folder:Estructura de directorios](file/Readme.md)                            | Estructura requerida para el desarrollo del curso.                                                      |
+| [:open_file_folder:Plantilla informe técnico](file/report/)                              | Plantilla para presentación de informes técnicos en quices de conocimiento y habilidad.                 |
+
+</div>
+
+**Configuración regional**
+
+En _Microsoft Windows / Panel de control / Region / Formats / Additional settings..._, establezca:
+
+* Símbolo decimal (Decimal symbol): punto (.)
+* Símbolo de agrupación de miles (Digit grouping symbol): coma (,)
+* Separador de listas (List separator): coma (,)
+
+
+## :large_blue_circle: Módulo 1 - Introducción y conceptos básicos
 
