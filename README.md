@@ -11,7 +11,7 @@ Bienvenid@, en este curso, los participantes obtendrán el conocimiento general 
 
 ## Objetivos del curso
 
-* Ofrecer a los participantes el conocimiento detallado de los SIG mediante el manejo de herramientas computacionales públicas.
+* Ofrecer a los participantes el conocimiento detallado del uso de los SIG aplicados a Estudios Ambientales, mediante el manejo de herramientas computacionales de uso público.
 * Diseñar, crear y editar un sistema de información geográfico a partir de procesos de digitalización directa o desde medios digitales. 
 * Obtener habilidades en el manejo de la representación gráfica de elementos geográficos.
 * Buscar, seleccionar y filtrar entidades espaciales y atributos de forma fácil y precisa. El participante además podrá ejecutar procesos de cálculo y difusión de atributos a partir de expresiones sencillas en SQL y Python. 
