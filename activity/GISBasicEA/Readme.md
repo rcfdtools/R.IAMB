@@ -190,6 +190,90 @@ Shapefile: en caso de utilizar archivos de formas, la estructura de directorios 
 
 <div align="center"><img src="graph/GDB_ZonificacionConservacionProteccion.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
+**Información vectorial en el Tema Áreas de Reglamentación Especial y Proyecto**
+
+<div align="center"><img src="graph/GDB_AreaReglEspecialProyecto.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+**Información vectorial en el Tema Compensación, Inversión 1 % y Contingencias**
+
+<div align="center"><img src="graph/GDB_CompensacionInversion1P.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+**Tablas complementarias (no geográficas)**
+
+| Tema general o medio    | Tabla                                                                                                        |
+|-------------------------|--------------------------------------------------------------------------------------------------------------|
+| Suelos                  | Propiedades Químicas de los Suelos                                                                           |
+|                         | Propiedades Físicas de los Suelos                                                                            |
+| Hidrologia              | Muestreo Fisicoquímico Fuentes Superficiales                                                                 |
+|                         | Parámetros Muestreo Fisicoquímico Fuentes Superficiales                                                      |
+|                         | Muestreo Hidrobiológico                                                                                      |
+|                         | Muestreo de Caracterización de Sedimento                                                                     |
+| Hidrogeologia           | Muestreo Fisicoquímico Fuentes Subterráneas                                                                  |
+|                         | Parámetros Muestreo Fisicoquímico Fuentes Subterráneas                                                       |
+| Atmosfera               | Contaminantes Fuentes Fijas de Emisión                                                                       |
+|                         | Contaminantes Fuentes Dispersas Emisión                                                                      |
+|                         | Fuentes Móviles de Emisión                                                                                   |
+|                         | Monitoreo de Calidad del Aire                                                                                |
+|                         | Monitoreo de Ruido Ambiental                                                                                 |
+|                         | Monitoreo de Ruido de Emisión                                                                                |
+| Clima                   | Monitoreo Estación Meteorológica                                                                             |
+| Biotico_conti_coste     | Registro de individuos fustales del muestreo de flora                                                        |
+|                         | Registro de especies de regeneración natural y otro tipo de vegetación del muestreo de flora                 |
+|                         | Resultados de la información estimada para cada especie en categoría de fustal por cobertura o ecosistema    |
+|                         | Registro de especies del muestreo de fauna                                                                   |
+|                         | Resultados de la información para cada especie de fauna por  cobertura                                       |
+| Marino                  | Muestreo Oceanografía Superficial y Columna Agua                                                             |
+|                         | Muestreo Fisicoquímico Marino                                                                                |
+|                         | Muestreo Hidrobiológico Marino                                                                               |
+|                         | Muestreo de Caracterización de Sedimento Marino                                                              |
+|                         | Muestreo Especies Flora Marina                                                                               |
+|                         | Muestreo Especies Fauna Marina                                                                               |
+|                         | Registros Observación Fauna Marina Mamíferos                                                                 |
+|                         | Registros Observación Fauna Marina Aves                                                                      |
+|                         | Registros Observación Fauna Marina Peces                                                                     |
+|                         | Registros Observación Fauna Marina Tortugas                                                                  |
+|                         | Registros Observación Fauna Marina Otra Fauna                                                                |
+|                         | Registros Observación Fauna Marina Pesquero                                                                  |
+|                         | Registros de Esfuerzo - Observación Fauna Marina                                                             |
+| Proyecto                | Registro de datos del análisis de servicios ecosistémicos                                                    |
+|                         | Registro de datos de la valoración económica de las alternativas                                             |
+|                         | Relación de las Medidas de Manejo para los Impactos Identificados                                            |
+|                         | Registro de las tecnologías y tratamientos (análisis de ciclo de vida) y/o las alternativas socioeconómicas  |
+|                         | Registro de los datos de los indicadores de las medidas de manejo                                            |
+|                         | Registro de datos de la evaluación económica ambiental (impactos relevantes No internalizables)              |
+|                         | Registro de datos de la evaluación económica ambiental (impactos relevantes Internalizables)                 |
+| Compensacion            | Registro de datos de afectación para Otras Compensaciones                                                    |
+| Inversion_1_por_ciento  | Corresponde a la inversión de no menos del 1% presentada para aprobación                                     |
+|                         | Beneficios económicos sociales (ambientales) de Interceptores y STARD                                        |
+| Contingencias           | Registro de datos del reporte parcial o final de las contingencias                                           |
+| Compen_Inver            | Ubicación espacial de las actividades de compensaciones e inversión del 1%                                   |
+|                         | Registro del Tipo de Ecosistema para actividades de compensación e inversión del 1%                          |
+|                         | Registro del Estado del Suelo en el área de compensación o inversión del 1%                                  |
+|                         | Registros Multimedia                                                                                         |
+| Geologia                | Registro datos de seguimiento para el aprovech. de Materiales de Construcción                                |
+| Hidrologia              | Registro datos de seguimiento para Ocupación de Cauce                                                        |
+|                         | Registro datos de seguimiento para Vertimientos (en Agua Superficial, en Vía y Suelo)                        |
+| Hidrogeologia           | Registro datos de seguimiento para Inyección                                                                 |
+| Hidrologia_Hidrogeo     | Registro datos de seguimiento para Captación de Aguas Superficiales y/o Subterráneas                         |
+|                         | Datos de indicadores de los Planes de Uso Eficiente y Ahorro del Agua                                        |
+|                         | Datos de tecnologías de los Planes de Uso Eficiente y Ahorro del Agua                                        |
+| Politico_Administrativo | Registro de las actividades ejecutadas y planeadas relacionadas con el medio socioeconómico                  |
+|                         | Registro datos de seguimiento para la caracterización socioeconómica                                         |
+| Proyecto                | Registro datos de seguimiento para la Infraestructura del proyecto                                           |
+|                         | Registro datos de seguimiento para la Disposición de Residuos Sólidos                                        |
+|                         | Registro datos de seguimiento para los Zodmes                                                                |
+|                         | Registro datos de seguimiento para el Dragado y Disposición                                                  |
+|                         | Registro de datos para seguimiento de la evaluación económica ambiental (impactos relevantes)                |
+| Compensacion            | Registro de datos de seguimiento a las actividades de compensación                                           |
+| Inversion_1_por_ciento  | Registro de datos de seguimiento a las actividades de inversión 1%                                           |
+| Compen_Inver            | Registro de Especies Sembradas en las áreas de compensación o inversión 1%                                   |
+|                         | Registro de los indicadores de avance para las actividades de compensación e inversión 1%                    |
+
+
+
+
+
+
 
 
 
