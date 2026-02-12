@@ -9,7 +9,7 @@ Mejoras que introducen los SIG a los estudios ambientales:
 * Uso de la tecnología como herramienta de soporte para la toma de decisiones en la que la elección de alternativas va acorde con el conocimiento de todas las áreas profesionales debido a que la información se utiliza de forma transversal y racional.
 * Permite contextualizar el proyecto ambiental mediante simulaciones hipotéticas para posteriormente someterlo a diferentes evaluaciones y análisis que pueden inducir al conocimiento de factores sub o sobre estimados.
 
-<div align="center"><img src="file/graph/Gemini_Generated_Image_4a8yb24a8yb24a8y_rounded.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/001434620896d2dc">https://gemini.google.com</a></sub><br><br></div>
+<div align="center"><img src="graph/Gemini_Generated_Image_4a8yb24a8yb24a8y_rounded.png" alt="rcfdtools" width="50%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/001434620896d2dc">https://gemini.google.com</a></sub><br><br></div>
 
 
 ## Objetivos
