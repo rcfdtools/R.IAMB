@@ -153,14 +153,14 @@ GIS como sistema transversal de información y análisis en las múltiples etapa
 
 > Nota: el subnivel Tema no es visible en la estructura de la Geodatabase o de directorios y solo puede ser observada en el diccionario de datos.
 
-<div align="center"><img src="graph/GDB_EstructuraGenericaA.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+<div align="center"><img src="graph/GDB_EstructuraGenericaA.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
 Shapefile: en caso de utilizar archivos de formas, la estructura de directorios o carpetas utilizará el mismo orden jerárquico utilizado en la base de datos o Geodatabase.
 
 **Información vectorial en el Tema General o Medio Abiótico**
 
 <div align="center"><img src="graph/GDB_GeneralMedioAbiotico1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-<div align="center"><img src="graph/GDB_GeneralMedioAbiotico2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/GDB_GeneralMedioAbiotico2.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 
 
