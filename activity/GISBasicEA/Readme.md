@@ -132,14 +132,14 @@ Es un modelo descriptivo en el que se trata de representar la realidad a través
 
 GIS como sistema transversal de información y análisis en las múltiples etapas de los estudios ambientales.
 
-<div align="center"><img src="graph/ANLA_ModeloDatos.svg" alt="rcfdtools" width="90%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_ModeloDatos.svg" alt="rcfdtools" width="80%" border="0" /></div>
 
 > Podrá utilizar una base de datos geográfica (Geodatabase en software comercial) o archivos de formas (shapefile en software comercial o libre) individuales para cada uno de los Estudios Ambientales – Modelo de datos descargable desde http://www.anla.gov.co
 
 
 ### 2.3. Concepto de evaluación y seguimiento ANLA
 
-<div align="center"><img src="graph/ANLA_ConceptoEvaluacionSeguimiento.jpg" alt="rcfdtools" width="70%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_ConceptoEvaluacionSeguimiento.jpg" alt="rcfdtools" width="60%" border="0" /></div>
 
 
 ### 2.4. Visión geomática ANLA (febrero 2013)
@@ -149,7 +149,7 @@ GIS como sistema transversal de información y análisis en las múltiples etapa
 
 ### 2.5. Estructura genérica de datos ANLA (datos espaciales, tablas y ráster)
 
-<div align="center"><img src="graph/GDB_EstructuraGenerica.jpg" alt="rcfdtools" width="45%" border="0" /></div>
+<div align="center"><img src="graph/GDB_EstructuraGenerica.jpg" alt="rcfdtools" width="50%" border="0" /></div>
 
 > Nota: el subnivel Tema no es visible en la estructura de la Geodatabase o de directorios y solo puede ser observada en el diccionario de datos.
 
@@ -196,7 +196,7 @@ Shapefile: en caso de utilizar archivos de formas, la estructura de directorios 
 
 **Información vectorial en el Tema Compensación, Inversión 1 % y Contingencias**
 
-<div align="center"><img src="graph/GDB_CompensacionInversion1P.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/GDB_CompensacionInversion1P.jpg" alt="rcfdtools" width="90%" border="0" /></div>
 
 **Tablas complementarias (no geográficas)**
 
@@ -305,25 +305,25 @@ Shapefile: en caso de utilizar archivos de formas, la estructura de directorios 
 
 La caracterización topográfica georreferenciada se realizó por medio del modelo digital de elevaciones de la Nasa – ASTER GDEM con resolución aproximada de 30 x 30 metros, reacondicionado con los drenajes foto restituidos, así como la definición de las cuencas a partir del criterio de tramos de drenaje con aportaciones mayores o iguales a 4 km². 
 
-<div align="center"><img src="graph/Ejemplo_RasterDSM.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Ejemplo_RasterDSM.jpg" alt="rcfdtools" width="90%" border="0" /></div>
 
 **Ejemplo de imágenes ráster – Modelo digital de pendientes, SLP**
 
 Modelo digital de pendientes en porcentaje para la determinación de la pendiente media en cuencas y drenajes. Construido a partir del modelo digital de elevación y utilizando la herramienta Pendiente de la extensión Análisis en 3D de ArcGIS.
 
-<div align="center"><img src="graph/Ejemplo_RasterSLP.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Ejemplo_RasterSLP.jpg" alt="rcfdtools" width="90%" border="0" /></div>
 
 **Ejemplo de imágenes ráster – Modelo interpolado de precipitación media anual mm/año, PM**
 
 Modelo espacial de precipitación obtenido a partir de los datos históricos de varias estaciones analizadas estadísticamente para determinar el valor medio multianual. Interpolación espacial IDW usando ArcGIS.
 
-<div align="center"><img src="graph/Ejemplo_RasterPrecipitacionMedia.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Ejemplo_RasterPrecipitacionMedia.jpg" alt="rcfdtools" width="90%" border="0" /></div>
 
 **Ejemplo de imágenes ráster – Modelo interpolado de temperatura media anual ºc, Tm**
 
 Modelo espacial de temperatura media anual generado utilizando algebra de mapas con la expresión regional de CENICAFÉ en ArcGIS.
 
-<div align="center"><img src="graph/Ejemplo_RasterTemperatura.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/Ejemplo_RasterTemperatura.jpg" alt="rcfdtools" width="90%" border="0" /></div>
 
 **Formatos admitidos por el ANLA**
 
@@ -344,12 +344,12 @@ Modelo espacial de temperatura media anual generado utilizando algebra de mapas 
 
 Circular Externa No. 00002 del 16 de Abril de 2021
 
-<div align="center"><img src="graph/GDB_YNCa.jpg" alt="rcfdtools" width="80%" border="0" /></div>
-<div align="center"><img src="graph/GDB_YNCb.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/GDB_YNCa.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/GDB_YNCb.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 **Plantilla de metadatos ANLA v 4.0 publicada en 2020.11.18**
 
-<div align="center"><img src="graph/ANLA_PlantillaMetadatos2020.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_PlantillaMetadatos2020.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## 3. Caso de estudio ejemplo 
