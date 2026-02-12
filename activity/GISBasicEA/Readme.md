@@ -57,26 +57,22 @@ https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-p
 
 <div align="center"><img src="graph/MarcoNormativo_Consolidacion.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-Mediante la Resolución 1503 de 2010, se adoptó la Metodología de Presentación de Estudios Ambientales, incluyendo por primera vez la estructura de la Geodatabase o GDB (Base de Datos Geográfica), como requerimiento de soporte de la información documental de los proyectos y trámites ambientales presentados ante la Autoridad Ambiental entre los que se incluyen los Estudios de Impacto Ambiental EIA, el Diagnóstico Ambiental de Alternativas DAA y los Planes de Manejo Ambiental PMA. 
+* Mediante la Resolución 1503 de 2010, se adoptó la Metodología de Presentación de Estudios Ambientales, incluyendo por primera vez la estructura de la Geodatabase o GDB (Base de Datos Geográfica), como requerimiento de soporte de la información documental de los proyectos y trámites ambientales presentados ante la Autoridad Ambiental entre los que se incluyen los Estudios de Impacto Ambiental EIA, el Diagnóstico Ambiental de Alternativas DAA y los Planes de Manejo Ambiental PMA. 
+* El 17 de agosto de 2012 a través de la Resolución 1415 el Ministerio de Ambiente y Desarrollo Sostenible actualizó y modificó el modelo de almacenamiento geográfico (Geodatabase) contenido en la Metodología General para la presentación de Estudios Ambientales adoptada mediante la Resolución 1503 del 4 de agosto de 2010.
+* A través de la Resolución 0188 de febrero 2013, se adopta el Modelo de Almacenamiento Geográfico (Geodatabase) para la entrega de la información geográfica de los Informes de Cumplimiento Ambiental ICA, con el objetivo de complementar y contrastar la base de datos de la GDB de estudios ambientales - presentada por los usuarios mediante Resolución 1415 de 2012 (línea base)-, y la de permisos y licenciamiento (obligaciones y permisos otorgados), logrando así facilitar el seguimiento ambiental de los proyectos licenciados, y el control y cumplimiento de las obligaciones contenidas en la licencia ambiental.
 
-El 17 de agosto de 2012 a través de la Resolución 1415 el Ministerio de Ambiente y Desarrollo Sostenible actualizó y modificó el modelo de almacenamiento geográfico (Geodatabase) contenido en la Metodología General para la presentación de Estudios Ambientales adoptada mediante la Resolución 1503 del 4 de agosto de 2010.
-
-A través de la Resolución 0188 de febrero 2013, se adopta el Modelo de Almacenamiento Geográfico (Geodatabase) para la entrega de la información geográfica de los Informes de Cumplimiento Ambiental ICA, con el objetivo de complementar y contrastar la base de datos de la GDB de estudios ambientales - presentada por los usuarios mediante Resolución 1415 de 2012 (línea base)-, y la de permisos y licenciamiento (obligaciones y permisos otorgados), logrando así facilitar el seguimiento ambiental de los proyectos licenciados, y el control y cumplimiento de las obligaciones contenidas en la licencia ambiental.
-
-“La Geodatabase GDB es el punto de partida para estandarizar la entrega de los productos geográficos y cartográficos de los proyectos sujetos a permisos y licenciamiento, que servirán como insumos al Sistema de Información Geográfica -SIG-, herramienta en la administración y gestión de la información Georreferenciada de la ANLA, facilitando y agilizando la toma de decisiones de la Autoridad Nacional de Licencias Ambientales”
+> “La Geodatabase GDB es el punto de partida para estandarizar la entrega de los productos geográficos y cartográficos de los proyectos sujetos a permisos y licenciamiento, que servirán como insumos al Sistema de Información Geográfica -SIG-, herramienta en la administración y gestión de la información Georreferenciada de la ANLA, facilitando y agilizando la toma de decisiones de la Autoridad Nacional de Licencias Ambientales”
 
 
 ### 1.3. Bases de datos geográfica año 2013
 
 <div align="center"><img src="graph/ANLA_GDB2013.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-La Resolución 2182 de diciembre de 2016 modifica y consolida el Modelo de Almacenamiento Geográfico contenido en la Metodología General para la Presentación de Estudios Ambientales (Diagnóstico Ambiental de Alternativas – DAA y Estudio de Impacto Ambiental – EIA) y el Seguimiento al Plan de Manejo Ambiental Específico de Proyectos – PMAE y los Informes de Cumplimiento Ambiental – ICA para los trámites de que trata el Capítulo 3 – Licencias Ambientales, Sección 1 del Decreto 1076 de 2015.
+* La Resolución 2182 de diciembre de 2016 modifica y consolida el Modelo de Almacenamiento Geográfico contenido en la Metodología General para la Presentación de Estudios Ambientales (Diagnóstico Ambiental de Alternativas – DAA y Estudio de Impacto Ambiental – EIA) y el Seguimiento al Plan de Manejo Ambiental Específico de Proyectos – PMAE y los Informes de Cumplimiento Ambiental – ICA para los trámites de que trata el Capítulo 3 – Licencias Ambientales, Sección 1 del Decreto 1076 de 2015.
+* El modelo de Almacenamiento Geográfico de esta Resolución _sustituye en su totalidad_ las especificaciones contenidas en las Resoluciones No. 1415 de 2012 y 0188 de 2013.
+* Establece además que la Utilización del Modelo de Almacenamiento Geográfico es de carácter _obligatorio para todas las autoridades ambientales competentes_ señaladas en el Decreto 1075 de 2015 y de _obligatoria observancia por parte de los usuarios_.
 
-El modelo de Almacenamiento Geográfico de esta Resolución _sustituye en su totalidad_ las especificaciones contenidas en las Resoluciones No. 1415 de 2012 y 0188 de 2013.
-
-Establece además que la Utilización del Modelo de Almacenamiento Geográfico es de carácter _obligatorio para todas las autoridades ambientales competentes_ señaladas en el Decreto 1075 de 2015 y de _obligatoria observancia por parte de los usuarios_.
-
-Proyectos radicados antes de la publicación de esta resolución no están obligadas a presentar el estudio es este modelo de datos y tienen un plazo de seis meses para su entrega.
+> Proyectos radicados antes de la publicación de esta resolución no están obligadas a presentar el estudio es este modelo de datos y tienen un plazo de seis meses para su entrega.
 
 
 ### 1.4. Bases de datos geográfica año 2016
@@ -87,7 +83,7 @@ Proyectos radicados antes de la publicación de esta resolución no están oblig
 
 ### 1.5. Base de datos Único Origen de Coordenadas año 2020 [^1]
 
-Resolución IGAC 471 del 14 de mayo de 2020 y Resolución IGAC 529 del 05 de junio de 2020
+Resolución IGAC 471 del 14 de mayo de 2020 y Resolución IGAC 529 del 05 de junio de 2020.
 
 El establecimiento de las condiciones técnicas mínimas que deben tener los productos básicos de cartografía oficial, serán los definidos de conformidad con lo dispuesto por la Resolución 471 del 14 de mayo de 2020 y la posterior Resolución 529 del 05 de junio de 2020, emitidas por el Instituto Geográfico Agustín Codazzi - IGAC, o la norma que la modifique y sustituya, para ello y para garantizar la homogeneidad y continuidad en la representación de los elementos del territorio, así como facilitar los trabajos relacionados con la gestión de coordenadas en el país. En tal sentido, los proyectos, obras o actividades, sujetos al licenciamiento ambiental, deben ajustar su información geográfica a los lineamientos establecidos en la referida normatividad, para la evaluación y seguimiento de los estudios ambientales y/o presentación de los Informes de Cumplimiento Ambiental.
 
