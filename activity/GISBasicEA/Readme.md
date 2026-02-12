@@ -154,6 +154,15 @@ GIS como sistema transversal de información y análisis en las múltiples etapa
 
 
 
+
+
+
+
+
+
+
+
+
 ## Referencias
 
 * Mª José Rodríguez. Los sistemas de información geográfica: una herramienta de análisis en los estudios de impacto ambiental (EIA).
