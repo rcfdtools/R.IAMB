@@ -172,7 +172,7 @@ Shapefile: en caso de utilizar archivos de formas, la estructura de directorios 
 
 **Información vectorial en el Tema Medio Biótico**
 
-<div align="center"><img src="graph/GDB_GeneralMedioBiotico.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/GDB_GeneralMedioBiotico.jpg" alt="rcfdtools" width="40%" border="0" /></div>
 
 
 
