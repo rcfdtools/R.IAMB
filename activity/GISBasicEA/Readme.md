@@ -301,6 +301,29 @@ Shapefile: en caso de utilizar archivos de formas, la estructura de directorios 
 | Modelo de Vibraciones                 | Corresponde a la superficie o Modelo Digital de vibraciones producidas por la actividad de las voladuras en mm/sg.                                                                                                                                               |
 | Modelo de Sobrepresión de Aire        | Corresponde a la superficie o Modelo Digital de la sobre presión del aire producidas por la actividad de las voladuras en db/L.                                                                                                                                  |
 
+**Ejemplo de imágenes ráster – Modelo digital de superficie, DSM**
+
+La caracterización topográfica georreferenciada se realizó por medio del modelo digital de elevaciones de la Nasa – ASTER GDEM con resolución aproximada de 30 x 30 metros, reacondicionado con los drenajes foto restituidos, así como la definición de las cuencas a partir del criterio de tramos de drenaje con aportaciones mayores o iguales a 4 km². 
+
+<div align="center"><img src="graph/Ejemplo_RasterDSM.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+**Ejemplo de imágenes ráster – Modelo digital de pendientes, SLP**
+
+Modelo digital de pendientes en porcentaje para la determinación de la pendiente media en cuencas y drenajes. Construido a partir del modelo digital de elevación y utilizando la herramienta Pendiente de la extensión Análisis en 3D de ArcGIS.
+
+<div align="center"><img src="graph/Ejemplo_RasterSLP.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+**Ejemplo de imágenes ráster – Modelo interpolado de precipitación media anual mm/año, PM**
+
+Modelo espacial de precipitación obtenido a partir de los datos históricos de varias estaciones analizadas estadísticamente para determinar el valor medio multianual. Interpolación espacial IDW usando ArcGIS.
+
+<div align="center"><img src="graph/Ejemplo_RasterPrecipitacionMedia.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+**Ejemplo de imágenes ráster – Modelo interpolado de temperatura media anual ºc, Tm**
+
+Modelo espacial de temperatura media anual generado utilizando algebra de mapas con la expresión regional de CENICAFÉ en ArcGIS.
+
+<div align="center"><img src="graph/Ejemplo_RasterTemperatura.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 
 
