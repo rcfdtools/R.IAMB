@@ -1,6 +1,6 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
-# [:large_blue_circle:] Módulo 1 - Introducción y conceptos básicos
+# :large_blue_circle:Módulo 1 - Introducción y conceptos básicos
 
 Objetivo: Introducir los elementos y principios de SIG para la elaboración de Estudios Ambientales.
 
