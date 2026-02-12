@@ -89,10 +89,10 @@ Objetivo: Introducir los elementos y principios de SIG para la elaboración de E
 
 <div align="center">
 
-| Actividad                                                           | Descripción |
-|:--------------------------------------------------------------------|:------------|
-| 1.1. Introducción, conceptos básicos de SIG y georreferenciación    |             |
-| 1.2. Sistemas de información geográfica y los estudios ambientales  |             |
+| Actividad                                                                                       | Descripción |
+|:------------------------------------------------------------------------------------------------|:------------|
+| [1.1. Introducción, conceptos básicos de SIG y georreferenciación](activity/GISBasic/Readme.md) |             |
+| 1.2. Sistemas de información geográfica y los estudios ambientales                              |             |
 
 </div>
 
