@@ -61,7 +61,7 @@ https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-p
 * El 17 de agosto de 2012 a través de la Resolución 1415 el Ministerio de Ambiente y Desarrollo Sostenible actualizó y modificó el modelo de almacenamiento geográfico (Geodatabase) contenido en la Metodología General para la presentación de Estudios Ambientales adoptada mediante la Resolución 1503 del 4 de agosto de 2010.
 * A través de la Resolución 0188 de febrero 2013, se adopta el Modelo de Almacenamiento Geográfico (Geodatabase) para la entrega de la información geográfica de los Informes de Cumplimiento Ambiental ICA, con el objetivo de complementar y contrastar la base de datos de la GDB de estudios ambientales - presentada por los usuarios mediante Resolución 1415 de 2012 (línea base)-, y la de permisos y licenciamiento (obligaciones y permisos otorgados), logrando así facilitar el seguimiento ambiental de los proyectos licenciados, y el control y cumplimiento de las obligaciones contenidas en la licencia ambiental.
 
-> “La Geodatabase GDB es el punto de partida para estandarizar la entrega de los productos geográficos y cartográficos de los proyectos sujetos a permisos y licenciamiento, que servirán como insumos al Sistema de Información Geográfica -SIG-, herramienta en la administración y gestión de la información Georreferenciada de la ANLA, facilitando y agilizando la toma de decisiones de la Autoridad Nacional de Licencias Ambientales”
+> La Geodatabase GDB es el punto de partida para estandarizar la entrega de los productos geográficos y cartográficos de los proyectos sujetos a permisos y licenciamiento, que servirán como insumos al Sistema de Información Geográfica -SIG-, herramienta en la administración y gestión de la información Georreferenciada de la ANLA, facilitando y agilizando la toma de decisiones de la Autoridad Nacional de Licencias Ambientales.
 
 
 ### 1.3. Bases de datos geográfica año 2013
@@ -120,8 +120,13 @@ El Sistema de Información Ambiental de Colombia (SIAC) “Es el conjunto integr
 * Avanzar en el fortalecimiento institucional en tecnologías geoespaciales.
 
 
+### 2.1. ¿Qué es la Geodatabase? 
 
+Es una base de datos geográfica (información cartográfica y alfanumérica o atributos), que permite su manipulación, consulta y análisis a través de plataformas SIG, lo que hace que se convierta en una poderosa herramienta de gestión del conocimiento para toma de decisiones en los procesos de Evaluación y Seguimiento Ambiental. 
 
+<div align="center"><img src="graph/QueEsGDB.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+
+> GIS registra la evolución o el cambio espacial y temporal de las variables identificadas en la línea base que requieren de monitoreo
 
 
 
