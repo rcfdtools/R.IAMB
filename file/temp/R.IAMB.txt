@@ -4,8 +4,6 @@ CURSO: Sistemas de Información Geográfica aplicados a Estudios Ambientales - I
 Módulo 1 - Introducción y conceptos básicos
 Objetivo: Introducir los elementos y principios para la elaboración de Estudios Ambientales.
 
-1.1. Introducción, conceptos básicos de SIG y georreferenciación
-https://github.com/rcfdtools/R.TSIG/blob/main/activity/GISBasic/Readme.md
 
 1.2. Sistemas de información geográfica y los estudios ambientales
 (Principios de EIA, gestión ambiental, definiciones ambientes, impacto y EIA.)
