@@ -44,14 +44,11 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 ## 1. Marco normativo
 
-Autoridad nacional de licencias ambientales – ANLA
-https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica
-
 
 ### 1.1. Antecedentes
 
-
 <div align="center"><img src="graph/MarcoNormativo_Antecedentes.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
 
 ### 1.2. Consolidación
 
@@ -152,11 +149,15 @@ GIS como sistema transversal de información y análisis en las múltiples etapa
 
 ### 2.5. Estructura genérica de datos ANLA (datos espaciales, tablas y ráster)
 
+<div align="center"><img src="graph/GDB_EstructuraGenerica.jpg" alt="rcfdtools" width="60%" border="0" /></div>
 
+> Nota: el subnivel Tema no es visible en la estructura de la Geodatabase o de directorios y solo puede ser observada en el diccionario de datos.
 
+<div align="center"><img src="graph/GDB_EstructuraGenericaA.jpg" alt="rcfdtools" width="60%" border="0" /></div>
 
+Shapefile: en caso de utilizar archivos de formas, la estructura de directorios o carpetas utilizará el mismo orden jerárquico utilizado en la base de datos o Geodatabase.
 
-
+Información vectorial en el Tema General o Medio Abiótico
 
 
 
