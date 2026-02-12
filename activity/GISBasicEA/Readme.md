@@ -391,7 +391,7 @@ Los impactos considerados son los cultivos agrícolas, la ganadería extensiva y
 
 En el procedimiento para la determinación del impacto por las actividades agrícolas, las clases definidas de calidad del paisaje y las clases de fragilidad del paisaje se combinan mediante una matriz para obtener cuatro clases de impacto paisajístico. Posteriormente, mediante la superposición de la cartografía correspondiente y por la suma de los valores numéricos de cada clase, se establecen cuatro clases de impacto para el cultivo agrícola con las siguientes frecuencias:
 
-<div align="center"><img src="graph/CasoEstudioA4.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+<div align="center"><img src="graph/CasoEstudioA4a.jpg" alt="rcfdtools" width="60%" border="0" /></div>
 
 * Clase 1. Impacto bajo: 4,765 ha. Es la de menor impacto.
 * Clase 2. Impacto medio: 4,198 ha.
