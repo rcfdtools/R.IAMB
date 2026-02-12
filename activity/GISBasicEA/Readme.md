@@ -182,6 +182,16 @@ Shapefile: en caso de utilizar archivos de formas, la estructura de directorios 
 
 <div align="center"><img src="graph/GDB_SocioEconomico.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
+**Información vectorial en el Tema Gestión del Riesgo**
+
+<div align="center"><img src="graph/GDB_GestionRiesgo.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+**Información vectorial en el Tema Zonificación y Áreas de Conservación y Protección Ambiental**
+
+<div align="center"><img src="graph/GDB_ZonificacionConservacionProteccion.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+
+
 
 
 
