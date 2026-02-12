@@ -325,14 +325,103 @@ Modelo espacial de temperatura media anual generado utilizando algebra de mapas 
 
 <div align="center"><img src="graph/Ejemplo_RasterTemperatura.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
+**Formatos admitidos por el ANLA**
+
+| Formatos admisibles  | Descripción                                                                               | Características                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Vectorial**        |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| FileGeoDataBase      | Formato tipo FileGeoDataBase.                                                             | Formato de entrega de la totalidad de la información vectorial y tablas; de no ser posible la entrega en este formato, se deberán entregar shapefiles y las tablas adicionales en formato dbf.                                                                                                                                                                                                                                           |
+| ShapeFile            | Formato para el intercambio de información geográfica.                                    | Este formato estándar aplica cuando no se entrega en el esquema GDB, por lo tanto, la organización de los archivos shape, debe estar basado bajo el mismo esquema en que se encuentra el Diseño actual, conservando los nombres de los objetos y estructura (DataSet, FeatureClass) que ahí se describen, en donde el DataSet corresponde a los nombres de las carpetas o directorios y el FeatureClass al nombre del archivo shapefile. |
+| **Ráster**           |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| GeoTiff,  img,       | Formatos estándar de archivo de imagen para aplicaciones SIG., (geotiff, img, grid, ecw). | Los archivos geotiff, deben incluirse dentro de una carpeta llamada Ráster.                                                                                                                                                                                                                                                                                                                                                              |
+| grid, ecw            |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Tablas**           |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| dBase (.dbf)         | Almacenamiento y manejo de datos tabulares.                                               | Este formato estándar aplica cuando no se entrega en el esquema GDB y corresponde a los datos alfanuméricos de tablas adicionales asociados a los shapefile. Los archivos dbf, deben incluirse dentro de una carpeta llamada Tablas                                                                                                                                                                                                      |
+| **Metadatos**        |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Archivos EXCEL       | Almacenamiento y manejo de las plantillas de metadatos de cada feature u objeto.          | Los archivos EXCEL, deben incluirse dentro de una carpeta llamada Metadatos.                                                                                                                                                                                                                                                                                                                                                             |
+
+**Modelo de Almacenamiento Geográfico Complementario - PPII – YNC**
+
+Circular Externa No. 00002 del 16 de Abril de 2021
+
+<div align="center"><img src="graph/GDB_YNCa.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/GDB_YNCb.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+**Plantilla de metadatos ANLA v 4.0 publicada en 2020.11.18**
+
+<div align="center"><img src="graph/ANLA_PlantillaMetadatos2020.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 
+## 3. Caso de estudio ejemplo 
+
+Utilización de un SIG para la determinación del impacto ambiental generado por la implantación de actividades agrícolas, ganaderas e industriales: el caso del Valle de Zapotitlán en la reserva de la biosfera de Tehuacán Cuicatlán - México. La utilización de los Sistemas de Información Geográfica ha supuesto un avance notable en los estudios del medio físico, por la ventaja de manejar un gran volumen de información.
+
+La metodología aplicada tiene como objetivo determinar el impacto ambiental que es generado al implantar actividades agrícolas, ganaderas e industriales en el Valle de Zapotitlán, localizado en la Reserva de la Biosfera de Tehuacán-Cuicatlán, México. Como herramienta para su valoración se utilizó el SIG comercial IDRISI 3.2 para Windows. Los resultados generados son una aportación que ayudarán a la gestión y planificación de la reserva.
+
+> Impacto: “Cambio que se produce en un factor ambiental al implantar una actividad concreta. McHarg, 1964”.
+
+### 3.1. Ámbito territorial
+
+El área de estudio comprende el Valle de Zapotitlán de las Salinas, dentro de la Reserva de la Biosfera de Tehuacán - Cuicatlán localizada al Sur del estado de Puebla y el norte del estado de Oaxaca - México, con una diferencia de altitud que va de los 1,242 a los 2,800 msnm.
+
+Distribuidos en la zona de estudio se encuentran los poblados de Zapotitlán de las Salinas, Los Reyes Metzontla, San Francisco Xochiltepec, Santa Ana Telostoc, San Lucas Tuletitlán, San Juan Raya y Santiago Acatepec.
+
+<div align="center"><img src="graph/CasoEstudioA1.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+
+Las principales actividades desarrolladas en la región corresponden a la agricultura de temporal con cultivos principalmente de maíz, se realiza la práctica de huertos familiares, plantaciones de agave y nopal, plantaciones de pitayas, ganadería de traspatio y ganadería caprina. Las actividades comerciales más importantes en la región se centran en tres aspectos; a) creación de talleres de artesanías de mármol y ónix, b) explotación de sal gema y graveras; y c) explotación de granjas avícolas.
+
+### 3.2. Metodología aplicada
+
+Se identificaron las distintas alteraciones analizando el efecto de cada acción sobre cada elemento del medio con la utilización de modelos que representan la realidad del territorio que ponen de manifiesto la evolución de los fenómenos o el desarrollo en el tiempo y el espacio los distintos procesos.
+
+En la primera fase o de prospección y sectorización, se obtuvieron una serie de aportaciones sobre el territorio, con la finalidad de adquirir datos ambientales para cada tema o aspecto del medio. La cartografía que se consideró en el área de estudio fue la vegetación y usos del suelo, modelo digital del terreno, orientación, pendiente, unidades de paisaje, riesgo de erosión, calidad y fragilidad de la vegetación, calidad y fragilidad del paisaje, fragilidad de las aguas superficiales, calidad del territorio, fragilidad visual y productividad de los suelos. Escala 1:50.000 para cada tema y fotografía aérea a escala 1:30.000.
+
+Con la información relativa al medio natural y al estado actual del área de estudio, se realizo la determinación del Impacto Ambiental.
+
+En el software geográfico se realiza la intersección espacial de las capas fuente para obtener la capa resultado de impacto
+
+<div align="center"><img src="graph/CasoEstudioA2.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+
+Los impactos considerados son los cultivos agrícolas, la ganadería extensiva y los polígonos industriales. Para cada una de estas actividades se consideran los elementos influyentes sobre los efectos ambientales directos e indirectos que experimentaría el territorio como consecuencia de la ejecución de la actividad generando como resultado una cartografía de impactos.
+
+<div align="center"><img src="graph/CasoEstudioA3.jpg" alt="rcfdtools" width="60%" border="0" /></div>
 
 
+### 3.3. Impactos del Cultivo Agrícola
+
+En el procedimiento para la determinación del impacto por las actividades agrícolas, las clases definidas de calidad del paisaje y las clases de fragilidad del paisaje se combinan mediante una matriz para obtener cuatro clases de impacto paisajístico. Posteriormente, mediante la superposición de la cartografía correspondiente y por la suma de los valores numéricos de cada clase, se establecen cuatro clases de impacto para el cultivo agrícola con las siguientes frecuencias:
+
+<div align="center"><img src="graph/CasoEstudioA4.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+
+* Clase 1. Impacto bajo: 4,765 ha. Es la de menor impacto.
+* Clase 2. Impacto medio: 4,198 ha.
+* Clase 3. Impacto alto: 24,298 ha.
+* Clase 4. Impacto muy alto: 6,383 ha. Es la de mayor impacto.
 
 
+### 3.4. Impacto de la Ganadería Extensiva considerando el uso actual
+
+Impacto sobre la vegetación y el riesgo actual de erosión se combinan mediante una matriz, a partir de la cual se definen 4 niveles de Impacto de la ganadería extensiva considerando el uso actual del suelo. A este se han superpuesto el territorio sin capacidad y los excluidos (clase 0: cultivos y núcleos urbanos respectivamente). Se definen por lo tanto tres niveles de impacto de la Ganadería Extensiva según el uso del suelo actual que en el territorio en estudio aparecen con las siguientes frecuencias:
+
+<div align="center"><img src="graph/CasoEstudioA5.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+
+* Clase 1. Impacto bajo: 4,224 ha.
+* Clase 2. Impacto medio: 6,594 ha.
+* Clase 3. Impacto alto: 17,009 ha.
+* Excluidas: 11,817 ha.
 
 
+### 3.5. Impacto de la localización de Polígonos Industriales
+
+Para determinar el impacto que puede ocasionar la instalación de polígonos industriales de tamaño pequeño o medio se han tenido en cuenta los siguientes parámetros: vocación del suelo (según su productividad agrícola), calidad del territorio afectado, fragilidad de las aguas superficiales (que pueden resultar contaminadas) y fragilidad visual. Mediante una matriz se combinan las clases definidas en función de la fragilidad de las aguas y de productividad de los suelos. Posteriormente, se combinan estas clases obtenidas con la calidad del territorio utilizando la siguiente matriz:
+
+<div align="center"><img src="graph/CasoEstudioA6.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+
+* Clase 1. Impacto bajo: 5,222 ha.
+* Clase 2. Impacto medio: 13,787 ha.
+* Clase 3. Impacto alto: 12,138 ha.
+* Clase 4. Impacto muy alto: 8,229 ha.
+* Excluida (núcleos urbanos) 268 ha.
 
 
 ## Referencias
