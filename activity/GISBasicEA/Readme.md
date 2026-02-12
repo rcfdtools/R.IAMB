@@ -157,7 +157,13 @@ GIS como sistema transversal de información y análisis en las múltiples etapa
 
 Shapefile: en caso de utilizar archivos de formas, la estructura de directorios o carpetas utilizará el mismo orden jerárquico utilizado en la base de datos o Geodatabase.
 
-Información vectorial en el Tema General o Medio Abiótico
+**Información vectorial en el Tema General o Medio Abiótico**
+
+<div align="center"><img src="graph/GDB_GeneralMedioAbiotico1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/GDB_GeneralMedioAbiotico2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+
 
 
 
