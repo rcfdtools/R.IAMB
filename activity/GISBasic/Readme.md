@@ -1,17 +1,16 @@
-<div align="center"><img alt="rcfdtools" src="../../file/graph/R.TSIG.svg" height="46px"></div>
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
-# [:large_blue_circle:]()Taller 0. Introducción y conceptos básicos de GIS en ingeniería
+# [:large_blue_circle:] Módulo 1 - Introducción y conceptos básicos
 
-Este taller presenta los conceptos generales de los sistemas de información geográfica, aplicación, utilidad, georreferenciación, funciones de un SIG, tipos de datos y codificación, formatos para almacenamiento geográfico, tipos de herramientas SIG, versiones y herramientas que componen los paquetes ArcGIS y QGIS. Este taller es una introducción general a los SIG como herramienta de toma de decisiones en ingeniería y presenta contenidos relacionados con conceptos de sistemas de proyección y georreferenciación.
+Objetivo: Introducir los elementos y principios de SIG para la elaboración de Estudios Ambientales.
 
-La gran diferencia que existe entre un aplicativo SIG y otros paquetes de software gráfico radica en que el aplicativo SIG es esencialmente una base de datos espacial, lo que otorga una cualidad incomparable en el desarrollo de análisis enfocados a resolver problemas reales que afectan el espacio geográfico estudiado.
 
 # 1.0 Introducción, conceptos básicos y georreferenciación
 Keywords: `topography` `photogrammetric` `earth-shape` `gnss` `gis-basics` `gis-utility` `gis-functions` `gis-history` `data-types` `related-sciences` `shapefile` `gdb` `crs` `srs` `epsg-4326` `wgs84`
 
 Sistemas de información geográfica. Fundamentos. Proyecciones y origen de coordenadas. 
 
-<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.TSIG" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
+<div align="center"><img src="graph/Gravity_anomalies_on_Earth.png" alt="R.DAPC" width="50%" border="0" /><sub><br>Tomado de: <a href="Public Domain, https://commons.wikimedia.org/w/index.php?curid=479365">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
 ## Objetivos
@@ -44,7 +43,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 | [:notebook:Lectura](https://www.esri.com/es-es/what-is-gis/overview)                                | ¿Qué son los SIG?                                  |        
 | [:notebook:Lectura](https://resources.arcgis.com/es/help/main/10.1/index.html#//003r00000001000000) | ¿Qué son las proyecciones cartográficas?           |           
 | [:notebook:Lectura](https://es.wikipedia.org/wiki/Forma_de_la_Tierra)                               | Forma de la tierra.                                |
-| [:date:TSIG_Georreferenciacion.xlsx](../../file/table/TSIG_Georreferenciacion.xlsx)                 | Cálculos básicos de la forma de la tierra.         |
+| [:date:IAMB_Georreferenciacion.xlsx](../../file/table/IAMB_Georreferenciacion.xlsx)                 | Cálculos básicos de la forma de la tierra.         |
 
 </div>
 
@@ -813,13 +812,13 @@ Extent
 
 ##
 
-_R.TSIG es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._
+_R.DAPC es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
 
-| [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.TSIG/discussions/1) |
-|-----------------------------------|----------------------------------------------------------------------------------|
+| [◄ Anterior](../README.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.DAPC/discussions/1) | [Siguiente ►](../M01A02a/Readme.md) |
+|----------------------------|-----------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------|
 
 [^1]: https://support.esri.com/es-es/gis-dictionary/surveying
 [^2]: https://www.ecomexico.net/
