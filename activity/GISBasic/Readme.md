@@ -5,7 +5,7 @@
 Objetivo: Introducir los elementos y principios de SIG para la elaboración de Estudios Ambientales.
 
 
-# 1.0 Introducción, conceptos básicos y georreferenciación
+# 1.1. Introducción, conceptos básicos y georreferenciación
 Keywords: `topography` `photogrammetric` `earth-shape` `gnss` `gis-basics` `gis-utility` `gis-functions` `gis-history` `data-types` `related-sciences` `shapefile` `gdb` `crs` `srs` `epsg-4326` `wgs84`
 
 Sistemas de información geográfica. Fundamentos. Proyecciones y origen de coordenadas. 
