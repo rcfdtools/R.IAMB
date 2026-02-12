@@ -129,6 +129,30 @@ Es una base de datos geográfica (información cartográfica y alfanumérica o a
 > GIS registra la evolución o el cambio espacial y temporal de las variables identificadas en la línea base que requieren de monitoreo
 
 
+### 2.2. Modelo de datos geográficos ANLA
+
+Es un modelo descriptivo en el que se trata de representar la realidad a través de un inventario preciso y detallado de la información disponible en múltiples áreas.
+
+GIS como sistema transversal de información y análisis en las múltiples etapas de los estudios ambientales.
+
+<div align="center"><img src="graph/ANLA_ModeloDatos.svg" alt="rcfdtools" width="90%" border="0" /></div>
+
+> Podrá utilizar una base de datos geográfica (Geodatabase en software comercial) o archivos de formas (shapefile en software comercial o libre) individuales para cada uno de los Estudios Ambientales – Modelo de datos descargable desde http://www.anla.gov.co
+
+
+### 2.3. Concepto de evaluación y seguimiento ANLA
+
+<div align="center"><img src="graph/ANLA_ConceptoEvaluacionSeguimiento.jpg" alt="rcfdtools" width="90%" border="0" /></div>
+
+
+### 2.4. Visión geomática ANLA (febrero 2013)
+
+<div align="center"><img src="graph/ANLA_VisionGeomatica2013.jpg" alt="rcfdtools" width="90%" border="0" /></div>
+
+
+### 2.5. Estructura genérica de datos ANLA (datos espaciales, tablas y ráster)
+
+
 
 ## Referencias
 
