@@ -124,7 +124,7 @@ El Sistema de Información Ambiental de Colombia (SIAC) “Es el conjunto integr
 
 Es una base de datos geográfica (información cartográfica y alfanumérica o atributos), que permite su manipulación, consulta y análisis a través de plataformas SIG, lo que hace que se convierta en una poderosa herramienta de gestión del conocimiento para toma de decisiones en los procesos de Evaluación y Seguimiento Ambiental. 
 
-<div align="center"><img src="graph/QueEsGDB.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+<div align="center"><img src="graph/QueEsGDB.svg" alt="rcfdtools" width="80%" border="0" /></div>
 
 > GIS registra la evolución o el cambio espacial y temporal de las variables identificadas en la línea base que requieren de monitoreo
 
