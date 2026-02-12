@@ -149,7 +149,7 @@ GIS como sistema transversal de información y análisis en las múltiples etapa
 
 ### 2.5. Estructura genérica de datos ANLA (datos espaciales, tablas y ráster)
 
-<div align="center"><img src="graph/GDB_EstructuraGenerica.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+<div align="center"><img src="graph/GDB_EstructuraGenerica.jpg" alt="rcfdtools" width="45%" border="0" /></div>
 
 > Nota: el subnivel Tema no es visible en la estructura de la Geodatabase o de directorios y solo puede ser observada en el diccionario de datos.
 
@@ -162,9 +162,17 @@ Shapefile: en caso de utilizar archivos de formas, la estructura de directorios 
 <div align="center"><img src="graph/GDB_GeneralMedioAbiotico1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/GDB_GeneralMedioAbiotico2.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
+**Ejemplo del Dataset del Medio Abiótico en el nivel temático 11 de Geología**
 
+<div align="center"><img src="graph/GDB_GeneralMedioAbioticoGeologia.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+**Ejemplo de la tabla de datos geográfica de Unidad Geológica**
 
+<div align="center"><img src="graph/GDB_GeneralMedioAbioticoUnidadGeologicaTabla.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+**Información vectorial en el Tema Medio Biótico**
+
+<div align="center"><img src="graph/GDB_GeneralMedioBiotico.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
