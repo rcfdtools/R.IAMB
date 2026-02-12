@@ -142,12 +142,12 @@ GIS como sistema transversal de información y análisis en las múltiples etapa
 
 ### 2.3. Concepto de evaluación y seguimiento ANLA
 
-<div align="center"><img src="graph/ANLA_ConceptoEvaluacionSeguimiento.jpg" alt="rcfdtools" width="90%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_ConceptoEvaluacionSeguimiento.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
 
 ### 2.4. Visión geomática ANLA (febrero 2013)
 
-<div align="center"><img src="graph/ANLA_VisionGeomatica2013.jpg" alt="rcfdtools" width="90%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_VisionGeomatica2013.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 
 ### 2.5. Estructura genérica de datos ANLA (datos espaciales, tablas y ráster)
