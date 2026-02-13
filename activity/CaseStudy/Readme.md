@@ -1,9 +1,11 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
 # 2.1. Vectores - Proyecto o caso de estudio
-Keywords: `anla` `eia` `environmental-impact-assessment` `sig`
+Keywords: `case-study` `base-maps` `project-area`
 
-AreaProyecto, AreaInfluencia
+En el caso de estudio se ha definido como límite geográfico la cuenca hidrográfica del Río Bogotá, la cual se encuentra incluída en la capa geográfica de [Zonificación Hidrográfica de Colombia](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data) a escala 1:100k actualizada por el IDEAM en el año 2022.
+
+> La actualización en escala 1:100,000 de la capa de zonificación hidrográfica de Colombia a escala 1:500.000 del 2013, utilizada hasta el ENA2018. Esta capa es la unidad de análisis utilizada en el ENA2022. Representa las unidades de análisis hidrográficas para el ordenamiento ambiental del territorio definidas por el IDEAM. La actualización del producto se realizó con base en la información dispuesta por HydroSheds y la edición sobre cartografía básica a escala 1: 100000, dispuesta por el IGAC en el 2016. Es importante mencionar, que en la zonificación hidrográfica del año 2013, con el fin de generar una cobertura de la zonificación hidrográfica en zonas marítimas en las que existen estaciones de IDEAM o de otras entidades como la DIMAR o el INVEMAR, entre otras, las cuales requieren asignación de codificación acorde con su ubicación, se hizo necesario en su momento definir estas sub-zonas hidrográficas, estas no necesariamente implican la generación de productos temáticos específicos. Para la presente actualización de la zonificación hidrográfica del año 2022, no se incluyen las áreas marino-costeras que se delimitan en la zonificación hidrográfica del año 2013, debido a que no se cuenta con información oficial a escala 1:100.000 que permitan su delimitación. [^1]
 
 
 ## Objetivos
@@ -31,9 +33,6 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 ## 1. Zona de estudio 
 
-En el caso de estudio se ha definido como límite geográfico la cuenca hidrográfica del Río Bogotá, la cual se encuentra incluída en la capa geográfica de [Zonificación Hidrográfica de Colombia](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data) a escala 1:100k actualizada por el IDEAM en el año 2022.
-
-> La actualización en escala 1:100,000 de la capa de zonificación hidrográfica de Colombia a escala 1:500.000 del 2013, utilizada hasta el ENA2018. Esta capa es la unidad de análisis utilizada en el ENA2022. Representa las unidades de análisis hidrográficas para el ordenamiento ambiental del territorio definidas por el IDEAM. La actualización del producto se realizó con base en la información dispuesta por HydroSheds y la edición sobre cartografía básica a escala 1: 100000, dispuesta por el IGAC en el 2016. Es importante mencionar, que en la zonificación hidrográfica del año 2013, con el fin de generar una cobertura de la zonificación hidrográfica en zonas marítimas en las que existen estaciones de IDEAM o de otras entidades como la DIMAR o el INVEMAR, entre otras, las cuales requieren asignación de codificación acorde con su ubicación, se hizo necesario en su momento definir estas sub-zonas hidrográficas, estas no necesariamente implican la generación de productos temáticos específicos. Para la presente actualización de la zonificación hidrográfica del año 2022, no se incluyen las áreas marino-costeras que se delimitan en la zonificación hidrográfica del año 2013, debido a que no se cuenta con información oficial a escala 1:100.000 que permitan su delimitación. [^1]
 
 1. En QGIS, cree un mapa nuevo en blanco con el nombre _/map/CaseStudy.qgz_, agregue la capa [/data/IDEAM/h_znhd_2022_100K.shp](../../file/data/IDEAM/h_znhd_2022_100K.shp) y abra la tabla de atributos, podrá observar que se compone de 316 Sub-zonas Hidrográficas. 
 
@@ -42,6 +41,8 @@ En el caso de estudio se ha definido como límite geográfico la cuenca hidrogr�
 2. 
 
 
+
+AreaProyecto, AreaInfluencia
 
 
 
