@@ -167,42 +167,34 @@ Cálculo de áreas
 Distribución porcentual
 <div align="center"><img src="graph/MADS_AutoridadAmbiental7.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+> Con la herramienta _Statistics_, verifique que el % de distribución sea 100.
+
 5. Utilizando el complemento [DataPlotly](https://plugins.qgis.org/plugins/DataPlotly/), cree una gráfica de pastel.
 
 <div align="center"><img src="graph/MADS_AutoridadAmbiental8.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-
-
 Tomando como referencia el límite de la subzona hidrográfica 2120 del IDEAM, las 3 autoridades ambientales con influencia geográfica directa sobre la cuenca del Río Bogotá son:
-
 
 <div align="center">
 
-| Autoridad ambiental - AA | Nombre                                        | Área en cuenca (km²) | % en cuenca |  Área AA. (km²)  |   % AA.   |
-|:-------------------------|:----------------------------------------------|:--------------------:|:-----------:|:----------------:|:---------:|
-| (n/a)                    | (área no coincidente)                         |         7.29         |    0.12     |       7.29       |    100    |
-| CAR                      | Corporación Autónoma Regional de Cundinamarca |       5331.94        |    89.87    |      18289       |   29.15   |
-| CORPOGUAVIO              | Corporación Autónoma Regional del Guavio      |        209.56        |    3.53     |     3635.01      |   5.77    |
-| SDA                      | Secretaria Distrital de Ambiente Bogotá       |        383.99        |    6.47     |      383.99      |    100    |
-|                          | Σ                                             |       5932.79        |     100     |     22315.3      |     0     |
+| Autoridad ambiental - AA | Nombre                                          | Área en cuenca (ha) | % en cuenca  |
+|:-------------------------|:------------------------------------------------|:-------------------:|:------------:|
+| CAR                      | Corporación Autónoma Regional de Cundinamarca   |      532822.35      |    89.88     |
+| CORPOGUAVIO              | Corporación Autónoma Regional del Guavio        |      20909.46       |     3.5      |
+| CORPORINOQUIA            | Corporación Autónoma Regional de la Orinoquía   |       679.21        |     0.12     |
+| SDA                      | Secretaria Distrital de Ambiente de Bogotá D.C. |      38399.44       |     6.48     |
+|                          | Σ                                               |      592810.46      |     100      |
 
 </div>
 
 > _**% en cuenca**_: corresponde al porcentaje del área geodésica del límite de la autoridad ambiental, con respecto a toda la cuenca del Río Bogotá.   
-> _**% AA.**_: corresponde al porcentaje del área geodésica del límite de la AA dentro de la cuenca del Río Bogotá, con respecto al área total de la AA.
-
-
-
-
-
-
-
-
 
 
 ## Referencias
 
-*
+* https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectoranalysis.html#qgisbasicstatisticsforfields
+* https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectoroverlay.html#qgisclip
+* https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html#qgisselectbylocation
 
 
 ## Control de versiones
