@@ -37,17 +37,16 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 </div>
 
+## 0. Glosario
 
-## Caso de estudio general
+* GIS: Acrónimo de Geographical Information System
+* ANLA: Autoridad Nacional de Licencias Ambientales
+* GDB: Geodatabase o base de datos geográfica
+* EIA: Estudio de impacto ambiental - “Se entiende por Estudio de Impacto Ambiental el conjunto de la información que deberá presentar ante la autoridad ambiental competente el peticionario de una licencia Ambiental. El estudio de impacto ambiental contendrá información sobre la localización del proyecto, y los elementos abióticos, bióticos y socioeconómicos del medio que puedan sufrir deterioro por la respectiva obra o actividad, para cuya ejecución se pide licencia, y la evaluación de los impactos que puedan producirse. Además, incluirá el diseño de los planes de prevención, corrección y compensación de impactos y el plan de manejo ambiental de la obra o actividad.” ANLA.
+* PMA: Plan de manejo ambiental - El Plan de Manejo Ambiental se realizará para mitigar los impactos ambientales que deterioran el medio ambiente y los recursos naturales por efecto de la operación y el funcionamiento del proyecto, desde el punto de vista físico, biótico y social. El Plan de Manejo Ambiental debe establecer el grado de vulnerabilidad de los ecosistemas y comunidades localizados en el área de influencia que se determine para el proyecto. Los impactos deben identificarse, dimensionarse y evaluarse cuantitativa y cualitativamente, de tal manera que se establezcan con la mayor precisión. El plan establece de manera detallada, las acciones que se implementarán para prevenir, mitigar, corregir o compensar los impactos y efectos ambientales negativos que se causen por el desarrollo de un proyecto, obra o actividad. ANLA.
 
-El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **“Análisis de impactos ambientales producidos por la expansión o re-densificación de proyectos urbanísticos en la cuenca hidrográfica del Río Bogotá”**.
 
-
-## 1. Marco normativo [^1]
-
-La Autoridad Nacional de Licencias Ambientales – ANLA, concibe el Sistema de Información Geográfica - SIG, como una herramienta que le permitirá satisfacer sus necesidades de información a nivel interno y externo, dando soporte a las diferentes instituciones nacionales que conforman el Sistema de Información Nacional Ambiental – SINA, bajo estándares establecidos por la Infraestructura Colombiana de Datos Espaciales – ICDE.
-
-La implementación del Sistema de Información Geográfica – SIG atiende al cumplimiento del Decreto 3573 del 27 de septiembre de 2011, numeral 8 del Art. 14 en el que se expresa la necesidad de diseñar e implementar un Sistema de Información Geográfica, como herramienta informativa para la administración, el manejo y uso de la información como un verdadero instrumento de gestión.
+## 1. Marco normativo
 
 
 ### 1.1. Antecedentes
@@ -104,6 +103,10 @@ En aras de garantizar que la información presentada ante la ANLA cumpla con lo 
 
 
 ## 2. Modelo nacional para presentación de estudios ambientales - componente geográfico [^1]
+
+La Autoridad Nacional de Licencias Ambientales – ANLA, concibe el Sistema de Información Geográfica - SIG, como una herramienta que le permitirá satisfacer sus necesidades de información a nivel interno y externo, dando soporte a las diferentes instituciones nacionales que conforman el Sistema de Información Nacional Ambiental – SINA, bajo estándares establecidos por la Infraestructura Colombiana de Datos Espaciales – ICDE.
+
+La implementación del Sistema de Información Geográfica – SIG atiende al cumplimiento del Decreto 3573 del 27 de septiembre de 2011, numeral 8 del Art. 14 en el que se expresa la necesidad de diseñar e implementar un Sistema de Información Geográfica, como herramienta informativa para la administración, el manejo y uso de la información como un verdadero instrumento de gestión.
 
 El SIG de la Autoridad Nacional de Licencias Ambientales ANLA, se está alimentado con la información geográfica de los proyectos, obras y actividades que competen a la entidad, la cual es consolidada en una base de datos institucional según los modelos de almacenamiento de la ANLA. De esta manera, la información geográfica de los Estudios de Impacto Ambiental – EIA, Diagnóstico Ambiental de Alternativas – DAA, Planes de Manejo Ambiental - PMA y los Informes de Cumplimiento Ambiental – ICA, así como todo tipo de datos que facilite la evaluación y el seguimiento de los proyectos, harán parte del SIG, integrando la información con los demás sistemas o aplicativos en uso por parte de la ANLA, tales como el Sistema de Información de Licencias Ambientales – SILA, la Ventanilla Integral de Trámites Ambientales en Línea – VITAL y el Registro Único Ambiental – RUA.
 
