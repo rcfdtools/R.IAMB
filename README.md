@@ -104,7 +104,7 @@ Objetivo: Introducir los elementos y principios de SIG para la elaboración de E
 
 ## :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
 
-Objetivo: Detallar los elementos de línea base que se deben contemplar y que deben formar parte de un Estudio Ambiental.
+Objetivo: Detallar los elementos de línea base que forman parte de un Estudio Ambiental.
 
 <div align="center">
 
