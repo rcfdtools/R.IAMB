@@ -6,10 +6,6 @@ Objetivo: Detallar los elementos que se deben contemplar y que deben formar part
 (A partir de cartografía nacional 1:500k, 1:100k, 1:25k)
 
 
-2.1. Vectores - Proyecto o caso de estudio
-(AreaProyecto, AreaInfluencia)
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/SZH/Readme.md
-
 2.2. Vectores - Medio abiótico - Geología
 (UnidadGeologica, ContactoGeologico, EstructuraFallaLineam)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Geology/Readme.md
