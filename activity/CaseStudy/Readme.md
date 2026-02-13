@@ -152,6 +152,15 @@ Enlaces para descarga:
 <div align="center"><img src="graph/MADS_AutoridadAmbiental2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/MADS_AutoridadAmbiental3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+3. Desde el modo de edición, combine el área _CORPOCHIVOR_ al polígono  
+
+
+
+
+
+
+
+
 
 
 Tomando como referencia el límite de la subzona hidrográfica 2120 del IDEAM, las 3 autoridades ambientales con influencia geográfica directa sobre la cuenca del Río Bogotá son:
