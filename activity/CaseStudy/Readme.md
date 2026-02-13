@@ -33,16 +33,34 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 ## 1. Zona de estudio 
 
-
-1. En QGIS, cree un mapa nuevo en blanco con el nombre _/map/CaseStudy.qgz_, agregue la capa [/data/IDEAM/h_znhd_2022_100K.shp](../../file/data/IDEAM/h_znhd_2022_100K.shp) y abra la tabla de atributos, podrá observar que se compone de 316 Sub-zonas Hidrográficas. 
+1. En QGIS, cree un mapa nuevo en blanco con el nombre _/map/CaseStudy.qgz_, agregue la capa [/data/IDEAM/h_znhd_2022_100K.shp](../../file/data/IDEAM/h_znhd_2022_100K.shp) y abra la tabla de atributos, podrá observar que se compone de 316 Sub-zonas Hidrográficas y que la capa utiliza el EPSG 4686. 
 
 <div align="center"><img src="graph/QGIS_AddLayer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. 
+2. Para verificar la localización y geo-referenciación correcta de la capa, ejecute el script [qgis_basemaps.py](../../file/src/qgis_basemaps.py) y agregue el mapa base de Google Maps y Google Satellite. Podrá observar que 
+
+<div align="center"><img src="graph/QGIS_XYZMap1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_XYZMap2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+3. Rotule e identifique la Sub-zona Hidrográfica 2120 correspondiente a la Cuenca del Río Bogotá.
+
+Rótulo: `'AH: '  || "COD_AH"  ||  ' - '  ||  "nom_ah"   || '\n'  ||  'ZH: '  ||  "COD_ZH"   ||  ' - '  ||   "nom_zh" || '\n'  ||  'SZH: '  ||  "COD_SZH"   ||  ' - '  ||   "nom_szh"`  
+
+<div align="center"><img src="graph/QGIS_Identify.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+4. Filtre el polígono correspondiente a la Sub-zona Hidrográfica 2120.
+
+<div align="center"><img src="graph/QGIS_Filter.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+## 2. Incorporación a capa ANLA: AreaProyecto
+
+1. En la carpeta 
 
 
 
-AreaProyecto, AreaInfluencia
+
+AreaInfluencia
 
 
 
@@ -59,10 +77,9 @@ AreaProyecto, AreaInfluencia
 
 ## Control de versiones
 
-| Versión      | Descripción        | Autor                                      | Horas |
-|--------------|:-------------------|--------------------------------------------|:-----:|
-| 2020.03.18   | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |  12   |
-| 2026.02.12   | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |   6   |
+| Versión    | Descripción        | Autor                                      | Horas |
+|------------|:-------------------|--------------------------------------------|:-----:|
+| 2026.02.13 | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |   6   |
 
 
 ##
