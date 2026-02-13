@@ -140,14 +140,13 @@ Enlaces para descarga:
 
 > La capa contiene de los límites de las Corporaciones Autónomas Regionales, construidos con base en la capa de límites municipales a escala 1:25000 publicados por el Instituto Geográfico Agustí Codazzi – IGAC del año 2018 y de la sinergia con la propuesta de los límites de las corporaciones Autónomas Regionales construido por el IDEAM. Cubre toda la extensión continental del territorio colombiano, además del archipiélago de San Andrés y Providencia.
 
-<div align="center"><img src="graph/MADS_AutoridadAmbiental.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/MADS_AutoridadAmbiental.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-
+2. Utilizando la herramienta 
 
 
 Tomando como referencia el límite de la subzona hidrográfica 2120 del IDEAM, las 3 autoridades ambientales con influencia geográfica directa sobre la cuenca del Río Bogotá son:
 
-<div align="center"><img src="file/graph/ArcGISPro_Layer_AutoridadAmbiental2.png" alt="R.SIGE" width="90%" border="0" /><br><sub>Autoridades ambientales con influencia geográfica sobre la cuenca del Río Bogotá (norte hacia arriba).</sub></div><br><br>
 
 <div align="center">
 
