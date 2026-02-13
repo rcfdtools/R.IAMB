@@ -1,7 +1,7 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
 # 2.1. Vectores - Proyecto o caso de estudio
-Keywords: `case-study` `base-maps` `project-area`
+Keywords: `case-study` `base-maps` `project-area` `clip` `statistics` 
 
 En el caso de estudio se ha definido como límite geográfico la cuenca hidrográfica del Río Bogotá, la cual se encuentra incluída en la capa geográfica de [Zonificación Hidrográfica de Colombia](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data) a escala 1:100k actualizada por el IDEAM en el año 2022.
 
