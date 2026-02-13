@@ -103,20 +103,20 @@ Objetivo: Detallar los elementos de línea base que se deben contemplar y que de
 
 <div align="center">
 
-| Actividad                                   | Descripción                                                             |
-|:--------------------------------------------|:------------------------------------------------------------------------|
-| 2.1. Vectores - Proyecto o caso de estudio  | AreaProyecto, AreaInfluencia                                            |
-| 2.2. Vectores - Medio abiótico - Geología   | UnidadGeologica, ContactoGeologico, EstructuraFallaLineam               |
-| 2.3. Vectores - Medio abiótico - Suelos     | Suelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo            |
-| 2.4. Vectores - Medio abiótico - Hidrología | CuencaHidrografica, OcupacionCauce                                      |
-| 2.5. Vectores - Medio abiótico - Atmósfera  | CalidadAire                                                             |
-| 2.6. Vectores - Medio abiótico - Clima      | EstacionMeteorologica                                                   |
-| 2.7. Vectores - Medio biótico               | Ecosistema                                                              |
-| 2.8. Vectores - Medio socioeconómico        | Departamento, Municipio, UnidadTerritorial, Predios                     |
-| 2.9. Vectores - Gestión del riesgo          | AmenazaSismica, AmenazaTsunami, AmenazaVolcanica                        |
-| 2.10. Tablas                                | Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB |
-| 2.11. Raster                                | ImaSatReg, DTM, DSM, MDPendiente                                        |
-|                                             |                                                                         |
+| Actividad                                                                  | Descripción                                                             |
+|:---------------------------------------------------------------------------|:------------------------------------------------------------------------|
+| [2.1. Vectores - Proyecto o caso de estudio](activity/CaseStudy/Readme.md) | AreaProyecto, AreaInfluencia                                            |
+| 2.2. Vectores - Medio abiótico - Geología                                  | UnidadGeologica, ContactoGeologico, EstructuraFallaLineam               |
+| 2.3. Vectores - Medio abiótico - Suelos                                    | Suelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo            |
+| 2.4. Vectores - Medio abiótico - Hidrología                                | CuencaHidrografica, OcupacionCauce                                      |
+| 2.5. Vectores - Medio abiótico - Atmósfera                                 | CalidadAire                                                             |
+| 2.6. Vectores - Medio abiótico - Clima                                     | EstacionMeteorologica                                                   |
+| 2.7. Vectores - Medio biótico                                              | Ecosistema                                                              |
+| 2.8. Vectores - Medio socioeconómico                                       | Departamento, Municipio, UnidadTerritorial, Predios                     |
+| 2.9. Vectores - Gestión del riesgo                                         | AmenazaSismica, AmenazaTsunami, AmenazaVolcanica                        |
+| 2.10. Tablas                                                               | Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB |
+| 2.11. Raster                                                               | ImaSatReg, DTM, DSM, MDPendiente                                        |
+|                                                                            |                                                                         |
 
 </div>
 
