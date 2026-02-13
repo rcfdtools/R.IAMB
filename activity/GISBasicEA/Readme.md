@@ -442,7 +442,7 @@ _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
 
-| [◄ Anterior](../GISBasic.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../CaseStudy/Readme.md) |
-|----------------------------|-----------------------------------|----------------------------------------------------------------------------------|---------------------------------------|
+| [◄ Anterior](../GISBasic/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../CaseStudy/Readme.md) |
+|-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|---------------------------------------|
 
 [^1]: https://www.anla.gov.co/01_anla/entidad/subdirecciones-y-oficinas/instrumentos-permisos-y-tramites-ambientales/sistema-de-informacion-geografica 
