@@ -142,7 +142,16 @@ Enlaces para descarga:
 
 <div align="center"><img src="graph/MADS_AutoridadAmbiental.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. Utilizando la herramienta 
+2. Utilizando la herramienta _Vector overlay / Clip_, recorte la capa de Autoridades Ambientales con la capa del área de proyecto, guarde como [/shp/AutoridadAmbientalAreaProyecto.shp](). Simbolice a partir del campo `car`.
+
+> Tenga en cuenta que la capa de Autoridades Ambientales utiliza el CRS 4686 y que el recorte utilizará este mismo sistema de referencia de coordenadas.
+> 
+> Podrá observar que se han incluido pequeñas fracciones de las autoridades ambientales CORPOCHIVOR y CORTOLIMA, lo anterior debido a las escalas de digitalización utilizadas para la delimitación de las capas utilizadas.    
+
+<div align="center"><img src="graph/MADS_AutoridadAmbiental1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/MADS_AutoridadAmbiental2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/MADS_AutoridadAmbiental3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
 
 
 Tomando como referencia el límite de la subzona hidrográfica 2120 del IDEAM, las 3 autoridades ambientales con influencia geográfica directa sobre la cuenca del Río Bogotá son:
