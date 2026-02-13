@@ -5,7 +5,7 @@ Keywords: `case-study` `base-maps` `project-area`
 
 En el caso de estudio se ha definido como límite geográfico la cuenca hidrográfica del Río Bogotá, la cual se encuentra incluída en la capa geográfica de [Zonificación Hidrográfica de Colombia](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data) a escala 1:100k actualizada por el IDEAM en el año 2022.
 
-<div align="center"><img src="graph/CaseStudy.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+<div align="center"><img src="graph/CaseStudy.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
 > La actualización en escala 1:100,000 de la capa de zonificación hidrográfica de Colombia a escala 1:500.000 del 2013, utilizada hasta el ENA2018. Esta capa es la unidad de análisis utilizada en el ENA2022. Representa las unidades de análisis hidrográficas para el ordenamiento ambiental del territorio definidas por el IDEAM. La actualización del producto se realizó con base en la información dispuesta por HydroSheds y la edición sobre cartografía básica a escala 1: 100000, dispuesta por el IGAC en el 2016. Es importante mencionar, que en la zonificación hidrográfica del año 2013, con el fin de generar una cobertura de la zonificación hidrográfica en zonas marítimas en las que existen estaciones de IDEAM o de otras entidades como la DIMAR o el INVEMAR, entre otras, las cuales requieren asignación de codificación acorde con su ubicación, se hizo necesario en su momento definir estas sub-zonas hidrográficas, estas no necesariamente implican la generación de productos temáticos específicos. Para la presente actualización de la zonificación hidrográfica del año 2022, no se incluyen las áreas marino-costeras que se delimitan en la zonificación hidrográfica del año 2013, debido a que no se cuenta con información oficial a escala 1:100.000 que permitan su delimitación. [^1]
 
@@ -28,6 +28,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 | [:date:magna_origen_nacional.zip](../../file/table/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                                               |
 | [:date:diccionario_datos_geograficos_anla.xlsx](../../file/table/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                                |
 | [:round_pushpin:Zonificacion_Hidrografica_2022.zip](../../file/table/IDEAM/Zonificacion_Hidrografica_2022.zip) | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                   |
+| [:round_pushpin:Lim_AA_25k_2022.zip](../../file/table/MADS/Lim_AA_25k_2022.zip)                                | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                   |
 | [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                             | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps).  |
 
 </div>
@@ -129,7 +130,7 @@ El dominio _Dom_Sector_, contiene los siguientes códigos:
 <div align="center"><img src="graph/ANLA_AreaInfluencia3.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 
-## 3. Límites de autoridades ambientales
+## 3. Límites de autoridades ambientales MADS
 
 Las Corporaciones Autónomas Regionales y de Desarrollo Sostenible, son entes corporativos de carácter público, creados por la ley, integrados por las entidades territoriales que por sus características constituyen geográficamente un mismo ecosistema o conforman una unidad geopolítica, biogeográfica o hidrogeográfica, dotados de autonomía administrativa y financiera, patrimonio propio y personería jurídica, encargados por la ley de administrar, dentro del área de su jurisdicción el medio ambiente y los recursos naturales renovables y propender por su desarrollo sostenible, de conformidad con las disposiciones legales y las políticas del Ministerio del Medio Ambiente. [^2]
 
