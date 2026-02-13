@@ -1,6 +1,6 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
-## :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
+# :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
 
 Objetivo: Detallar los elementos de línea base que forman parte de un Estudio Ambiental.
 
