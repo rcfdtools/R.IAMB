@@ -59,7 +59,7 @@ Rótulo: `'AH: '  || "COD_AH"  ||  ' - '  ||  "nom_ah"   || '\n'  ||  'ZH: '  ||
 
 La capa _AreaProyecto_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
 
-<div align="center"><img src="graph/ANLA_AreaProyecto.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_AreaProyecto.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 El dominio _Dom_Sector_, contiene los siguientes códigos:
 
@@ -100,7 +100,7 @@ El Área o Áreas de Influencia del Proyecto, comprende la definición del área
 
 La capa _AreaProyecto_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
 
-<div align="center"><img src="graph/ANLA_AreaInfluencia.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_AreaInfluencia.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 El dominio _Dom_Sector_, contiene los siguientes códigos:
 
