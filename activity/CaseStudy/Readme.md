@@ -22,14 +22,14 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 <div align="center">
 
-| Requerimiento                                                                                                  | Descripción                                                                                                           |
-|:---------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| [:toolbox:Herramienta](https://qgis.org/)                                                                      | QGIS 3.44 o superior.                                                                                                 |
-| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                              | Geodatabase ANLA Magna Origen Nacional.                                                                               |
+| Requerimiento                                                                                                 | Descripción                                                                                                           |
+|:--------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 3.44 o superior.                                                                                                 |
+| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                                               |
 | [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                                |
 | [:round_pushpin:Zonificacion_Hidrografica_2022.zip](../../file/data/IDEAM/Zonificacion_Hidrografica_2022.zip) | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                   |
 | [:round_pushpin:Lim_AA_25k_2022.zip](../../file/data/MADS/Lim_AA_25k_2022.zip)                                | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                   |
-| [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                             | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps).  |
+| [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps).  |
 
 </div>
 
@@ -216,8 +216,8 @@ _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
 
-| [◄ Anterior](../GISBasicEA.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../M01A02a/Readme.md) |
-|--------------------------------|-----------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------|
+| [◄ Anterior](../GISBasicEA/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../XXXX/Readme.md) |
+|---------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
 
 [^1]: https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data 
 [^2]: https://archivo.minambiente.gov.co/index.php/noticias/2067
