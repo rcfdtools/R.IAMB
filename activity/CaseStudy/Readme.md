@@ -55,7 +55,22 @@ Rótulo: `'AH: '  || "COD_AH"  ||  ' - '  ||  "nom_ah"   || '\n'  ||  'ZH: '  ||
 
 ## 2. Incorporación a capa ANLA: AreaProyecto
 
-1. En la carpeta 
+La capa _AreaProyecto_ del modelo de datos ANLA, requiere de los siguientes atributos y un dominio:
+
+<div align="center"><img src="graph/ANLA_AreaProyecto.jpg" alt="rcfdtools" width="800%" border="0" /></div>
+
+El dominio _Dom_Sector_, contiene los siguientes códigos:
+
+<div align="center"><img src="graph/ANLA_Dom_Sector.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+
+
+
+
+1. En la carpeta [/gdb](../../file/gdb) descomprima la geodatabase [BD_ANLA_MAGNA_NACIONAL.gdb](../../file/data/ANLA/magna_origen_nacional.zip) y cargue al mapa la capa /T_33_Proyecto/AreaProyecto. Active el modo de edición, copie y pegue el polígono correspondiente a la SZH 2120.
+
+<div align="center"><img src="graph/QGIS_AreaProyecto1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. Como observa, luego de copiar el polígono, no se homologan automáticamente los campos requeridos por la capa _AreaProyecto_ del ANLA.
 
 
 
