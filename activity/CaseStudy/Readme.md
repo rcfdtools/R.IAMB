@@ -1,4 +1,4 @@
-<div align="right"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
 # :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
 
