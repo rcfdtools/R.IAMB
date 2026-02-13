@@ -127,6 +127,48 @@ El dominio _Dom_Sector_, contiene los siguientes códigos:
 <div align="center"><img src="graph/ANLA_AreaInfluencia3.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 
+## 3. Límites de autoridades ambientales
+
+Las Corporaciones Autónomas Regionales y de Desarrollo Sostenible, son entes corporativos de carácter público, creados por la ley, integrados por las entidades territoriales que por sus características constituyen geográficamente un mismo ecosistema o conforman una unidad geopolítica, biogeográfica o hidrogeográfica, dotados de autonomía administrativa y financiera, patrimonio propio y personería jurídica, encargados por la ley de administrar, dentro del área de su jurisdicción el medio ambiente y los recursos naturales renovables y propender por su desarrollo sostenible, de conformidad con las disposiciones legales y las políticas del Ministerio del Medio Ambiente. [^2]
+
+Enlaces para descarga:
+
+* https://datos.icde.gov.co/datasets/0fd08ce937034387b33699e8165ffc84
+* https://siac-datosabiertos-mads.hub.arcgis.com/datasets/0fd08ce937034387b33699e8165ffc84
+
+1. Cargue al proyecto la capa de [Límites autoridades ambientales de Colombia (versión 2022)](../../file/data/MADS/Lim_AA_25k_2022.zip) del Ministerio de Ambiente y Desarrollo Sostenible.
+
+> La capa contiene de los límites de las Corporaciones Autónomas Regionales, construidos con base en la capa de límites municipales a escala 1:25000 publicados por el Instituto Geográfico Agustí Codazzi – IGAC del año 2018 y de la sinergia con la propuesta de los límites de las corporaciones Autónomas Regionales construido por el IDEAM. Cubre toda la extensión continental del territorio colombiano, además del archipiélago de San Andrés y Providencia.
+
+<div align="center"><img src="graph/MADS_AutoridadAmbiental.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+
+
+
+Tomando como referencia el límite de la subzona hidrográfica 2120 del IDEAM, las 3 autoridades ambientales con influencia geográfica directa sobre la cuenca del Río Bogotá son:
+
+<div align="center"><img src="file/graph/ArcGISPro_Layer_AutoridadAmbiental2.png" alt="R.SIGE" width="90%" border="0" /><br><sub>Autoridades ambientales con influencia geográfica sobre la cuenca del Río Bogotá (norte hacia arriba).</sub></div><br><br>
+
+<div align="center">
+
+| Autoridad ambiental - AA | Nombre                                        | Área en cuenca (km²) | % en cuenca |  Área AA. (km²)  |   % AA.   |
+|:-------------------------|:----------------------------------------------|:--------------------:|:-----------:|:----------------:|:---------:|
+| (n/a)                    | (área no coincidente)                         |         7.29         |    0.12     |       7.29       |    100    |
+| CAR                      | Corporación Autónoma Regional de Cundinamarca |       5331.94        |    89.87    |      18289       |   29.15   |
+| CORPOGUAVIO              | Corporación Autónoma Regional del Guavio      |        209.56        |    3.53     |     3635.01      |   5.77    |
+| SDA                      | Secretaria Distrital de Ambiente Bogotá       |        383.99        |    6.47     |      383.99      |    100    |
+|                          | Σ                                             |       5932.79        |     100     |     22315.3      |     0     |
+
+</div>
+
+> _**% en cuenca**_: corresponde al porcentaje del área geodésica del límite de la autoridad ambiental, con respecto a toda la cuenca del Río Bogotá.   
+> _**% AA.**_: corresponde al porcentaje del área geodésica del límite de la AA dentro de la cuenca del Río Bogotá, con respecto al área total de la AA.
+
+
+
+
+
+
 
 
 
@@ -154,3 +196,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 |--------------------------------|-----------------------------------|----------------------------------------------------------------------------------|---------------------------------------------------|
 
 [^1]: https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data 
+[^2]: https://archivo.minambiente.gov.co/index.php/noticias/2067
