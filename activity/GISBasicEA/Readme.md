@@ -37,12 +37,6 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 </div>
 
-
-## Caso de estudio general
-
-El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **“Análisis de impactos ambientales producidos por la expansión o re-densificación de proyectos urbanísticos en la cuenca hidrográfica del Río Bogotá”**.
-
-
 ## 1. Marco normativo [^1]
 
 La Autoridad Nacional de Licencias Ambientales – ANLA, concibe el Sistema de Información Geográfica - SIG, como una herramienta que le permitirá satisfacer sus necesidades de información a nivel interno y externo, dando soporte a las diferentes instituciones nacionales que conforman el Sistema de Información Nacional Ambiental – SINA, bajo estándares establecidos por la Infraestructura Colombiana de Datos Espaciales – ICDE.

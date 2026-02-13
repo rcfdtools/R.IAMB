@@ -83,6 +83,11 @@ En _Microsoft Windows / Panel de control / Region / Formats / Additional setting
 * Separador de listas (List separator): coma (,)
 
 
+## Caso de estudio general
+
+El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **“Análisis de impactos ambientales producidos por la expansión o re-densificación de proyectos urbanísticos en la cuenca hidrográfica del Río Bogotá”**.
+
+
 ## :large_blue_circle: Módulo 1 - Introducción y conceptos básicos
 
 Objetivo: Introducir los elementos y principios de SIG para la elaboración de Estudios Ambientales.

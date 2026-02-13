@@ -55,30 +55,76 @@ Rótulo: `'AH: '  || "COD_AH"  ||  ' - '  ||  "nom_ah"   || '\n'  ||  'ZH: '  ||
 
 ## 2. Incorporación a capa ANLA: AreaProyecto
 
-La capa _AreaProyecto_ del modelo de datos ANLA, requiere de los siguientes atributos y un dominio:
+Área del proyecto objeto de solicitud de licencia. Ej.: Campo, Bloque, Área de Interés, Estación o Refinería (sector de hidrocarburos), Puerto, Aeropuerto, Infraestructura Marina y Costera, Infraestructura Fluvial, Planta de Tratamiento, Relleno Sanitario (sector infraestructura), Hidroeléctricas, Termoeléctricas, Subestaciones, Presas, Represas o Embalses (sector energía), Explotación Minera (sector minería), Plantas de Formulación y/o Producción, Laboratorios, Centros Experimentales (sector agroquímicos).
 
-<div align="center"><img src="graph/ANLA_AreaProyecto.jpg" alt="rcfdtools" width="800%" border="0" /></div>
+La capa _AreaProyecto_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
+
+<div align="center"><img src="graph/ANLA_AreaProyecto.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 El dominio _Dom_Sector_, contiene los siguientes códigos:
 
 <div align="center"><img src="graph/ANLA_Dom_Sector.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
-
-
-
 1. En la carpeta [/gdb](../../file/gdb) descomprima la geodatabase [BD_ANLA_MAGNA_NACIONAL.gdb](../../file/data/ANLA/magna_origen_nacional.zip) y cargue al mapa la capa /T_33_Proyecto/AreaProyecto. Active el modo de edición, copie y pegue el polígono correspondiente a la SZH 2120.
 
 <div align="center"><img src="graph/QGIS_AreaProyecto1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. Como observa, luego de copiar el polígono, no se homologan automáticamente los campos requeridos por la capa _AreaProyecto_ del ANLA.
+2. Como observa, luego de copiar el polígono, no se homologan automáticamente los campos requeridos por la capa _AreaProyecto_ del ANLA, incluya manualmente los siguientes atributos:
+
+<div align="center"><img src="graph/QGIS_AreaProyecto2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Para la rotulación establezca la siguiente configuración de saltos de línea:
+
+<div align="center"><img src="graph/QGIS_AreaProyecto3.jpg" alt="rcfdtools" width="70%" border="0" /></div>
+
+3. En el campo `AREA_HA`, calcule el área geodésica en hectáreas, obtendrá que el área de estudio corresponde a 592810.46 ha.
+
+Expresión: `$area/10000`
+
+Incluya en el rótulo el área calculada.
+
+Expresión: `"PROYECTO"  ||  '\n'  ||  'A (ha): ' || round( "AREA_HA", 2)`
+
+> Debido al tamaño espacial del polígono del área de estudio, realizaremos los cálculos de área geodésica y no los de área planar `area($geometry)`.
+
+<div align="center"><img src="graph/QGIS_FieldCalculator.jpg" alt="rcfdtools" width="70%" border="0" /></div>
+
+Guarde y detenga el modo de edición de esta capa.
 
 
+## 3. Incorporación a capa ANLA: AreaInfluencia
 
+Luego de definida el Área de Proyecto, es necesario establecer el Área de Influencia que para el caso de estudio corresponderá a todos los polígonos perimetrales o próximos al área de proyecto y su propia área.
 
-AreaInfluencia
+El Área o Áreas de Influencia del Proyecto, comprende la definición del área o de las áreas de influencia, de acuerdo con los impactos identificados en cada una de las etapas del proyecto y las características del espacio geográfico. Pueden presentarse áreas de influencia por "Medio", "Componente" o "Grupo de Componentes".
 
+La capa _AreaProyecto_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
 
+<div align="center"><img src="graph/ANLA_AreaInfluencia.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
+El dominio _Dom_Sector_, contiene los siguientes códigos:
+
+<div align="center"><img src="graph/ANLA_Dom_AreaInfluencia.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+
+1. Cargue al mapa la capa /T_33_Proyecto/AreaInfluencia. Desactive el filtro realizado en la capa _h_znhd_2022_100K_. Podrá observar que existen múltiples sub-zonas hidrográficas alrededor del polígono de la zona de estudio. 
+
+<div align="center"><img src="graph/ANLA_AreaInfluencia1.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+2. Utilizando la herramienta _Select By Location_, seleccione todos los polígonos de las SZH que se intersecan con el polígono del área de estudio. Podrá observar que de los 316 polígonos han sido seleccionados 10 polígonos.
+
+<div align="center"><img src="graph/ANLA_SelectByLocation.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+3. Active el modo de edición de la capa _AreaInfluencia_, copie y pegue los polígonos seleccionados.
+
+<div align="center"><img src="graph/ANLA_AreaInfluencia2.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+4. Utilizando la herramienta _Merge Selected Features_, disponible en la barra de herramientas _Advanced Digitizing Toolbar_, combine los 10 polígonos en un único polígono.
+
+<div align="center"><img src="graph/ANLA_MergeSelectedFeatures.jpg" alt="rcfdtools" width="80%" border="0" /></div>
+
+5. Asigne y/o calcule los atributos requeridos.
+
+<div align="center"><img src="graph/ANLA_AreaInfluencia3.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 
 
