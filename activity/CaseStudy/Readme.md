@@ -152,14 +152,24 @@ Enlaces para descarga:
 <div align="center"><img src="graph/MADS_AutoridadAmbiental2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/MADS_AutoridadAmbiental3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Desde el modo de edición, combine el área _CORPOCHIVOR_ al polígono  
+3. Desde el modo de edición, combine las áreas _CORPOCHIVOR_ y _CORTOLIMA_ al polígono _CAR_ y elimine los campos de área y perímetro. En la capa resultante hemos obtenido 4 autoridades ambientales dentro de la zona de estudio.  
 
+<div align="center"><img src="graph/MADS_AutoridadAmbiental4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+4. Calcule las áreas geográficas de cada polígono en hectáreas y su distribución porcentual con respecto al área total.
 
+Cálculo de áreas
+<div align="center"><img src="graph/MADS_AutoridadAmbiental5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+Área total
+<div align="center"><img src="graph/MADS_AutoridadAmbiental6.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+Distribución porcentual
+<div align="center"><img src="graph/MADS_AutoridadAmbiental7.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+5. Utilizando el complemento [DataPlotly](https://plugins.qgis.org/plugins/DataPlotly/), cree una gráfica de pastel.
 
+<div align="center"><img src="graph/MADS_AutoridadAmbiental8.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
