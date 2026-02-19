@@ -6,7 +6,7 @@ Objetivo: Detallar los elementos de línea base que forman parte de un Estudio A
 
 
 # 2.1. Vectores - Proyecto o caso de estudio
-Keywords: `case-study` `base-maps` `project-area` `clip` `statistics` 
+Keywords: `case-study` `base-maps` `project-area` `clip` `statistics` `area-proyecto` `area-influencia`
 
 En el caso de estudio se ha definido como límite geográfico la cuenca hidrográfica del Río Bogotá, la cual se encuentra incluída en la capa geográfica de [Zonificación Hidrográfica de Colombia](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data) a escala 1:100k actualizada por el IDEAM en el año 2022.
 
@@ -291,8 +291,8 @@ _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
 
-| [◄ Anterior](../GISBasicEA/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../XXXX/Readme.md) |
-|---------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
+| [◄ Anterior](../GISBasicEA/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../Geology/Readme.md) |
+|---------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
 
 [^1]: https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data 
 [^2]: https://archivo.minambiente.gov.co/index.php/noticias/2067
