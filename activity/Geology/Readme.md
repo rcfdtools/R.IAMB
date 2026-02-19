@@ -45,7 +45,7 @@ Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
 
 > Para los dominios Dom_Geol_Epo y Dom_Geol_Eda, solo se ha incluido en las ilustraciones, una muestra de los primeros valores codificados. Consulte la lista completa de valores en el diccionario de datos.
 
-1. Ingrese al sitio del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y descargue la File Geodatabase del Atlas Geológico de Colombia versión 2023 a escala 1:500K (_agc2023.gdb.zip_) y el archivo de estilos (_agc2023.style_). Guarde y descomprima en la carpeta [/data/SGC/](../../data/SGC). 
+1. Ingrese al sitio del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y descargue la File Geodatabase del Atlas Geológico de Colombia versión 2023 a escala 1:500K (_agc2023.gdb.zip_) y el archivo de estilos (_agc2023.style_). Guarde y descomprima en la carpeta [/data/SGC/](../../file/data/SGC). 
 
 <div align="center"><img src="graph/SGC_Download2023.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -54,7 +54,33 @@ Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
 <div align="center"><img src="graph/ChronostratChart2023-04SpanishAmer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_AddLayer1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+3. Para incorporar en QGIS los estilos contenidos en el archivo _agc2023.style_ del SGC diseñados para ArcGIS, es necesario convertir el archivo .style a formato XML. Desde el menú _Plugins / Manage and Install Plugins..._, instale SLYR (Community Edition).
 
+<div align="center"><img src="graph/QGIS_PluginSLYR.png" alt="rcfdtools" width="100%" border="0" /></div>
+
+Descargue desde https://github.com/lsgunth/mdbtools-win/archive/master.zip, el gestor de bases de datos _mdbtools_ para Windows y descomprima en la carpeta [/tools/](../../file/tools).
+
+En el panel del Processing Tool o desde las propiedades del proyecto QGIS, acceda a las opciones de configuración y en la pestaña SLYR realice la asociación de ruta a MDB Tools.
+
+<div align="center"><img src="graph/QGIS_MDBTools.png" alt="rcfdtools" width="100%" border="0" /></div>
+
+Ejecute el Processing Toolbox / SLYR / Style databases / Convert ESRI style to QGIS style XML, así obtendrá el archivo de estilos en formato XML, guarde como [/data/SGC/agc2023.xml](../../file/data/SGC/agc2023.xml).
+
+<div align="center"><img src="graph/QGIS_StyleToXML.png" alt="rcfdtools" width="100%" border="0" /></div>
+
+4. Desde el menú _Settings_ de QGIS, ejecute el _Style Manager_ e importe todos los estilos contenidos en el archivo XML convertido.
+
+<div align="center"><img src="graph/QGIS_StyleManager1.png" alt="rcfdtools" width="100%" border="0" /></div>
+
+Verifique los estilos importados como agc2023 en el grupo Tags.
+
+<div align="center"><img src="graph/QGIS_StyleManager2.png" alt="rcfdtools" width="100%" border="0" /></div>
+
+> La importación de los estilos no actualiza automáticamente los colores aplicados a las unidades cronoestratigráficas, su aplicación puede ser realizada manualmente utilizando los códigos y colores importados.
+
+Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC (p. ej., C-Pi), en el panel de simbología podrá observar que se ha incluido un grupo de estilo nuevo, denominado _agc2023_. Para aplicar el estilo _C-Pi_, correspondiente a _Dioritas, granodioritas, cuarzodioritas, tonalitas y gabros_, seleccione el símbolo correspondiente.
+
+<div align="center"><img src="graph/QGIS_Style.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
@@ -75,6 +101,7 @@ Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
 
 * [Atlas Geológico de Colombia 2023 a escala 500K.](https://www2.sgc.gov.co/MGC/Paginas/agc_500K2023.aspx)
 * [Memoria explicativa del Mapa Geológico de Colombia, Geological Map of Colombia y Atlas Geológico de Colombia 2023.](https://www2.sgc.gov.co/MGC/Documents/MGC_2023/Memoria_mgc_gmc_agc_2023.pdf)
+* https://opengislab.com/blog/2019/3/16/converting-esri-styles-to-qgis-styles-using-slyr
 
 
 ## Control de versiones
