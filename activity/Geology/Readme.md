@@ -5,7 +5,7 @@ Keywords: `geology` `geological-map` `mot` `uc` `geological-fail` `volcanic` `un
 
 Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y recorte las líneas de falla y unidades cronoestratigráficas hasta el límite municipal del mapa MOT del POT. Describa y explique las fallas y unidades presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con la capa de unidades cronoestratigráficas y a través de un resumen estadístico, obtenga por cada categoría del MOT, las unidades cronoestratigráficas presentes y sus áreas. 
 
-<div align="center"><img src="graph/Geology.png" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Geology.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## Objetivos
@@ -49,32 +49,32 @@ Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
 
 <div align="center"><img src="graph/SGC_Download2023.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. En QGIS, cree un nuevo mapa de proyecto y guarde como _/map/Geology.qgz_ y establezca el CRS 9377. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_)contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../file/ref/ChronostratChart2023-04SpanishAmer.pdf)[^1]. Rotule a partír de las localizaciones definidas en _UCAnot_ desactivando la visualización del rectángulo envolvente al rótulo.
+2. En QGIS, cree un nuevo mapa de proyecto y guarde como _/map/Geology.qgz_ y establezca el CRS 4686. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_)contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../file/ref/ChronostratChart2023-04SpanishAmer.pdf)[^1]. Rotule a partír de las localizaciones definidas en _UCAnot_ desactivando la visualización del rectángulo envolvente al rótulo.
 
 <div align="center"><img src="graph/ChronostratChart2023-04SpanishAmer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_AddLayer1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 3. Para incorporar en QGIS los estilos contenidos en el archivo _agc2023.style_ del SGC diseñados para ArcGIS, es necesario convertir el archivo .style a formato XML. Desde el menú _Plugins / Manage and Install Plugins..._, instale SLYR (Community Edition).
 
-<div align="center"><img src="graph/QGIS_PluginSLYR.png" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_PluginSLYR.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Descargue desde https://github.com/lsgunth/mdbtools-win/archive/master.zip, el gestor de bases de datos _mdbtools_ para Windows y descomprima en la carpeta [/tools/](../../file/tools).
 
 En el panel del Processing Tool o desde las propiedades del proyecto QGIS, acceda a las opciones de configuración y en la pestaña SLYR realice la asociación de ruta a MDB Tools.
 
-<div align="center"><img src="graph/QGIS_MDBTools.png" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_MDBTools.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Ejecute el Processing Toolbox / SLYR / Style databases / Convert ESRI style to QGIS style XML, así obtendrá el archivo de estilos en formato XML, guarde como [/data/SGC/agc2023.xml](../../file/data/SGC/agc2023.xml).
 
-<div align="center"><img src="graph/QGIS_StyleToXML.png" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_StyleToXML.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 4. Desde el menú _Settings_ de QGIS, ejecute el _Style Manager_ e importe todos los estilos contenidos en el archivo XML convertido.
 
-<div align="center"><img src="graph/QGIS_StyleManager1.png" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_StyleManager1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Verifique los estilos importados como agc2023 en el grupo Tags.
 
-<div align="center"><img src="graph/QGIS_StyleManager2.png" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_StyleManager2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 > La importación de los estilos no actualiza automáticamente los colores aplicados a las unidades cronoestratigráficas, su aplicación puede ser realizada manualmente utilizando los códigos y colores importados.
 
@@ -82,7 +82,36 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC (p.
 
 <div align="center"><img src="graph/QGIS_Style.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+5. Agregue al mapa, la capa del límite del área del proyecto desde _/gdb/BD_ANLA_MAGNA_NACIONAL.gdb/T33_PROYECTO/AreaProyecto_. Ajuste la simbología utilizando solo contornos, acérquese y rotule el mapa geológico a partir del campo `Simbolo_UC`.
 
+<div align="center"><img src="graph/QGIS_AddLayer2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta de geo-procesamiento _Vector overlay / Clip_, recorte el mapa geológico hasta el límite del área de proyecto. Nombre la capa resultante como `/shp/UCAreaProyecto4686.shp`. Simbolice y rotule por Podrá observar que para el caso de estudio, existen 16 diferentes unidades cronoestratigráficas.
+
+> Para realizar correctamente el recorte, defina en Advanced / Algorithm Setting / Invalid feature filtering / Do not Filter (Better Performance).
+
+<div align="center"><img src="graph/QGIS_Clip.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Clip1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Unidades encontradas  
+
+| Símbolo UC | Descripción                                                                                                                       | Edad                       | UG integradas      |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------|--------------------|
+| b6k6-Stm   | Shales, calizas, arenitas, cherts y fosforitas                                                                                    | Albiano-Maastrichtiano     |                    |
+| E1-Sc      | Conglomerados intercalados con arenitas de grano medio a grueso y lodolitas carbonosas                                            | Paleoceno                  |                    |
+| k1k6-Stm   | Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur. | Cenomaniano-Maastrichtiano |                    |
+| k6E1-Stm   | Arcillolitas rojizas con intercalaciones de cuarzoarenitas de grano fino. Mantos de carbón a la base.                             | Maastrichtiano-Paleoceno   | Formación Guaduas  |
+| Q-al       | Depósitos aluviales y de llanuras aluviales                                                                                       | Cuaternario                |                    |
+| Q-ca       | Abanicos aluviales y depósitos coluviales                                                                                         | Cuaternario                |                    |
+| Q1-l       | Arcillas, turbas, y arcillas arenosas con niveles delgados de gravas. Localmente, capas de depósitos de diatomeas.                | Pleistoceno                |                    |
+
+7. Ajuste la simbología del mapa recortado utilizando los estilos importados.
+
+<div align="center"><img src="graph/ArcGISPro_Mpio25899_UC1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+8. A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _k1k6-Stm_, correspondiente a _Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur de la edad Cenomaniano-Maastrichtiano_.
+
+<div align="center"><img src="graph/ArcGISPro_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
