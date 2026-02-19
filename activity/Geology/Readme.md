@@ -35,6 +35,16 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 Las unidades geológicas comprenden la delimitación y clasificación de una formación geológica que representa la estructura e historia del desarrollo de la corteza terrestre y sus capas más profundas.
 
+La capa _UnidadGeologica_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene varios dominios asociados:
+
+<div align="center"><img src="graph/ANLA_UnidadGeologica.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
+
+<div align="center"><img src="graph/ANLA_Dom_Geol_Eon.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Era.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Per.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Epo.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Eda.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+
+> Para los dominios Dom_Geol_Epo y Dom_Geol_Eda, solo se ha incluido en las ilustraciones, una muestra de los primeros valores codificados. Consulte la lista completa de valores en el diccionario de datos.
+
 1. Ingrese al sitio del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y descargue la File Geodatabase del Atlas Geológico de Colombia versión 2023 a escala 1:500K (_agc2023.gdb.zip_) y el archivo de estilos (_agc2023.style_). Guarde y descomprima en la carpeta [/data/SGC/](../../data/SGC). 
 
 <div align="center"><img src="graph/SGC_Download2023.jpg" alt="rcfdtools" width="100%" border="0" /></div>
