@@ -122,9 +122,13 @@ Unidades encontradas
 
 <div align="center"><img src="graph/QGIS_Symbology.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-8. A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _k1k6-Stm_, correspondiente a _Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur de la edad Cenomaniano-Maastrichtiano_.
+9. Calcule el área geodésica en hectáreas de cada Unidad encontrada, nombre el campo como `AREA_ha`.
 
-<div align="center"><img src="graph/ArcGISPro_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_FieldCalculator.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+10. A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _Q1-l_, correspondiente a _Arcillas, turbas, y arcillas arenosas con niveles delgados de gravas. Localmente, capas de depósitos de diatomeas_, con más de 120k hectáreas.
+
+<div align="center"><img src="graph/QGIS_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
