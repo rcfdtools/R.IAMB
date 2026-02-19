@@ -86,7 +86,7 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC (p.
 
 <div align="center"><img src="graph/QGIS_AddLayer2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. Utilizando la herramienta de geo-procesamiento _Vector overlay / Clip_, recorte el mapa geológico hasta el límite del área de proyecto. Nombre la capa resultante como `/shp/UCAreaProyecto4686.shp`. Simbolice y rotule por Podrá observar que para el caso de estudio, existen 16 diferentes unidades cronoestratigráficas.
+6. Utilizando la herramienta de geo-procesamiento _Vector overlay / Clip_, recorte el mapa geológico hasta el límite del área de proyecto. Nombre la capa resultante como `/shp/UCAreaProyecto4686.shp`. Simbolice y rotule por _SimboloUC_, podrá observar que para el caso de estudio, existen 16 diferentes unidades cronoestratigráficas y que en la tabla de atributos existen 290 polígonos independientes.
 
 > Para realizar correctamente el recorte, defina en Advanced / Algorithm Setting / Invalid feature filtering / Do not Filter (Better Performance).
 
@@ -95,19 +95,32 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC (p.
 
 Unidades encontradas  
 
-| Símbolo UC | Descripción                                                                                                                       | Edad                       | UG integradas      |
-|------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------|--------------------|
-| b6k6-Stm   | Shales, calizas, arenitas, cherts y fosforitas                                                                                    | Albiano-Maastrichtiano     |                    |
-| E1-Sc      | Conglomerados intercalados con arenitas de grano medio a grueso y lodolitas carbonosas                                            | Paleoceno                  |                    |
-| k1k6-Stm   | Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur. | Cenomaniano-Maastrichtiano |                    |
-| k6E1-Stm   | Arcillolitas rojizas con intercalaciones de cuarzoarenitas de grano fino. Mantos de carbón a la base.                             | Maastrichtiano-Paleoceno   | Formación Guaduas  |
-| Q-al       | Depósitos aluviales y de llanuras aluviales                                                                                       | Cuaternario                |                    |
-| Q-ca       | Abanicos aluviales y depósitos coluviales                                                                                         | Cuaternario                |                    |
-| Q1-l       | Arcillas, turbas, y arcillas arenosas con niveles delgados de gravas. Localmente, capas de depósitos de diatomeas.                | Pleistoceno                |                    |
+| Símbolo UC  | Descripción                                                                                                                                                            | Edad                        | UG integradas         |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-----------------------|
+| b2b6-Sm     | Shales con yeso, cherts, calizas y arenitas.                                                                                                                           | Valanginiano-Albiano        |                       |
+| b2b6-Stm    | Shales calcáreos o silíceos; cherts; cuarzoarenitas y arenitas líticas; conglomerados gradados, y calizas arrecifales.                                                 | Valanginiano-Albiano        |                       |
+| b6k6-Stm    | Shales, calizas, arenitas, cherts y fosforitas                                                                                                                         | Albiano-Maastrichtiano      |                       |
+| E1-Sc       | Conglomerados intercalados con arenitas de grano medio a grueso y lodolitas carbonosas                                                                                 | Paleoceno                   |                       |
+| e6e9-Sc     | Intercalaciones de capas rojas de conglomerados, arenitas líticas conglomeráticas y arcillolitas.                                                                      | Bartoniano-Chattiano        | Formación Barzalosa   |
+| e6e9-Sct    | Arenitas de grano fino a conglomeráticas interestratificadas con arcillolitas y limolitas. Ocasionalmente, lentes de hierro oolítico y carbón.                         | Bartoniano-Chattiano        | Formación La Regadera |
+| k1k6-Stm    | Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur.                                      | Cenomaniano-Maastrichtiano  |                       |
+| k6E1-Stm    | Arcillolitas rojizas con intercalaciones de cuarzoarenitas de grano fino. Mantos de carbón a la base.                                                                  | Maastrichtiano-Paleoceno    | Formación Guaduas     |
+| N1-Sc       | Conglomerados y arenitas poco consolidados con matriz ferruginosa y arcillosa. También, arcillolitas con intercalaciones de limolitas, lodolitas arenosas y arenitas.  | Mioceno                     | Formación Marichuela  |
+| N2Q1-Sc     | Conglomerados de bloques a guijos con intercalaciones de arcillas y arenitas de grano fino a grueso.                                                                   | Plioceno-Pleistoceno        |                       |
+| n4n6-Sc     | Arenitas líticas con intercalaciones de arcillolitas de color gris verdoso y conglomerados                                                                             | Serravaliano-Mesiniano      | Grupo Honda           |
+| Q-al        | Depósitos aluviales y de llanuras aluviales                                                                                                                            | Cuaternario                 |                       |
+| Q-ca        | Abanicos aluviales y depósitos coluviales                                                                                                                              | Cuaternario                 |                       |
+| Q-g         | Depósitos glaciares                                                                                                                                                    | Cuaternario                 |                       |
+| Q-t         | Terrazas aluviales                                                                                                                                                     | Cuaternario                 |                       |
+| Q1-l        | Arcillas, turbas, y arcillas arenosas con niveles delgados de gravas. Localmente, capas de depósitos de diatomeas.                                                     | Pleistoceno                 |                       |
 
-7. Ajuste la simbología del mapa recortado utilizando los estilos importados.
+7. Disuelva las unidades obtenidas para obtener 16 polígonos multiparte, guarde como _/shp/UCAreaProyectoDissolve4686.shp_. Elimine los campos geométricos y de Objeto.
 
-<div align="center"><img src="graph/ArcGISPro_Mpio25899_UC1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Dissolve.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+8. Ajuste la simbología del mapa recortado utilizando los estilos importados.
+
+<div align="center"><img src="graph/QGIS_Symbology.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 8. A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _k1k6-Stm_, correspondiente a _Shales, calizas, fosforitas, cherts y cuarzoarenitas. Predominio de facies finas al norte del Cocuy y facies más arenosas al sur de la edad Cenomaniano-Maastrichtiano_.
 
