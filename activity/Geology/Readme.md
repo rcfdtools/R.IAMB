@@ -123,7 +123,7 @@ Unidades encontradas
 
 <div align="center"><img src="graph/QGIS_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-:pencil2: Para cada Unidad Cronoestratigráfica, calcule la distribución porcentual de cada clase. Cree un script en Python.
+:pencil2: A partir de un script en Python, para cada Unidad Cronoestratigráfica, calcule la distribución porcentual respecto al total del área del proyecto.
 
 
 ## 2. Incorporación a capa ANLA: UnidadGeologica
