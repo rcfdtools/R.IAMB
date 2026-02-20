@@ -124,7 +124,7 @@ Unidades encontradas
 
 <div align="center"><img src="graph/QGIS_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-:pencil2:**Actividad individual:** A partir de un script en Python, para cada Unidad Cronoestratigráfica, calcule la distribución porcentual respecto al total del área del proyecto.
+:pencil2:**Tarea:** A partir de un script en Python, para cada Unidad Cronoestratigráfica, calcule la distribución porcentual respecto al total del área del proyecto.
 
 
 ## 2. Incorporación a capa ANLA: UnidadGeologica
@@ -186,7 +186,7 @@ Dominio: Dom_Con_UG
 
 <div align="center"><img src="graph/ANLA_Dom_Con_UG.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
-:pencil2:**Actividad individual:** Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de ContactoGeologico. Investigue si esta capa puede ser homologada desde el AGC o el MGC.
+:pencil2:**Tarea:** Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de ContactoGeologico. Investigue si esta capa puede ser homologada desde el AGC o el MGC.
 
 
 ## 4. Incorporación a capa ANLA: EstructuraFallaLineam
@@ -206,7 +206,7 @@ Agregue al mapa la capa de fallas geológicas _Fallas_ contenidas en la GDB `/da
 <div align="center"><img src="graph/QGIS_Clip2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-:pencil2:**Actividad individual:** Utilizando el procedimiento anteriormente explicado, cree y homologue a través de un script en Python la capa de _EstructuraFallaLineam_.
+:pencil2:**Tarea:** Utilizando el procedimiento anteriormente explicado, cree y homologue a través de un script en Python la capa de _EstructuraFallaLineam_.
 
 
 ## Referencias
