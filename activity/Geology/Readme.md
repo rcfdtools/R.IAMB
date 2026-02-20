@@ -125,15 +125,15 @@ Unidades encontradas
 
 ## 2. Incorporación a capa ANLA: UnidadGeologica
 
-Las unidades geológicas comprenden la delimitación y clasificación de una formación geológica que representa la estructura e historia del desarrollo de la corteza terrestre y sus capas más profundas.
+Corresponde a los límites de las unidades geológicas.
 
-La capa _UnidadGeologica_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene varios dominios asociados:
+La capa _ContactoGeologico_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
 
-<div align="center"><img src="graph/ANLA_UnidadGeologica.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_ContactoGeologico.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
+Dominio: Dom_Con_UG
 
-<div align="center"><img src="graph/ANLA_Dom_Geol_Eon.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Era.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Per.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Epo.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Eda.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_Dom_Con_UG.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
 > Para los dominios Dom_Geol_Epo y Dom_Geol_Eda, solo se ha incluido en las ilustraciones, una muestra de los primeros valores codificados. Consulte la lista completa de valores en el diccionario de datos del ANLA.
 
@@ -172,16 +172,13 @@ Búsqueda para homologación en https://stratigraphy.org/chart/?language=es
 > Manualmente requerirá asignar la simbología específica de cada nomenclatura.
 
 
+## 3. Incorporación a capa ANLA: ContactoGeologico
 
 
 
 
 
 
-
-
-
-## 2. ContactoGeologico
 
 2. En QGIS, cree un nuevo mapa de proyecto y guarde como _/map/Geology.qgz_ y establezca el CRS 9377. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_) y fallas geológicas (_Fallas_ y _FallasAnot_) contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`.
 
