@@ -153,9 +153,12 @@ Como observa, los nombres de atributos contenidos en la capa _UCAreaProyectoDiss
 | NOMBRE (100)   | Descripcio (255) | Homologación por cambio de nombre de atributo y truncando longitud a 100 caracteres.                                                                                                                       |
 | NOMENCLAT (20) | SimboloUC        | Homologación por cambio de nombre de atributo.                                                                                                                                                             |
 
-Para la homologación, será necesario manualmente renombrar el campo `Edad` de la capa UC como `EdadTxt`, crear en la capa _UCAreaProyectoDissolve4686_ los diferentes campos de homologación, asignar los valores existentes a los campos `NOMBRE`, `NOMENCLAT` y asignar manualmente los valores de los campos `EON`, `ERA`, `PERIODO` y `EPOCA` a partir de las definiciones contenidas en la [Tabla Cronoestratigráfica Internacional](https://stratigraphy.org/). Los valores de referencia para homologación se encuentran en la tabla [/table/IAMB_Geology.xlsx](../../file/table/IAMB_Geology.xlsx)
+Para la homologación, será necesario manualmente renombrar el campo `Edad` de la capa UC como `EdadTxt`, crear en la capa _UCAreaProyectoDissolve4686_ los diferentes campos de homologación, asignar los valores existentes a los campos `NOMBRE`, `NOMENCLAT` y asignar manualmente los valores de los campos `EON`, `ERA`, `PERIODO` y `EPOCA` a partir de las definiciones contenidas en la [Tabla Cronoestratigráfica Internacional](https://stratigraphy.org/).
 
+Los valores de referencia para homologación se encuentran en la tabla [/table/IAMB_Geology.xlsx](../../file/table/IAMB_Geology.xlsx)
 <div align="center"><img src="graph/IAMB_unidadgeologica_homologador.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Búsqueda para homologación en https://stratigraphy.org/chart/?language=es
 <div align="center"><img src="graph/IAMB_unidadgeologica_homologador1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Para simplificar el proceso de homologación, utilice el script de Python [/src/qgis_unidadgeologica_homologador.py](../../file/src/qgis_unidadgeologica_homologador.py).
