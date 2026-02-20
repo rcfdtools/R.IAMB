@@ -15,7 +15,7 @@
 |                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 
-## 1. Genereal link references
+## 1. General link references
 
 * https://www.usgs.gov/landsat-missions/landsat-acronyms
 * [QGIS Python - Coordinate Transformation](https://www.youtube.com/watch?v=3YXjYAdAyjo)
