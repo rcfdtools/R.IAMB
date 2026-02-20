@@ -174,7 +174,6 @@ Búsqueda para homologación en https://stratigraphy.org/chart/?language=es
 
 ## 3. Incorporación a capa ANLA: ContactoGeologico
 
-
 La capa _ContactoGeologico_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
 
 <div align="center"><img src="graph/ANLA_ContactoGeologico.jpg" alt="rcfdtools" width="100%" border="0" /></div>
@@ -183,16 +182,28 @@ Dominio: Dom_Con_UG
 
 <div align="center"><img src="graph/ANLA_Dom_Con_UG.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
-> Para los dominios Dom_Geol_Epo y Dom_Geol_Eda, solo se ha incluido en las ilustraciones, una muestra de los primeros valores codificados. Consulte la lista completa de valores en el diccionario de datos del ANLA.
-
-
-
-
-
-2. En QGIS, cree un nuevo mapa de proyecto y guarde como _/map/Geology.qgz_ y establezca el CRS 9377. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_) y fallas geológicas (_Fallas_ y _FallasAnot_) contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`.
+Utilizando el procedimiento anterior, cree y homologue la capa de ContactoGeologico. Investigue si esta capa puede ser homologada desde el AGC o el MGC.
 
 
 ## 4. Incorporación a capa ANLA: EstructuraFallaLineam
+
+Equivale a los trazados de las estructuras de fallas y lineamientos geológicos en la superficie terrestre que implican ruptura de la corteza con o sin desplazamiento.
+
+La capa _EstructuraFallaLineam_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
+
+<div align="center"><img src="graph/ANLA_EstructuraFallaLineam.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Dominio: Dom_Fall_EG
+
+<div align="center"><img src="graph/ANLA_Dom_Fall_EG.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+
+1. Agregue al mapa la capa de fallas geológicas _Fallas_ contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/`, recorte hasta el límite del área de proyecto y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Guarde la capa _/shp/FallasAreaProyecto4686.shp_.
+
+<div align="center"><img src="graph/QGIS_Clip2.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+
+
+
 
 
 
