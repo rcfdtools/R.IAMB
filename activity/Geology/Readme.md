@@ -152,6 +152,10 @@ Como observa, los nombres de atributos contenidos en la capa _UCAreaProyectoDiss
 | EDAD (Real)    | Edad             | Holomogación manual debido a que los nombres disponibles en UC no tienen están asociados a códigos de dominio y no tienen correspondencia directa con los nombres o códigos del dominio ANLA Dom_Geol_Eda. |
 | NOMBRE (100)   | Descripcio (255) | Homologación por cambio de nombre de atributo y truncando longitud a 100 caracteres.                                                                                                                       |
 | NOMENCLAT (20) | SimboloUC        | Homologación por cambio de nombre de atributo.                                                                                                                                                             |
+Para la homologación, será necesario renombrar el campo `Edad` de la capa UC como `EdadTxt`, crear en la capa _UCAreaProyectoDissolve4686_ los diferentes campos de homologación, asignar los valores existentes a los campos `NOMBRE`, `NOMENCLAT` y asignar manualmente los valores de los campos `EON`, `ERA`, `PERIODO` y `EPOCA` a partir de las definiciones contenidas en la Tabla Cronoestratigráfica Internacional.
+
+Para este proceso crearemos un script en Python.
+
 
 
 
