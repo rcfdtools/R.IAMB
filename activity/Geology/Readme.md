@@ -182,7 +182,7 @@ Dominio: Dom_Con_UG
 
 <div align="center"><img src="graph/ANLA_Dom_Con_UG.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
-Utilizando el procedimiento anterior, cree y homologue la capa de ContactoGeologico. Investigue si esta capa puede ser homologada desde el AGC o el MGC.
+Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de ContactoGeologico. Investigue si esta capa puede ser homologada desde el AGC o el MGC.
 
 
 ## 4. Incorporación a capa ANLA: EstructuraFallaLineam
@@ -202,7 +202,7 @@ Dominio: Dom_Fall_EG
 <div align="center"><img src="graph/QGIS_Clip2.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
-
+2. Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de EstructuraFallaLineam.
 
 
 
