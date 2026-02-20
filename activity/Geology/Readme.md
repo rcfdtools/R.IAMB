@@ -20,13 +20,14 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 <div align="center">
 
-| Requerimiento                                                                                                 | Descripción                                                                                                           |
-|:--------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 3.44 o superior.                                                                                                 |
-| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                                               |
-| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                                |
-| [:round_pushpin:Zonificacion_Hidrografica_2022.zip](../../file/data/IDEAM/Zonificacion_Hidrografica_2022.zip) | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                   |
-| [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps).  |
+| Requerimiento                                                                                                 | Descripción                                                                                                          |
+|:--------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 3.44 o superior.                                                                                                |
+| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                                              |
+| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                               |
+| [:date:IAMB_Geology.xlsx](../../file/table/IAMB_Geology.xlsx)                                                 | Tabla para homologación de unidades geológicas.                                                                      |
+| [:round_pushpin:Zonificacion_Hidrografica_2022.zip](../../file/data/IDEAM/Zonificacion_Hidrografica_2022.zip) | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                  |
+| [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps). |
 
 </div>
 
@@ -169,7 +170,7 @@ Búsqueda para homologación en https://stratigraphy.org/chart/?language=es
 
 <div align="center"><img src="graph/QGIS_UnidadGeologica_Copy.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-> Manualmente requerirá asignar la simbología específica de cada nomenclatura.
+> Manualmente requerirá asignar nuevamente la simbología específica de cada nomenclatura.
 
 
 ## 3. Incorporación a capa ANLA: ContactoGeologico
@@ -182,7 +183,7 @@ Dominio: Dom_Con_UG
 
 <div align="center"><img src="graph/ANLA_Dom_Con_UG.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
-Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de ContactoGeologico. Investigue si esta capa puede ser homologada desde el AGC o el MGC.
+:pencil2: Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de ContactoGeologico. Investigue si esta capa puede ser homologada desde el AGC o el MGC.
 
 
 ## 4. Incorporación a capa ANLA: EstructuraFallaLineam
@@ -197,15 +198,12 @@ Dominio: Dom_Fall_EG
 
 <div align="center"><img src="graph/ANLA_Dom_Fall_EG.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
-1. Agregue al mapa la capa de fallas geológicas _Fallas_ contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/`, recorte hasta el límite del área de proyecto y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Guarde la capa _/shp/FallasAreaProyecto4686.shp_.
+Agregue al mapa la capa de fallas geológicas _Fallas_ contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/`, recorte hasta el límite del área de proyecto y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Guarde la capa _/shp/FallasAreaProyecto4686.shp_.
 
 <div align="center"><img src="graph/QGIS_Clip2.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="25%" border="0" /></div>
 
-2. Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de EstructuraFallaLineam.
-
-
-
+:pencil2: Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de _EstructuraFallaLineam_.
 
 
 ## Referencias
