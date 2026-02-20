@@ -161,10 +161,15 @@ Los valores de referencia para homologación se encuentran en la tabla [/table/I
 Búsqueda para homologación en https://stratigraphy.org/chart/?language=es
 <div align="center"><img src="graph/IAMB_unidadgeologica_homologador1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-Para simplificar el proceso de homologación, utilice el script de Python [/src/qgis_unidadgeologica_homologador.py](../../file/src/qgis_unidadgeologica_homologador.py).
+2. Para simplificar el proceso de homologación, utilice el script de Python [/src/qgis_unidadgeologica_homologador.py](../../file/src/qgis_unidadgeologica_homologador.py).
 
+<div align="center"><img src="graph/QGIS_unidadgeologica_homologador.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+3. Copie y pegue espacialmente todos los vectores de la capa _UCAreaProyectoDissolve4686_ en la capa _UnidadGeologica_, podrá observar en la tabla de atributos que se han incorporado los atributos requeridos por el ANLA.
 
+<div align="center"><img src="graph/QGIS_UnidadGeologica_Copy.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+> Manualmente requerirá asignar la simbología específica de cada nomenclatura.
 
 
 
