@@ -15,3 +15,6 @@
 |                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 
+## 1. Genereal link references
+
+* https://www.usgs.gov/landsat-missions/landsat-acronyms

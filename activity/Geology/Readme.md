@@ -11,7 +11,7 @@ Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - S
 ## Objetivos
 
 * Estudiar la geología de la zona de estudio.
-* Estudiar la composición de las unidades cronoestratigráficas.
+* Estudiar la composición de las [unidades cronoestratigráficas](https://stratigraphy.org/).
 
 
 ## Requerimientos
@@ -152,9 +152,11 @@ Como observa, los nombres de atributos contenidos en la capa _UCAreaProyectoDiss
 | EDAD (Real)    | Edad             | Holomogación manual debido a que los nombres disponibles en UC no tienen están asociados a códigos de dominio y no tienen correspondencia directa con los nombres o códigos del dominio ANLA Dom_Geol_Eda. |
 | NOMBRE (100)   | Descripcio (255) | Homologación por cambio de nombre de atributo y truncando longitud a 100 caracteres.                                                                                                                       |
 | NOMENCLAT (20) | SimboloUC        | Homologación por cambio de nombre de atributo.                                                                                                                                                             |
-Para la homologación, será necesario renombrar el campo `Edad` de la capa UC como `EdadTxt`, crear en la capa _UCAreaProyectoDissolve4686_ los diferentes campos de homologación, asignar los valores existentes a los campos `NOMBRE`, `NOMENCLAT` y asignar manualmente los valores de los campos `EON`, `ERA`, `PERIODO` y `EPOCA` a partir de las definiciones contenidas en la Tabla Cronoestratigráfica Internacional.
+Para la homologación, será necesario manualmente renombrar el campo `Edad` de la capa UC como `EdadTxt`, crear en la capa _UCAreaProyectoDissolve4686_ los diferentes campos de homologación, asignar los valores existentes a los campos `NOMBRE`, `NOMENCLAT` y asignar manualmente los valores de los campos `EON`, `ERA`, `PERIODO` y `EPOCA` a partir de las definiciones contenidas en la [Tabla Cronoestratigráfica Internacional](https://stratigraphy.org/).
 
-Para este proceso crearemos un script en Python.
+<div align="center"><img src="graph/IAMB_unidadgeologica_homologador.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Para simplificar el proceso de homologación, utilice el script de Python [/src/qgis_unidadgeologica_homologador.py](../../file/src/qgis_unidadgeologica_homologador.py).
 
 
 
@@ -184,6 +186,7 @@ Para este proceso crearemos un script en Python.
 * [Atlas Geológico de Colombia 2023 a escala 500K.](https://www2.sgc.gov.co/MGC/Paginas/agc_500K2023.aspx)
 * [Memoria explicativa del Mapa Geológico de Colombia, Geological Map of Colombia y Atlas Geológico de Colombia 2023.](https://www2.sgc.gov.co/MGC/Documents/MGC_2023/Memoria_mgc_gmc_agc_2023.pdf)
 * https://opengislab.com/blog/2019/3/16/converting-esri-styles-to-qgis-styles-using-slyr
+* https://stratigraphy.org/
 
 
 ## Control de versiones
