@@ -222,6 +222,7 @@ Dominio: Dom_Fall_EG
 | Versión    | Descripción        | Autor                                      | Horas |
 |------------|:-------------------|--------------------------------------------|:-----:|
 | 2026.02.19 | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |   6   |
+| 2026.02.20 | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |  5   |
 
 
 ##
