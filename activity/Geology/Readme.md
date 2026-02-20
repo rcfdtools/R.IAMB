@@ -5,7 +5,7 @@ Keywords: `geology` `geological-map` `mot` `uc` `geological-fail` `volcanic` `un
 
 Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y recorte las líneas de falla y unidades cronoestratigráficas hasta el límite del área del proyecto. Describa y explique las fallas y unidades presentes en la zona de estudio. 
 
-<div align="center"><img src="graph/Geology.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+<div align="center"><img src="graph/Geology.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
 
 ## Objetivos
