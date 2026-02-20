@@ -196,7 +196,7 @@ La capa _EstructuraFallaLineam_ del modelo de datos ANLA, requiere de los siguie
 
 Dominio: Dom_Fall_EG
 
-<div align="center"><img src="graph/ANLA_Dom_Fall_EG.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+<div align="center"><img src="graph/ANLA_Dom_Fall_EG.jpg" alt="rcfdtools" width="35%" border="0" /></div>
 
 Agregue al mapa la capa de fallas geológicas _Fallas_ contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/`, recorte hasta el límite del área de proyecto y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Guarde la capa _/shp/FallasAreaProyecto4686.shp_.
 
