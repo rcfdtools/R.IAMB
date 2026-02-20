@@ -5,7 +5,7 @@ Keywords: `geology` `geological-map` `mot` `uc` `geological-fail` `volcanic` `un
 
 Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y recorte las líneas de falla y unidades cronoestratigráficas hasta el límite municipal del mapa MOT del POT. Describa y explique las fallas y unidades presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con la capa de unidades cronoestratigráficas y a través de un resumen estadístico, obtenga por cada categoría del MOT, las unidades cronoestratigráficas presentes y sus áreas. 
 
-<div align="center"><img src="graph/Geology.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Geology.jpg" alt="rcfdtools" width="60%" border="0" /></div>
 
 
 ## Objetivos
