@@ -31,25 +31,17 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 </div>
 
 
-## 1. Unidad Geológica
-
-Las unidades geológicas comprenden la delimitación y clasificación de una formación geológica que representa la estructura e historia del desarrollo de la corteza terrestre y sus capas más profundas.
-
-La capa _UnidadGeologica_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene varios dominios asociados:
-
-<div align="center"><img src="graph/ANLA_UnidadGeologica.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
-
-<div align="center"><img src="graph/ANLA_Dom_Geol_Eon.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Era.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Per.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Epo.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Eda.jpg" alt="rcfdtools" width="25%" border="0" /></div>
-
-> Para los dominios Dom_Geol_Epo y Dom_Geol_Eda, solo se ha incluido en las ilustraciones, una muestra de los primeros valores codificados. Consulte la lista completa de valores en el diccionario de datos.
+## 1. Atlas geológico de Colombia - AGC
 
 1. Ingrese al sitio del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y descargue la File Geodatabase del Atlas Geológico de Colombia versión 2023 a escala 1:500K (_agc2023.gdb.zip_) y el archivo de estilos (_agc2023.style_). Guarde y descomprima en la carpeta [/data/SGC/](../../file/data/SGC). 
+
+> El Mapa Geológico de Colombia (MGC) es una representación unificada de gran escala que sintetiza la geología del país, mientras que el Atlas Geológico de Colombia (AGC) es una compilación detallada de múltiples mapas, con leyendas basadas en códigos (edad + litología) y descripciones más exhaustivas. 
 
 <div align="center"><img src="graph/SGC_Download2023.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 2. En QGIS, cree un nuevo mapa de proyecto y guarde como _/map/Geology.qgz_ y establezca el CRS 4686. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_)contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../file/ref/ChronostratChart2023-04SpanishAmer.pdf)[^1]. Rotule a partír de las localizaciones definidas en _UCAnot_ desactivando la visualización del rectángulo envolvente al rótulo.
+
+> Opcionalmente, puede abrir el mapa creado en la actividad [CaseStudy](../CaseStudy) y guardar como Geology. 
 
 <div align="center"><img src="graph/ChronostratChart2023-04SpanishAmer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_AddLayer1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
@@ -129,6 +121,46 @@ Unidades encontradas
 10. A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _Q1-l_, correspondiente a _Arcillas, turbas, y arcillas arenosas con niveles delgados de gravas. Localmente, capas de depósitos de diatomeas_, con más de 120k hectáreas.
 
 <div align="center"><img src="graph/QGIS_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+## 2. Incorporación a capa ANLA: UnidadGeologica
+
+Las unidades geológicas comprenden la delimitación y clasificación de una formación geológica que representa la estructura e historia del desarrollo de la corteza terrestre y sus capas más profundas.
+
+La capa _UnidadGeologica_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene varios dominios asociados:
+
+<div align="center"><img src="graph/ANLA_UnidadGeologica.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
+
+<div align="center"><img src="graph/ANLA_Dom_Geol_Eon.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Era.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Per.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Epo.jpg" alt="rcfdtools" width="25%" border="0" /><img src="graph/ANLA_Dom_Geol_Eda.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+
+> Para los dominios Dom_Geol_Epo y Dom_Geol_Eda, solo se ha incluido en las ilustraciones, una muestra de los primeros valores codificados. Consulte la lista completa de valores en el diccionario de datos.
+
+1. Agregue el mapa base de Google Terrain y represente en color negro, establezca transparencia de 60% en la capa UC. Agregue al mapa la capa _/gdb/BD_ANLA_MAGNA_NACIONAL.gdb/T_11_GEOLOGIA/UnidadGeologica_ y consulte la tabla de atributos.
+
+<div align="center"><img src="graph/QGIS_UnidadGeologica1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Como observa, los nombres de atributos contenidos en la capa _UCAreaProyectoDissolve4686_ del AGC son diferentes a los utilizados por el ANLA, requiriendo las siguientes homologaciones:
+
+| Atributo ANLA  | Atributo AGC     | Homologación                                                                                                                                                                                               |
+|----------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| EON (Real)     | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                       |
+| ERA (Real)     | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                       |
+| PERIODO (Real) | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                       |
+| EPOCA (Real)   | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                       |
+| EDAD (Real)    | Edad             | Holomogación manual debido a que los nombres disponibles en UC no tienen están asociados a códigos de dominio y no tienen correspondencia directa con los nombres o códigos del dominio ANLA Dom_Geol_Eda. |
+| NOMBRE (100)   | Descripcio (255) | Homologación por cambio de nombre de atributo y truncando longitud a 100 caracteres.                                                                                                                       |
+| NOMENCLAT (20) | SimboloUC        | Homologación por cambio de nombre de atributo.                                                                                                                                                             |
+
+
+
+
+
+
+
+
+
 
 
 
