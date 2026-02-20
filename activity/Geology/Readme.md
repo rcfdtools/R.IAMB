@@ -200,8 +200,8 @@ Dominio: Dom_Fall_EG
 
 Agregue al mapa la capa de fallas geológicas _Fallas_ contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/`, recorte hasta el límite del área de proyecto y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Guarde la capa _/shp/FallasAreaProyecto4686.shp_.
 
-<div align="center"><img src="graph/QGIS_Clip2.jpg" alt="rcfdtools" width="25%" border="0" /></div>
-<div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="25%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Clip2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 :pencil2: Utilizando el procedimiento anteriormente explicado, cree y homologue la capa de _EstructuraFallaLineam_.
 
