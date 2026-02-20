@@ -28,7 +28,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 | [:date:IAMB_Geology.xlsx](../../file/table/IAMB_Geology.xlsx)                                                 | Tabla para homologación de unidades geológicas.                                                                                                  |
 | [:round_pushpin:Zonificacion_Hidrografica_2022.zip](../../file/data/IDEAM/Zonificacion_Hidrografica_2022.zip) | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                                              |
 | [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps).                             |
-| [:round_pushpin:qgis_unidadgeologica_homologador.py](../../file/src/qgis_unidadgeologica _homologador.py)     | Script en Python homologación de atributos de unidades geológicas a partir de las Unidades Cronoestratigráficas del Atlas Geológico de Colombia. |
+| [:round_pushpin:qgis_unidadgeologica _homologador.py](../../file/src/qgis_unidadgeologica_homologador.py)     | Script en Python homologación de atributos de unidades geológicas a partir de las Unidades Cronoestratigráficas del Atlas Geológico de Colombia. |
 
 </div>
 
