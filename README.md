@@ -106,6 +106,8 @@ Objetivo: Introducir los elementos y principios de SIG para la elaboración de E
 
 Objetivo: Detallar los elementos de línea base que forman parte de un Estudio Ambiental.
 
+Los elementos de línea base en la elaboración de estudios ambientales son la descripción detallada y el diagnóstico actual de las características físicas, bióticas y socioeconómicas de un área, previa a la ejecución de cualquier proyecto. Actúan como una _fotografía_ inicial para evaluar impactos y diseñar medidas de manejo. 
+
 <div align="center">
 
 | Actividad                                                                  | Descripción                                                                                                                                                                                                                                                                                                                                                                   |
@@ -128,7 +130,7 @@ Objetivo: Detallar los elementos de línea base que forman parte de un Estudio A
 
 ## :large_blue_circle: Módulo 3 - Análisis ambiental
 
-Objetivo: 
+El análisis ambiental es un proceso técnico, sistemático y multidisciplinario que evalúa los efectos que un proyecto, actividad, política pública o plan puede tener sobre el medio ambiente. Su finalidad es prevenir, minimizar o compensar impactos negativos en el entorno natural, social y económico, asegurando que el desarrollo territorial se lleve a cabo de forma sostenible. 
 
 <div align="center">
 

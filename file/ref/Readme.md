@@ -19,3 +19,5 @@
 
 * https://www.usgs.gov/landsat-missions/landsat-acronyms
 * [QGIS Python - Coordinate Transformation](https://www.youtube.com/watch?v=3YXjYAdAyjo)
+* [Definición de los indicadores de la línea base ambiental de Caldas – Colombia.](https://cdiac.manizales.unal.edu.co/publicaciones/publicacion1.pdf)
+* https://www.anla.gov.co/01_anla/proyectos/nuevo-licenciamiento-ambiental/elaboracion-y-evaluacion-eia
