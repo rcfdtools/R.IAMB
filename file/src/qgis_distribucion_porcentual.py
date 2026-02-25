@@ -14,14 +14,14 @@ import qgis.utils
 layer = iface.activeLayer()
 
 # General parameters
-area_field = ['APkm2', QVariant.Double]
-areadp_field = ['AGDp', QVariant.Double]
+area_field = ['Aha', QVariant.Double]
+areapd_field = ['APD', QVariant.Double]
 crs_source = layer.crs()
 crs_target = QgsCoordinateReferenceSystem('EPSG:9377') # Define the CRS for the calculations ●
 transform = QgsCoordinateTransform(crs_source, crs_target, QgsProject.instance().transformContext())
 
 # Add fields and do calculations
-new_field_list = [area_field, areadp_field]
+new_field_list = [area_field, areapd_field]
 if layer and layer.dataProvider().capabilities() & QgsVectorDataProvider.AddAttributes:
     # Fields creation
     for field in new_field_list:
@@ -55,11 +55,11 @@ if layer and layer.dataProvider().capabilities() & QgsVectorDataProvider.AddAttr
             fid = feature.id()
             geom = feature.geometry()
             geom.transform(transform)
-            area = geom.area()/1000000 
+            area = geom.area()/10000 
             total_area += area
             layer.changeAttributeValue(fid, field_index, area)
-        print(f'Total area of the layer is: {total_area} km²')
-        field_index = layer.fields().indexOf(areadp_field[0])
+        print(f'Total area of the layer is: {total_area} ha')
+        field_index = layer.fields().indexOf(areapd_field[0])
         for feature in layer.getFeatures():
             fid = feature.id()
             areadp = (feature[layer.fields().indexFromName(area_field[0])] / total_area) * 100
