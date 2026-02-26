@@ -108,7 +108,7 @@ El mapa de conflictos de uso de las tierras del IGAC del año 2016, resulta de l
 
 Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando la cadena de búsqueda _Conflictos de uso de la tierra año 2012. Territorio nacional_.
 
-<div align="center"><img src="graph/ColombiaMapas_ConflictosUso100K.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ColombiaMapas_ConflictosUso100K.png" alt="rcfdtools" width="100%" border="0" /></div>
 
 :pencil2:**Tarea:** Descargue, procese, homologue y cargue el análisis requerido en la capa _ConflictoUsoSuelo_ del modelo ANLA.
 
