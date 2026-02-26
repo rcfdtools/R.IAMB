@@ -5,7 +5,7 @@ Keywords: `land-soil` `land-conflict` `land-potential-use`
 
 Descargue el Mapa de Suelos, vocación de uso y conflictos de uso de Colombia del IGAC y recorte hasta el límite del área del proyecto. Describa y explique los tipos de suelos presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con las capas de suelos. A través de un resumen estadístico, obtenga por cada categoría del MOT, los tipos de suelos presentes, usos potenciales, conflictos de uso y sus áreas.  
 
-<div align="center"><img src="graph/LandSoil.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/LandSoil.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
 
 ## Objetivos
