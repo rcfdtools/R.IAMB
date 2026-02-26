@@ -141,9 +141,9 @@ Servicio: https://www.colombiaenmapas.gov.co/?u=0&t=43&servicio=1776
 <div align="center"><img src="graph/ANLA_CapacidadUsoTierra.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
-## 6. Suelos en las áreas de influencia de los humedales de Colombia, región Andina
+## 6. Suelos en áreas de humedales
 
-Este producto es resultado de la ejecución del contrato 13-13-014-091PS, firmado entre el Instituto Geográfico Agustín Codazzi (IGAC) y el Instituto Humboldt, en el marco del convenio 005 (13-014) entre el Instituto Humboldt y el Fondo Adaptación. Muestra las unidades de capacidad de uso de tierras generadas para los suelos de los humedales de la región Andina, mediante el levantamiento semidetallado del suelo en las áreas de influencia de los humedales de Colombia en 2015.
+El mapa de _Suelos en las áreas de influencia de los humedales de Colombia - Región Andina_, es un producto resultado de la ejecución del contrato 13-13-014-091PS, firmado entre el Instituto Geográfico Agustín Codazzi (IGAC) y el Instituto Humboldt, en el marco del convenio 005 (13-014) entre el Instituto Humboldt y el Fondo Adaptación. Muestra las unidades de capacidad de uso de tierras generadas para los suelos de los humedales de la región Andina, mediante el levantamiento semidetallado del suelo en las áreas de influencia de los humedales de Colombia en 2015.
 
 * Servicio: https://www.colombiaenmapas.gov.co/?u=0&t=43&servicio=805
 * Entidad: Instituto de Investigación de Recursos Biológicos Alexander von Humboldt - IvAH
