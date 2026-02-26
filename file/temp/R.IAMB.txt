@@ -6,14 +6,6 @@ Objetivo: Detallar los elementos que se deben contemplar y que deben formar part
 (A partir de cartografía nacional 1:500k, 1:100k, 1:25k)
 
 
-2.3. Vectores - Medio abiótico - Suelos
-(Suelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo)
-Suelos en las áreas de influencia de los humedales de Colombia, región Andina
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/LandSoil/Readme.md
-Análisis con POT Cundinamarca o Nacional https://github.com/rcfdtools/R.SIGE/blob/main/activity/LandUseAnalysis/Readme.md
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/LandUseIGAC/Readme.md
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/MoorLand/Readme.md
-
 2.4. Vectores - Medio abiótico - Hidrología
 (CuencaHidrografica, OcupacionCauce)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/BasinLimit/Readme.md
