@@ -78,7 +78,7 @@ Cree una gráfica de barras representando las diferentes unidades de suelo, podr
 
 <div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-Suelos presentes en la zona de estudio:
+Suelos presentes en la zona de estudio (Tabla sin `TIPO_RELIE`, `LITOLOGÍA`_, `CARACTERÍS`, `CARACTER_1`, `PERFIL`):
 
 | UCS_F   | UCS                   | PAISAJE               | CLIMA                         | COMPONENTE                                                                           | PORCENTAJE            |        Aha |       APD |
 |:--------|:----------------------|:----------------------|:------------------------------|:-------------------------------------------------------------------------------------|:----------------------|-----------:|----------:|
