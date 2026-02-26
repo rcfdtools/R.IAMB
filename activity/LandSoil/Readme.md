@@ -178,7 +178,7 @@ Para garantizar la operación institucional, el Instituto recibe recursos públi
 
 Desde el portal de datos abiertos del SIAC, descargue la capa de [Páramos delimitados Junio 2020 - SIAC](https://siac-datosabiertos-mads.hub.arcgis.com/datasets/9631ed8c44274baa824e6277276de48f/about), guarde y descomprima en la carpeta [/data/IvAH](../../data/IvAH).
 
-<div align="center"><img src="graph/Chrome_SIAC_Download.png" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/Chrome_SIAC_Download.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 :pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
 
