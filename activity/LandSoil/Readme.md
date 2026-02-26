@@ -87,14 +87,7 @@ Por paisaje, montaña presenta la mayor área.
 <div align="center"><img src="graph/ANLA_Suelo.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
-## 3. Vocación de uso y conflictos de uso de Colombia vs. MOT
-
-El análisis realizado de suelos, puede ser replicado utilizando la información geográfica contenida en los mapas de vocación de uso y conflictos de uso; el procedimiento consiste en descargar, recortar, intersecar e identificar a partir de los atributos contenidos, cuáles pueden generar incompatibilidad con las categorías propuestas en el MOT. 
-
-> Para su caso de estudio, realice el análisis de posibles incompatibilidades de estos dos mapas, con respecto a las zonas definidas en el modelo de ocupación territorial - MOT.
-
-
-### 3.1. Vocación de uso
+## 2. Vocación de uso
 
 El mapa de Vocación de Uso de las tierras del IGAC del año 2013, se determina mediante matrices de decisión que incluyen indicadores e índices de su estado. En los atributos geográficos considerados se encuentra el clima y la pendiente. Entre los de los suelos sobresalen la erosión, humedad, granulometría, pedregosidad, profundidad efectiva, fertilidad y salinidad. Esta clasificación comprende 5 clases: agrícola, ganadera, agroforestal, forestal y de conservación/recuperación. En cada una se establece el uso principal que debe tener. Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi - IGAC, para el territorio nacional, el cual fue publicado en la obra Suelos y Tierras de Colombia 2016 a escala 1:100.000.
 
@@ -106,8 +99,10 @@ Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando l
 
 <div align="center"><img src="graph/ColombiaMapas_VocacionUso100K.png" alt="rcfdtools" width="100%" border="0" /></div>
 
+:pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
 
-### 3.2. Conflictos de uso
+
+## 3. Conflictos de uso
 
 El mapa de conflictos de uso de las tierras del IGAC del año 2016, resulta de las discrepancias entre el uso que hace la población del medio natural y el que debería tener, de acuerdo con sus potencialidades y restricciones ambientales. El IGAC, a través de la Subdirección de Agrología, ha venido investigando durante los últimos 25 años, los criterios y metodologías tendientes a establecer el uso y las prácticas de manejo que deben tener los suelos y tierras del país, buscando su productividad sostenible en función de la oferta y demanda ambientales. Su mayor dedicación se ha concentrado en aspectos agrícolas, ganaderos, agroforestales, forestales y de conservación/recuperación de suelos y aguas. Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi - IGAC, para el territorio nacional, el cual fue publicado en la obra Suelos y Tierras de Colombia 2016 a escala 1:100.000.
 
@@ -115,14 +110,35 @@ Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando l
 
 <div align="center"><img src="graph/ColombiaMapas_ConflictosUso100K.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+:pencil2:**Tarea:** Descargue, procese, homologue y cargue el análisis requerido en la capa _ConflictoUsoSuelo_ del modelo ANLA.
+
+<div align="center"><img src="graph/ANLA_ConflictoUsoSuelo.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+## 4. Uso actual del suelo
+
+Corresponde al uso que se le está dando actualmente al suelo y está directamente relacionado con la cobertura de la tierra. Este análisis puede ser realizado a partir de unidades prediales combinando con la información del registro 1 de catastro, en los que se encuentra la destinación económica.
+
+* Clase complementaria: [Análisis de destinaciones económicas IGAC (creación de dominios)](https://github.com/rcfdtools/R.SIGE/blob/main/activity/LandUseIGAC/Readme.md)
+* Predios nacionales año 2020: https://github.com/rcfdtools/R.GISMobile
+
+:pencil2:**Tarea:** Descargue, procese, homologue y cargue el análisis requerido en la capa _UsoActualSuelo_ del modelo ANLA.
+
+<div align="center"><img src="graph/ANLA_UsoActualSuelo.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
+## 5. Capacidad de uso de tierra
 
-Suelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo
+El mapa de _Capacidad de uso de las tierras de la República de Colombia a escala 1:100.000_ del Instituto Geográfico Agustín Codazzi - IGAC, contiene la Clasificación por Capacidad de Uso está basada en la interpretación de las Unidades Cartográficas que integran el mapa de suelos del país (escala 1:100.000). La interpretación busca establecer las restricciones y potencialidades biofísicas de las tierras. Los criterios para evaluarlas y sus rangos de variación se adaptaron al país; a partir de la clasificación originada en los Estados Unidos; a través de la experiencia proporcionada durante más de cinco décadas de aplicación. La clasificación propende por la utilización correcta de las tierras del país y; al estar espacializada; constituye un criterio imprescindible en los planes de ordenamiento territorial; en la toma de decisiones con el fin de reducir su uso irracional y en la planificación de sus recursos naturales. Dado que el producto integra varios insumos, se visualiza la fecha de insumo correspondiente al más reciente utilizado durante su elaboración.
 
+Servicio: https://www.colombiaenmapas.gov.co/?u=0&t=43&servicio=1776
 
+<div align="center"><img src="graph/ColombiaMapas_CapacidadUsoTierra100K.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+:pencil2:**Tarea:** Descargue, procese, homologue y cargue el análisis requerido en la capa _CapacidadUsoTierra_ del modelo ANLA.
+
+<div align="center"><img src="graph/ANLA_CapacidadUsoTierra.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
