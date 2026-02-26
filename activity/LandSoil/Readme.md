@@ -42,6 +42,7 @@ Los Levantamientos Generales de Suelos de los departamentos del Territorio Colom
 
 **Estirpe**: la generación del Mapa Digital de Suelos, para el levantamiento general de suelos, escala 1:100.000, se realizó a partir de los parámetros definidos por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi, para el objeto: Suelos. Para la elaboración del levantamiento, el GIT de Levantamientos de Suelos y Aplicaciones Agrológicas, en la etapa de precampo recopiló información secundaria proveniente de estudios de suelos anteriores, e investigaciones sobre los factores formadores del suelo, tales como clima, geología y geomorfología, los cuales se interpretan con el apoyo de insumos de cartografía, sensores remotos y fotointerpretación. Posteriormente, en la etapa de campo se realiza la descripción de las observaciones tipo cajuelas o barrenaje, y calicatas, ajuste a las líneas de interpretación y recolección de muestras que serán analizadas por el Laboratorio Nacional de Suelos. La sistematización y georreferenciación de esta información sirve de apoyo fundamental para el trazo de las líneas de suelos, que son digitalizadas sobre cartografía base, imágenes de sensores remotos, modelos digitales de elevación, entre otros. Finalmente en la etapa de poscampo se consolidó la leyenda de suelos del estudio, la cartografía temática con sus diferentes atributos y la memoria técnica respectiva. 
 
+* Servicio: https://www.colombiaenmapas.gov.co/?b=igac&u=0&t=43&servicio=395
 * Fuente: https://www.colombiaenmapas.gov.co/, buscar como _Suelos Cundinamarca_
 * Extensión espacial: Departamento de Cundinamarca - Colombia - Suramérica
 * Escala: 1:100000
@@ -98,6 +99,8 @@ El objetivo principal de la vocación es la determinación del uso más apropiad
 
 Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando la cadena de búsqueda _Vocación de Uso. Territorio Nacional_.
 
+Servicio: https://www.colombiaenmapas.gov.co/?u=0&t=43&servicio=7301
+
 <div align="center"><img src="graph/ColombiaMapas_VocacionUso100K.png" alt="rcfdtools" width="100%" border="0" /></div>
 
 :pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
@@ -108,6 +111,9 @@ Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando l
 El mapa de conflictos de uso de las tierras del IGAC del año 2016, resulta de las discrepancias entre el uso que hace la población del medio natural y el que debería tener, de acuerdo con sus potencialidades y restricciones ambientales. El IGAC, a través de la Subdirección de Agrología, ha venido investigando durante los últimos 25 años, los criterios y metodologías tendientes a establecer el uso y las prácticas de manejo que deben tener los suelos y tierras del país, buscando su productividad sostenible en función de la oferta y demanda ambientales. Su mayor dedicación se ha concentrado en aspectos agrícolas, ganaderos, agroforestales, forestales y de conservación/recuperación de suelos y aguas. Este producto es generado por la Subdirección de Agrología del Instituto Geográfico Agustín Codazzi - IGAC, para el territorio nacional, el cual fue publicado en la obra Suelos y Tierras de Colombia 2016 a escala 1:100.000.
 
 Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando la cadena de búsqueda _Conflictos de uso de la tierra año 2012. Territorio nacional_.
+
+Servicio: https://www.colombiaenmapas.gov.co/?u=0&t=43&servicio=1652
+
 
 <div align="center"><img src="graph/ColombiaMapas_ConflictosUso100K.png" alt="rcfdtools" width="100%" border="0" /></div>
 
