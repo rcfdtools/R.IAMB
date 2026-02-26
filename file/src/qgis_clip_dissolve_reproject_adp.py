@@ -1,6 +1,6 @@
 # https://github.com/rcfdtools
 # Clip, Dissolve, Reproject and calculates the area percentual distribution APD
-# Before run set Settings -> Options -> Processing -> General -> Invalid features filtering as Do not filter
+# Before run set Settings / Options / Processing / General / Invalid features filtering / Do not filter
 
 # Libraries
 import processing
@@ -8,11 +8,12 @@ import os
 from qgis.core import QgsField, QgsVectorLayer
 
 # General parameters
-input_layer_path = 'D:/R.IAMB/file/data/SGC/agc2023.gdb|layername=UC' # ●
+#input_layer_path = 'D:/R.IAMB/file/data/SGC/agc2023.gdb|layername=UC' # ●
+input_layer_path = 'D:/R.IAMB/file/data/IGAC/SUELOS_CUNDINAMARCA_100K.gdb|layername=SUELOS_CUNDINAMARCA_VF' # ●
 overlay_layer_path = 'D:/R.IAMB/file/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProyecto' # ●
 output_path = 'D:/R.IAMB/file/shp/' # ●
-output_file_clip_name = 'UCAreaProyecto' # Name without .shp extension ●
-dissolve_field = 'SimboloUC' # ●
+output_file_clip_name = 'SuelosVFAreaProyecto' # Name without .shp extension, e.g., UCAreaProyecto ●
+dissolve_field = 'UCS_F' # e.g., SimboloUC●
 crs_target_code = '9377'  # Define the CRS code for the calculations ●
 output_file_clip_path = f'{output_path}{output_file_clip_name}.shp'
 output_file_dissolve_path = f'{output_path}{output_file_clip_name}Dissolve.shp'
