@@ -55,7 +55,7 @@ Los Levantamientos Generales de Suelos de los departamentos del Territorio Colom
 
 <div align="center"><img src="graph/QGIS_AddLayer1.png" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, reproyecte y calcule la distribución porcentual de los suelos contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 97 tipos de suelos diferentes.
+3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, reproyecte y calcule la distribución porcentual de los suelos contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 97 tipos de suelos diferentes. En la tabla de atributos de la capa disuelta y reproyectada, elimine los atributos `AREA`, `SHAPE_Leng` y `SHAPE_Area`.
 
 > Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
 
@@ -72,26 +72,19 @@ dissolve_field = 'UCS_F'
 
 > Tenga en cuenta que debido a las escalas de digitalización y versión, el límite espacial del mapa de suelos de Cundinamarca puede no cubrir completamente el área del proyecto.
 
-4. En la tabla de atributos de la capa disuelta y reproyectada, elimine los atributos `AREA`, `SHAPE_Leng` y `SHAPE_Area`.
+Cree una gráfica de barras representando las diferentes unidades de suelo, podrá observar que _RLQa_ correspondiente a _Mantos de ceniza volcánica sobre depósitos clásticos hidrogénicos_, es la mayor clase con un área de 41043.27 ha, correspondiente al 6.93 % de la superficie de toda la cuenca en estudio.  
 
+<div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-
-5. Cree gráficos de barras representando las diferentes variables categóricas presentes en la capa de suelos dentro de la zona de estudio. 
+4. Con la herramienta de estadísticas por categorías, cree tablas y gráficos de barras representando las diferentes variables categóricas presentes en la capa de suelos dentro de la zona de estudio. 
 
 Por paisaje, montaña presenta la mayor área.  
 <div align="center"><img src="graph/QGIS_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
-
-Por código de clasificación _UCS_F_, el suelo dominante es _MLCd_, correspondiente a suelos profundos a superficiales, bien drenados, con texturas moderadamente finas a moderadamente gruesas, reacción extremada a fuertemente ácida, saturación de aluminio media a alta y fertilidad, en general, moderada.  
 <div align="center"><img src="graph/QGIS_Chart2.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
-
-Por clima, frío húmedo y muy frío muy húmedo, presentan las mayores áreas.  
-<div align="center"><img src="graph/QGIS_Chart3.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
-
-Por tipo de relieve y litología, las rocas clásticas arenosas y limo arcillosas y mantos de ceniza volcánica, presentan la mayor área.  
-<div align="center"><img src="graph/QGIS_Chart4.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa _Suelo_ del modelo ANLA.
 
+<div align="center"><img src="graph/ANLA_Suelo.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## 3. Vocación de uso y conflictos de uso de Colombia vs. MOT
