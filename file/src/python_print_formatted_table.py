@@ -1,5 +1,5 @@
 # https://github.com/rcfdtools
-# Print a shapefile table content in console
+# Print a shapefile table content in console as a Markdown table
 
 # Libraries
 import geopandas as gpd
@@ -8,7 +8,8 @@ import tabulate
 
 # Execution
 shapefile_path = 'D:/R.IAMB/file/shp/SuelosVFAreaProyectoDissolve9377.shp' # ●
-columns = ['UCS_F', 'UCS', 'PAISAJE', 'CLIMA', 'TIPO_RELIE', 'LITOLOGÍA_', 'CARACTERÍS', 'CARACTER_1', 'COMPONENTE', 'PERFIL', 'PORCENTAJE', 'Aha', 'APD'] # ● For SuelosVFAreaProyectoDissolve9377.shp
+#columns = ['UCS_F', 'UCS', 'PAISAJE', 'CLIMA', 'TIPO_RELIE', 'LITOLOGÍA_', 'CARACTERÍS', 'CARACTER_1', 'COMPONENTE', 'PERFIL', 'PORCENTAJE', 'Aha', 'APD'] # ● Complete for SuelosVFAreaProyectoDissolve9377.shp
+columns = ['UCS_F', 'UCS', 'PAISAJE', 'CLIMA', 'COMPONENTE', 'PORCENTAJE', 'Aha', 'APD'] # ● Complete for SuelosVFAreaProyectoDissolve9377.shp
 gdf = gpd.read_file(shapefile_path, columns=columns)
 df = pd.DataFrame(gdf).drop(columns=['geometry']) # Convert to Pandas dataframe
 df.index.name = 'ID'
