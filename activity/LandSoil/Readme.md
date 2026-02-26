@@ -3,7 +3,7 @@
 # 2.3. Vectores - Medio abiótico - Suelos
 Keywords: `land-soil` `land-conflict` `land-potential-use` `moorland`
 
-Descargue, recorte, analice y homologue los mapas de suelos, vocación de uso y conflictos de uso presentes en la zona de estudio.
+Descargue, recorte, cree, analice y homologue los mapas de suelos, vocación de uso, conflictos de uso, uso actual del suelo y zonas de páramo presentes en la zona de estudio.
 
 <div align="center"><img src="graph/LandSoil.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
