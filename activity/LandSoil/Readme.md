@@ -127,7 +127,6 @@ Corresponde al uso que se le está dando actualmente al suelo y está directamen
 <div align="center"><img src="graph/ANLA_UsoActualSuelo.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
-
 ## 5. Capacidad de uso de tierra
 
 El mapa de _Capacidad de uso de las tierras de la República de Colombia a escala 1:100.000_ del Instituto Geográfico Agustín Codazzi - IGAC, contiene la Clasificación por Capacidad de Uso está basada en la interpretación de las Unidades Cartográficas que integran el mapa de suelos del país (escala 1:100.000). La interpretación busca establecer las restricciones y potencialidades biofísicas de las tierras. Los criterios para evaluarlas y sus rangos de variación se adaptaron al país; a partir de la clasificación originada en los Estados Unidos; a través de la experiencia proporcionada durante más de cinco décadas de aplicación. La clasificación propende por la utilización correcta de las tierras del país y; al estar espacializada; constituye un criterio imprescindible en los planes de ordenamiento territorial; en la toma de decisiones con el fin de reducir su uso irracional y en la planificación de sus recursos naturales. Dado que el producto integra varios insumos, se visualiza la fecha de insumo correspondiente al más reciente utilizado durante su elaboración.
@@ -140,6 +139,8 @@ Servicio: https://www.colombiaenmapas.gov.co/?u=0&t=43&servicio=1776
 
 <div align="center"><img src="graph/ANLA_CapacidadUsoTierra.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+
+## 6. 
 
 
 ## Referencias
