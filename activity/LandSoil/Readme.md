@@ -31,7 +31,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 </div>
 
 
-## 1. Mapa de suelos de la zona de estudio
+## 1. Mapa de suelos
 
 El mapa de suelos del Departamento de Cundinamarca, ha sido creado por el [Instituto Geográfico Agustín Codazzi](https://www.igac.gov.co/) - Subdirección de Agrología - Grupo Interno de Trabajo Geomática - Carrera 30 # 48 - 51 – Sede Central, Bogotá D.C, Departamento de Cundinamarca, 111321, República de Colombia. Autor: german.alvarez@igac.gov.co (Subdirector de Agrología), +57 1 3694100 Ext. 91007
 
