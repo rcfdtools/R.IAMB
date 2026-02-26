@@ -1,7 +1,7 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
 # 2.3. Vectores - Medio abiótico - Suelos
-Keywords: `land-soil` `land-conflict` `land-potential-use`
+Keywords: `land-soil` `land-conflict` `land-potential-use` `moorland`
 
 Descargue el Mapa de Suelos, vocación de uso y conflictos de uso de Colombia del IGAC y recorte hasta el límite del área del proyecto. Describa y explique los tipos de suelos presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con las capas de suelos. A través de un resumen estadístico, obtenga por cada categoría del MOT, los tipos de suelos presentes, usos potenciales, conflictos de uso y sus áreas.  
 
@@ -157,19 +157,39 @@ Este producto es resultado de la ejecución del contrato 13-13-014-091PS, firmad
 :pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
 
 
+## 7. Estudio de zonas de páramo
+
+Según el artículo 4 de la Ley 1930 de 2018 o Ley de páramos, el Ministerio de Ambiente y Desarrollo Sostenible debe realizar la delimitación de los páramos con base en el área de referencia generada por el Instituto de Investigación de Recursos Biológicos Alexander von Humboldt a escala 1:25.000. En este ejercicio, realizaremos la delimitación a partir de una cota específica utilizando el modelo digital de elevación ESA Copernicus y evaluaremos su correspondencia con el mapa de Complejos de páramos de Colombia del IvAH.
+
+El Instituto Humboldt es una entidad colombiana, vinculada al Ministerio de Ambiente y Desarrollo Sostenible, regida por el derecho privado, que investiga acerca de la biodiversidad y de las relaciones entre esta y el bienestar humano.[^1]
+
+Constituido en diciembre de 1993, mediante la Ley 99, comenzó operaciones en enero de 1995 en Villa de Leyva, Boyacá. En la actualidad el Claustro de San Agustín es una de las tres sedes del Instituto, donde se almacenan las Colecciones Biológicas que soportan el inventario nacional de la biodiversidad, parte de las cuales fueron heredadas del antiguo Inderena. Las otras sedes del Instituto están en Bogotá, D. C. (Venado de Oro, Calle 72 y Calle 28) y el Laboratorio de Biología Molecular y Banco de Tejidos, en Palmira, Valle, en las instalaciones del Centro Internacional de Agricultura Tropical (Ciat). Adicionalmente, el Instituto tiene investigadores en campo en los sitios donde se llevan a cabo los proyectos de investigación y de profesionales en distintas locaciones del país, vinculados a través de teletrabajo.
+
+Para garantizar la operación institucional, el Instituto recibe recursos públicos de fuentes diversas como el Presupuesto General de la Nación, el Sistema General de Regalías y el Fondo Nacional Ambiental (Fonam), entre otros. Así mismo, gestiona proyectos de investigación y gestión de cooperación internacional, municipios y empresas privadas.
+
+**Complejos de páramos de Colombia**: esta información corresponde a la actualización de los límites cartográficos de los Complejos de Páramos de Colombia, a escala 1:100.000, con criterios y variables unificados para el país. Las principales variables consideradas para la actualización del límite fueron: Temperatura promedio anual, geo-sistemas de alta montaña, modelos potenciales de presencia de fauna y flora, integridad ecológica e imágenes de satélite de alta resolución.
+
+Desde el portal de datos abiertos del SIAC, descargue la capa de [Páramos delimitados Junio 2020 - SIAC](https://siac-datosabiertos-mads.hub.arcgis.com/datasets/9631ed8c44274baa824e6277276de48f/about), guarde y descomprima en la carpeta [/data/IvAH](../../data/IvAH).
+
+<div align="center"><img src="graph/Chrome_SIAC_Download.png" alt="rcfdtools" width="100%" border="0" /></div>
+
+:pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
+
+
 ## Referencias
 
 * [Mapa Digital de Suelos del Departamento de Cundinamarca, República de Colombia. Escala 1:100.000. Año 2001.](https://metadatos.icde.gov.co/geonetwork/srv/api/records/f7c184ea-8abb-45a5-9cf2-1f88981760b6)
 * https://www.colombiaenmapas.gov.co/
 * https://geoportal.igac.gov.co/contenido/datos-abiertos-agrologia
 * https://www.datos.gov.co/dataset/vocaciondeusoterritorionacional/ip25-k55k/about_data
+* [Páramos delimitados Junio 2020 - SIAC](https://siac-datosabiertos-mads.hub.arcgis.com/datasets/9631ed8c44274baa824e6277276de48f/about)
 
 
 ## Control de versiones
 
-| Versión     | Descripción                                                | Autor                                      | Horas |
-|-------------|:-----------------------------------------------------------|--------------------------------------------|:-----:|
-| 2026.02.26 | Versión inicial con alcance de la actividad                | [rcfdtools](https://github.com/rcfdtools)  |   6   |
+| Versión      | Descripción                                 | Autor                                      | Horas |
+|--------------|:--------------------------------------------|--------------------------------------------|:-----:|
+| 2026.02.26   | Versión inicial con alcance de la actividad | [rcfdtools](https://github.com/rcfdtools)  |   6   |
 
 
 
@@ -184,5 +204,5 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 |------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
 
 [^1]: Cohen, K.M., Finney, S.C., Gibbard, P.L. y Fan, J.-X. (2013; actualizado) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204. 
-[^2]: 
+ 
 
