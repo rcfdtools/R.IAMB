@@ -3,7 +3,7 @@
 # 2.3. Vectores - Medio abiótico - Suelos
 Keywords: `land-soil` `land-conflict` `land-potential-use`
 
-Descargue el Mapa de Suelos, vocación de uso y conflictos de uso de Colombia del IGAC y recorte hasta el límite municipal del mapa MOT del POT. Describa y explique los tipos de suelos presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con las capas de suelos. A través de un resumen estadístico, obtenga por cada categoría del MOT, los tipos de suelos presentes, usos potenciales, conflictos de uso y sus áreas.  
+Descargue el Mapa de Suelos, vocación de uso y conflictos de uso de Colombia del IGAC y recorte hasta el límite del área del proyecto. Describa y explique los tipos de suelos presentes en la zona de estudio. Utilizando la herramienta de geoprocesamiento Intersect, combine el modelo de ocupación territorial MOT con las capas de suelos. A través de un resumen estadístico, obtenga por cada categoría del MOT, los tipos de suelos presentes, usos potenciales, conflictos de uso y sus áreas.  
 
 <div align="center"><img src="graph/LandSoil.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -11,7 +11,7 @@ Descargue el Mapa de Suelos, vocación de uso y conflictos de uso de Colombia de
 ## Objetivos
 
 * Estudiar los tipos de suelos presentes en la zona de estudio, sus vocaciones principales y los conflictos identificados por la autoridad catastral nacional.
-* Identificar íncompatibilidades entre suelos y el modelo de ocupación territorial - MOT.
+* Calcular la distribución porcentual de los diferentes suelos identificados en la zona de estudio.
 
 
 ## Requerimientos
@@ -49,7 +49,7 @@ Los Levantamientos Generales de Suelos de los departamentos del Territorio Colom
 
 1. Desde el portal de https://www.colombiaenmapas.gov.co/, busque y descargue en formato GDB, el mapa de suelos del Departamento de Cundinamarca, guarde y descomprima en la ruta `/data/IGAC/SUELOS_CUNDINAMARCA_100K.gdb`.
 
-<div align="center"><img src="graph/ColombiaMapas_Suelos100K.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ColombiaMapas_Suelos100K.png" alt="rcfdtools" width="100%" border="0" /></div>
 
 2. En QGIS, abra el mapa de proyecto _CaseStudy.qgz_, creado previamente y guarde como _/map/LandSoil.qgz_ y establezca el CRS 9377. Agregue al mapa la capa _SUELOS_CUNDINAMARCA_VF_, ajuste la simbología a valores únicos representando el campo de atributos `UCS_F` y rotule a partir del mismo campo.  
 
@@ -109,7 +109,7 @@ El objetivo principal de la vocación es la determinación del uso más apropiad
 
 Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando la cadena de búsqueda _Vocación de Uso. Territorio Nacional_.
 
-<div align="center"><img src="graph/ColombiaMapas_VocacionUso100K.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/ColombiaMapas_VocacionUso100K.png" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ### 3.2. Conflictos de uso
@@ -119,6 +119,16 @@ El mapa de conflictos de uso de las tierras del IGAC del año 2016, resulta de l
 Este mapa puede ser obtenido de https://www.colombiaenmapas.gov.co/ ingresando la cadena de búsqueda _Conflictos de uso de la tierra año 2012. Territorio nacional_.
 
 <div align="center"><img src="graph/ColombiaMapas_ConflictosUso100K.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+
+
+
+Suelo, UsoActualSuelo, CapacidadUsoTierra, ConflictoUsoSuelo
+
+
+
+
 
 
 ## Referencias
