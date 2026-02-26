@@ -121,6 +121,7 @@ Corresponde al uso que se le está dando actualmente al suelo y está directamen
 
 * Clase complementaria: [Análisis de destinaciones económicas IGAC (creación de dominios)](https://github.com/rcfdtools/R.SIGE/blob/main/activity/LandUseIGAC/Readme.md)
 * Predios nacionales año 2020: https://github.com/rcfdtools/R.GISMobile
+* [Registro 1 catastral Cundinamarca a 20231231](../../file/data/IGAC/25_Cundinamarca_Registro1_20231231.zip).
 
 :pencil2:**Tarea:** Descargue, procese, homologue y cargue el análisis requerido en la capa _UsoActualSuelo_ del modelo ANLA.
 
