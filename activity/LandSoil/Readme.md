@@ -90,6 +90,8 @@ Por clima, frío húmedo y muy frío muy húmedo, presentan las mayores áreas.
 Por tipo de relieve y litología, las rocas clásticas arenosas y limo arcillosas y mantos de ceniza volcánica, presentan la mayor área.  
 <div align="center"><img src="graph/QGIS_Chart4.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
+:pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa _Suelo_ del modelo ANLA.
+
 
 
 ## 3. Vocación de uso y conflictos de uso de Colombia vs. MOT
