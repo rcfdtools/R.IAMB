@@ -12,6 +12,7 @@ Descargue el Mapa de Suelos, vocación de uso y conflictos de uso de Colombia de
 
 * Estudiar los tipos de suelos presentes en la zona de estudio, sus vocaciones principales y los conflictos identificados por la autoridad catastral nacional.
 * Calcular la distribución porcentual de los diferentes suelos identificados en la zona de estudio.
+* Aplicar los conceptos y habilidades de homologación de atributos.
 
 
 ## Requerimientos
