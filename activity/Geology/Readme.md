@@ -1,9 +1,9 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
-# 2.2. Vectores - Medio abiótico - Geología
+# 2.2. Medio abiótico - Geología
 Keywords: `geology` `geological-map` `mot` `uc` `geological-fail` `volcanic` `unidad-geologica` `contacto-geologico` `estructura-falla-lineam`
 
-Descargue el Mapa Geológico de Colombia del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y recorte las líneas de falla y unidades cronoestratigráficas hasta el límite del área del proyecto. Describa y explique las fallas y unidades presentes en la zona de estudio. 
+Descargue los vectores del Mapa Geológico de Colombia del [Servicio Geológico Colombiano - SGC](https://www2.sgc.gov.co/MGC/Paginas/mgc_1_5M2023.aspx) y recorte las líneas de falla y unidades cronoestratigráficas hasta el límite del área del proyecto. Describa y explique las fallas y unidades presentes en la zona de estudio. 
 
 <div align="center"><img src="graph/Geology.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 

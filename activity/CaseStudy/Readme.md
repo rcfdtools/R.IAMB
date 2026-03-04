@@ -5,10 +5,10 @@
 Objetivo: Detallar los elementos de línea base que forman parte de un Estudio Ambiental.
 
 
-# 2.1. Vectores - Proyecto o caso de estudio
+# 2.1. Proyecto o caso de estudio
 Keywords: `case-study` `base-maps` `project-area` `clip` `statistics` `area-proyecto` `area-influencia`
 
-En el caso de estudio se ha definido como límite geográfico la cuenca hidrográfica del Río Bogotá, la cual se encuentra incluída en la capa geográfica de [Zonificación Hidrográfica de Colombia](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data) a escala 1:100k actualizada por el IDEAM en el año 2022.
+En el caso de estudio se ha definido como límite geográfico vectorial la cuenca hidrográfica del Río Bogotá, la cual se encuentra incluída en la capa geográfica de [Zonificación Hidrográfica de Colombia](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Zonificaci-n-Hidrogr-fica-Colombia/5kjg-nuda/about_data) a escala 1:100k actualizada por el IDEAM en el año 2022.
 
 <div align="center"><img src="graph/CaseStudy.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 

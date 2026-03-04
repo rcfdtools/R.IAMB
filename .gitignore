@@ -63,6 +63,8 @@ Lib/
 *.dwl2
 *.cdc
 *.nc
+*.jp2
+*.xml
 
 
 # Video exclusions
