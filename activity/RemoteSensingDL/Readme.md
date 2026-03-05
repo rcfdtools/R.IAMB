@@ -257,18 +257,19 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 
 <div align="center"><img src="graph/QGIS_Slope3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+4. Con la herramienta _Raster Analysis / Reclassify by Table_, reclasifique los pixeles o celdas a los códigos de dominio ANLA. Guarde como _/dem/COP30_Slope_Reclass.tif_. Simbolice por valores únicos.
 
-4. Con la herramienta _Raster Analysis / Reclassify by Table_, reclasifique los pixeles o celdas a los códigos de dominio ANLA.
+<div align="center"><img src="graph/QGIS_ReclassifyByTable.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_ReclassifyByTable1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_ReclassifyByTable2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+5. Con la herramienta _Raster Conversion / Polygonize_, convierta los píxeles reclasificados en vectores. Guarde como /shp/COP30_Slope_Reclass.shp. Simbolice por código de dominio sin línea de contorno.
 
+<div align="center"><img src="graph/QGIS_RasterPoligonize.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+6. Con la herramienta _Vector Geometry / Dissolve_, disuelva los polígonos obtenidos por su código de dominio. Guarde como _/shp/COP30_Slope_Reclass_Dissolve.shp_.
 
-
-<div align="center"><img src="graph/QGIS_Slope.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-
-
-:pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
+<div align="center"><img src="graph/QGIS_Dissolve.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## Referencias
@@ -278,12 +279,11 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 * [Download Satellite Data using QGIS | SCP Plugin | Landsat | Sentinel | MODIS](https://www.youtube.com/watch?v=S8nyq_GMpfA)
 
 
-
 ## Control de versiones
 
 | Versión    | Descripción                                 | Autor                                      | Horas |
 |------------|:--------------------------------------------|--------------------------------------------|:-----:|
-| 2026.03.05 | Versión inicial con alcance de la actividad | [rcfdtools](https://github.com/rcfdtools)  |   6   |
+| 2026.03.05 | Versión inicial con alcance de la actividad | [rcfdtools](https://github.com/rcfdtools)  |   9   |
 
 
 
