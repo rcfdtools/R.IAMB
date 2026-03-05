@@ -31,9 +31,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 | [:construction_worker:Usuario Copernicus](https://dataspace.copernicus.eu/)                                   | Cuenta de usuario en el European Union's Earth observation program (ERA5 data).                         |
 | [:construction_worker:Usuario OpenTopography](https://portal.opentopography.org/newUser)                      | Cuenta de usuario en OpenTopography (high-resolution topographic data as LiDAR, radar, photogrammetry). |
 
-
 </div>
-
 
 
 ## 0. Introducción general a sensores remotos y fotointerpretación [^1]
@@ -90,11 +88,62 @@ Sentinel es un proyecto multi-satélite que está siendo desarrollado por la ESA
 Los satélites comerciales Ikonos para la observación de la tierra, capturaban colecciones de imágenes multiespectrales y pancromáticas. La primera versión fue lanzada el 24 de septiembre de 1999 y la versión 2 fue lanzada en enero del 2000 y suspendida el 31 de marzo de 2016.  La resolución de las imágenes capturadas es de 1 a 4 metros dependiendo de la banda espectral y el modo de captura. https://www.esa.int/SPECIALS/Eduspace_ES/SEM776E3GXF_0.html
 
 
-
-
 ## 1. Imágen satelital regional
 
-ImaSatReg
+Corresponde al mosaico de imágenes de satélite con resolución espacial mayor o igual a 10 metros, ortocorregido y/o georeferenciado, modo pancromático, multiespectral o hiperespectral. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o imagen se debe identificar con el prefijo _ImaSatReg_ seguido de la fecha de toma (mes,día,año) a la que corresponde, p. ej., _ImaSatReg01012015.tif_.
+
+1. En QGIS, abra el mapa _/map/CaseStudy.qgz_ y guarde como  _/map/RemoteSensingDL.qgz_. Exporte la capa _AreaProyecto_ como un archivo shapefile en _/shp/AreaProyecto.shp_ para actualizar la extensión de esta capa.
+
+<div align="center"><img src="graph/QGIS_Export.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. Con la herramienta _Layer Tools / Extract layer extent_, obtenga el polígono envolvente del área del proyecto, guarde como _/shp/LayerExtentAreaProyecto9377.shp_.
+
+<div align="center"><img src="graph/QGIS_ExtractLayerExtent.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+3. Con la herramienta _Vector General / Reproject layer_, reproyecte la capa al CRS 4326, guarde como _/shp/LayerExtentAreaProyecto4326.shp_.
+
+<div align="center"><img src="graph/QGIS_Reproject.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+4. Desde el explorador de su sistema operativo, comprima el shapefile creado como _/shp/LayerExtentAreaProyecto4326.zip_.
+
+<div align="center"><img src="graph/Windows_LayerExtentZip.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+5. Ingrese al portal https://earthexplorer.usgs.gov/ y realice el Login con su cuenta de usuario. En la pestaña _Search Criteria_, importe el comprimido del archivo shapefile que contiene el límite de la zona de estudio, defina el rango de fechas 02/27/2026 a 02/27/2026 y cobertura de nubes de hasta el 30%.
+
+<div align="center"><img src="graph/Chrome_EarthExplorer1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+6. En la pestaña _Datasets_ seleccione _Landsat / Landsat Collection 2 Level-1 / Landsat 8-9 OLI-TIRS C2 L1_.
+
+<div align="center"><img src="graph/Chrome_EarthExplorer2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+7. En la pestaña _Additional Criteria_ establezca el WRS Path 008, WRS Row 056 a 057 y el Satellite 9.
+
+<div align="center"><img src="graph/Chrome_EarthExplorer3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+8. En la pestaña _Results_, agregue los overlay para visualización de las imágenes.
+
+<div align="center"><img src="graph/Chrome_EarthExplorer4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+9. Descargue los paquetes completos de las dos imágenes encontradas. En [Releases](https://github.com/rcfdtools/R.IAMB/release) del curso IAMB encontrará estas imágenes.
+
+<div align="center"><img src="graph/Chrome_EarthExplorer5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 2. Modelo digital de superficie - DSM
@@ -113,6 +162,7 @@ DSM
 
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/composite-bands.htm
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm
+* [Download Satellite Data using QGIS | SCP Plugin | Landsat | Sentinel | MODIS](https://www.youtube.com/watch?v=S8nyq_GMpfA)
 
 
 
