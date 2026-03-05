@@ -219,7 +219,6 @@ Corresponde al Modelo Digital de Superficie (incluye elementos de la cobertura t
 4. Cambie la representación del DSM como falso Hillshade aplicando un facto Z de 3.
 
 <div align="center"><img src="graph/QGIS_FalseHillshade.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-<div align="center"><img src="graph/QGIS_FalseHillshade1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 :pencil2:**Tarea:** Descargue, procese y analice para el área de proyecto, los demás DEM disponibles en Open Topography.
 
@@ -257,7 +256,7 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 
 <div align="center"><img src="graph/QGIS_Slope3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-4. Con la herramienta _Raster Analysis / Reclassify by Table_, reclasifique los pixeles o celdas a los códigos de dominio ANLA. Guarde como _/dem/COP30_Slope_Reclass.tif_. Simbolice por valores únicos.
+4. Con la herramienta _Raster Analysis / Reclassify by Table_, reclasifique los píxeles o celdas a los códigos de dominio ANLA. Guarde como _/dem/COP30_Slope_Reclass.tif_. Simbolice por valores únicos.
 
 <div align="center"><img src="graph/QGIS_ReclassifyByTable.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_ReclassifyByTable1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
