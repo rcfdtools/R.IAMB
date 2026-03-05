@@ -1,6 +1,6 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
-# 2.4. Imágen satelital y DEM
+# 2.4. Imagen satelital y DEM
 Keywords: `sentinel` `landsat` `remote-sensing` `clip-raster`
 
 Descargue, cree un mosaico y recorte imágenes satelitales hasta el límite de la zona de estudio.
@@ -90,7 +90,7 @@ Los satélites comerciales Ikonos para la observación de la tierra, capturaban 
 
 ## 1. Imagen satelital regional - Landsat
 
-Corresponde al mosaico de imágenes de satélite con resolución espacial mayor o igual a 10 metros, ortocorregido y/o georeferenciado, modo pancromático, multiespectral o hiperespectral. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o imagen se debe identificar con el prefijo _ImaSatReg_ seguido de la fecha de toma (mes,día,año) a la que corresponde, p. ej., _ImaSatReg01012015.tif_.
+Corresponde al mosaico de imágenes de satélite con resolución espacial mayor o igual a 10 metros, ortocorregido y/o georeferenciado, modo pancromático, multiespectral o hiperespectral. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o imagen se debe identificar con el prefijo _ImaSatReg_ seguido de la fecha de toma (mes, día, año) a la que corresponde, p. ej., _ImaSatReg01012015_.
 
 1. En QGIS, abra el mapa _/map/CaseStudy.qgz_ y guarde como  _/map/RemoteSensingDL.qgz_. Exporte la capa _AreaProyecto_ como un archivo shapefile en _/shp/AreaProyecto.shp_ para actualizar la extensión de esta capa.
 
@@ -194,10 +194,37 @@ Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 ## 3. Modelo digital de superficie - DSM
 
-DSM
+Corresponde al Modelo Digital de Superficie (incluye elementos de la cobertura terrestre como por ejemplo cobertura vegetal, edificaciones, etc.), en escala de grises, donde cada celda o pixel contiene el valor de elevación en metros sobre el nivel del mar. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo digital de superficie se debe identificar como _DSM_.
+
+1. En QGIS, instale el complemento o _Plugin_ _Open Topography_.
+
+<div align="center"><img src="graph/QGIS_PluginOpenTopography.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. Ingrese al portal https://opentopography.org y obtenga la API key de su cuenta de usuario.
+
+<div align="center"><img src="graph/Chrome_OpenTopographyAPIKey.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. Ingrese la API key en el Plugin, defina como región de descarga el límite de la capa _LayerExtentAreaProyecto9377Buffer1000m_ y descargue el mapa Copernicus de 30 metros de resolución, guarde como _/dem/COP30.tif_.
+
+<div align="center"><img src="graph/QGIS_PluginOpenTopography1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+3. Exporte y reproyecte el DSM cómo _/dem/COP30_9377.tif_.
+
+<div align="center"><img src="graph/QGIS_SaveRasterLayerAs.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+4. Cambie la representación del DSM como falso Hillshade aplicando un facto Z de 3.
+
+<div align="center"><img src="graph/QGIS_FalseHillshade.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_FalseHillshade1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+:pencil2:**Tarea:** Descargue, procese y analice para el área de proyecto, los demás DEM disponibles en Open Topography.
 
 
 ## 4. Modelo digital de pendientes - MDPendiente
+
+Corresponde a la superficie o Modelo Digital de Pendientes, en escala de grises, donde cada celda o pixel contiene el valor de pendiente en porcentaje. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo se debe identificar como _Pendiente_.
+
+1. 
 
 
 
