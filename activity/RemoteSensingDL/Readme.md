@@ -145,9 +145,13 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 <div align="center"><img src="graph/QGIS_RasterMerge.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_RasterMerge1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+13. Utilizando la herramienta _Vector Geometry / Buffer_, cree un polígono con aferencia de 1000 metros alrededor del polígono _LayerExtentAreaProyecto9377_, guarde como _/shp/LayerExtentAreaProyecto9377Buffer100m.shp_.
 
+<div align="center"><img src="graph/QGIS_Buffer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+14. Utilizando la herramienta _Raster Extraction / Clip Raster by Extent_, recorte la imagen y guarde como _/grid/LC09_L2SP_20260227_B4B3B2_Clip.tif_.
 
+<div align="center"><img src="graph/QGIS_ClipRasterByExtent.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
