@@ -266,7 +266,7 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 
 <div align="center"><img src="graph/QGIS_RasterPoligonize.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. Con la herramienta _Vector Geometry / Dissolve_, disuelva los polígonos obtenidos por su código de dominio. Guarde como _/shp/COP30_Slope_Reclass_Dissolve.shp_.
+6. Con la herramienta _Vector Geometry / Dissolve_, disuelva los polígonos obtenidos por su código de dominio. Guarde como _/shp/COP30_Slope_Reclass_Dissolve.shp_. Calcule el área en hectáreas de cada polígono.
 
 <div align="center"><img src="graph/QGIS_Dissolve.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
