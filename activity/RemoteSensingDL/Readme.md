@@ -1,0 +1,143 @@
+<div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
+
+# 2.4. Imágen satelital y DEM
+Keywords: `sentinel` `landsat` `remote-sensing` `clip-raster`
+
+Descargue, cree un mosaico y recorte imágenes satelitales hasta el límite de la zona de estudio.
+
+<div align="center"><img src="graph/LandSoil.jpg" alt="rcfdtools" width="70%" border="0" /></div>
+
+
+## Objetivos
+
+* Estudiar los tipos de suelos presentes en la zona de estudio, sus vocaciones principales y los conflictos identificados por la autoridad catastral nacional.
+* Calcular la distribución porcentual de los diferentes suelos identificados en la zona de estudio.
+* Aplicar los conceptos y habilidades de homologación de atributos.
+
+
+## Requerimientos
+
+Archivos, actividades previas, lecturas y herramientas requeridas para el desarrollo de esta actividad:
+
+<div align="center">
+
+| Requerimiento                                                                                                 | Descripción                                                                                                          |
+|:--------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 3.44 o superior.                                                                                                |
+| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                                              |
+| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                               |
+| [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps). |
+| [:construction_worker:Usuario USGS](https://ers.cr.usgs.gov/register/contact)                                 | Cuenta de usuario en el USGS - United States Geological Survey (Satellital images).                     |
+| [:construction_worker:Usuario Copernicus](https://dataspace.copernicus.eu/)                                   | Cuenta de usuario en el European Union's Earth observation program (ERA5 data).                         |
+| [:construction_worker:Usuario OpenTopography](https://portal.opentopography.org/newUser)                      | Cuenta de usuario en OpenTopography (high-resolution topographic data as LiDAR, radar, photogrammetry). |
+
+
+</div>
+
+
+
+## 0. Introducción general a sensores remotos y fotointerpretación [^1]
+
+Los sensores remotos o Teledetección [^2] comprenden diversas técnicas para localización, captura y transmisión de datos de objetos y fenómenos a distancia, sin contacto físico con el elemento o fenómeno de interés. Algunas de sus aplicaciones más interesantes en la ingeniería civil y ambiental son: representación y análisis de modelos de terreno - elevación, elaboración de mapas de pendientes, composición de bandas de imágenes para la restitución masiva de cuerpos de agua, delimitación detallada de cuencas hidrográficas y morfometría, monitoreo de vegetación y evaluación de su calidad por medio de índices, monitoreo de contaminación atmosférica, seguir trayectoria de huracanes, medir fenómenos de remoción en masa, flujo por avalanchas, inundaciones y fenómenos de expansión urbana, entre otros.
+
+### 0.1. Espectro electromagnético
+
+Comprende el rango completo de longitudes de onda (frecuencias) por el que se extiende la radiación electromagnética.
+
+<div align="center"><img src="graph/Graph_ElectromagneticSpectrum.png" alt="R.SIGE" width="90%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
+
+
+### 0.2. Plataformas utilizadas en sensores remotos satelitales
+
+
+#### 0.2.1. Landsat [^3]
+
+Los Landsat son una serie de satélites construidos y puestos en órbita por Estados Unidos de América para la observación en alta resolución de la superficie terrestre. Los satélites Landsat orbitan alrededor de la Tierra en órbita circular heliosincrónica, a 705 km de altura, con una inclinación de 98.2º respecto del ecuador y un período de 99 minutos. La órbita de los satélites está diseñada de tal modo que cada vez que estos cruzan el ecuador de norte a sur lo hacen entre las 10:00 y las 10:15 de la mañana hora local. Los Landsat están equipados con instrumentos específicos para la teledetección multiespectral. El primer satélite Landsat (en principio denominado ERTS-1) fue lanzado el 23 de julio de 1972. Landsat 9 fue puesto en órbita el 27 de septiembre de 2021. La resolución de las imágenes capturadas es de 15 a 100 metros dependiendo de la banda espectral y el modo de captura. https://landsat.gsfc.nasa.gov/
+
+<div align="center"><img src="graph/Graph_LandsatTimeLine.png" alt="R.SIGE" width="70%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
+
+<div align="center"><br>Bandas y longitudes de onda
+
+| Landsat 7<br>Banda                   | Landsat 7<br>Ancho (µm) | Landsat 7<br>Resolución (m) | Landsat 8/9<br>Banda                   | Landsat 8/9<br>Ancho (µm) | Landsat 8/9<br>Resolución (m) |
+|--------------------------------------|:-----------------------:|:---------------------------:|----------------------------------------|:-------------------------:|:-----------------------------:|
+|                                      |                         |                             | Band 1 Coastal Aerosol                 |        0.43 – 0.45        |              30               |
+| Band 1 Blue                          |       0.45 – 0.52       |             30              | Band 2 Blue                            |        0.45 – 0.51        |              30               |
+| Band 2 Green                         |       0.52 – 0.60       |             30              | Band 3 Green                           |        0.53 – 0.59        |              30               |
+| Band 3 Red                           |       0.63 – 0.69       |             30              | Band 4 Red                             |        0.64 – 0.67        |              30               |
+| Band 4 NIR<br>Near Infrared          |       0.77 – 0.90       |             30              | Band 5 NIR<br>Near Infrared            |        0.85 – 0.88        |              30               |
+| Band 5 SWIR1<br>Shortwave Infrared 1 |       1.55 – 1.75       |             30              | Band 6 SWIR1<br>Shortwave Infrared 1   |        1.57 – 1.65        |              30               |
+| Band 7 SWIR2<br>Shortwave Infrared 2 |       2.09 – 2.35       |             30              | Band 7 SWIR2<br>Shortwave Infrared 2   |        2.11 – 2.29        |              30               |
+| Band 8 Panchromatic                  |       0.52 – 0.90       |             15              | Band 8 Panchromatic                    |        0.50 – 0.68        |              15               |
+|                                      |                         |                             | Band 9 Cirrus [^7]                     |        1.36 – 1.38        |              30               |
+| Band 6 TIR<br>Thermal Infrared       |      10.40 – 12.50      |            30/60            | Band 10 TIRS1 [^8]<br>Thermal Infrared |       10.6 – 11.19        |              100              |
+|                                      |                         |                             | Band 11 TIRS2<br>Thermal Infrared      |       11.5 – 12.51        |              100              |
+
+</div>
+
+
+#### 0.2.2. SPOT [^4]
+
+Los satélites Spot (Satellite Pour l’Observation de la Terre: Satélite Para la Observación de la Tierra) son una serie de satélites de teledetección civiles de observación del suelo terrestre que han sido desarrollado por el CNES (Centro Nacional de Estudios Espaciales francés) en colaboración con Bélgica y Suecia. La primera versión de SPOT fue lanzada el 22 de febrero de 1986 (Ariane 1). SPOT 7 fue lanzado el 30 de junio de 2014. La resolución de las imágenes capturadas es de 2.5 a 20 metros dependiendo de la banda espectral y el modo de captura. https://earth.esa.int/eogateway/missions/spot
+
+
+#### 0.2.3. Sentinel [^5]
+
+Sentinel es un proyecto multi-satélite que está siendo desarrollado por la ESA (European Space Agency) en el marco del Programa Copérnico. Las misiones Sentinel incluyen satélites de radar y satélites de imágenes super-espectrales para la vigilancia terrestre, oceánica y atmosférica de la Tierra. La primera versión fue lanzada el 3 de abril de 2014, la versión 6 que incluye radar altimétrico fue lanzada el 21 de noviembre de 2020. La resolución de las imágenes capturadas es de 5 a 300 metros dependiendo de la banda espectral, el modo de captura, y la polarización. https://www.esa.int/Applications/Observing_the_Earth/Copernicus/The_Sentinel_missions
+
+
+#### 0.2.4. Ikonos [^6]
+
+Los satélites comerciales Ikonos para la observación de la tierra, capturaban colecciones de imágenes multiespectrales y pancromáticas. La primera versión fue lanzada el 24 de septiembre de 1999 y la versión 2 fue lanzada en enero del 2000 y suspendida el 31 de marzo de 2016.  La resolución de las imágenes capturadas es de 1 a 4 metros dependiendo de la banda espectral y el modo de captura. https://www.esa.int/SPECIALS/Eduspace_ES/SEM776E3GXF_0.html
+
+
+
+
+## 1. Imágen satelital regional
+
+ImaSatReg
+
+
+## 2. Modelo digital de superficie - DSM
+
+DSM
+
+
+## 3. Modelo digital de pendientes - MDPendiente
+
+
+
+:pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
+
+
+## Referencias
+
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/composite-bands.htm
+* https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm
+
+
+
+## Control de versiones
+
+| Versión    | Descripción                                 | Autor                                      | Horas |
+|------------|:--------------------------------------------|--------------------------------------------|:-----:|
+| 2026.03.05 | Versión inicial con alcance de la actividad | [rcfdtools](https://github.com/rcfdtools)  |   6   |
+
+
+
+##
+
+_R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._
+
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
+
+
+| [◄ Anterior](../LandSoil/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../XXXX/Readme.md) |
+|-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
+
+[^1]: https://learn.arcgis.com/es/arcgis-imagery-book/chapter2/
+[^2]: http://mappinggis.com/2015/05/como-descargar-imagenes-landsat/
+[^3]: https://es.wikipedia.org/wiki/Landsat
+[^4]: https://es.wikipedia.org/wiki/SPOT
+[^5]: https://es.wikipedia.org/wiki/Sentinel_(sat%C3%A9lite)
+[^6]: https://en.wikipedia.org/wiki/Ikonos 
+
