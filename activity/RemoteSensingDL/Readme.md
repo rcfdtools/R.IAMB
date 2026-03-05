@@ -88,7 +88,7 @@ Sentinel es un proyecto multi-satélite que está siendo desarrollado por la ESA
 Los satélites comerciales Ikonos para la observación de la tierra, capturaban colecciones de imágenes multiespectrales y pancromáticas. La primera versión fue lanzada el 24 de septiembre de 1999 y la versión 2 fue lanzada en enero del 2000 y suspendida el 31 de marzo de 2016.  La resolución de las imágenes capturadas es de 1 a 4 metros dependiendo de la banda espectral y el modo de captura. https://www.esa.int/SPECIALS/Eduspace_ES/SEM776E3GXF_0.html
 
 
-## 1. Imágen satelital regional - Landsat
+## 1. Imagen satelital regional - Landsat
 
 Corresponde al mosaico de imágenes de satélite con resolución espacial mayor o igual a 10 metros, ortocorregido y/o georeferenciado, modo pancromático, multiespectral o hiperespectral. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o imagen se debe identificar con el prefijo _ImaSatReg_ seguido de la fecha de toma (mes,día,año) a la que corresponde, p. ej., _ImaSatReg01012015.tif_.
 
@@ -157,16 +157,47 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 
+## 2. Imagen satelital regional - Sentinel
+
+1. En QGIS, instale el complemento o Plugin _Sentinel 2 Image Downloader_. 
+
+<div align="center"><img src="graph/QGIS_PluginSentinel2ImageDownloader.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. En la pestaña Download Footprints y a partir del _Layer Extent_ de la capa _AreaProyecto_ y para la fecha 26/02/2026, genere los límites o Foot Print de las imágenes Sentinel disponibles en Copernicus y agreguelas al mapa. 
+
+<div align="center"><img src="graph/QGIS_PluginSentinel2ImageDownloader1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_PluginSentinel2ImageDownloader2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+3. Edite la capa _footprints_ eliminando los polígonos o límites de imágenes no requeridas.
+
+<div align="center"><img src="graph/QGIS_PluginSentinel2ImageDownloader3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+4. En la pestaña _Download Images_, ingrese sus credenciales de https://dataspace.copernicus.eu/, seleccione el archivo editado _Footprints_. En _OPTIONS_, seleccione TCI (10M) - RGB image e inicie la descarga.
+
+<div align="center"><img src="graph/QGIS_PluginSentinel2ImageDownloader4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+5. Copie el contenido descargado en la carpeta _/data/Sentinel2/20260226_ y agregue al mapa. Para crear una imagen extendida, también descargue y agregue _T18NXL_20260226T152651_TCI_10m_.
+
+<div align="center"><img src="graph/QGIS_PluginSentinel2ImageDownloader5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+6. Con la herramienta _Raster Miscellaneous / Merge_, combine las 4 imágenes multibanda en una única imagen multibanda. Guarde primero como una capa temporal y luego exporte en formato TIFF como _/grid/Sentinel2_20260226.tif_ reproyectando al CRS 9377.
+
+<div align="center"><img src="graph/QGIS_RasterMerge2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+7. Utilizando la herramienta _Raster Extraction / Clip Raster by Extent_, recorte la imagen y guarde como _/grid/Sentinel2_20260226_Clip.tif_.
+
+<div align="center"><img src="graph/QGIS_ClipRasterByExtent2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_ClipRasterByExtent3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 
-
-
-## 2. Modelo digital de superficie - DSM
+## 3. Modelo digital de superficie - DSM
 
 DSM
 
 
-## 3. Modelo digital de pendientes - MDPendiente
+## 4. Modelo digital de pendientes - MDPendiente
 
 
 
