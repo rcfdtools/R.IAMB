@@ -88,7 +88,7 @@ Sentinel es un proyecto multi-satélite que está siendo desarrollado por la ESA
 Los satélites comerciales Ikonos para la observación de la tierra, capturaban colecciones de imágenes multiespectrales y pancromáticas. La primera versión fue lanzada el 24 de septiembre de 1999 y la versión 2 fue lanzada en enero del 2000 y suspendida el 31 de marzo de 2016.  La resolución de las imágenes capturadas es de 1 a 4 metros dependiendo de la banda espectral y el modo de captura. https://www.esa.int/SPECIALS/Eduspace_ES/SEM776E3GXF_0.html
 
 
-## 1. Imágen satelital regional
+## 1. Imágen satelital regional - Landsat
 
 Corresponde al mosaico de imágenes de satélite con resolución espacial mayor o igual a 10 metros, ortocorregido y/o georeferenciado, modo pancromático, multiespectral o hiperespectral. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o imagen se debe identificar con el prefijo _ImaSatReg_ seguido de la fecha de toma (mes,día,año) a la que corresponde, p. ej., _ImaSatReg01012015.tif_.
 
