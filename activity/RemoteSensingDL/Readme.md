@@ -128,12 +128,22 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 
 <div align="center"><img src="graph/Chrome_EarthExplorer5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-10. En la carpeta 
+10. En la carpeta _/data/Landsat9_ descomprima en dos subcarpetas los archivos contenidos en cada comprimido descargado.
 
+<div align="center"><img src="graph/Windows_Landsat9Folder.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+11. En QGIS, y con la herramienta _Raster Miscellaneous / Build Virtual Raster_, cree una imagen compuesta en falso color a partir de las bandas espectrales 4,3,2. Este procedimiento se realiza independiente para las dos imágenes descargadas. Guarde como _/grid/LC09_L2SP_008056_20260227_B4B3B2.vrt_ y /grid/LC09_L2SP_008057_20260227_B4B3B2.vrt. Al finalizar, establezca desde las propiedades de visualización el brillo de las imágenes en 50%.
 
+> En la pestaña _Parameters_, marque la casilla _Place each input file into a separate band_.
+> En la opción _Input Layers_ de la herramienta _Buil Virtual Raster_, deberá ordenar las bandas en la secuencia B4, B3, B2.
 
+<div align="center"><img src="graph/QGIS_BuildVirtualRaster1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_BuildVirtualRaster2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+12. Con la herramienta _Raster Miscellaneous / Merge_, combine las dos imágenes multibanda en una única imagen multibanda. Guarde primero como una capa temporal y luego exporte en formato TIFF como _/grid/LC09_L2SP_20260227_B4B3B2.tif_ reproyectando al CRS 9377.
+
+<div align="center"><img src="graph/QGIS_RasterMerge.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_RasterMerge1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
