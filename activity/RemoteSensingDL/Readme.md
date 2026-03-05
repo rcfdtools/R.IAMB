@@ -228,7 +228,7 @@ Corresponde al Modelo Digital de Superficie (incluye elementos de la cobertura t
 
 Corresponde a la superficie o Modelo Digital de Pendientes, en escala de grises, donde cada celda o pixel contiene el valor de pendiente en porcentaje. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo se debe identificar como _Pendiente_.
 
-1. Utilizando la herramienta _Raster Analysis / Slope_, cree el mapa de pendientes en tasa porcentual. Ajuste la simbología truncando el valor máximo a 100%.
+1. Con la herramienta _Raster Analysis / Slope_, cree el mapa de pendientes en tasa porcentual. Ajuste la simbología truncando el valor máximo a 100%. Guarde como _/dem/COP30_Slope_9377.tif_.
 
 <div align="center"><img src="graph/QGIS_Slope.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -249,11 +249,22 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 
 <div align="center"><img src="graph/QGIS_Contour.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. Con la herramienta _Interpolation / TIN Interpolation_, cree una superficie interpolada tipo _Structure Lines_ a partir de curvas de nivel.
+2. Con la herramienta _Interpolation / TIN Interpolation_, cree una superficie interpolada tipo _Structure Lines_ a partir de curvas de nivel con resolución de 50 metros. Guarde como _/dem/COP30Contour2D50mTINInterpolation50m.tif_.
 
 <div align="center"><img src="graph/QGIS_TINInterpolation.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+3. Con la herramienta _Raster Analysis / Slope_, cree el mapa de pendientes en tasa porcentual a partir del mapa interpolado. Ajuste la simbología truncando el valor máximo a 100%. Guarde como _/dem/COP30Contour2D50mTINInterpolation50mSlope.tif_.
 
+<div align="center"><img src="graph/QGIS_Slope3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+4. Con la herramienta _Raster Analysis / Reclassify by Table_, reclasifique los pixeles o celdas a los códigos de dominio ANLA.
+
+
+
+
+
+<div align="center"><img src="graph/QGIS_Slope.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 
