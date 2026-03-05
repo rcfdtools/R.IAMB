@@ -124,7 +124,7 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 
 <div align="center"><img src="graph/Chrome_EarthExplorer4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-9. Descargue los paquetes completos de las dos imágenes encontradas. En [Releases](https://github.com/rcfdtools/R.IAMB/release) del curso IAMB encontrará estas imágenes.
+9. Descargue los paquetes completos de las dos imágenes encontradas. En [Releases](https://github.com/rcfdtools/R.IAMB/releases) del curso IAMB encontrará estas imágenes.
 
 <div align="center"><img src="graph/Chrome_EarthExplorer5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
