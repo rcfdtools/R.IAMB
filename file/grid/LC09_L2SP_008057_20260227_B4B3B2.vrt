@@ -2,6 +2,14 @@
   <SRS dataAxisToSRSAxisMapping="1,2">PROJCS["WGS 84 / UTM zone 18N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-75],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","32618"]]</SRS>
   <GeoTransform>  4.4308500000000000e+05,  3.0000000000000000e+01,  0.0000000000000000e+00,  5.9521500000000000e+05,  0.0000000000000000e+00, -3.0000000000000000e+01</GeoTransform>
   <VRTRasterBand dataType="UInt16" band="1">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">70.65</MDI>
+      <MDI key="STATISTICS_MINIMUM">7607</MDI>
+      <MDI key="STATISTICS_MAXIMUM">40069</MDI>
+      <MDI key="STATISTICS_MEAN">10583.382483043</MDI>
+      <MDI key="STATISTICS_STDDEV">4067.905390405</MDI>
+    </Metadata>
     <NoDataValue>0</NoDataValue>
     <ComplexSource resampling="nearest">
       <SourceFilename relativeToVRT="0">D:/R.IAMB/file/data/Landsat9/LC09_L2SP_008057_20260227_20260228_02_T1/LC09_L2SP_008057_20260227_20260228_02_T1_SR_B4.TIF</SourceFilename>
@@ -13,6 +21,14 @@
     </ComplexSource>
   </VRTRasterBand>
   <VRTRasterBand dataType="UInt16" band="2">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">70.65</MDI>
+      <MDI key="STATISTICS_MINIMUM">7674</MDI>
+      <MDI key="STATISTICS_MAXIMUM">39376</MDI>
+      <MDI key="STATISTICS_MEAN">10841.85078148</MDI>
+      <MDI key="STATISTICS_STDDEV">3939.6485483737</MDI>
+    </Metadata>
     <NoDataValue>0</NoDataValue>
     <ComplexSource resampling="nearest">
       <SourceFilename relativeToVRT="0">D:/R.IAMB/file/data/Landsat9/LC09_L2SP_008057_20260227_20260228_02_T1/LC09_L2SP_008057_20260227_20260228_02_T1_SR_B3.TIF</SourceFilename>
@@ -24,6 +40,14 @@
     </ComplexSource>
   </VRTRasterBand>
   <VRTRasterBand dataType="UInt16" band="3">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">70.65</MDI>
+      <MDI key="STATISTICS_MINIMUM">7099</MDI>
+      <MDI key="STATISTICS_MAXIMUM">40329</MDI>
+      <MDI key="STATISTICS_MEAN">9829.2509584193</MDI>
+      <MDI key="STATISTICS_STDDEV">4039.8497456215</MDI>
+    </Metadata>
     <NoDataValue>0</NoDataValue>
     <ComplexSource resampling="nearest">
       <SourceFilename relativeToVRT="0">D:/R.IAMB/file/data/Landsat9/LC09_L2SP_008057_20260227_20260228_02_T1/LC09_L2SP_008057_20260227_20260228_02_T1_SR_B2.TIF</SourceFilename>
