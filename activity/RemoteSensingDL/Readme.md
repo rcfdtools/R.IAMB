@@ -152,8 +152,9 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 14. Utilizando la herramienta _Raster Extraction / Clip Raster by Extent_, recorte la imagen y guarde como _/grid/LC09_L2SP_20260227_B4B3B2_Clip.tif_.
 
 <div align="center"><img src="graph/QGIS_ClipRasterByExtent.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_ClipRasterByExtent1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-
+Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 
 
