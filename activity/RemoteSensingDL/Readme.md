@@ -128,7 +128,7 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 
 <div align="center"><img src="graph/Chrome_EarthExplorer5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-
+10. En la carpeta 
 
 
 
