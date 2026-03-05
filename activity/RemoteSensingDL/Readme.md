@@ -1,6 +1,6 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
-# 2.4. Imagen satelital y DEM
+# 2.4. Imagen satelital, DEM y Pendiente
 Keywords: `sentinel` `landsat` `remote-sensing` `clip-raster`
 
 Descargue, cree un mosaico y recorte imágenes satelitales hasta el límite de la zona de estudio.
@@ -156,6 +156,8 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 
 Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
+:pencil2:**Tarea:** Descargue, procese y analice imágenes de años anteriores que tengan cobertura de nubosidad inferior al 20%.
+
 
 ## 2. Imagen satelital regional - Sentinel
 
@@ -191,6 +193,8 @@ Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
+:pencil2:**Tarea:** Descargue, procese y analice imágenes de años anteriores que tengan cobertura de nubosidad inferior al 20%.
+
 
 ## 3. Modelo digital de superficie - DSM
 
@@ -224,7 +228,32 @@ Corresponde al Modelo Digital de Superficie (incluye elementos de la cobertura t
 
 Corresponde a la superficie o Modelo Digital de Pendientes, en escala de grises, donde cada celda o pixel contiene el valor de pendiente en porcentaje. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo se debe identificar como _Pendiente_.
 
-1. 
+1. Utilizando la herramienta _Raster Analysis / Slope_, cree el mapa de pendientes en tasa porcentual. Ajuste la simbología truncando el valor máximo a 100%.
+
+<div align="center"><img src="graph/QGIS_Slope.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. Ajuste la simbología para representar las pendientes de acuerdo a los valores establecidos en el dominio _Dom_PenSuelo_ del ANLA.
+
+<div align="center"><img src="graph/ANLA_Dom_PenSuelo.jpg" alt="rcfdtools" width="60%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Slope1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Slope2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+## 5. Mapa vectorial de pendientes
+
+En el modelo ANLA, representa la inclinación del terreno, según clasificación metodología IGAC. Contiene el dominio asociado _Dom_PenSuelo_.
+
+<div align="center"><img src="graph/ANLA_Pendiente.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+1. En QGIS y con la herramienta _Raster Extraction / Contour_, cree curvas de nivel 2D cada 50 metros. Guarde como _/shp/COP30Contour2D50m.shp_
+
+<div align="center"><img src="graph/QGIS_Contour.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. Con la herramienta _Interpolation / TIN Interpolation_, cree una superficie interpolada tipo _Structure Lines_ a partir de curvas de nivel.
+
+<div align="center"><img src="graph/QGIS_TINInterpolation.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
 
 
 
