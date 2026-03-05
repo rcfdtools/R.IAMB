@@ -5,11 +5,6 @@ Módulo 2 - Características de los estudios ambientales - Línea base
 Objetivo: Detallar los elementos que se deben contemplar y que deben formar parte de un Estudio Ambiental.
 (A partir de cartografía nacional 1:500k, 1:100k, 1:25k)
 
-2.4. Imágen satelital y DEM
-(ImaSatReg, DTM, DSM, MDPendiente)
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/RemoteSensingDL/Readme.md
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/DEMSatellite/Readme.md
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/DEMSlope/Readme.md
 
 2.5. Medio socioeconómico - División geopolítica 
 (Departamento, Municipio, UnidadTerritorial, Predios)
