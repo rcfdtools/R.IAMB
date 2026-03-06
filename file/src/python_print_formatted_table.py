@@ -7,9 +7,11 @@ import pandas as pd
 import tabulate
 
 # Execution
-shapefile_path = 'D:/R.IAMB/file/shp/SuelosVFAreaProyectoDissolve9377.shp' # ●
+#shapefile_path = 'D:/R.IAMB/file/shp/SuelosVFAreaProyectoDissolve9377.shp' # ●
 #columns = ['UCS_F', 'UCS', 'PAISAJE', 'CLIMA', 'TIPO_RELIE', 'LITOLOGÍA_', 'CARACTERÍS', 'CARACTER_1', 'COMPONENTE', 'PERFIL', 'PORCENTAJE', 'Aha', 'APD'] # ● Complete for SuelosVFAreaProyectoDissolve9377.shp
-columns = ['UCS_F', 'UCS', 'PAISAJE', 'CLIMA', 'COMPONENTE', 'PORCENTAJE', 'Aha', 'APD'] # ● Complete for SuelosVFAreaProyectoDissolve9377.shp
+#columns = ['UCS_F', 'UCS', 'PAISAJE', 'CLIMA', 'COMPONENTE', 'PORCENTAJE', 'Aha', 'APD'] # ● For SuelosVFAreaProyectoDissolve9377.shp
+shapefile_path = 'D:/R.IAMB/file/shp/MunicipiosAreaProyectoClipDissolve9377.shp' # ●
+columns = ['MpCodigo', 'MpNombre', 'ATotalha', 'Aha', 'APD', 'APP'] # ● For MunicipiosAreaProyecto.shp
 gdf = gpd.read_file(shapefile_path, columns=columns)
 df = pd.DataFrame(gdf).drop(columns=['geometry']) # Convert to Pandas dataframe
 df.index.name = 'ID'
