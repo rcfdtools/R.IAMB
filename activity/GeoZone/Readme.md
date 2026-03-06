@@ -1098,6 +1098,7 @@ dissolve_field = 'CODIGO_VER'
 
 4. Debido a que existen múltiples gestores catastrales y con el fin de realizar el análisis predial de la zona de estudio, utilizaremos la versión 2021-01 de los predios de Colombia integrados por [rcfdtools](https://github.com/rcfdtools) en el proyecto [GISMobile](https://github.com/rcfdtools/R.GISMobile/releases/tag/GISMobile). Descargue la base de datos y agregue a QGIS las capas _BogotaLote_, _R_TERRENO_REG_1_, _U_TERRENO_REG_1_.
 
+<div align="center"><img src="graph/Chrome_GISMobile.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_Predios.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 5. Utilizando el polígono _AreaProyecto_ y con la herramienta _Vector Overlay / Clip_, realice un clip de las capas prediales y guarde como: _/shp/BogotaLoteAreAproyecto.shp_, _/shp/TerrenoRuralAreaProyecto.shp_ y _/shp/TerrenoUrbanoAreaProyecto.shp_ 
