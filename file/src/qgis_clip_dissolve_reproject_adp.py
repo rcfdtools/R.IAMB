@@ -10,12 +10,13 @@ from qgis.core import QgsField, QgsVectorLayer
 # General parameters
 #input_layer_path = 'D:/R.IAMB/file/data/SGC/agc2023.gdb|layername=UC' # ● Atlas geológico de Colombia - Unidades cronoestratigráficas
 #input_layer_path = 'D:/R.IAMB/file/data/IGAC/SUELOS_CUNDINAMARCA_100K.gdb|layername=SUELOS_CUNDINAMARCA_VF' # ● Mapa de suelos de cundinamarca
-input_layer_path = 'D:/R.IAMB/file/shp/MunicipiosAreaProyecto.shp' # ● Municipios de Colombia
+#input_layer_path = 'D:/R.IAMB/file/shp/MunicipiosAreaProyecto.shp' # ● Municipios de Colombia
+input_layer_path = 'D:/R.IAMB/file/data/DANE/VeredasColombia20260306.shp' # ● Veredas de Colombia
 overlay_layer_path = 'D:/R.IAMB/file/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProyecto' # ●
 output_path = 'D:/R.IAMB/file/shp/' # ●
-output_file_clip_name = 'MunicipiosAreaProyectoClip' # Name without .shp extension, e.g., UCAreaProyecto, SuelosVFAreaProyecto, MunicipiosAreaProyectoClip ●
-dissolve_field = 'MpCodigo' # e.g., SimboloUC, UCS_F, MpCodigo ●
-crs_target_code = '9377'  # Define the CRS code for the calculations ●
+output_file_clip_name = 'VeredaAreaProyecto' # Name without .shp extension, e.g., UCAreaProyecto, SuelosVFAreaProyecto, MunicipiosAreaProyectoClip, VeredaAreaProyecto ●
+dissolve_field = 'CODIGO_VER' # e.g., SimboloUC, UCS_F, MpCodigo, CODIGO_VER ●
+crs_target_code = '9377' # Define the CRS code for the calculations ●
 output_file_clip_path = f'{output_path}{output_file_clip_name}.shp'
 output_file_dissolve_path = f'{output_path}{output_file_clip_name}Dissolve.shp'
 output_file_dissolve_path_reprojected = f'{output_path}{output_file_clip_name}Dissolve{crs_target_code}.shp'
