@@ -123,6 +123,8 @@ Expresión: `("Aha" / "ATotalha") * 100`
 
 <div align="center"><img src="graph/QGIS_FieldCalculator1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+<div align="center">
+
 |   MpCodigo | MpNombre                   |   ATotalha |          Aha |          APD |           APP |
 |-----------:|:---------------------------|-----------:|-------------:|-------------:|--------------:|
 |      11001 | Bogotá, D.C.               |  161815    | 84497.1      | 14.2702      |  52.2183      |
@@ -194,6 +196,9 @@ Expresión: `("Aha" / "ATotalha") * 100`
 |      25898 | Zipacón                    |    5414.08 |  5414.08     |  0.914354    | 100           |
 |      25899 | Zipaquirá                  |   19458.1  | 18167.8      |  3.06826     |  93.3687      |
 |      73275 | Flandes                    |    9674.43 |     1.94023  |  0.000327675 |   0.0200553   |
+
+</div>
+
 
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa correspondiente del modelo ANLA.
 
