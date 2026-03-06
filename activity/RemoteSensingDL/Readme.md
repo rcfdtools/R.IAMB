@@ -293,8 +293,8 @@ _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
 
-| [◄ Anterior](../LandSoil/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../XXXX/Readme.md) |
-|-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
+| [◄ Anterior](../LandSoil/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../GeoZone/Readme.md) |
+|-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|-------------------------------------|
 
 [^1]: https://learn.arcgis.com/es/arcgis-imagery-book/chapter2/
 [^2]: http://mappinggis.com/2015/05/como-descargar-imagenes-landsat/
