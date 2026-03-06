@@ -5,12 +5,13 @@ Keywords: `state` `county` `remote-sensing` `clip-raster`
 
 Descargue, cree un mosaico y recorte imágenes satelitales hasta el límite de la zona de estudio.
 
-<div align="center"><img src="graph/RemoteSensingDL.jpg" alt="rcfdtools" width="70%" border="0" /></div>
+<div align="center"><img src="graph/GeoZone.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
 
 ## Objetivos
 
-* 
+* Analizar la cobertura departamental, municipal y veredal del área de estudio.
+* Identificar e integrar las unidades prediales contenidas en el área del proyecto.
 
 
 ## Requerimientos
@@ -99,7 +100,7 @@ Expresión: `area(@geometry)/10000`
 
 <div align="center"><img src="graph/QGIS_FieldCalculator.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps.
+6. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecados.
 
 > Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
 
@@ -229,7 +230,7 @@ Dominios: Dom_UnidTerr, Dom_Municipio, Dom_Departamento, Dom_PoblaDesplaz, Dom_T
 
 <div align="center"><img src="graph/QGIS_Vereda.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps.
+3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 787 veredas contenidas o intersecadas.
 
 > Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
 
@@ -1065,7 +1066,7 @@ Dominios: Dom_Municipio, Dom_Departamento, Dom_Tenencia.
 
 <div align="center"><img src="graph/QGIS_GestoresCatastrales.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps.
+3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 8 gestores contenidos o intersecados.
 
 > Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
 
@@ -1095,25 +1096,35 @@ dissolve_field = 'CODIGO_VER'
 
 </div>
 
+4. Debido a que existen múltiples gestores catastrales y con el fin de realizar el análisis predial de la zona de estudio, utilizaremos la versión 2021-01 de los predios de Colombia integrados por [rcfdtools](https://github.com/rcfdtools) en el proyecto [GISMobile](https://github.com/rcfdtools/R.GISMobile/releases/tag/GISMobile). Descargue la base de datos y agregue a QGIS las capas _BogotaLote_, _R_TERRENO_REG_1_, _U_TERRENO_REG_1_.
 
+<div align="center"><img src="graph/QGIS_Predios.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+5. Utilizando el polígono _AreaProyecto_ y con la herramienta _Vector Overlay / Clip_, realice un clip de las capas prediales y guarde como: _/shp/BogotaLoteAreAproyecto.shp_, _/shp/TerrenoRuralAreaProyecto.shp_ y _/shp/TerrenoUrbanoAreaProyecto.shp_ 
+
+<div align="center"><img src="graph/QGIS_Clip6.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Clip7.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Clip8.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta _Vector General / Merge vector layers_, combine las 3 capas recortadas en una única capa predial, nombre como _/shp/PredioAreaProyecto.shp_. Obtendrá un total de 1,372,472 predios.
+
+<div align="center"><img src="graph/QGIS_MergeVectorLayers.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa correspondiente del modelo ANLA.
 
 
-
-
 ## Referencias
 
-*
-
+* https://www.colombiaenmapas.gov.co/
+* https://www.igac.gov.co/
+* https://www.gov.co/home
 
 
 ## Control de versiones
 
-| Versión     | Descripción                                 | Autor                                      | Horas |
-|-------------|:--------------------------------------------|--------------------------------------------|:-----:|
-| 2026.03.06 | Versión inicial con alcance de la actividad | [rcfdtools](https://github.com/rcfdtools)  |   9   |
+| Versión      | Descripción                                  | Autor                                      | Horas |
+|--------------|:---------------------------------------------|--------------------------------------------|:-----:|
+| 2026.03.06   | Versión inicial con alcance de la actividad  | [rcfdtools](https://github.com/rcfdtools)  |   9   |
 
 
 
