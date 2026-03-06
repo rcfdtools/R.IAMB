@@ -1077,8 +1077,8 @@ overlay_layer_path = 'C:/IAMB/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProye
 output_file_clip_name = 'VeredaAreaProyecto'
 dissolve_field = 'CODIGO_VER'
 ```
-
 <div align="center"><img src="graph/QGIS_Clip4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Clip5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 <div align="center">
 
