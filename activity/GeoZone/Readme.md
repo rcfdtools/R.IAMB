@@ -199,13 +199,7 @@ Expresión: `("Aha" / "ATotalha") * 100`
 
 </div>
 
-
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa correspondiente del modelo ANLA.
-
-
-
-
-
 
 ## 3. Veredas
 
@@ -218,6 +212,54 @@ La capa _UnidadTerritorial_ del modelo de datos ANLA, requiere de los siguientes
 Dominios: Dom_UnidTerr, Dom_Municipio, Dom_Departamento, Dom_PoblaDesplaz, Dom_TransPublico, Dom_MediosComu, Dom_MediosComu, Dom_MediosComu, Dom_MediosComu, Dom_Activ_Econo, Dom_Activ_Econo, Dom_Activ_Econo, Dom_DesEconom, Dom_DesEconom, Dom_DesEconom, Dom_DesEconom, Dom_Boolean.
 
 > Consulte todas las propiedades requeridas en el diccionario de datos del ANLA.
+
+1. Ingrese al portal de https://www.colombiaenmapas.gov.co/ y descargue la capa Veredas de Colombia.
+
+* Recurso: https://www.colombiaenmapas.gov.co/?u=0&t=29&servicio=690
+* Entidad: Departamento Administrativo Nacional de Estadística - DANE
+* Resumen: Veredas de Colombia delimitadas por el DANE dentro del Marco Geoestadístico Nacional año 2020 y actualizadas con fines estadísticos a los límites de departamentos y municipios del IGAC (Mayo 2016). Las veredas son una división territorial de carácter administrativo en el área rural de los municipios, establecidas mediante acuerdo municipal. Se conforman principalmente por la agrupación de predios delimitados por accidentes geográficos y vías principales.
+* Fecha de elaboración: 15-02-2025
+* Fecha de insumos: 30-11-2024
+
+<div align="center"><img src="graph/ColombiaMapas_Veredas.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. En QGIS cargue y rotule la capa [/data/DANE/VeredasColombia20260306.shp](../../file/data/DANE/VeredasColombia20260306.zip). Podrá observar que la zona de estudio interseca o contiene múltiples veredas.
+
+<div align="center"><img src="graph/QGIS_Vereda.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
+
+
+3. Utilizando la herramienta _Vector Selection / Select by location_, seleccione todos los municipios que intersecan el área de estudio. Podrá observar que se han seleccionado 69 municipios.
+
+<div align="center"><img src="graph/QGIS_SelectByLocation.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+4. Exporte y re-proyecte los municipios seleccionados, guarde como /shp/MunicipiosAreaProyecto.shp.
+
+<div align="center"><img src="graph/QGIS_SaveVectorLayerAs.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_SaveVectorLayerAs1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+5. Calcule el área total en hectáreas de cada municipio. Nombre el campo como `ATotalha`.
+
+Expresión: `area(@geometry)/10000`
+
+<div align="center"><img src="graph/QGIS_FieldCalculator.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+6. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, reproyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps. En la tabla de atributos de la capa disuelta y reproyectada, elimine los atributos `AREA`, `SHAPE_Leng` y `SHAPE_Area`.
+
+> Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
+
+Parámetros generales
+```
+input_layer_path = 'C:/IAMB/shp/MunicipiosAreaProyecto.shp'
+overlay_layer_path = 'C:/IAMB/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProyecto'
+output_file_clip_name = 'MunicipiosAreaProyectoClip'
+dissolve_field = 'MpCodigo'
+```
+
+
+
+
 
 
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa correspondiente del modelo ANLA.
