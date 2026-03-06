@@ -1139,4 +1139,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 | [◄ Anterior](../RemoteSensingDL/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../XXXX/Readme.md) |
 |-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
 
-[^1]: https://learn.arcgis.com/es/arcgis-imagery-book/chapter2/
+[^1]:
