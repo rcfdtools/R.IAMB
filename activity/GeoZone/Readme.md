@@ -99,7 +99,7 @@ Expresión: `area(@geometry)/10000`
 
 <div align="center"><img src="graph/QGIS_FieldCalculator.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps. En la tabla de atributos de la capa disuelta y re-proyectada, elimine los atributos `AREA`, `SHAPE_Leng` y `SHAPE_Area`.
+6. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps.
 
 > Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
 
@@ -229,7 +229,7 @@ Dominios: Dom_UnidTerr, Dom_Municipio, Dom_Departamento, Dom_PoblaDesplaz, Dom_T
 
 <div align="center"><img src="graph/QGIS_Vereda.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps. En la tabla de atributos de la capa disuelta y re-proyectada, elimine los atributos `AREA`, `SHAPE_Leng` y `SHAPE_Area`.
+3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps.
 
 > Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
 
@@ -1051,7 +1051,52 @@ La capa _Predios_ del modelo de datos ANLA, requiere de los siguientes atributos
 
 Dominios: Dom_Municipio, Dom_Departamento, Dom_Tenencia.
 
-1.  
+1. Ingrese al portal de https://www.colombiaenmapas.gov.co/ y descargue la capa de Gestores Catastrales Colombia.
+
+* Recurso: https://www.colombiaenmapas.gov.co/?u=0&t=29&servicio=557
+* Entidad: Instituto Geográfico Agustín Codazzi - IGAC
+* Resumen: Dentro del marco de la política de Catastro Multipropósito del Gobierno Nacional, el Instituto Geográfico Agustín Codazzi (IGAC) habilitó diferentes entidades, como gestores catastrales, con el objetivo de empoderar a los entes territoriales y que puedan mejorar la gestión de sus territorios.
+* Fecha de elaboración: 15-05-2023
+* Fecha de insumos: 15-05-2023
+
+<div align="center"><img src="graph/ColombiaMapas_GestoresCatastrales.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. En QGIS cargue y rotule la capa [/data/IGAC/GestoresCatastrales20240301/municipioserviciosV.shp](../../file/data/IGAC/GestoresCastrales20240301.zip). Simbolice por el campo `gestor_cat`, podrá observar que en la zona de estudio existen varios gestores catastrales.
+
+<div align="center"><img src="graph/QGIS_GestoresCatastrales.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, re-proyecte y calcule la distribución porcentual de los municipios contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 69 municipios contenidos o intersecadps.
+
+> Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
+
+Parámetros generales
+
+```
+input_layer_path = 'C:/IAMB/shp/VeredasColombia20260306.shp'
+overlay_layer_path = 'C:/IAMB/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProyecto'
+output_file_clip_name = 'VeredaAreaProyecto'
+dissolve_field = 'CODIGO_VER'
+```
+
+<div align="center"><img src="graph/QGIS_Clip4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+<div align="center">
+
+| gestor_cat                                                        |       Aha |       APD |
+|:------------------------------------------------------------------|----------:|----------:|
+| DEPARTAMENTO DE CUNDINAMARCA                                      | 246474    | 41.6256   |
+| IGAC                                                              | 171199    | 28.9128   |
+| MUNICIPIO DE COTA                                                 |   5427.95 |  0.916696 |
+| MUNICIPIO DE GIRARDOT                                             |   7642.5  |  1.2907   |
+| MUNICIPIO DE SESQUILE                                             |  13959.5  |  2.35755  |
+| MUNICIPIO DE SOACHA                                               |  29108.4  |  4.91596  |
+| MUNICIPIO DE ZIPAQUIRA                                            |  33960.6  |  5.73542  |
+| UNIDAD ADMINISTRATIVA ESPECIAL DE CATASTRO DISTRITAL BOGOTA UAECD |  84349.3  | 14.2453   |
+
+</div>
+
+
+
 
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa correspondiente del modelo ANLA.
 
