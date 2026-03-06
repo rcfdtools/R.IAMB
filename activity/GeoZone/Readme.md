@@ -1109,6 +1109,7 @@ dissolve_field = 'CODIGO_VER'
 6. Utilizando la herramienta _Vector General / Merge vector layers_, combine las 3 capas recortadas en una única capa predial, nombre como _/shp/PredioAreaProyecto.shp_. Obtendrá un total de 1,372,472 predios.
 
 <div align="center"><img src="graph/QGIS_MergeVectorLayers.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_MergeVectorLayers1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa correspondiente del modelo ANLA.
 
