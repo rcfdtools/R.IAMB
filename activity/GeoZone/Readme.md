@@ -1041,7 +1041,6 @@ dissolve_field = 'CODIGO_VER'
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa correspondiente del modelo ANLA.
 
 
-
 ## 4. Predios
 
 Presenta los predios identificados en el área de influencia del proyecto y su caracterización, necesarios para el desarrollo de las diferentes actividades y de los objetivos del proyecto. 
@@ -1052,7 +1051,7 @@ La capa _Predios_ del modelo de datos ANLA, requiere de los siguientes atributos
 
 Dominios: Dom_Municipio, Dom_Departamento, Dom_Tenencia.
 
- 
+1.  
 
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa correspondiente del modelo ANLA.
 
