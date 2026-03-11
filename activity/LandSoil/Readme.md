@@ -3,7 +3,7 @@
 # 2.3. Medio abiótico - Suelos
 Keywords: `land-soil` `land-conflict` `land-potential-use` `moorland`
 
-Descargue, recorte, cree, analice y homologue los mapas vectoriales de suelos, vocación de uso, conflictos de uso, uso actual del suelo y zonas de páramo presentes en la zona de estudio.
+Descargue, recorte, cree, analice y homologue los mapas vectoriales de suelos, vocación de uso, conflictos de uso, uso actual del suelo, zonas de páramo y ecosistemas presentes en la zona de estudio.
 
 <div align="center"><img src="graph/LandSoil.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
@@ -282,6 +282,19 @@ Para garantizar la operación institucional, el Instituto recibe recursos públi
 Desde el portal de datos abiertos del SIAC, descargue la capa de [Páramos delimitados Junio 2020 - SIAC](https://siac-datosabiertos-mads.hub.arcgis.com/datasets/9631ed8c44274baa824e6277276de48f/about), guarde y descomprima en la carpeta [/data/IvAH](../../data/IvAH).
 
 <div align="center"><img src="graph/Chrome_SIAC_Download.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+:pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
+
+
+## 8. Ecosistemas
+
+* Servicio: https://www.colombiaenmapas.gov.co/?u=0&t=2&servicio=1454
+* Entidad: Ministerio de Ambiente y Desarrollo Sostenible
+* Resumen: El mapa Áreas de Importancia Especial y de Ecosistemas Estratégicos ilustra las 37 áreas de páramo delimitadas en el país mediante las leyes 1450 de 2011 y 1753 de 2015, que fueron ratificadas por la Ley 1930 de 2018. Asimismo, el mapa ilustra las zonas en reservas forestales de Ley 2ª de 1959 que abarcan una superficie total de 65.280.321 ha, y que fueron establecidas para el desarrollo de la economía forestal y protección de los suelos, las aguas y la vida silvestre. Por otra parte, también se ilustran los ecosistemas de humedales reconocidos por el Ministerio de Ambiente y Desarrollo Sostenible. Se representan los 12 sitios designados como Humedales de Importancia Internacional de la Convención Ramsar con más de un millón de hectáreas reconocidas, destacando el primer complejo urbano de Humedales Altoandinos de Latinoamérica ubicado en Bogotá declarado en 2018 (Ministerio de Ambiente y Desarrollo Sostenible, 2021).
+* Fecha de Elaboración: 30-12-2021
+* Fecha de Insumos: 30-12-2021
+
+<div align="center"><img src="graph/ColombiaMapas_Ecosistemas.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 :pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
 
