@@ -6,34 +6,31 @@ Objetivo: Detallar los elementos que se deben contemplar y que deben formar part
 (A partir de cartografía nacional 1:500k, 1:100k, 1:25k)
 
 
-2.5. Medio socioeconómico - División geopolítica 
-(Departamento, Municipio, UnidadTerritorial, Predios)
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/CountyLimit/Readme.md
-https://github.com/rcfdtools/R.HydroBogota/blob/main/README.md#22-municipios-y-distrito
-
-2.6. Medio biótico - Ecosistema 
-(Ecosistema)
-www.colombiaenmapas.gov.co >>> Áreas de importancia especial y ecosistemas estratégicos
-https://www.colombiaenmapas.gov.co/?u=0&t=2&servicio=1454
-
-2.7. Gestión del riesgo - Amenazas
-(AmenazaSismica, AmenazaTsunami, AmenazaVolcanica)
-
-2.8. Medio abiótico - Hidrología   
+2.6. Medio abiótico - Hidrología   
 (CuencaHidrografica, OcupacionCauce)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/BasinLimit/Readme.md
+https://datosabiertos.bogota.gov.co/dataset/corriente-de-agua-bogota-d-c
+https://datosabiertos.bogota.gov.co/dataset/cuerpo-de-agua-bogota-d-c
+Redigitalización Río Sisga
 
-2.9. Medio abiótico - Clima
+
+
+
+
+2.7. Medio abiótico - Clima
 (EstacionMeteorologica)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/CNEStation/Readme.md
 
-2.10. Medio abiótico - Atmósfera 
+2.8. Medio abiótico - Atmósfera 
 (CalidadAire)
 https://www.ambientebogota.gov.co/calidad-del-aire
 http://rmcab.ambientebogota.gov.co/home/map
 
-2.11. Tablas de registro climatológico
+2.9. Tablas de registro climatológico
 (Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB)
+
+
+
 
 
 Módulo 3 - Análisis ambiental
@@ -56,3 +53,13 @@ https://github.com/rcfdtools/R.SIGE/blob/main/activity/RemoteSensingERA5/Readme.
 
 3.6. Análisis de amenazas naturales
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Hazard/Readme.md
+
+
+
+
+Hojas cartográficas 1:25k
+**************************
+
+Carto25000_209IVC_CC_2013_gpkg.zip
+https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTM5MCIsImV4cCI6MTc3MzM0NDI0MCwianRpIjoiY2FydG9fR1BLRy01MzEyIn0.F90QK63KkU4JLiC9rIb3EUpOf0Dy4TWdaFwebkYHTGLHHvYOqPDsPu2w8uDqaSM2Jhdv9UkCOoD3Zl9_LtNCJQ
+
