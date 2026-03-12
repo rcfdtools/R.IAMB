@@ -8,11 +8,8 @@ Objetivo: Detallar los elementos que se deben contemplar y que deben formar part
 
 2.6. Medio abiótico - Hidrología   
 (CuencaHidrografica, OcupacionCauce)
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/BasinLimit/Readme.md
-https://datosabiertos.bogota.gov.co/dataset/corriente-de-agua-bogota-d-c
+
 https://datosabiertos.bogota.gov.co/dataset/cuerpo-de-agua-bogota-d-c
-Bases de datos vectoriales por hojas cartográficas
-https://www.colombiaenmapas.gov.co/?u=0&t=23&servicio=5&cescala=1:25.000
 Redigitalización Río Sisga
 1. Drenajes
 2. Buffer 500m al rededor de área proyecto
@@ -67,6 +64,9 @@ https://github.com/rcfdtools/R.SIGE/blob/main/activity/Hazard/Readme.md
 
 Hojas cartográficas 1:25k
 **************************
+Bases de datos vectoriales por hojas cartográficas
+https://www.colombiaenmapas.gov.co/?u=0&t=23&servicio=5&cescala=1:25.000
+
 D:\R.IAMB\file\data\IGAC\HojaCartografica
 
 Carto25000_209IVC_CC_2013_gpkg.zip
