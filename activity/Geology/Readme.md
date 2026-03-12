@@ -218,14 +218,6 @@ Agregue al mapa la capa de fallas geológicas _Fallas_ contenidas en la GDB `/da
 * https://www2.sgc.gov.co/sgc/mapas/Paginas/geoportal.aspx
 
 
-## Control de versiones
-
-| Versión    | Descripción        | Autor                                      | Horas |
-|------------|:-------------------|--------------------------------------------|:-----:|
-| 2026.02.19 | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |   6   |
-| 2026.02.20 | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |  5   |
-
-
 ##
 
 _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._

@@ -427,14 +427,6 @@ Para determinar el impacto que puede ocasionar la instalación de polígonos ind
 * LibroSIG, Aprendiendo a manejar los SIG en la gestión ambiental. 1ª Edición. ISBN: 978-84-691-7370-1. Madrid – España. 2008.
 
 
-## Control de versiones
-
-| Versión      | Descripción        | Autor                                      | Horas |
-|--------------|:-------------------|--------------------------------------------|:-----:|
-| 2020.03.18   | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |  12   |
-| 2026.02.12   | Versión inicial.   | [rcfdtools](https://github.com/rcfdtools)  |   6   |
-
-
 ##
 
 _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._

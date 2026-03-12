@@ -308,14 +308,6 @@ Desde el portal de datos abiertos del SIAC, descargue la capa de [Páramos delim
 * [Páramos delimitados Junio 2020 - SIAC](https://siac-datosabiertos-mads.hub.arcgis.com/datasets/9631ed8c44274baa824e6277276de48f/about)
 
 
-## Control de versiones
-
-| Versión      | Descripción                                 | Autor                                      | Horas |
-|--------------|:--------------------------------------------|--------------------------------------------|:-----:|
-| 2026.02.26   | Versión inicial con alcance de la actividad | [rcfdtools](https://github.com/rcfdtools)  |   6   |
-
-
-
 ##
 
 _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._

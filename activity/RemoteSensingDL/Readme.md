@@ -278,14 +278,6 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 * [Download Satellite Data using QGIS | SCP Plugin | Landsat | Sentinel | MODIS](https://www.youtube.com/watch?v=S8nyq_GMpfA)
 
 
-## Control de versiones
-
-| Versión    | Descripción                                 | Autor                                      | Horas |
-|------------|:--------------------------------------------|--------------------------------------------|:-----:|
-| 2026.03.05 | Versión inicial con alcance de la actividad | [rcfdtools](https://github.com/rcfdtools)  |   9   |
-
-
-
 ##
 
 _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._
