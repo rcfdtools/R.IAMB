@@ -1122,14 +1122,6 @@ dissolve_field = 'CODIGO_VER'
 * https://www.gov.co/home
 
 
-## Control de versiones
-
-| Versión      | Descripción                                  | Autor                                      | Horas |
-|--------------|:---------------------------------------------|--------------------------------------------|:-----:|
-| 2026.03.06   | Versión inicial con alcance de la actividad  | [rcfdtools](https://github.com/rcfdtools)  |   9   |
-
-
-
 ##
 
 _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._
@@ -1137,7 +1129,7 @@ _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
 
-| [◄ Anterior](../RemoteSensingDL/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../XXXX/Readme.md) |
-|-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
+| [◄ Anterior](../RemoteSensingDL/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../BasinLimit/Readme.md) |
+|-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------------|
 
 [^1]:
