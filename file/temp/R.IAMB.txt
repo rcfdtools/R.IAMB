@@ -14,7 +14,13 @@ https://datosabiertos.bogota.gov.co/dataset/cuerpo-de-agua-bogota-d-c
 Bases de datos vectoriales por hojas cartográficas
 https://www.colombiaenmapas.gov.co/?u=0&t=23&servicio=5&cescala=1:25.000
 Redigitalización Río Sisga
-
+1. Drenajes
+2. Buffer 500m al rededor de área proyecto
+3. Recorte DEM
+4. Creación proyecto HMS
+5. Walls 2, 100, 100
+6. Burn 5, 10, 1000
+7. Area to define streams: 100
 
 
 
@@ -61,8 +67,7 @@ https://github.com/rcfdtools/R.SIGE/blob/main/activity/Hazard/Readme.md
 
 Hojas cartográficas 1:25k
 **************************
-Bases de datos vectoriales por hojas cartográficas
-https://www.colombiaenmapas.gov.co/?u=0&t=23&servicio=5&cescala=1:25.000
+D:\R.IAMB\file\data\IGAC\HojaCartografica
 
 Carto25000_209IVC_CC_2013_gpkg.zip
 https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTM5MCIsImV4cCI6MTc3MzM0NDI0MCwianRpIjoiY2FydG9fR1BLRy01MzEyIn0.F90QK63KkU4JLiC9rIb3EUpOf0Dy4TWdaFwebkYHTGLHHvYOqPDsPu2w8uDqaSM2Jhdv9UkCOoD3Zl9_LtNCJQ
