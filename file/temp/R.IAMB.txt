@@ -7,10 +7,7 @@ Objetivo: Detallar los elementos que se deben contemplar y que deben formar part
 
 
 2.6. Medio abiótico - Hidrología   
-(CuencaHidrografica, OcupacionCauce)
-
-https://datosabiertos.bogota.gov.co/dataset/cuerpo-de-agua-bogota-d-c
-Redigitalización Río Sisga
+(OcupacionCauce)
 1. Drenajes
 2. Buffer 500m al rededor de área proyecto
 3. Recorte DEM
