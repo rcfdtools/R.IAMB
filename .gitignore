@@ -76,6 +76,7 @@ Lib/
 #.dem/ASTER/ASTGTMV003Mosaic.tif.*
 #HECHMS/terrain/
 #HECHMS/gis/
+file/data/IGAC/Drenaje_Sencillo.gpkg
 file/dem/ALOSPalsarFBS/*.zip
 file/dem/*.tif
 file/dem/*.tif.*
