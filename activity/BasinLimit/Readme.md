@@ -32,7 +32,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 </div>
 
 
-## 1. Red de drenaje
+## 1. Red de drenaje y capas requeridas
 
 Para la delimitación correcta de las sub-cuencas contenidas en la zona de estudio, son necesarias las líneas de los drenajes para la modificación del modelo digital de elevación.
 
@@ -52,19 +52,30 @@ Para la delimitación correcta de las sub-cuencas contenidas en la zona de estud
 
 > Tenga en cuenta que los vectores en escala 1:25.000, deben ser descargados individualmente a partir de hojas cartográficas o masívamente a través de los servicios WFS o REST. Guarde y descomprima en las carpetas [/data/IGAC](../../data/IGAC) y [/data/EAAB](../../data/EAAB).
 
-2. En QGIS, abra el mapa _/map/CaseStudy.qgz_ y guarde como _/map/BasinLimit.qgz_. Cargue las capas de drenajes sencillos y corrientes de agua de las diferentes fuentes obtenidas y evalué su precisión a partir de las imágenes satelitales disponibles en los mapas base. 
+2. En QGIS, abra el mapa _/map/CaseStudy.qgz_ y guarde como _/map/BasinLimit.qgz_. Cargue las capas de índices de mapas para identificación de hojas cartográficas, drenajes sencillos y corrientes de agua de las diferentes fuentes obtenidas y evalué su precisión a partir de las imágenes satelitales disponibles en los mapas base. 
 
 > Para facilitar el proceso de cargue y análisis, la compilación de los vectores de kos drenajes sencillos de Colombia se encuentran publicados en https://github.com/rcfdtools/R.IAMB/releases/tag/DrenajeSencilloIGAC.  
 
-<div align="center"><img src="graph/QGIS_AddLayer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_AddLayer500k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:500k</div>
+<div align="center"><img src="graph/QGIS_AddLayer100k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:100k</div>
+<div align="center"><img src="graph/QGIS_AddLayer25k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:25k</div>
+<div align="center"><img src="graph/QGIS_AddLayer25k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes y cuerpos de agua EAAB</div>
+
+> Como observa, la red de drenaje a escala 1:25k del IGAC contiene una representación detallada los vectores requeridos para la delimitación de las cuencas requeridas, sin embargo, existe ausencia de múltiples planchas vigentes. Puede descargar versiones anteriores de las hojas cartográficas en las zonas faltantes, directamente desde https://www.colombiaenmapas.gov.co/. 
 
 3. A partir de las diferentes versiones de las capas de drenajes obtenidas, identifique los ríos principales dentro de la zona de estudio y cree la capa geográfica _/shp/Drenaje_Profile_9377.shp_. Identifique los cauces por su nombre y calcule su longitud en metros.
 
 <div align="center"><img src="graph/QGIS_NewLayer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+4. Agregue al mapa el modelo digital de elevación DEM /dem/COP30_9377.tif
 
+<div align="center"><img src="graph/QGIS_DEM.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+5. Utilizando la herramienta Vector _Geometry / Buffer_, cree un polígono con aferencia alrededor del área de proyecto, guarde como _/shp/AreaProyectoBuffer500m.shp_.
 
+<div align="center"><img src="graph/QGIS_Buffer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+6. Utilizando la herramienta _GDAL / Raster Extraction / Clip Raster by Mask Layer_, recorte el DEM hasta el límite del buffer asignando `NoData = 0`, guarde como _/dem/COP30_9377_Buffer500m.tif_.   
 
 
 ## 2. Delimitación de cuencas en HEC-HMS
