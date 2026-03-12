@@ -56,10 +56,10 @@ Para la delimitación correcta de las sub-cuencas contenidas en la zona de estud
 
 > Para facilitar el proceso de cargue y análisis, la compilación de los vectores de kos drenajes sencillos de Colombia se encuentran publicados en https://github.com/rcfdtools/R.IAMB/releases/tag/DrenajeSencilloIGAC.
 
-<div align="center"><img src="graph/QGIS_AddLayer500k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:500k</div>
-<div align="center"><img src="graph/QGIS_AddLayer100k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:100k</div>
-<div align="center"><img src="graph/QGIS_AddLayer25k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:25k</div>
-<div align="center"><img src="graph/QGIS_AddLayerEAAB.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes y cuerpos de agua EAAB</div>
+<div align="center"><img src="graph/QGIS_AddLayer500k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:500k</div><br>
+<div align="center"><img src="graph/QGIS_AddLayer100k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:100k</div><br>
+<div align="center"><img src="graph/QGIS_AddLayer25k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:25k</div><br>
+<div align="center"><img src="graph/QGIS_AddLayerEAAB.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes y cuerpos de agua EAAB</div><br>
 
 > Como observa, la red de drenaje a escala 1:25k del IGAC contiene una representación detallada los vectores requeridos para la delimitación de las cuencas requeridas, sin embargo, existe ausencia de múltiples planchas vigentes. Puede descargar versiones anteriores de las hojas cartográficas en las zonas faltantes, directamente desde https://www.colombiaenmapas.gov.co/. 
 
