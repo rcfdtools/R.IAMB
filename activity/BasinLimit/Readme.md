@@ -77,6 +77,9 @@ Para la delimitación correcta de las sub-cuencas contenidas en la zona de estud
 
 6. Utilizando la herramienta _GDAL / Raster Extraction / Clip Raster by Mask Layer_, recorte el DEM hasta el límite del buffer asignando `NoData = 0`, guarde como _/dem/COP30_9377_Buffer500m.tif_.   
 
+<div align="center"><img src="graph/QGIS_ClipRasterByMaskLayer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
 
 ## 2. Delimitación de cuencas en HEC-HMS
 
