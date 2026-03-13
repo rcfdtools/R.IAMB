@@ -143,11 +143,11 @@ Luego de terminada la ejecución podrá observar que ahora el DEM contiene la lo
 
 Podrá observar que al desplazarse por el mapa se visualizan momentáneamente los mapas previamente generados, para visualizar únicamente el último mapa creado, de clic derecho sobre el mapa, seleccione la opción _Map Layers_ y deje activo solo los mapas Sink.
 
-<div align="center"><img src="graph/HECHMS_MapLayers1.jpg" alt="rcfdtools" width="40%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_MapLayers1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 8. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Preprocess Drainage` que le permitirá conocer en detalle como drena el flujo sobre el modelo de terreno.
 
-> Para mejorar la interpretación de los drenajes identificados, agregue en _Map Layers_ las capas del área de proyecto y drenajes desde la carpeta _/shp_.
+> Para mejorar la interpretación de los drenajes identificados, agregue en _Map Layers_ las capas del área de proyecto y drenajes desde la carpeta _/shp/_.
 
 <div align="center"><img src="graph/HECHMS_PreprocessDrainage1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -160,22 +160,24 @@ Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice 
 <div align="center"><img src="graph/HECHMS_IdentifyStream.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/HECHMS_IdentifyStream1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-10. Utilizando la herramienta _Break Point Creation Tool_ cree un punto de extracción o sifón de cuenca en la parte baja del Río Frío.
+10. Utilizando la herramienta _Break Point Creation Tool_ cree un punto de extracción o sifón de cuenca en la parte baja del Río Bogotá.
 
-<div align="center"><img src="graph/HECHMS_BreakPointCreationTool1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_BreakPointCreationTool.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 11. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Delineate Elements` que le permitirá extraer las cuencas y drenajes hasta el punto de estudio definido. Utilice los prefijos W, R, J.
 
+<div align="center"><img src="graph/HECHMS_DelineateElements.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/HECHMS_DelineateElements1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-12. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Export Layers` que le permitirá exportar uno a uno los elementos generados. Exporte las subcuencas y los drenajes obtenidos en la carpeta `\file\shp\' como _RioFrioCuencas_ y _RioFrioDrenajes_.
+12. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Export Layers` que le permitirá exportar uno a uno los elementos generados. Exporte las subcuencas y los drenajes obtenidos junto con sus propiedades en la carpeta `/shp/' como _RioBogotaCuencas.shp_ y _RioBogotaDrenajes.shp_.
 
+<div align="center"><img src="graph/HECHMS_ExportLayers.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/HECHMS_ExportLayers1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## 3. Visualización de cuencas y grillas
 
-1. En el proyecto de ArcGIS Pro, cargue desde la carpeta `\file\shp\` las capas `RioFrioCuencas.shp` y `RioFrioDrenajes.shp` generadas en HEC-HMS.
+1. En el mapa _BasinLimit_ de QGIS, cargue desde la carpeta `\file\shp\` las capas `RioFrioCuencas.shp` y `RioFrioDrenajes.shp` generadas en HEC-HMS.
 
 <div align="center"><img src="graph/QGIS_AddLayer2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
