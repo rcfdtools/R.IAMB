@@ -66,3 +66,28 @@ D:\R.IAMB\file\data\IGAC\HojaCartografica
 Carto25000_209IVC_CC_2013_gpkg.zip
 https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTM5MCIsImV4cCI6MTc3MzM0NDI0MCwianRpIjoiY2FydG9fR1BLRy01MzEyIn0.F90QK63KkU4JLiC9rIb3EUpOf0Dy4TWdaFwebkYHTGLHHvYOqPDsPu2w8uDqaSM2Jhdv9UkCOoD3Zl9_LtNCJQ
 
+
+
+
+
+
+
+## :large_blue_circle: Módulo 3 - Análisis ambiental
+
+**Objetivo**: Obtener habilidades computacionales en el desarrollo de análisis ambientales utilizando SIG.
+
+El análisis ambiental es un proceso técnico, sistemático y multidisciplinario que evalúa los efectos que un proyecto, actividad, política pública o plan puede tener sobre el medio ambiente. Su finalidad es prevenir, minimizar o compensar impactos negativos en el entorno natural, social y económico, asegurando que el desarrollo territorial se lleve a cabo de forma sostenible. 
+
+<div align="center">
+
+| Actividad                                                              | Descripción                                    |
+|:-----------------------------------------------------------------------|:-----------------------------------------------|
+| 3.1. Digitalización de vectores                                        |                                                |
+| 3.2. Estudio geográfico de embalses o reservorios                      |                                                |
+| 3.3. Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI y otros índices   |                                                |
+| 3.4. Generación de mapas ráster interpolados, isolíneas y zonificación |                                                |
+| 3.5. Análisis hidro-climatológico ERA5 Land Monthly                    |                                                |
+| 3.6. Análisis de amenazas naturales                                    | AmenazaSismica, AmenazaTsunami, AmenazaVolcanica                                                |
+| 3.7. Análisis de impactos ambientales                                  | Por desarrollos y redensificación urbanística. |
+
+</div>

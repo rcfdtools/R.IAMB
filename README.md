@@ -124,28 +124,6 @@ Los elementos de línea base en la elaboración de estudios ambientales son la d
 
 </div>
 
-
-## :large_blue_circle: Módulo 3 - Análisis ambiental
-
-**Objetivo**: Obtener habilidades computacionales en el desarrollo de análisis ambientales utilizando SIG.
-
-El análisis ambiental es un proceso técnico, sistemático y multidisciplinario que evalúa los efectos que un proyecto, actividad, política pública o plan puede tener sobre el medio ambiente. Su finalidad es prevenir, minimizar o compensar impactos negativos en el entorno natural, social y económico, asegurando que el desarrollo territorial se lleve a cabo de forma sostenible. 
-
-<div align="center">
-
-| Actividad                                                              | Descripción                                    |
-|:-----------------------------------------------------------------------|:-----------------------------------------------|
-| 3.1. Digitalización de vectores                                        |                                                |
-| 3.2. Estudio geográfico de embalses o reservorios                      |                                                |
-| 3.3. Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI y otros índices   |                                                |
-| 3.4. Generación de mapas ráster interpolados, isolíneas y zonificación |                                                |
-| 3.5. Análisis hidro-climatológico ERA5 Land Monthly                    |                                                |
-| 3.6. Análisis de amenazas naturales                                    | AmenazaSismica, AmenazaTsunami, AmenazaVolcanica                                                |
-| 3.7. Análisis de impactos ambientales                                  | Por desarrollos y redensificación urbanística. |
-
-</div>
-
-
 ##
 
 _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
