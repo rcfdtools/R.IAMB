@@ -102,7 +102,7 @@ Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionf
 
 <div align="center"><img src="graph/HECHMS_CoordinateSystem.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-4. En el menú _Components / Create Component / Terrain Data_, cree el terreno a partir del modelo digital de elevación - DEM Copernicus almacenado en la ruta [/dem/COP30_9377.tif](../../file/dem), seleccionando unidades verticales en metros, nombrar como _COP30.
+4. En el menú _Components / Create Component / Terrain Data_, cree el terreno a partir del modelo digital de elevación - DEM Copernicus almacenado en la ruta [/dem/COP30_9377_Buffer500m.tif](../../file/dem), seleccionando unidades verticales en metros, nombrar como _COP30.
 
 <div align="center"><img src="graph/HECHMS_TerrainData1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/HECHMS_TerrainData2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
@@ -115,19 +115,23 @@ Automáticamente, el modelo de terreno será copiado en la carpeta `/hec/HECHMS_
 
 <div align="center"><img src="graph/HECHMS_TerrainData4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. En la tabla de contenido, seleccione _HECHMS / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción _Terrain Reconditioning_. El primer paso (Step 1) permite crear paredes perimetrales de confinamiento utilizando el borde de una cuenca previamente digitalizada, utilice la capa . 
+6. En la tabla de contenido, seleccione _HECHMS / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción _Terrain Reconditioning_. El primer paso (Step 1) permite crear paredes perimetrales de confinamiento utilizando el borde de una cuenca previamente digitalizada, utilice la capa _/shp/AreaProyecto.shp_ establezca:
 
+* Smooth raise cell buffer: 3
+* Smooth raise height: 100
+* Sharp raise height: 100
+ 
 <div align="center"><img src="graph/HECHMS_TerrainReconditioningStep1.jpg" alt="rcfdtools" width="50%" border="0" /></div>
 
-El segundo paso (Step 2) permite modificar el terreno incrustando los drenajes, para ello es necesario exportar desde ArcGIS Pro la red de drenaje `\file\gdb\SIGE.gdb\SIGE\Mpio25899_Drenaje` a un archivo de formas shapefile utilizando el CRS 9377 y en la ruta `\file\shp\Mpio25899_Drenaje.shp`.
+El segundo paso (Step 2) permite modificar el terreno incrustando los drenajes, para ello, utilice la capa _/shp/Drenaje_Profile_9377.shp_ y defina:
 
-<div align="center"><img src="graph/QGIS_ExportFeatures1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-Seleccione la red de drenaje `\file\shp\Mpio25899_Drenaje.shp`, defina el número de celdas aferentes o _Smooth drop cell buffer_ (p. ej. 5), la profundidad de suavizado lateral o _Smooth drop height_ (p. ej. 10) y la profundidad de incrustación en el cauce o _Sharp drop height_ (p. ej. 1000 para garantizar que en el relleno de sumideros se mantenga la localización de las celdas correspondientes a los drenajes marcados), de clic en _Next >_. 
+* Número de celdas aferentes o _Smooth drop cell buffer_: 5
+* Profundidad de suavizado lateral o _Smooth drop height_: 10
+* Profundidad de incrustación en el cauce o _Sharp drop height_: 1000 para garantizar que en el relleno de sumideros se mantenga la localización de las celdas correspondientes a los drenajes marcados)
 
 <div align="center"><img src="graph/HECHMS_TerrainReconditioningStep2.jpg" alt="rcfdtools" width="50%" border="0" /></div>
 
-Luego de terminada la ejecución podrá observar que ahora el DEM contiene la localización de los drenajes en el terreno.
+Luego de terminada la ejecución podrá observar que ahora el DEM contiene la localización de las paredes perimetrales y de los drenajes en el terreno.
 
 <div align="center"><img src="graph/HECHMS_TerrainReconditioningStep3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
