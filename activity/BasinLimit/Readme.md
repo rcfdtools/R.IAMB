@@ -98,7 +98,7 @@ Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionf
 
 <div align="center"><img src="graph/HECHMS_CreateBasinModel.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. En la tabla de contenido localizada a la izquierda, seleccione _HECHMS / Basin Models / RioBogota_, luego en el menú _GIS – Coordinate System_ seleccione el sistema de proyección de coordenadas _9377.prj_ localizado en el directorio _D:\R.SIGE\file\HECHMS\projectionfile_. 
+3. En la tabla de contenido localizada a la izquierda, seleccione _HECHMS_v0 / Basin Models / RioBogota_, luego en el menú _GIS – Coordinate System_ seleccione el sistema de proyección de coordenadas _9377.prj_ localizado en el directorio _D:\R.SIGE\file\HECHMS\projectionfile_. 
 
 <div align="center"><img src="graph/HECHMS_CoordinateSystem.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -111,17 +111,17 @@ Automáticamente, el modelo de terreno será copiado en la carpeta `/hec/HECHMS_
 
 <div align="center"><img src="graph/HECHMS_TerrainData3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-5. En la tabla de contenido, seleccione _HECHMS / Basin Models / RioBogota_ y en la parte inferior asocie el terreno creado al modelo de cuencas.
+5. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en la parte inferior asocie el terreno creado al modelo de cuencas.
 
 <div align="center"><img src="graph/HECHMS_TerrainData4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. En la tabla de contenido, seleccione _HECHMS / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción _Terrain Reconditioning_. El primer paso (Step 1) permite crear paredes perimetrales de confinamiento utilizando el borde de una cuenca previamente digitalizada, utilice la capa _/shp/AreaProyecto.shp_ establezca:
+6. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción _Terrain Reconditioning_. El primer paso (Step 1) permite crear paredes perimetrales de confinamiento utilizando el borde de una cuenca previamente digitalizada, utilice la capa _/shp/AreaProyecto.shp_ establezca:
 
 * Smooth raise cell buffer: 3
 * Smooth raise height: 100
 * Sharp raise height: 100
  
-<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep1.jpg" alt="rcfdtools" width="50%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 El segundo paso (Step 2) permite modificar el terreno incrustando los drenajes, para ello, utilice la capa _/shp/Drenaje_Profile_9377.shp_ y defina:
 
@@ -129,13 +129,13 @@ El segundo paso (Step 2) permite modificar el terreno incrustando los drenajes, 
 * Profundidad de suavizado lateral o _Smooth drop height_: 10
 * Profundidad de incrustación en el cauce o _Sharp drop height_: 1000 para garantizar que en el relleno de sumideros se mantenga la localización de las celdas correspondientes a los drenajes marcados)
 
-<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep2.jpg" alt="rcfdtools" width="50%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_TerrainReconditioningStep2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Luego de terminada la ejecución podrá observar que ahora el DEM contiene la localización de las paredes perimetrales y de los drenajes en el terreno.
 
 <div align="center"><img src="graph/HECHMS_TerrainReconditioningStep3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-7. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Preprocess Sinks` que identificará y rellenara los sumideros o zonas bajas donde el flujo puede confinarse y no drenar.
+7. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Preprocess Sinks` que identificará y rellenara los sumideros o zonas bajas donde el flujo puede confinarse y no drenar.
 
 > Este proceso es especialmente importante debido a que garantiza que todas las celdas del DEM drenen hacia un punto más bajo.
 
@@ -145,7 +145,9 @@ Podrá observar que al desplazarse por el mapa se visualizan momentáneamente lo
 
 <div align="center"><img src="graph/HECHMS_MapLayers1.jpg" alt="rcfdtools" width="40%" border="0" /></div>
 
-8. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Preprocess Drainage` que le permitirá conocer en detalle como drena el flujo sobre el modelo de terreno.
+8. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Preprocess Drainage` que le permitirá conocer en detalle como drena el flujo sobre el modelo de terreno.
+
+> Para mejorar la interpretación de los drenajes identificados, agregue en _Map Layers_ las capas del área de proyecto y drenajes desde la carpeta _/shp_.
 
 <div align="center"><img src="graph/HECHMS_PreprocessDrainage1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -153,7 +155,7 @@ Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice 
 
 <div align="center"><img src="graph/HECHMS_PreprocessDrainage2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-9. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Identify Stream` que le permitirá definir el área de aportación a partir de la cual obtendrá o generará las cuencas del modelo. Visualice el resultado utilizando como fondo el modelo de terreno.
+9. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Identify Stream` que le permitirá definir el área de aportación a partir de la cual obtendrá o generará las cuencas del modelo. Visualice el resultado utilizando como fondo el modelo de terreno.
 
 <div align="center"><img src="graph/HECHMS_IdentifyStream.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -161,11 +163,11 @@ Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice 
 
 <div align="center"><img src="graph/HECHMS_BreakPointCreationTool1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-11. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Delineate Elements` que le permitirá extraer las cuencas y drenajes hasta el punto de estudio definido. Utilice los prefijos W, R, J.
+11. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Delineate Elements` que le permitirá extraer las cuencas y drenajes hasta el punto de estudio definido. Utilice los prefijos W, R, J.
 
 <div align="center"><img src="graph/HECHMS_DelineateElements1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-12. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción `Export Layers` que le permitirá exportar uno a uno los elementos generados. Exporte las subcuencas y los drenajes obtenidos en la carpeta `\file\shp\' como _RioFrioCuencas_ y _RioFrioDrenajes_.
+12. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Export Layers` que le permitirá exportar uno a uno los elementos generados. Exporte las subcuencas y los drenajes obtenidos en la carpeta `\file\shp\' como _RioFrioCuencas_ y _RioFrioDrenajes_.
 
 <div align="center"><img src="graph/HECHMS_ExportLayers1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
