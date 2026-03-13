@@ -155,9 +155,10 @@ Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice 
 
 <div align="center"><img src="graph/HECHMS_PreprocessDrainage2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-9. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Identify Stream` que le permitirá definir el área de aportación a partir de la cual obtendrá o generará las cuencas del modelo. Visualice el resultado utilizando como fondo el modelo de terreno.
+9. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Identify Stream` que le permitirá definir el área de aportación (100 km²) a partir de la cual obtendrá o generará las cuencas del modelo. Visualice el resultado utilizando como fondo el modelo de terreno.
 
 <div align="center"><img src="graph/HECHMS_IdentifyStream.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_IdentifyStream1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 10. Utilizando la herramienta _Break Point Creation Tool_ cree un punto de extracción o sifón de cuenca en la parte baja del Río Frío.
 
