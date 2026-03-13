@@ -25,9 +25,9 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 |:--------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
 | [:mortar_board:Actividad](../RemoteSensingDL/Readme.md)                                                       | Modelo digital de elevación - DEM a partir de sensores remotos satelitales. |
 | [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 4.0 o superior.                                                        |
+| [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/)                                      | HEC-HMS 4.12 o superior.                                                    |
 | [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                     |
 | [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                      |
-| [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/)                                      | HEC-HMS 4.12 o superior.                                                    |
 
 </div>
 
@@ -80,46 +80,42 @@ Para la delimitación correcta de las subcuencas contenidas en la zona de estudi
 <div align="center"><img src="graph/QGIS_ClipRasterByMaskLayer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
-
 ## 2. Delimitación de cuencas en HEC-HMS
 
-
-1. En HEC-HMS, cree un proyecto nuevo en blanco definiendo _Metric_ en el sistema de unidades por defecto, guardar como _HECHMS_ en la carpeta _/hec/_.
+1. En HEC-HMS, cree un proyecto nuevo en blanco definiendo _Metric_ en el sistema de unidades por defecto, guardar como _HECHMS_v0_ en la carpeta _/hec/_.
 
 <div align="center"><img src="graph/HECHMS_CreateNewProject.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-Automáticamente, obtendrá una carpeta con la estructura de directorios y archivos requeridos por este modelo, que para la versión 4.12 contendrá:
+Automáticamente, obtendrá una carpeta con la estructura de directorios y archivos requeridos por este modelo, que para la versión 4.13 contendrá:
 
 <div align="center"><img src="graph/HECHMS_CreateNewProjectStructure.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionfile_ y copie dentro cualquier archivo de proyección de los archivos de forma shapefile generados en la carpeta `\file\shp` que cotenga los parámetros del CRS 9377 , por ejemplo, el archivo `.prj` de la capa _Predio.shp_. 
+Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionfile_ y copie dentro el archivo de proyección de coordenadas [MAGNA_OrigenNacional.prj](../../file/projectionfile) correspondiente al CRS 9377. 
 
-2. En el menú _Components – Create Component – Basin Model_, cree 1 modelo de cuenca y nómbrelo como _RioFrio_.
+2. En el menú _Components / Create Component / Basin Model_, cree un modelo de cuenca y nómbrelo como _RioBogota_.
 
 > Evite utilizar caracteres especiales diferentes a los utilizados en el idioma inglés, tales como eñes y tildes.
 
 <div align="center"><img src="graph/HECHMS_CreateBasinModel.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. En la tabla de contenido localizada a la izquierda, seleccione _HECHMS – Basin Models – RioFrio_, luego en el menú _GIS – Coordinate System_ seleccione el sistema de proyección de coordenadas _9377.prj_ localizado en el directorio _D:\R.SIGE\file\HECHMS\projectionfile_. 
+3. En la tabla de contenido localizada a la izquierda, seleccione _HECHMS / Basin Models / RioBogota_, luego en el menú _GIS – Coordinate System_ seleccione el sistema de proyección de coordenadas _9377.prj_ localizado en el directorio _D:\R.SIGE\file\HECHMS\projectionfile_. 
 
 <div align="center"><img src="graph/HECHMS_CoordinateSystem.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-4. En el menú _Components – Create Component – Terrain Data_, cree el terreno a partir del modelo digital de elevación - DEM Copernicus almacenado en la ruta `\file\dem\Copernicus\Copernicus30m.tif`, seleccionando unidades verticales en metros, nombrar como _TerrainCopernicus.
+4. En el menú _Components / Create Component / Terrain Data_, cree el terreno a partir del modelo digital de elevación - DEM Copernicus almacenado en la ruta [/dem/COP30_9377.tif](../../file/dem), seleccionando unidades verticales en metros, nombrar como _COP30.
 
 <div align="center"><img src="graph/HECHMS_TerrainData1.jpg" alt="rcfdtools" width="50%" border="0" /></div>
 <div align="center"><img src="graph/HECHMS_TerrainData2.jpg" alt="rcfdtools" width="50%" border="0" /></div>
 
-Automáticamente, el modelo de terreno será copiado en la carpeta `\file\HECHMS\terrain`.
+Automáticamente, el modelo de terreno será copiado en la carpeta `/hec/HECHMS_v0/terrain/`.
 
 <div align="center"><img src="graph/HECHMS_TerrainData3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-5. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en la parte inferior asocie el terreno creado al modelo de cuencas.
+5. En la tabla de contenido, seleccione _HECHMS / Basin Models / RioBogota_ y en la parte inferior asocie el terreno creado al modelo de cuencas.
 
 <div align="center"><img src="graph/HECHMS_TerrainData4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. En la tabla de contenido, seleccione _HECHMS – Basin Models – RioFrio_ y en el menú _GIS_, seleccione la opción _Terrain Reconditioning_. El primer paso (Step 1) permite crear paredes perimetrales de confinamiento utilizando el borde de una cuenca previamente digitalizada, dar clic en _Next >_. 
-
-> Para el caso de estudio no ejecutaremos la generación de paredes perimetrales a partir de la zona de estudio correspondiente a la zona hidrográfica del Río Bogotá debido a que el análisis lo realizaremos en cuencas internas que descargan a este cauce principal. 
+6. En la tabla de contenido, seleccione _HECHMS / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción _Terrain Reconditioning_. El primer paso (Step 1) permite crear paredes perimetrales de confinamiento utilizando el borde de una cuenca previamente digitalizada, utilice la capa . 
 
 <div align="center"><img src="graph/HECHMS_TerrainReconditioningStep1.jpg" alt="rcfdtools" width="50%" border="0" /></div>
 
