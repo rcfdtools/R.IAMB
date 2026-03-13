@@ -104,8 +104,8 @@ Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionf
 
 4. En el menú _Components / Create Component / Terrain Data_, cree el terreno a partir del modelo digital de elevación - DEM Copernicus almacenado en la ruta [/dem/COP30_9377.tif](../../file/dem), seleccionando unidades verticales en metros, nombrar como _COP30.
 
-<div align="center"><img src="graph/HECHMS_TerrainData1.jpg" alt="rcfdtools" width="50%" border="0" /></div>
-<div align="center"><img src="graph/HECHMS_TerrainData2.jpg" alt="rcfdtools" width="50%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_TerrainData1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/HECHMS_TerrainData2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Automáticamente, el modelo de terreno será copiado en la carpeta `/hec/HECHMS_v0/terrain/`.
 
