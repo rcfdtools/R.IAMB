@@ -177,19 +177,13 @@ Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice 
 
 ## 3. Visualización de cuencas y grillas
 
-1. En el mapa _BasinLimit_ de QGIS, cargue desde la carpeta `\file\shp\` las capas `RioFrioCuencas.shp` y `RioFrioDrenajes.shp` generadas en HEC-HMS.
+1. En el mapa _BasinLimit_ de QGIS, cargue desde la carpeta `/shp/` las capas `RioBogotaCuencas.shp` y `RioBogotaDrenajes.shp` generadas desde HEC-HMS.
 
 <div align="center"><img src="graph/QGIS_AddLayer2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. Para obtener el límite externo de la cuenca, ejecute la herramienta de geo-procesamiento _Data Management Tools / Dissolve_, nombre como `\file\shp\RioFrioCuenca.shp`.
+> Tenga en cuenta que el límite de la cuenca obtenido puede ser ligeramente diferente al de la subzona hidrográfica del IDEAM.
 
-<div align="center"><img src="graph/QGIS_Dissolve1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-3. Compare con el límite municipal, podrá observar que gran parte del área territorial municipal corresponde a esta cuenca, especialmente en la zona de montaña.
-
-<div align="center"><img src="graph/QGIS_Dissolve2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-4. Cargue y visualice los diferentes mapas ráster generados en HEC-HMS.
+2. Cargue y visualice los diferentes mapas ráster generados en HEC-HMS.
 
 Modelo digital de terreno ajustado con drenajes  
 <div align="center"><img src="graph/QGIS_DEMReconditioned.jpg" alt="rcfdtools" width="100%" border="0" /></div>
@@ -219,9 +213,7 @@ _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusu
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
 
-| [◄ Anterior](../RemoteSensingDL/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../BasinLimit/Readme.md) |
-|-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------------|
+| [◄ Anterior](../RemoteSensingDL/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../xxxx/Readme.md) |
+|-------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
 
 [^1]:
-
-
