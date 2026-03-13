@@ -12,7 +12,7 @@ A partir del modelo digital de elevación ESA Copernicus, cree el mapa de rellen
 
 * Generar el mapa de direcciones y acumulaciones de flujo.
 * Delimitar cuencas hidrográficas a partir de puntos de estudio.
-* Evaluar la extensión de las sub-cuencas contenidas en el área de proyecto.
+* Evaluar la extensión de las subcuencas contenidas en el área de proyecto.
 
 
 ## Requerimientos
@@ -34,7 +34,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 ## 1. Red de drenaje y capas requeridas
 
-Para la delimitación correcta de las sub-cuencas contenidas en la zona de estudio, son necesarias las líneas de los drenajes para la modificación del modelo digital de elevación.
+Para la delimitación correcta de las subcuencas contenidas en la zona de estudio, son necesarias las líneas de los drenajes para la modificación del modelo digital de elevación.
 
 1. Desde el portal de https://www.colombiaenmapas.gov.co/ y https://datosabiertos.bogota.gov.co, descargue las bases de datos vectoriales y los vectores digitalizados de los drenajes y cuerpos de agua contenidos en la zona de estudio, utilice los siguientes enlaces:
 
