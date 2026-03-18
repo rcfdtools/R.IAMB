@@ -220,22 +220,21 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 <div align="center"><img src="graph/QGIS_SelectByLocation.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Exporte las estaciones seleccionadas a una nueva capa y guarde como `/shp/CNE_Colombia_20260318_ZE.shp`; en la exportación defina el CRS 9377. 
+3. Exporte las estaciones seleccionadas a una nueva capa y guarde como _/shp/CNE_Colombia_20260318_ZE.shp_, en la exportación defina el CRS 9377. 
 
 <div align="center"><img src="graph/QGIS_CNE_Colombia_20260318_ZE.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_CNE_Colombia_20260318_ZEa.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-4. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
+4. A partir de la capa de extracción generada, cree estadísticos y gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos; evalúe altitudes.
 
-<div align="center">Conteo de estaciones por fuente<br><img src="graph/QGIS_Source_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+En el conteo de estaciones por fuente encontrará que el 79.9% de las estaciones corresponden a otras entidades y el 20.1 a estaciones IDEAM.
 
-<div align="center">Conteo de estaciones por categoría<br><img src="graph/QGIS_Category_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Conteo de estaciones por fuente<br><img src="graph/QGIS_Source.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Conteo de estaciones por fuente<br><img src="graph/QGIS_Source1.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
-<div align="center">Conteo de estaciones por categoría y por fuente<br><img src="graph/QGIS_SourceCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+Con respecto a las altitudes, el promedio de cotas de las estaciones del IDEAM es de 1973.3 m.s.n.m. y 2342.3 m.s.n.m. para otras entidades.
 
-<div align="center">Conteo de estaciones por tecnología y por fuente<br><img src="graph/QGIS_TechCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
-
-<div align="center">Conteo de estaciones por entidad<br><img src="graph/QGIS_CompCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Conteo de estaciones por fuente<br><img src="graph/QGIS_Source2.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
 
 ## 4. Estudio de longitud hipotética de series
@@ -244,187 +243,6 @@ Una vez obtenida la red de estaciones integrada sobre la zona de estudio, es nec
 
 > Este procedimiento es importante debido a que para la descarga de las series de datos registradas en las estaciones, es necesario primero conocer la homogeneidad en las longitudes hipotéticas de los registros que deberían tener las estaciones a partir de su fecha de puesta en operación y recolección de datos. Por ejemplo, si la mayoría de las estaciones tienen un registro continuo y actual de al menos 15 o 20 años y en las estaciones de la zona de estudio existen estaciones recientes o antiguas suspendidas con registros cortos (p. ej. 5 años), se podrían descartar estas estaciones del análisis, siempre y cuando no correspondan a estaciones en la zona de frontera geográfica de la zona en estudio.
 
-1. En la capa `\file\data\shp\CNE_Colombia_20260318_ZE.shp`, cree los siguientes campos de atributos:
-
-<div align="center">
-
-| Campo    | Tipo   | Descripción                                                                                 |
-|:---------|:-------|---------------------------------------------------------------------------------------------|
-| LYearS   | Double | Campo para longitud hipotética de serie a partir de las fechas de instalación y suspensión. |
-| LYearSTW | Double | Campo para longitud hipotética de serie a partir de una ventana de tiempo definida.         |
-
-</div>
-
-En la tabla de atributos dar clic en el botón _Field: Add_ y desde el modo de edición agregar los campos indicados, luego desde el Menú superior _Fields_, dar clic en _Save_. 
-
-<div align="center"><img src="graph/QGIS_AddField.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-2. El cálculo del campo `LYearS` puede ser realizado dando clic en la cabecera del campo y seleccionando la opción _Calculate Field_ utilizando la instrucción Python 3 `(!FechaInst!-!FechaSusp!)/365`, sin embargo, no podrá ser aplicada a estaciones que se encuentran suspendidas debido a que el campo fecha de suspensión contendrá valores nulos, por lo que Python devolverá un error y no realizará el cálculo solicitado. Igual sucede con el campo fecha de instalación cuando este se encuentra nulo, la operación de cálculo no podrá ser completada.
-
-<div align="center"><img src="graph/QGIS_CalculateFieldLYearSError.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-> Para el correcto análisis de los campos fecha de instalación y fecha de suspensión, también es necesario establecer en la configuración regional definida desde el _Panel de Control / Region_, el formato de fechas cortas como d/MM/yyyy.
-
-<div align="center"><img src="graph/Windows11_ControlPanelRegionFormat.jpg" alt="rcfdtools" width="40%" border="0" /></div>
-
-3. Para realizar correctamente este cálculo, es necesario considerar la fecha final de los registros de las estaciones que se encuentran en operación, para este ejemplo, la fecha de corte corresponde al último día del año inmediatamente anterior 31/12/2023 y considerando que para análisis climatológicos, únicamente se utilizan datos de años cronológica o hidrológicamente completos. La longitud de series en años usando Python a través de Calculate Field para el campo `LYearS` y para el campo `LYearSTW`, puede ser realizada a través de Code Block utilizando las siguientes instrucciones:
-
-Pre-Logic Script Code para Python 3 sobre ArcGIS Pro: 
-```
-from datetime import datetime
-date_format = '%d/%m/%Y'
-tw_start_date = datetime.strptime('01/01/1980', date_format)# Time-window start. Use '' for set 01/01/1900
-tw_end_date = datetime.strptime('31/12/2023', date_format) # Time-window end. Use '' for use the current date and prevent over-time wrong suspension dates
-if not tw_start_date: tw_start_date = datetime.strptime('01/01/1900', date_format)
-if not tw_end_date: tw_end_date = str(datetime.today().date())
-def len_years_serie(installation_date, suspension_date):
-    if installation_date:
-        if installation_date <= tw_start_date:
-            tw_installation_date = tw_start_date
-        else:
-            tw_installation_date = installation_date
-        if suspension_date:
-            if suspension_date >= tw_end_date:
-                tw_suspension_date = tw_end_date
-            else:
-                tw_suspension_date = suspension_date
-            diff_date = suspension_date - installation_date
-            tw_diff_date = tw_suspension_date - tw_installation_date
-        else:
-            diff_date = tw_end_date - installation_date
-            tw_diff_date = tw_end_date - tw_installation_date
-        diff_date = float(diff_date.days)/365
-        tw_diff_date = float(tw_diff_date.days)/365
-        if diff_date < 0: diff_date = 0
-        if tw_diff_date < 0: tw_diff_date = 0
-    else:
-        diff_date = 0
-        tw_diff_date = 0
-    return diff_date, tw_diff_date # First value is complete length. Second value is time window length
-```
-
-LYearS:
-```
-len_years_serie(!FechaInst!, !FechaSusp!)[0]
-```
-
-LYearSTW:
-```
-len_years_serie(!FechaInst!, !FechaSusp!)[1]
-```
-
-> En el script, la posición 0 devuelve el valor calculado para `LYearS` y 1 el valor calculado para `LYearSTW`.
-
-4. Para realizar el cálculo de longitudes hipotéticas totales y utilizando el calculador de campo sobre `LYearS`, ingrese el script y realice el cálculo a partir de los campos `FechaInst` y `FechaSusp`.
-
-<div align="center"><img src="graph/QGIS_CalculateField_LYearS.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-5. Para realizar el cálculo de longitudes hipotéticas de series a partir de una ventana de tiempo definida, p. ej. del 01/01/1980 al 31/12/2023 correspondiente a 44.027397 años, y utilizando el calculador de campo sobre `LYearSTW`, ingrese el script y realice el cálculo a partir de los campos `FechaInst` y `FechaSusp`.
-
-<div align="center"><img src="graph/QGIS_CalculateField_LYearSTW.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-5. De clic derecho en la cabecera del campo `LYearS` y seleccione la opción _Statistics_, obtendrá un resumen estadístico y una gráfica con las longitudes hipotéticas en años para cada estación. Como puede observar, la media de las longitudes es de 31.54 años con una alta desviación estándar correspondiente a 23.61 años y múltiples estaciones tienen longitudes cortas de menos de 10 años, correspondientes a estaciones jóvenes.
-
-<div align="center"><img src="graph/QGIS_LYearSStatistics.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-Utilizando la tecla <kbd>Ctrl</kbd>+<kbd>clic</kbd>, seleccione las barras correspondientes a los valores de la media y superiores, obtendrá que 707 estaciones contienen longitudes hipotéticas iguales o superiores a 24.76 años dentro y alrededor del límite municipal.    
-
-<div align="center"><img src="graph/QGIS_LYearSStatistics1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-En cuanto a las longitudes en la ventana de tiempo establecida, la media de las longitudes es de 24.47 años con una desviación estándar correspondiente a 17.68 años. Con respecto al umbral mínimo de 15 años para considerar la estación con longitud de captura suficientemente larga, al seleccionar las estaciones a partir del corte 14.58 años, podrá observar que se obtienen 827 estaciones. 
-
-<div align="center"><img src="graph/QGIS_LYearSTWStatistics.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-
-## 5. Análisis de cobertura espacial en estaciones
-
-1. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Create Thiessen Polygons_, cree polígonos de aferencia al rededor de cada estación. Nombre la capa como `\file\data\shp\CNE_Colombia_20260318_ZE_Thiessen.shp` y simbolice solo por contorno.
-
-> Tenga en cuenta que para localizaciones donde se encuentran dos estacionas sobre un mismo punto (una convencional y una automática), se creará un único polígono. 
-
-<div align="center"><img src="graph/QGIS_Thiessen.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-2. En la capa de polígonos de Thiessen, cree un campo numérico doble con el nombre `AGkm2` y calcula el área geodésica. Como puede observar, en la tabla de atributos únicamente aparecen 989 polígonos y en la capa original existían 1250 estaciones, lo que indica que en 261 localizaciones existen estaciones en la misma posición o muy próximas.
-
-<div align="center"><img src="graph/QGIS_Thiessen1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-Para el campo `AGkm2`, genere una estadística visual y analice el área promedio de cobertura por estación; podrá observar que corresponde a 20.61 km² con una desviación estándar de 31.38 km².
-
-<div align="center"><img src="graph/QGIS_Thiessen2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-3. Para calcular la distancia promedio entre estaciones, en el panel de geo-procesamiento y a partir de la capa de estaciones de la zona de estudio, ejecute la herramienta _3D Analyst Tools / Create TIN_, guarde la superficie triangulada como `\file\dem\CNE_Colombia_20260318_ZE_TIN`. Podrá observar que se generó una superficie triangulada 3D a partir de los valores de elevación de las estaciones.
-
-<div align="center"><img src="graph/QGIS_TIN.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-4. Utilizando la herramienta de geo-procesamiento _3D Analyst Tools / TIN Edge_, obtenga las líneas 3D de la red triangulada del modelo digital de elevación TIN, guarde la capa como `\file\shp\CNE_Colombia_20260318_ZE_TIN_Edge.shp`
-
-<div align="center"><img src="graph/QGIS_TIN_Edge.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-5. Abra la tabla de atributos y agregue dos campos numéricos dobles con los nombres `LP2Dkm` y `LP3Dkm`, con el calculador de campo, calcule la distancia planar 2D y 3D de las líneas generadas.
-
-<div align="center"><img src="graph/QGIS_TIN_Edge1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-6. Seleccione por localización todas aquellas líneas cuya distancia sea menor o igual 35 km, podrá observar que en el contorno perimetral, existen algunas líneas conectoras de más de 35 km.
-
-<div align="center"><img src="graph/QGIS_TIN_Edge2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-7. Genere estadísticas visuales de los dos campos creados, podrá observar que para las líneas seleccionadas, la distancia promedio 2D entre estaciones es  4.38 km y la distancia promedio 3D es 4.44 km.  
-
-<div align="center"><img src="graph/QGIS_TIN_Edge3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-<div align="center"><img src="graph/QGIS_TIN_Edge4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-
-## 6. Análisis usando software libre - QGIS
-
-Para el desarrollo de las actividades desarrolladas en esta clase, se pueden utilizar en QGIS las siguientes herramientas o geo-procesos:
-
-| Proceso                                    | Procedimiento                                                                                                                                                                                                                                                                                      |
-|:-------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Simbología                                 | Modificable desde las propiedades de la capa en la pestaña _Symbology_.                                                                                                                                                                                                                            |
-| Rotulado                                   | Modificable desde las propiedades de la capa en la pestaña _Labels_.                                                                                                                                                                                                                               |
-| Cálculos geométricos o de  campo           | Directamente desde la tabla de atributos mediante el botón _Open Field Calculator_ o <kbd>Ctr</kbd>+<kbd>I</kbd>. La geometría de cálculo `$area` permite obtener el valor elipsoidal y `area` el valor proyectado.                                                                                |
-| Tabla a puntos                             | Herramienta disponible en el _Processing Toolbox / Vector Creation / Create points layer from table_.                                                                                                                                                                                              |
-| Selección por localización                 | Herramienta disponible en el _Processing Toolbox / Vector Selection / [Select by location](https://docs.qgis.org/testing/en/docs/user_manual/processing_algs/qgis/vectorselection.html). Para la extracción directa de elementos por localización, utilizar la herramienta _Extract by location_.  |
-| Selección por atributos                    | Herramienta disponible en el _Processing Toolbox / Vector Selection / [Select by attribute](https://docs.qgis.org/testing/en/docs/user_manual/processing_algs/qgis/vectorselection.html). Para la extracción directa de elementos por localización, utilizar la herramienta _attribute_.           |                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Superficie triangulada TIN                 | Herramienta disponible en el _Processing Toolbox / Mesh / [TIN Mesh Creation](https://docs.qgis.org/testing/en/docs/user_manual/processing_algs/qgis/mesh.html).                                                                                                                                   |
-| Lados en una superficie triangulada (edge) | Herramienta disponible en el _Processing Toolbox / Mesh / [Export mesh edges](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/mesh.html).                                                                                                                                      |
-
-Ejemplo rótulo en QGIS: `'A(ha): ' ||  round("AGha", 2) || '\n' || 'P (m): ' ||  round("PGm", 2) `
-
-[:notebook:QGIS training manual](https://docs.qgis.org/3.34/en/docs/training_manual/)  
-[:notebook:Herramientas comúnmente utilizadas en QGIS](../QGIS.md)
-
-
-## Elementos requeridos en diccionario de datos
-
-Agregue a la tabla resúmen generada en la actividad [Inventario de información geo-espacial recopilada del POT y diccionario de datos](../POTLayer/Readme.md), las capas generadas en esta actividad que se encuentran listadas a continuación:
-
-| Nombre                                | Descripción                                                                                                                                                    | Geometría    | Registros | 
-|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------| 
-| CNE_IDEAM_20260318.xls                | Libro de Excel con la integración de registros del catálogo nacional del IDEAM y otras entidades.                                                              | N/A          | 9107      | 
-| CNE_Colombia_20260318.shp             | Estaciones hidroclimatológicas de Colombia a partir del cátalogo nacional del IDEAM y de otras entidades.                                                      | Punto 2D     | 9107      | 
-| CNE_Colombia_20260318_ZE.shp          | Estaciones hidroclimatológicas de la zona de estudio a partir de la intersección del catálogo de Colombia con el polígono envolvente al rededor del municipio. | Punto 2D     | 1250      | 
-| CNE_Colombia_20260318_ZE_Thiessen.shp | Polígonos de Thiessen al rededor de las estaciones de la zona de estudio.                                                                                      | Polígono 2D  | 989       | 
-| CNE_Colombia_20260318_ZE_TIN_Edge.shp | Lados de superficie triangulado o líneas conectoras entre estaciones a partir del modelo digital triangulado TIN.                                              | Polilínea 3D | 2948      | 
-| CNE_Colombia_20260318_ZE_TIN          | Superficie irregular triangulada TIN generada a partir de la localización y elevación de las estaciones de la zona de estudio.                                 | TIN          | N/A       | 
-
-> :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
-
-
-## Actividades de proyecto :triangular_ruler:
-
-En la siguiente tabla se listan las actividades que deben ser desarrolladas y documentadas por cada grupo de proyecto en un único archivo de Adobe Acrobat .pdf. El documento debe incluir portada (indicando el caso de estudio, número de avance, nombre del módulo, fecha de presentación, nombres completos de los integrantes), numeración de páginas, tabla de contenido, lista de tablas, lista de ilustraciones, introducción, objetivo general, capítulos por cada ítem solicitado, conclusiones y referencias bibliográficas.
-
-| Actividad     | Alcance                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|:--------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avance **P3** | Realice el análisis de estaciones presentado en esta actividad e incluya análisis segmentados de número de estaciones y longitud hipotética de series para categorías de estaciones que registren datos de precipitación, nivel de lámina, temperatura y evaporación. Como referencia, puede utilizar la actividad [Catálogo nacional de estaciones - CNE y selección de estaciones para la zona de estudio](https://github.com/rcfdtools/R.LTWB/tree/main/Section03/CNEStation) que se encuentra disponible en el curso [R.LTWB](https://github.com/rcfdtools/R.LTWB/blob/main/Readme.md). | 
-| Avance **P3** | :compass:Mapa digital impreso _P3-6: Localización de estaciones hidroclimatológicas zona de estudio y mapa de estaciones de Colombia._<br>Incluir red triangulada TIN con rótulo de distancia. Embebido dentro del informe final como una imágen y referenciados como anexo.                                                                                                                                                                                   | 
-| Avance **P3** | En una tabla y al final del informe de avance de esta entrega, indique el detalle de las sub-actividades realizadas por cada integrante de su grupo. Para actividades que no requieren del desarrollo de elementos de avance, indicar si realizo la lectura de la guía de clase y las lecturas indicadas al inicio en los requerimientos. Utilice las siguientes columnas: Nombre del integrante, Actividades realizadas, Tiempo dedicado en horas.            | 
-
-> No es necesario presentar un documento de avance independiente, todos los avances de proyecto de este módulo se integran en un único documento.
-> 
-> En el informe único, incluya un numeral para esta actividad y sub-numerales para el desarrollo de las diferentes sub-actividades, siguiendo en el mismo orden de desarrollo presentado en esta actividad.
-
 
 ## Referencias
 
@@ -432,21 +250,15 @@ En la siguiente tabla se listan las actividades que deben ser desarrolladas y do
 * http://www.ideam.gov.co/solicitud-de-informacion
 
 
-## Control de versiones
+##
 
-| Versión    | Descripción                                                             | Autor                                      | Horas |
-|------------|:------------------------------------------------------------------------|--------------------------------------------|:-----:|
-| 2024.03.18 | Versión inicial con alcance de la actividad.                            | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-| 2024.07.23 | Investigación, documentación y desarrollo para caso de estudio general. | [rcfdtools](https://github.com/rcfdtools)  |   6   |
-| 2024.07.24 | Investigación, documentación y desarrollo para caso de estudio general. | [rcfdtools](https://github.com/rcfdtools)  |   4   |
-
-
-_R.SIGE es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](LICENSE.md)._
+_R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [rcfdtools](https://github.com/rcfdtools) en GitHub._
 
-| [◄ Anterior](../SZH/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.SIGE/discussions/22) | [Siguiente ►](../GDB/Readme.md) |
-|--------------------------------|-----------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------|
 
-[^1]: http://dhime.ideam.gov.co/atencionciudadano/
-[^2]: https://pro.arcgis.com/en/pro-app/latest/help/data/excel/prepare-to-work-with-excel-in-arcgis-pro.htm
+| [◄ Anterior](../BasinLimit/Readme.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora](https://github.com/rcfdtools/R.IAMB/discussions/1) | [Siguiente ►](../xxxx/Readme.md) |
+|---------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|----------------------------------|
+
+[^1]:
+
