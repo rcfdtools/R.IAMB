@@ -171,7 +171,7 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 
 <div align="center"><img src="graph/Excel_CNE_20260318.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Cree un nuevo archivo de Excel y guárdelo como _/table/CNE_Colombia_20260318.xlsx_, renombre la hoja como _CNE_Colombia_20260318_, agregue una columna al inicio con el nombre _CNESource_, copie en la misma hoja los registros de las dos tablas de atributos y normalice los nombres de las cabeceras a 10 caracteres. La tabla final deberá contener 9360 registros.
+3. Cree un nuevo archivo de Excel y guárdelo como _/table/CNE_Colombia_20260318.xlsx_, renombre la hoja como _CNE_Colombia_20260318_, agregue una columna al inicio con el nombre _CNESource_, copie en la misma hoja los registros de las dos tablas de atributos y normalice los nombres de las cabeceras a 10 caracteres. La tabla final deberá contener 9360 registros, incluída la cabecera.
 
 Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `Tecnologia`, `Estado`, `FechaInst`, `FechaSusp`, `Altitud`, `LatDD`, `LongDD`, `Depto`, `Municipio`, `AreaOperat`, `Entidad`, `AH`, `ZH`, `SZH`, `Corriente`, `Observ`, `Subred`.
 
@@ -191,18 +191,26 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 * En los campos `FechaInst`, `FechaSusp`, `Altitud`, `LatDD`, `LongDD`, no deben existir comas, las separaciones decimales deberán ser establecidas en puntos, tanto en la tabla como en la configuración regional del panel de control de su sistema operativo. 
 * Los campos `LatDD` y `LongDD` deben contener siempre valores. 
 
-5. En QGIS, abra el mapa _/map/CaseStudy.qgz_ y guarde como _/map/CNEStation.qgz_. Agregue y abra en el mapa la tabla integrada creada en Excel, verifique que contenga 9107 registros.
+5. En QGIS, abra el mapa _/map/CaseStudy.qgz_ y guarde como _/map/CNEStation.qgz_. Agregue la tabla integrada creada en Excel, verifique que contenga 9359 registros.
 
-<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. En la tabla de contenido, de clic derecho en la tabla _CNE_Colombia_20240702$_, seleccione la opción _Create Point From Table / XY Table To Point_ y cree la capa geográfica de estaciones. Asegúrese de seleccionar las columnas correctas de localización geográfica, y en Environments establezca el CRS 9377, guarde la capa como `\file\data\shp\CNE_Colombia_20240702.shp`.
+6. Exporte la tabla a formato .csv, guarde como _/table/CNE_Colombia_20260318.csv_ y remueva las tablas del panel _Layers_ del mapa.
 
-<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702a.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702b.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318a.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+7. 
+
+
+
+6. En la tabla de contenido, de clic derecho en la tabla _CNE_Colombia_20260318$_, seleccione la opción _Create Point From Table / XY Table To Point_ y cree la capa geográfica de estaciones. Asegúrese de seleccionar las columnas correctas de localización geográfica, y en Environments establezca el CRS 9377, guarde la capa como `\file\data\shp\CNE_Colombia_20260318.shp`.
+
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318a.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318b.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 7. Abra la tabla de atributos de la capa geográfica creada y asegúrese de que existen 9107 estaciones.
 
-<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702c.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318c.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## 3. Extracción y estudio general de estaciones en la zona de estudio
@@ -211,27 +219,27 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 > Para la correcta localización geográfica de las estaciones, los catálogos deben contener al menos 6 posiciones decimales en los campos geocodificacos `LatDD` y `LongDD` para tener precisión al menos métrica. Muchos de los valores consignados en la tabla del catálogo correspondiente a otras estaciones, tienen pocos decimales y en la ilustración se puede observar que se encuentran alineadas horizontal o verticalmente a una grilla imaginaria regular.
 
-<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702d.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318d.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 2. Desde el menú _Map / Selection / Select By Location_, seleccione todas aquellas estaciones del catálogo integrado estaciones que se intersecan con el polígono envolvente de la zona de estudio, podrá observar en la tabla de atributos que se han seleccionado 1250 estaciones.
 
-<div align="center"><img src="graph/ArcGISPro_SelectByLocation.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_SelectByLocation.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-8. Exporte las estaciones seleccionadas a una nueva capa y guarde como `\file\data\shp\CNE_Colombia_20240702_ZE.shp`; en la exportación defina el CRS 9377. 
+8. Exporte las estaciones seleccionadas a una nueva capa y guarde como `\file\data\shp\CNE_Colombia_20260318_ZE.shp`; en la exportación defina el CRS 9377. 
 
-<div align="center"><img src="graph/ArcGISPro_CNE_Colombia_20240702_ZEa.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318_ZEa.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 9. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
 
-<div align="center">Conteo de estaciones por fuente<br><img src="graph/ArcGISPro_Source_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Conteo de estaciones por fuente<br><img src="graph/QGIS_Source_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
-<div align="center">Conteo de estaciones por categoría<br><img src="graph/ArcGISPro_Category_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Conteo de estaciones por categoría<br><img src="graph/QGIS_Category_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
-<div align="center">Conteo de estaciones por categoría y por fuente<br><img src="graph/ArcGISPro_SourceCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Conteo de estaciones por categoría y por fuente<br><img src="graph/QGIS_SourceCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
-<div align="center">Conteo de estaciones por tecnología y por fuente<br><img src="graph/ArcGISPro_TechCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Conteo de estaciones por tecnología y por fuente<br><img src="graph/QGIS_TechCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
-<div align="center">Conteo de estaciones por entidad<br><img src="graph/ArcGISPro_CompCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Conteo de estaciones por entidad<br><img src="graph/QGIS_CompCategory_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
 
 ## 4. Estudio de longitud hipotética de series
@@ -240,7 +248,7 @@ Una vez obtenida la red de estaciones integrada sobre la zona de estudio, es nec
 
 > Este procedimiento es importante debido a que para la descarga de las series de datos registradas en las estaciones, es necesario primero conocer la homogeneidad en las longitudes hipotéticas de los registros que deberían tener las estaciones a partir de su fecha de puesta en operación y recolección de datos. Por ejemplo, si la mayoría de las estaciones tienen un registro continuo y actual de al menos 15 o 20 años y en las estaciones de la zona de estudio existen estaciones recientes o antiguas suspendidas con registros cortos (p. ej. 5 años), se podrían descartar estas estaciones del análisis, siempre y cuando no correspondan a estaciones en la zona de frontera geográfica de la zona en estudio.
 
-1. En la capa `\file\data\shp\CNE_Colombia_20240702_ZE.shp`, cree los siguientes campos de atributos:
+1. En la capa `\file\data\shp\CNE_Colombia_20260318_ZE.shp`, cree los siguientes campos de atributos:
 
 <div align="center">
 
@@ -253,11 +261,11 @@ Una vez obtenida la red de estaciones integrada sobre la zona de estudio, es nec
 
 En la tabla de atributos dar clic en el botón _Field: Add_ y desde el modo de edición agregar los campos indicados, luego desde el Menú superior _Fields_, dar clic en _Save_. 
 
-<div align="center"><img src="graph/ArcGISPro_AddField.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_AddField.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 2. El cálculo del campo `LYearS` puede ser realizado dando clic en la cabecera del campo y seleccionando la opción _Calculate Field_ utilizando la instrucción Python 3 `(!FechaInst!-!FechaSusp!)/365`, sin embargo, no podrá ser aplicada a estaciones que se encuentran suspendidas debido a que el campo fecha de suspensión contendrá valores nulos, por lo que Python devolverá un error y no realizará el cálculo solicitado. Igual sucede con el campo fecha de instalación cuando este se encuentra nulo, la operación de cálculo no podrá ser completada.
 
-<div align="center"><img src="graph/ArcGISPro_CalculateFieldLYearSError.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CalculateFieldLYearSError.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 > Para el correcto análisis de los campos fecha de instalación y fecha de suspensión, también es necesario establecer en la configuración regional definida desde el _Panel de Control / Region_, el formato de fechas cortas como d/MM/yyyy.
 
@@ -313,61 +321,61 @@ len_years_serie(!FechaInst!, !FechaSusp!)[1]
 
 4. Para realizar el cálculo de longitudes hipotéticas totales y utilizando el calculador de campo sobre `LYearS`, ingrese el script y realice el cálculo a partir de los campos `FechaInst` y `FechaSusp`.
 
-<div align="center"><img src="graph/ArcGISPro_CalculateField_LYearS.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CalculateField_LYearS.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 5. Para realizar el cálculo de longitudes hipotéticas de series a partir de una ventana de tiempo definida, p. ej. del 01/01/1980 al 31/12/2023 correspondiente a 44.027397 años, y utilizando el calculador de campo sobre `LYearSTW`, ingrese el script y realice el cálculo a partir de los campos `FechaInst` y `FechaSusp`.
 
-<div align="center"><img src="graph/ArcGISPro_CalculateField_LYearSTW.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CalculateField_LYearSTW.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 5. De clic derecho en la cabecera del campo `LYearS` y seleccione la opción _Statistics_, obtendrá un resumen estadístico y una gráfica con las longitudes hipotéticas en años para cada estación. Como puede observar, la media de las longitudes es de 31.54 años con una alta desviación estándar correspondiente a 23.61 años y múltiples estaciones tienen longitudes cortas de menos de 10 años, correspondientes a estaciones jóvenes.
 
-<div align="center"><img src="graph/ArcGISPro_LYearSStatistics.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_LYearSStatistics.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Utilizando la tecla <kbd>Ctrl</kbd>+<kbd>clic</kbd>, seleccione las barras correspondientes a los valores de la media y superiores, obtendrá que 707 estaciones contienen longitudes hipotéticas iguales o superiores a 24.76 años dentro y alrededor del límite municipal.    
 
-<div align="center"><img src="graph/ArcGISPro_LYearSStatistics1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_LYearSStatistics1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 En cuanto a las longitudes en la ventana de tiempo establecida, la media de las longitudes es de 24.47 años con una desviación estándar correspondiente a 17.68 años. Con respecto al umbral mínimo de 15 años para considerar la estación con longitud de captura suficientemente larga, al seleccionar las estaciones a partir del corte 14.58 años, podrá observar que se obtienen 827 estaciones. 
 
-<div align="center"><img src="graph/ArcGISPro_LYearSTWStatistics.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_LYearSTWStatistics.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## 5. Análisis de cobertura espacial en estaciones
 
-1. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Create Thiessen Polygons_, cree polígonos de aferencia al rededor de cada estación. Nombre la capa como `\file\data\shp\CNE_Colombia_20240702_ZE_Thiessen.shp` y simbolice solo por contorno.
+1. Utilizando la herramienta de geo-procesamiento _Analysis Tools / Create Thiessen Polygons_, cree polígonos de aferencia al rededor de cada estación. Nombre la capa como `\file\data\shp\CNE_Colombia_20260318_ZE_Thiessen.shp` y simbolice solo por contorno.
 
 > Tenga en cuenta que para localizaciones donde se encuentran dos estacionas sobre un mismo punto (una convencional y una automática), se creará un único polígono. 
 
-<div align="center"><img src="graph/ArcGISPro_Thiessen.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Thiessen.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 2. En la capa de polígonos de Thiessen, cree un campo numérico doble con el nombre `AGkm2` y calcula el área geodésica. Como puede observar, en la tabla de atributos únicamente aparecen 989 polígonos y en la capa original existían 1250 estaciones, lo que indica que en 261 localizaciones existen estaciones en la misma posición o muy próximas.
 
-<div align="center"><img src="graph/ArcGISPro_Thiessen1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Thiessen1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Para el campo `AGkm2`, genere una estadística visual y analice el área promedio de cobertura por estación; podrá observar que corresponde a 20.61 km² con una desviación estándar de 31.38 km².
 
-<div align="center"><img src="graph/ArcGISPro_Thiessen2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_Thiessen2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Para calcular la distancia promedio entre estaciones, en el panel de geo-procesamiento y a partir de la capa de estaciones de la zona de estudio, ejecute la herramienta _3D Analyst Tools / Create TIN_, guarde la superficie triangulada como `\file\dem\CNE_Colombia_20240702_ZE_TIN`. Podrá observar que se generó una superficie triangulada 3D a partir de los valores de elevación de las estaciones.
+3. Para calcular la distancia promedio entre estaciones, en el panel de geo-procesamiento y a partir de la capa de estaciones de la zona de estudio, ejecute la herramienta _3D Analyst Tools / Create TIN_, guarde la superficie triangulada como `\file\dem\CNE_Colombia_20260318_ZE_TIN`. Podrá observar que se generó una superficie triangulada 3D a partir de los valores de elevación de las estaciones.
 
-<div align="center"><img src="graph/ArcGISPro_TIN.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_TIN.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-4. Utilizando la herramienta de geo-procesamiento _3D Analyst Tools / TIN Edge_, obtenga las líneas 3D de la red triangulada del modelo digital de elevación TIN, guarde la capa como `\file\shp\CNE_Colombia_20240702_ZE_TIN_Edge.shp`
+4. Utilizando la herramienta de geo-procesamiento _3D Analyst Tools / TIN Edge_, obtenga las líneas 3D de la red triangulada del modelo digital de elevación TIN, guarde la capa como `\file\shp\CNE_Colombia_20260318_ZE_TIN_Edge.shp`
 
-<div align="center"><img src="graph/ArcGISPro_TIN_Edge.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_TIN_Edge.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 5. Abra la tabla de atributos y agregue dos campos numéricos dobles con los nombres `LP2Dkm` y `LP3Dkm`, con el calculador de campo, calcule la distancia planar 2D y 3D de las líneas generadas.
 
-<div align="center"><img src="graph/ArcGISPro_TIN_Edge1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_TIN_Edge1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 6. Seleccione por localización todas aquellas líneas cuya distancia sea menor o igual 35 km, podrá observar que en el contorno perimetral, existen algunas líneas conectoras de más de 35 km.
 
-<div align="center"><img src="graph/ArcGISPro_TIN_Edge2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_TIN_Edge2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 7. Genere estadísticas visuales de los dos campos creados, podrá observar que para las líneas seleccionadas, la distancia promedio 2D entre estaciones es  4.38 km y la distancia promedio 3D es 4.44 km.  
 
-<div align="center"><img src="graph/ArcGISPro_TIN_Edge3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-<div align="center"><img src="graph/ArcGISPro_TIN_Edge4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_TIN_Edge3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_TIN_Edge4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## 6. Análisis usando software libre - QGIS
@@ -397,12 +405,12 @@ Agregue a la tabla resúmen generada en la actividad [Inventario de información
 
 | Nombre                                | Descripción                                                                                                                                                    | Geometría    | Registros | 
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------| 
-| CNE_IDEAM_20240702.xls                | Libro de Excel con la integración de registros del catálogo nacional del IDEAM y otras entidades.                                                              | N/A          | 9107      | 
-| CNE_Colombia_20240702.shp             | Estaciones hidroclimatológicas de Colombia a partir del cátalogo nacional del IDEAM y de otras entidades.                                                      | Punto 2D     | 9107      | 
-| CNE_Colombia_20240702_ZE.shp          | Estaciones hidroclimatológicas de la zona de estudio a partir de la intersección del catálogo de Colombia con el polígono envolvente al rededor del municipio. | Punto 2D     | 1250      | 
-| CNE_Colombia_20240702_ZE_Thiessen.shp | Polígonos de Thiessen al rededor de las estaciones de la zona de estudio.                                                                                      | Polígono 2D  | 989       | 
-| CNE_Colombia_20240702_ZE_TIN_Edge.shp | Lados de superficie triangulado o líneas conectoras entre estaciones a partir del modelo digital triangulado TIN.                                              | Polilínea 3D | 2948      | 
-| CNE_Colombia_20240702_ZE_TIN          | Superficie irregular triangulada TIN generada a partir de la localización y elevación de las estaciones de la zona de estudio.                                 | TIN          | N/A       | 
+| CNE_IDEAM_20260318.xls                | Libro de Excel con la integración de registros del catálogo nacional del IDEAM y otras entidades.                                                              | N/A          | 9107      | 
+| CNE_Colombia_20260318.shp             | Estaciones hidroclimatológicas de Colombia a partir del cátalogo nacional del IDEAM y de otras entidades.                                                      | Punto 2D     | 9107      | 
+| CNE_Colombia_20260318_ZE.shp          | Estaciones hidroclimatológicas de la zona de estudio a partir de la intersección del catálogo de Colombia con el polígono envolvente al rededor del municipio. | Punto 2D     | 1250      | 
+| CNE_Colombia_20260318_ZE_Thiessen.shp | Polígonos de Thiessen al rededor de las estaciones de la zona de estudio.                                                                                      | Polígono 2D  | 989       | 
+| CNE_Colombia_20260318_ZE_TIN_Edge.shp | Lados de superficie triangulado o líneas conectoras entre estaciones a partir del modelo digital triangulado TIN.                                              | Polilínea 3D | 2948      | 
+| CNE_Colombia_20260318_ZE_TIN          | Superficie irregular triangulada TIN generada a partir de la localización y elevación de las estaciones de la zona de estudio.                                 | TIN          | N/A       | 
 
 > :bulb:Para funcionarios que se encuentran ensamblando el SIG de su municipio, se recomienda incluir y documentar estas capas en el Diccionario de Datos.
 
