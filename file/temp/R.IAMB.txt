@@ -6,16 +6,6 @@ Objetivo: Detallar los elementos que se deben contemplar y que deben formar part
 (A partir de cartografía nacional 1:500k, 1:100k, 1:25k)
 
 
-2.6. Medio abiótico - Hidrología   
-(OcupacionCauce)
-7. Area to define streams: 100
-
-
-
-
-2.7. Medio abiótico - Clima
-(EstacionMeteorologica)
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/CNEStation/Readme.md
 
 2.8. Medio abiótico - Atmósfera 
 (CalidadAire)
@@ -65,7 +55,14 @@ https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token
 
 
 
+<div align="center">
 
+| Actividad                             | Descripción                                                             |
+|:--------------------------------------|:------------------------------------------------------------------------|
+| 2.8. Medio abiótico - Atmósfera       | CalidadAire                                                             |
+| 2.9. Tablas de registro climatológico | Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB |
+
+</div>
 
 
 
