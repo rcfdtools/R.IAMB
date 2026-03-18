@@ -1,4 +1,5 @@
 CURSO: Sistemas de Información Geográfica aplicados a Estudios Ambientales - IAMB
+_(si el promedio de calificaciones de todo el semestre es ≥ a 4.5 y su asistencia a clases es ≥ al 90% no presenta examen final)_.
 
 
 Módulo 2 - Características de los estudios ambientales - Línea base

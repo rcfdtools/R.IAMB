@@ -48,7 +48,7 @@ La evaluación del desempeño de los estudiantes valora el cumplimiento de los o
 
 * Asistencia: 10%
 * Quices: 40%
-* Examen: 50% _(si el promedio de calificaciones de todo el semestre es ≥ a 4.5 y su asistencia a clases es ≥ al 90% no presenta examen final)_.
+* Examen: 50% 
 
 > Acorde con el _Literal b_ del Artículo 46 del reglamento estudiantil de posgrado, los estudiantes de posgrado deben _"Asistir y participar cumplida y activamente en todas las actividades académicas contempladas en el plan de estudios"_.
 
@@ -82,10 +82,12 @@ En _Microsoft Windows / Panel de control / Region / Formats / Additional setting
 * Símbolo de agrupación de miles (Digit grouping symbol): coma (,)
 * Separador de listas (List separator): coma (,)
 
+En QGIS, desde el menú _Settings / General / Override System Locale_, establezca en _User interface translation_ y _Locale (number, date and currency formats)_, American English y English United States (en_US).
+
 
 ## Caso de estudio general
 
-El curso y sus diferentes talleres prácticos, se ejemplifican a través de un caso de estudio general correspondiente al **_“Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá”_**.
+El curso, los diferentes talleres prácticos y las actividades a realizar por los participantes, se ejemplifican a través de un caso de estudio general correspondiente al **_“Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá”_**.
 
 
 ## :large_blue_circle: Módulo 1 - Introducción y conceptos básicos
