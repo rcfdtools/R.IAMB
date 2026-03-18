@@ -3,7 +3,7 @@
 # 2.5. Medio socioeconómico - División geopolítica
 Keywords: `state` `county` `remote-sensing` `clip-raster`
 
-Descargue, cree un mosaico y recorte imágenes satelitales hasta el límite de la zona de estudio.
+Descargue, procese y analice los mapas de límites veredal, municipal, departamental y predial del área de estudio. 
 
 <div align="center"><img src="graph/GeoZone.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 

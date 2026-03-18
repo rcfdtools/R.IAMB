@@ -3,7 +3,7 @@
 # 2.4. Imagen satelital, DEM y Pendiente
 Keywords: `sentinel` `landsat` `remote-sensing` `clip-raster`
 
-Descargue, cree un mosaico y recorte imágenes satelitales hasta el límite de la zona de estudio.
+Descargue, cree un mosaico y recorte imágenes satelitales DEM hasta el límite de la zona de estudio. Cree y procese los mapas raster y vectorial de pendiente.
 
 <div align="center"><img src="graph/RemoteSensingDL.jpg" alt="rcfdtools" width="70%" border="0" /></div>
 
