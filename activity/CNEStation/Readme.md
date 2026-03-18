@@ -25,11 +25,12 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 <div align="center">
 
-| Requerimiento                                                                                                 | Descripción                                                                 |
-|:--------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
-| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 4.0 o superior.                                                        |
-| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                     |
-| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                      |
+| Requerimiento                                                                                                 | Descripción                                                                                        |
+|:--------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 4.0 o superior.                                                                               |
+| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                            |
+| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                             |
+| [:round_pushpin:qgis_station_len_years.py](../../file/src/qgis_station_len_years.py)                          | Script en Python para análisis de longitud hipotética de series en estaciones hidroclimatológicas. |
 
 </div>
 
@@ -232,7 +233,7 @@ En el conteo de estaciones por fuente encontrará que el 79.9% de las estaciones
 
 Con respecto a las altitudes, el promedio de cotas de las estaciones del IDEAM es de 1973.3 m.s.n.m. y 2342.3 m.s.n.m. para otras entidades.
 
-<div align="center">Conteo de estaciones por fuente<br><img src="graph/QGIS_Source2.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
+<div align="center">Análisis de altitudes por fuente<br><img src="graph/QGIS_Source2.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
 
 ## 4. Estudio de longitud hipotética de series
@@ -240,6 +241,34 @@ Con respecto a las altitudes, el promedio de cotas de las estaciones del IDEAM e
 Una vez obtenida la red de estaciones integrada sobre la zona de estudio, es necesario estudiar la longitud hipotética de las series a partir de las fechas de instalación y suspensión registradas en el catálogo. 
 
 > Este procedimiento es importante debido a que para la descarga de las series de datos registradas en las estaciones, es necesario primero conocer la homogeneidad en las longitudes hipotéticas de los registros que deberían tener las estaciones a partir de su fecha de puesta en operación y recolección de datos. Por ejemplo, si la mayoría de las estaciones tienen un registro continuo y actual de al menos 15 o 20 años y en las estaciones de la zona de estudio existen estaciones recientes o antiguas suspendidas con registros cortos (p. ej. 5 años), se podrían descartar estas estaciones del análisis, siempre y cuando no correspondan a estaciones en la zona de frontera geográfica de la zona en estudio.
+
+1. Utilizando el _Field Calculator_, cree los campos de fecha:
+
+* FInst = `to_date("FechaInst",'dd/M/yyyy')`
+* FSus = `to_date("FechaSusp",'dd/M/yyyy')`
+
+<div align="center"><img src="graph/QGIS_FieldCalculator.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+2. En el panel _Layers_, seleccione la capa /shp/CNE_Colombia_20260318_ZE.shp, y ejecute el script _/src/qgis_station_len_years.py_. Establezca como fechas de análisis los siguientes valores:
+
+* `tw_start_date = QDate(1980, 1, 1)`
+* `tw_end_date = QDate(2025, 12, 31)`
+
+<div align="center"><img src="graph/QGIS_Python.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+3. Luego de la ejecución serán agregados a la tabla de atributos de la capa de estaciones los campos:
+
+* LYearS: longitud hipotética de series por estación desde la fecha de instalación hasta el 2025/12/31.
+* LYearSTW: longitud hipotética de series por estación para la ventana de tiempo establecida de 1980/01/01 a 2025/12/31.
+
+<div align="center"><img src="graph/QGIS_LYearS.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+4. Desde el panel Layers, cree una copia de la capa de estaciones, represente en mapas de calor a partir de las longitudes hipotéticas obtenidas y obtenga los estadísticos. Podrá observar que las mayores longitudes se encuentran sobre el área urbana de Bogotá D.C. con un promedio de 31.97 años para longitudes completas y 25.18 años para la ventana de tiempo establecida.
+
+<div align="center"><img src="graph/QGIS_LYearS1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_LYearSTW.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
 
 
 ## Referencias
