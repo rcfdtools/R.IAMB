@@ -1,6 +1,6 @@
 <div align="center"><img alt="rcfdtools" src="../../file/graph/R.IAMB.svg" height="46px"></div>
 
-# 2.6. Medio abiótico - Hidrología
+# 2.6. Medio abiótico - Hidrología - Delimitación de cuencas
 Keywords: `basin` `basin-limit` `hec-hms` `dem-reconditioning` `fill` `fdr`  
 
 A partir del modelo digital de elevación ESA Copernicus, cree el mapa de relleno de sumideros FIL. Reacondicione el modelo de terreno FIL como RawDEM, utilizando la red hidrográfica nacional. A partir del RawDEM, cree el mapa de direcciones de flujo FDR. Con la grilla FDR, cree el mapa de acumulación de flujo FAC. Con la grilla FAC, defina los drenajes con áreas de aportación de 100 km² creando un mapa binarizado. Cree una capa de puntos y a partir de la red de drenaje y del modelo digital de elevación, identifique el punto de control, delimite cuencas principales, convierta a vectores y analice las áreas obtenidas.
