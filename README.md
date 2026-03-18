@@ -87,7 +87,7 @@ En QGIS, desde el menú _Settings / General / Override System Locale_, establezc
 
 ## Caso de estudio general
 
-El curso, los diferentes talleres prácticos y las actividades a realizar por los participantes, se ejemplifican a través de un caso de estudio general correspondiente al **_“Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá”_**.
+El curso, los diferentes talleres prácticos y las actividades complementarias a realizar por los participantes, se ejemplifican o evalúan a través de un caso de estudio general correspondiente al **_“Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá”_**.
 
 
 ## :large_blue_circle: Módulo 1 - Introducción y conceptos básicos
