@@ -212,18 +212,17 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 ## 3. Extracción y estudio general de estaciones en la zona de estudio
 
-1. Desde la carpeta _\file\data\shp_, agregue al mapa las capas _SZH2120.shp_ y _SZH2120_Envelope_Buffer250m.shp_, creadas en la actividad [Análisis de sub-zonas hidrográficas](../SZH/Readme.md). Simbolice estas zonas solo por su contorno y simbolice las estaciones por valores únicos a partir del campo `CNESource`, podrá observar que mayoritariamente las estaciones dentro del polígono envolvente corresponden a estaciones de otras entidades y que su localización geográfica no es precisa.
+1. Agregue al mapa la capa _/shp/LayerExtentAreaProyecto9377Buffer1000m.shp_ creada en la actividad de descarga de modelos digitales de elevación
 
-> Para la correcta localización geográfica de las estaciones, los catálogos deben contener al menos 6 posiciones decimales en los campos geocodificacos `LatDD` y `LongDD` para tener precisión al menos métrica. Muchos de los valores consignados en la tabla del catálogo correspondiente a otras estaciones, tienen pocos decimales y en la ilustración se puede observar que se encuentran alineadas horizontal o verticalmente a una grilla imaginaria regular.
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318f.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318d.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-2. Desde el menú _Map / Selection / Select By Location_, seleccione todas aquellas estaciones del catálogo integrado estaciones que se intersecan con el polígono envolvente de la zona de estudio, podrá observar en la tabla de atributos que se han seleccionado 1250 estaciones.
+2. Utilizando la herramienta de selección por localización, seleccione todas las estaciones que se intersecan con el polígono envolvente. Podrá observar en la tabla de atributos que se han seleccionado 1315 estaciones.
 
 <div align="center"><img src="graph/QGIS_SelectByLocation.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-8. Exporte las estaciones seleccionadas a una nueva capa y guarde como `\file\data\shp\CNE_Colombia_20260318_ZE.shp`; en la exportación defina el CRS 9377. 
+8. Exporte las estaciones seleccionadas a una nueva capa y guarde como `/shp/CNE_Colombia_20260318_ZE.shp`; en la exportación defina el CRS 9377. 
 
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318_ZE.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_CNE_Colombia_20260318_ZEa.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 9. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
