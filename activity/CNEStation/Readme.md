@@ -199,18 +199,15 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 <div align="center"><img src="graph/QGIS_CNE_Colombia_20260318a.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-7. 
+7. Desde el menú _Layer / Add Layer / Add Delimited Text Layer..._ agregue la tabla .csv como una capa temporal. Establezca el campo `Código` como _String_, `FechaInst` y `FechaSusp` como _String_, y los campos `Altitud`, `LatDD` y `LongDD` como _Double_. En _Geometry Definition_, establezca los campos `LatDD`,  `LongDD`, `Altitud` y el CRS 4326.
 
-
-
-6. En la tabla de contenido, de clic derecho en la tabla _CNE_Colombia_20260318$_, seleccione la opción _Create Point From Table / XY Table To Point_ y cree la capa geográfica de estaciones. Asegúrese de seleccionar las columnas correctas de localización geográfica, y en Environments establezca el CRS 9377, guarde la capa como `\file\data\shp\CNE_Colombia_20260318.shp`.
-
-<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318a.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_CNE_Colombia_20260318b.jpg" alt="rcfdtools" width="100%" border="0" /></div>
-
-7. Abra la tabla de atributos de la capa geográfica creada y asegúrese de que existen 9107 estaciones.
-
 <div align="center"><img src="graph/QGIS_CNE_Colombia_20260318c.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+8. Abra la tabla de atributos de la capa geográfica creada y asegúrese de que existen 9359 estaciones y exporte a un archivo shapefile como _/shp/QGIS_CNE_Colombia_20260318b.shp_
+
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318d.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+<div align="center"><img src="graph/QGIS_CNE_Colombia_20260318e.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## 3. Extracción y estudio general de estaciones en la zona de estudio
