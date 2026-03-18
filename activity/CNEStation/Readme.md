@@ -268,7 +268,9 @@ Una vez obtenida la red de estaciones integrada sobre la zona de estudio, es nec
 <div align="center"><img src="graph/QGIS_LYearS1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_LYearSTW.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
+:pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa _EstacionMeteorologica_ del modelo ANLA.
 
+<div align="center"><img src="graph/ANLA_EstacionMeteorologica.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
 ## Referencias
