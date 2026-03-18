@@ -220,12 +220,12 @@ Utilice los siguientes nombres: `CNESource`, `Codigo`, `Nombre`, `Categoria`, `T
 
 <div align="center"><img src="graph/QGIS_SelectByLocation.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-8. Exporte las estaciones seleccionadas a una nueva capa y guarde como `/shp/CNE_Colombia_20260318_ZE.shp`; en la exportación defina el CRS 9377. 
+3. Exporte las estaciones seleccionadas a una nueva capa y guarde como `/shp/CNE_Colombia_20260318_ZE.shp`; en la exportación defina el CRS 9377. 
 
 <div align="center"><img src="graph/QGIS_CNE_Colombia_20260318_ZE.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_CNE_Colombia_20260318_ZEa.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-9. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
+4. A partir de la capa de extracción generada, cree gráficos de análisis evaluando las diferentes variables categóricas contenidas en la tabla de atributos.
 
 <div align="center">Conteo de estaciones por fuente<br><img src="graph/QGIS_Source_Chart.jpg" alt="rcfdtools" width="100%" border="0" /></div><br>
 
