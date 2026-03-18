@@ -8,9 +8,6 @@ Objetivo: Detallar los elementos que se deben contemplar y que deben formar part
 
 2.6. Medio abiótico - Hidrología   
 (OcupacionCauce)
-4. Creación proyecto HMS
-5. Walls 2, 100, 100
-6. Burn 5, 10, 1000
 7. Area to define streams: 100
 
 

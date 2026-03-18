@@ -199,11 +199,22 @@ Dirección de flujo
 
 :pencil2:**Tarea:** Homologue y cargue el análisis realizado en la capa _CuencaHidrografica_ del modelo ANLA.
 
+<div align="center"><img src="graph/ANLA_CuencaHidrografica.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+:pencil2:**Tarea:** Realice el análisis requerido en la capa _OcupacionCauce_ del modelo ANLA.
+
+<div align="center"><img src="graph/ANLA_OcupacionCauce.jpg" alt="rcfdtools" width="100%" border="0" /></div>
+
+
 
 ## Referencias
 
 * [HEC-HMS Technical Reference Manual](https://www.hec.usace.army.mil/confluence/hmsdocs/hmstrm)
 * [HEC-HMS User's Manual](https://www.hec.usace.army.mil/confluence/hmsdocs/hmsum/latest)
+* https://www.anla.gov.co/01_anla/permiso-y-autorizacion-construccion-obras-cauce-o-deposito-agua
+* [Guía para la solicitud de autorizaciónde ocupación de cauces - ANLA](https://storymaps.arcgis.com/stories/56ac6a8baf6b413f818a02312bd036dc)
+* https://www.anm.gov.co/sites/default/files/DocumentosAnm/permisos_ambientales.pdf
+* [Ocupación de cauces - Servicio Rest - ANLA](https://portalsig.anla.gov.co/publico/rest/services/REGIONALIZACION/Reporte_AltoMagdalena_2018/MapServer/117)
 
 
 ##

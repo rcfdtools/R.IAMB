@@ -229,6 +229,8 @@ Corresponde a la superficie o Modelo Digital de Pendientes, en escala de grises,
 
 1. Con la herramienta _Raster Analysis / Slope_, cree el mapa de pendientes en tasa porcentual. Ajuste la simbología truncando el valor máximo a 100%. Guarde como _/dem/COP30_Slope_9377.tif_.
 
+> Para optimizar el análisis de pendiente puede ejecutar la herramienta _Raster Terrain Analysis / Fill sinks (Wang & Liu)_ que le permitirá rellenar los sumideros en terreno y en canopy de vegetación. Con la herramienta _Elevation Profile_ analice y compare el modelo digital de elevación original, el modelo con sumideros rellenados y con la calculadora raster calcule y analice la diferencia de elevación entre estos dos modelos. 
+
 <div align="center"><img src="graph/QGIS_Slope.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 2. Ajuste la simbología para representar las pendientes de acuerdo a los valores establecidos en el dominio _Dom_PenSuelo_ del ANLA.
