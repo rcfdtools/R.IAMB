@@ -74,15 +74,11 @@ Para el desarrollo del curso y las actividades del proyecto final, son requerida
 
 </div>
 
-**Configuración regional**
+**Configuración regional en ingeniería**
 
-En _Microsoft Windows / Panel de control / Region / Formats / Additional settings..._, establezca:
-
-* Símbolo decimal (Decimal symbol): punto (.)
-* Símbolo de agrupación de miles (Digit grouping symbol): coma (,)
-* Separador de listas (List separator): coma (,)
-
-En QGIS, desde el menú _Settings / General / Override System Locale_, establezca en _User interface translation_ y _Locale (number, date and currency formats)_, American English y English United States (en_US).
+* Sistema operativo: en _Microsoft Windows / Panel de control / Region / Formats / Additional settings..._, establezca símbolo decimal (Decimal symbol): punto `.`, símbolo de agrupación de miles (digit grouping symbol): coma `,` y separador de listas (list separator): coma `,`.
+* Microsoft Excel: en el menú _Archivo / Opciones / Avanzado / Opciones de Edición_, desmarque la casilla de _Uso de Separadores del Sistema_ y establezca punto `,` como separador decimal y coma `,` como separador de miles. 
+* QGIS, desde el menú _Settings / General / Override System Locale_, establezca en _User interface translation_ y _Locale (number, date and currency formats)_, American English y English United States (en_US).
 
 
 ## Caso de estudio general
