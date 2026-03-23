@@ -99,8 +99,8 @@ El curso, los diferentes talleres prácticos y las actividades complementarias a
 
 | Actividad                                                                                           | Descripción                                                                                                                                                |
 |:----------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [1.1. Introducción, conceptos básicos de SIG y georreferenciación](activity/GISBasic/Readme.md)     | Sistemas de información geográfica, fundamentos, proyecciones y origen de coordenadas.<br/>[Quiz 1.1. Conocimiento](https://forms.office.com/r/DX4JQBQkHb) |
-| [1.2. Sistemas de información geográfica y los estudios ambientales](activity/GISBasicEA/Readme.md) | Modelo de datos nacional para presentación de estudios ambientales en Colombia.<br/>[Quiz 1.2. Conocimiento](https://forms.office.com/r/RHecDaenWG)       |
+| [1.1. Introducción, conceptos básicos de SIG y georreferenciación](activity/GISBasic/Readme.md)     | Sistemas de información geográfica, fundamentos, proyecciones y origen de coordenadas.<br/><br/>Quices individuales:<br/>[Quiz 1.1. Conocimiento](https://forms.office.com/r/DX4JQBQkHb) |
+| [1.2. Sistemas de información geográfica y los estudios ambientales](activity/GISBasicEA/Readme.md) | Modelo de datos nacional para presentación de estudios ambientales en Colombia.<br/><br/>Quices individuales:<br/>[Quiz 1.2. Conocimiento](https://forms.office.com/r/RHecDaenWG)       |
 
 </div>
 
