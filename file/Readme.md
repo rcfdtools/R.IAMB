@@ -1,9 +1,6 @@
 # Estructura de directorios
 
-Para el desarrollo del caso de estudio y del proyecto de clase, es necesario crear la siguiente estructura en su repositorio de proyecto.
-
-[Descargar aquí.](IAMB_FileStructure.zip)
-
+Para el desarrollo de las diferentes actividades del curso, son requeridos los siguientes directorios, que deben estar contenidos en la carpeta `C:\IAMB` o `D:\IAMB`. [:package:Descargar.](IAMB_FileStructure.zip)
 > Atención: no incluya archivos en la raíz del repositorio, utilice la carpeta correspondiente. En caso de que requiera de la creación de archivos temporales, utilice la carpeta `\temp`.
 
 | Carpeta                                            | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                        |
