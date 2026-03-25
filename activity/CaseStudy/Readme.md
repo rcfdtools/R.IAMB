@@ -33,7 +33,6 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 | [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                                               |
 | [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                                |
 | [:round_pushpin:Zonificacion_Hidrografica_2022.zip](../../file/data/IDEAM/Zonificacion_Hidrografica_2022.zip) | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                   |
-| [:round_pushpin:Lim_AA_25k_2022.zip](../../file/data/MADS/Lim_AA_25k_2022.zip)                                | Zonificación Hidrográfica de Colombia a escala 1:100k, IDEAM, 2022.                                                   |
 | [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps).  |
 
 </div>
@@ -148,6 +147,12 @@ El dominio _Dom_Sector_, contiene los siguientes códigos:
 <div align="center"><img src="graph/QGIS_AreaProyecto1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 2. Como observa, luego de copiar el polígono, no se homologan automáticamente los campos requeridos por la capa _AreaProyecto_ del ANLA, incluya manualmente los siguientes atributos:
+
+* SECTOR: Proyectos Especiales
+* OPERADOR: IAMB
+* PROYECTO: Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá
+* DESCRIP: Sub-zona Hidrográfica 2120 - Cuenca del Río Bogotá.
+* NOMENCLAT: Cuenca Río Bogotá
 
 <div align="center"><img src="graph/QGIS_AreaProyecto2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
