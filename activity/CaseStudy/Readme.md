@@ -149,11 +149,17 @@ El dominio _Dom_Sector_, contiene los siguientes códigos:
 
 2. Como observa, luego de copiar el polígono, no se homologan automáticamente los campos requeridos por la capa _AreaProyecto_ del ANLA, incluya manualmente los siguientes atributos:
 
-* SECTOR: _Proyectos Especiales_
-* OPERADOR: _IAMB_
-* PROYECTO: _Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá_
-* DESCRIP: _Sub-zona Hidrográfica 2120 - Cuenca del Río Bogotá_
-* NOMENCLAT: _Cuenca Río Bogotá_
+<div align="center">
+
+| Atributo  | Valor                                                                                                                                         |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| SECTOR    | Proyectos Especiales                                                                                                                          |
+| OPERADOR  | IAMB                                                                                                                                          |
+| PROYECTO  | Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá |
+| DESCRIP   | Sub-zona Hidrográfica 2120 - Cuenca del Río Bogotá                                                                                            |
+| NOMENCLAT | Cuenca Río Bogotá                                                                                                                             |
+
+</div>
 
 <div align="center"><img src="graph/QGIS_AreaProyecto2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
