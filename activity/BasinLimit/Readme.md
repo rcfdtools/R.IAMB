@@ -26,7 +26,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 | [:mortar_board:Actividad](../RemoteSensingDL/Readme.md)                                                       | Modelo digital de elevación - DEM a partir de sensores remotos satelitales. |
 | [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 4.0 o superior.                                                        |
 | [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/)                                      | HEC-HMS 4.12 o superior.                                                    |
-| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                     |
+| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                          | Geodatabase ANLA Magna Origen Nacional.                                     |
 | [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                      |
 
 </div>
