@@ -31,7 +31,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 | [:notebook:Lectura](../../file/data/ANLA/guia_modelodatosanla.pdf)                                            | Guía para diligenciamiento y presentación del modelo de datos geográficos. |
 | [:notebook:Lectura](../../file/data/ANLA/03-05-2021-anla-circular-externa-00002.pdf)                          | Circular externa 00002 de 2021-05-03.                                      |
 | [:notebook:Lectura](../../file/data/ANLA/resolucion2182_20161223.pdf)                                         | Resolución 2180 de 2016-12-23.                                             |
-| [:date:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                    |
+| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                           | Geodatabase ANLA Magna Origen Nacional.                                    |
 | [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                     |
 | [:date:20201118-Plantilla-Metadatos-ANLA.xlsx](../../file/data/ANLA/20201118-Plantilla-Metadatos-ANLA.xlsx)   | Plantilla metadatos ANLA.                                                  |
 
