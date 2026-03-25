@@ -151,13 +151,13 @@ El dominio _Dom_Sector_, contiene los siguientes códigos:
 
 <div align="center">
 
-| Atributo  | Valor                                                                                                                                         |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| SECTOR    | Proyectos Especiales                                                                                                                          |
-| OPERADOR  | IAMB                                                                                                                                          |
-| PROYECTO  | Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá |
-| DESCRIP   | Sub-zona Hidrográfica 2120 - Cuenca del Río Bogotá                                                                                            |
-| NOMENCLAT | Cuenca Río Bogotá                                                                                                                             |
+| Atributo   | Valor                                                                                                                                          |
+|:-----------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+| SECTOR     | Proyectos Especiales                                                                                                                           |
+| OPERADOR   | IAMB                                                                                                                                           |
+| PROYECTO   | Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá  |
+| DESCRIP    | Sub-zona Hidrográfica 2120 - Cuenca del Río Bogotá                                                                                             |
+| NOMENCLAT  | Cuenca Río Bogotá                                                                                                                              |
 
 </div>
 
@@ -213,6 +213,19 @@ El dominio _Dom_Sector_, contiene los siguientes códigos:
 <div align="center"><img src="graph/ANLA_MergeSelectedFeatures.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
 5. Asigne y/o calcule los atributos requeridos.
+
+<div align="center">
+
+| Atributo    | Valor                                                                                                                                         |
+|:------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
+| OPERADOR    | IAMB                                                                                                                                          |
+| PROYECTO    | Análisis de impactos ambientales producidos por la expansión o re-densificación de áreas urbanizadas en la cuenca hidrográfica del Río Bogotá |
+| AREA_INFL   | Medio Físico                                                                                                                                  |
+| COMPONENTE  | Intersección con subzonas hidrográficas                                                                                                       |
+| OBSERV      | Área de influencia indirecta considerando asentamientos próximos y transvase de agua entre cuencas                                            |
+| ID_AREAINF  | 1                                                                                                                                             |
+
+</div>
 
 <div align="center"><img src="graph/ANLA_AreaInfluencia3.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
