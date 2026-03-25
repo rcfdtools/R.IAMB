@@ -28,10 +28,11 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 | Requerimiento                                                                                                 | Descripción                                                                |
 |:--------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 3.44 o superior.                                                      |
 | [:notebook:Lectura](../../file/data/ANLA/guia_modelodatosanla.pdf)                                            | Guía para diligenciamiento y presentación del modelo de datos geográficos. |
 | [:notebook:Lectura](../../file/data/ANLA/03-05-2021-anla-circular-externa-00002.pdf)                          | Circular externa 00002 de 2021-05-03.                                      |
 | [:notebook:Lectura](../../file/data/ANLA/resolucion2182_20161223.pdf)                                         | Resolución 2180 de 2016-12-23.                                             |
-| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                           | Geodatabase ANLA Magna Origen Nacional.                                    |
+| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                          | Geodatabase ANLA Magna Origen Nacional.                                    |
 | [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                     |
 | [:date:20201118-Plantilla-Metadatos-ANLA.xlsx](../../file/data/ANLA/20201118-Plantilla-Metadatos-ANLA.xlsx)   | Plantilla metadatos ANLA.                                                  |
 
@@ -143,6 +144,8 @@ GIS como sistema transversal de información y análisis en las múltiples etapa
 
 
 ### 2.5. Estructura genérica de datos ANLA (datos espaciales, tablas y ráster)
+
+Siga las indicaciones del instructor para explorar en [QGIS](https://qgis.org/) la base de datos y la estructura del modelo de datos geo-espacial del ANLA. 
 
 <div align="center"><img src="graph/GDB_EstructuraGenerica.jpg" alt="rcfdtools" width="50%" border="0" /></div>
 
