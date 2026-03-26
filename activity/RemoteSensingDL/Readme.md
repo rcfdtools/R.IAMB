@@ -275,7 +275,7 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 
 ## 6. Análisis de diferencias DEM
 
-:pencil2: Utilizando los conceptos aprendidos en esta actividad y con algebra de mapas (_Raster Analysis / Raster Calculator_) y reclasificación por clases (_Raster Analysis / Reclassify by Table_), realice un análisis de diferencias entre los DEM _Copernicus 30_ y _ASTER GDEM_, para identificar zonas mineras, áreas con remoción en masa, nuevos cuerpos de agua de gran extensión y diferencias de elevación extendidas dentro del área de estudio.
+:pencil2: Utilizando los conceptos aprendidos en esta actividad, con algebra de mapas (_Raster Analysis / Raster Calculator_) y reclasificación por clases (_Raster Analysis / Reclassify by Table_), realice un análisis de diferencias entre los DEM _Copernicus 30_ y _ASTER GDEM_, para identificar zonas mineras, áreas con remoción en masa, nuevos cuerpos de agua de gran extensión y diferencias de elevación extendidas dentro del área de estudio.
 
 
 ## Referencias
