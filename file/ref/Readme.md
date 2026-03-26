@@ -24,10 +24,6 @@
 * https://earthdata.nasa.gov/
 * https://www.giss.nasa.gov/tools/panoply/
 * https://www.usgs.gov/
-
-
-## General link references
-
 * https://www.usgs.gov/landsat-missions/landsat-acronyms
 * [QGIS Python - Coordinate Transformation](https://www.youtube.com/watch?v=3YXjYAdAyjo)
 * [Definición de los indicadores de la línea base ambiental de Caldas – Colombia.](https://cdiac.manizales.unal.edu.co/publicaciones/publicacion1.pdf)
