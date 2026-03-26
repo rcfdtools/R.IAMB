@@ -129,7 +129,7 @@ Los elementos de línea base en la elaboración de estudios ambientales son la d
 </div>
 
 
-## :large_blue_circle: Módulo 3 - Análisis ambiental aplicado
+## :large_blue_circle: Módulo 3 - Estudios ambientales - Análisis aplicado
 
 **Objetivo**: Aplicar los conceptos y habilidades computacionales obtenidas en los módulos 1 y 2, para análisis ambiental utilizando SIG. Cada estudiante investiga y realiza de forma autónoma los análisis requeridos, utilizando como apoyo talleres guía realizados en otros cursos de rcfdtools.
 
