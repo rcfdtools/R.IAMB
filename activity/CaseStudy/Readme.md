@@ -4,6 +4,8 @@
 
 Objetivo: Detallar los elementos de línea base que forman parte de un Estudio Ambiental.
 
+Los elementos de línea base en la elaboración de estudios ambientales son la descripción detallada y el diagnóstico actual de las características físicas, bióticas y socioeconómicas de un área, previa a la ejecución de cualquier proyecto. Actúan como una fotografía inicial para evaluar impactos y diseñar medidas de manejo.
+
 
 # 2.1. Proyecto o caso de estudio
 Keywords: `case-study` `base-maps` `project-area` `clip` `statistics` `area-proyecto` `area-influencia`
