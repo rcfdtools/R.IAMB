@@ -1,3 +1,4 @@
+Análisis de diferencias entre DEM para identificar zonas mineras, áreas con remosión en masa, cuerpos de agua de gran extensión.
 
 Padlet
 
@@ -7,14 +8,12 @@ Padlet
 https://www.ambientebogota.gov.co/calidad-del-aire
 http://rmcab.ambientebogota.gov.co/home/map
 
-2.9. Tablas de registro climatológico
+Módulo 3 - Análisis ambiental aplicado
+
+3.0. Tablas de registro climatológico
 (Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB)
-
-
-
-
-
-Módulo 3 - Análisis ambiental
+https://github.com/rcfdtools/R.LTWB/blob/main/activity/CNEStationDatasetDownload/Readme.md
+https://github.com/rcfdtools/R.LTWB/blob/main/activity/RemoteSensing/Readme.md
 
 3.1. Digitalización de vectores
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Digitizing/Readme.md
@@ -63,7 +62,7 @@ https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token
 
 ## :large_blue_circle: Módulo 3 - Análisis ambiental
 
-**Objetivo**: Obtener habilidades computacionales en el desarrollo de análisis ambientales utilizando SIG.
+**Objetivo**: Aplicar los conceptos y habilidades computacionales obtenidas en los módulos 1 y 2, para análisis ambiental utilizando SIG. Cada estudiante investiga y realiza de forma autónoma los análisis requeridos, utilizando como apoyo talleres guía realizados en otros cursos de rcfdtools.
 
 El análisis ambiental es un proceso técnico, sistemático y multidisciplinario que evalúa los efectos que un proyecto, actividad, política pública o plan puede tener sobre el medio ambiente. Su finalidad es prevenir, minimizar o compensar impactos negativos en el entorno natural, social y económico, asegurando que el desarrollo territorial se lleve a cabo de forma sostenible. 
 
