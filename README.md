@@ -131,7 +131,7 @@ Los elementos de línea base en la elaboración de estudios ambientales son la d
 
 ## :large_blue_circle: Módulo 3 - Estudios ambientales - Análisis aplicado
 
-**Objetivo**: Aplicar los conceptos y habilidades computacionales obtenidas en los módulos 1 y 2, para análisis ambiental utilizando SIG. Cada estudiante investiga y realiza de forma autónoma los análisis requeridos, utilizando como apoyo talleres guía realizados en otros cursos de rcfdtools.
+**Objetivo**: Aplicar los conceptos y habilidades computacionales obtenidas en los módulos 1 y 2 para el análisis ambiental de la zona de proyecto utilizando SIG. Cada estudiante investiga y realiza de forma autónoma los análisis requeridos, utilizando como apoyo talleres guía realizados en otros cursos de [rcfdtools](https://github.com/rcfdtools).
 
 El análisis ambiental es un proceso técnico, sistemático y multidisciplinario que evalúa los efectos que un proyecto, actividad, política pública o plan puede tener sobre el medio ambiente. Su finalidad es prevenir, minimizar o compensar impactos negativos en el entorno natural, social y económico, asegurando que el desarrollo territorial se lleve a cabo de forma sostenible. 
 
@@ -141,6 +141,8 @@ El análisis ambiental es un proceso técnico, sistemático y multidisciplinario
 |:-------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 3.1. Guía general              |                                                                                                                                                                                          |
 | [Auto-evaluación Módulo 3]()   | A partir de las actividades desarrolladas, cree un informe técnico único detallado (será publicado en el repositorio del curso, para su consulta global) y realice su auto-calificación. |
+
+</div>
 
 
 ##
