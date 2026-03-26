@@ -1,12 +1,28 @@
 Análisis de diferencias entre DEM para identificar zonas mineras, áreas con remosión en masa, cuerpos de agua de gran extensión.
+Move population to SIGE.
 
 Padlet
 
+
+## :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
 
 2.8. Medio abiótico - Atmósfera 
 (CalidadAire)
 https://www.ambientebogota.gov.co/calidad-del-aire
 http://rmcab.ambientebogota.gov.co/home/map
+
+<div align="center">
+
+| Actividad                             | Descripción                                                             |
+|:--------------------------------------|:------------------------------------------------------------------------|
+| 2.8. Medio abiótico - Atmósfera       | CalidadAire                                                             |
+| 2.9. Tablas de registro climatológico | Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB |
+
+</div>
+
+
+
+## :large_blue_circle: Módulo 3 - Estudios ambientales - Análisis aplicado
 
 Módulo 3 - Análisis ambiental aplicado
 
@@ -34,36 +50,6 @@ https://github.com/rcfdtools/R.SIGE/blob/main/activity/RemoteSensingERA5/Readme.
 3.6. Análisis de amenazas naturales
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Hazard/Readme.md
 
-
-
-
-Hojas cartográficas 1:25k
-**************************
-Bases de datos vectoriales por hojas cartográficas
-https://www.colombiaenmapas.gov.co/?u=0&t=23&servicio=5&cescala=1:25.000
-
-D:\R.IAMB\file\data\IGAC\HojaCartografica
-
-Carto25000_209IVC_CC_2013_gpkg.zip
-https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTM5MCIsImV4cCI6MTc3MzM0NDI0MCwianRpIjoiY2FydG9fR1BLRy01MzEyIn0.F90QK63KkU4JLiC9rIb3EUpOf0Dy4TWdaFwebkYHTGLHHvYOqPDsPu2w8uDqaSM2Jhdv9UkCOoD3Zl9_LtNCJQ
-
-
-## :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
-
-<div align="center">
-
-| Actividad                             | Descripción                                                             |
-|:--------------------------------------|:------------------------------------------------------------------------|
-| 2.8. Medio abiótico - Atmósfera       | CalidadAire                                                             |
-| 2.9. Tablas de registro climatológico | Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB |
-
-</div>
-
-
-
-## :large_blue_circle: Módulo 3 - Análisis ambiental aplicado
-
-
 | Actividad                                                              | Descripción                                    |
 |:-----------------------------------------------------------------------|:-----------------------------------------------|
 | 3.1. Digitalización de vectores                                        |                                                |
@@ -74,4 +60,4 @@ https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token
 | 3.6. Análisis de amenazas naturales                                    | AmenazaSismica, AmenazaTsunami, AmenazaVolcanica                                                |
 | 3.7. Análisis de impactos ambientales                                  | Por desarrollos y redensificación urbanística. |
 
-</div>
+

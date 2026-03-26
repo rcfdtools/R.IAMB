@@ -28,6 +28,7 @@
 * [QGIS Python - Coordinate Transformation](https://www.youtube.com/watch?v=3YXjYAdAyjo)
 * [Definición de los indicadores de la línea base ambiental de Caldas – Colombia.](https://cdiac.manizales.unal.edu.co/publicaciones/publicacion1.pdf)
 * https://www.anla.gov.co/01_anla/proyectos/nuevo-licenciamiento-ambiental/elaboracion-y-evaluacion-eia
+* [Bases de datos vectoriales por hojas cartográficas 1:25k - IGAC](https://www.colombiaenmapas.gov.co/?u=0&t=23&servicio=5&cescala=1:25.000)
 
 
 ## Textos guía
