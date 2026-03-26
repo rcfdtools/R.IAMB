@@ -26,29 +26,34 @@ http://rmcab.ambientebogota.gov.co/home/map
 
 Módulo 3 - Análisis ambiental aplicado
 
-3.0. Tablas de registro climatológico
+3.1. Estudio poblacional: censos, proyecciones y demanda de servicios públicos
+https://github.com/rcfdtools/R.SIGE/blob/main/activity/Population/Readme.md
+https://github.com/rcfdtools/R.SIGE/blob/main/activity/PopulationGIS/Readme.md
+
+3.2. Tablas de registro climatológico
 (Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB)
 https://github.com/rcfdtools/R.LTWB/blob/main/activity/CNEStationDatasetDownload/Readme.md
 https://github.com/rcfdtools/R.LTWB/blob/main/activity/RemoteSensing/Readme.md
 
-3.1. Digitalización de vectores
+3.3. Digitalización de vectores
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Digitizing/Readme.md
 
-3.2. Estudio geográfico de embalses o reservorios
+3.4. Estudio geográfico de embalses o reservorios
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Reservoir/Readme.md
 
-3.3. Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI y otros índices
+3.5. Índices de vegetación: NDVI, SAVI, MSAVI, TSAVI y otros índices
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/RemoteSensingNDVI/Readme.md
 
-3.4. Generación de mapas ráster interpolados, isolíneas y zonificación
+3.6. Generación de mapas ráster interpolados, isolíneas y zonificación
 (MDPrec, MDTemp, MDPM10Diario, MDPM10Anual, Isoyeta, Isoterma, ZonificacionClimatica)
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/ThermicLevel/Readme.md
 
-3.5. Análisis hidro-climatológico ERA5 Land Monthly
+3.7. Análisis hidro-climatológico ERA5 Land Monthly
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/RemoteSensingERA5/Readme.md
 
-3.6. Análisis de amenazas naturales
+3.8. Análisis de amenazas naturales
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Hazard/Readme.md
+
 
 | Actividad                                                              | Descripción                                    |
 |:-----------------------------------------------------------------------|:-----------------------------------------------|

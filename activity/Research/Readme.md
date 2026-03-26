@@ -17,7 +17,8 @@ Guía con descripción de actividades de investigación aplicada a realizar por 
 
 ## Objetivos
 
-* 
+* Aplicar conceptos y habilidades de análisis geográfico.
+* Investigar y analizar algunos de los componentes aplicados en estudios ambientales.
 
 
 ## Requerimientos
@@ -35,12 +36,13 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 </div>
 
 
-## 1. Conceptos generales
+## 1. Investigaciones aplicadas
 
-
-## Referencias
-
-* 
+| Actividad | Descripción | Referencia |
+|-----------|-------------|------------|
+| 3.1.      |             |            |
+|           |             |            |
+|           |             |            |
 
 
 ##
