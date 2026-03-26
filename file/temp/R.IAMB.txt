@@ -26,9 +26,6 @@ http://rmcab.ambientebogota.gov.co/home/map
 
 Módulo 3 - Análisis ambiental aplicado
 
-3.1. Estudio poblacional: censos, proyecciones y demanda de servicios públicos
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/Population/Readme.md
-https://github.com/rcfdtools/R.SIGE/blob/main/activity/PopulationGIS/Readme.md
 
 3.2. Tablas de registro climatológico
 (Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB)
