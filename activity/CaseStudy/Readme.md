@@ -301,6 +301,7 @@ Tomando como referencia el límite de la subzona hidrográfica 2120 del IDEAM, l
 * https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectoroverlay.html#qgisclip
 * https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/qgis/vectorselection.html#qgisselectbylocation
 
+
 ##
 
 _R.IAMB es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../LICENSE.md)._
