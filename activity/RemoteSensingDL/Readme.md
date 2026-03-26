@@ -273,6 +273,11 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 <div align="center"><img src="graph/QGIS_Dissolve.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 
+## 6. Análisis de diferencias DEM
+
+:pencil2: Utilizando los conceptos aprendidos en esta actividad y con algebra de mapas (_Raster Analysis / Raster Calculator_) y reclasificación por clases (_Raster Analysis / Reclassify by Table_), realice un análisis de diferencias entre los DEM _Copernicus 30_ y _ASTER GDEM_, para identificar zonas mineras, áreas con remoción en masa, nuevos cuerpos de agua de gran extensión y diferencias de elevación extendidas dentro del área de estudio.
+
+
 ## Referencias
 
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/composite-bands.htm

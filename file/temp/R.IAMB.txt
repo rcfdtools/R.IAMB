@@ -1,4 +1,4 @@
-Análisis de diferencias entre DEM para identificar zonas mineras, áreas con remosión en masa, cuerpos de agua de gran extensión.
+
 Move population to SIGE.
 
 Padlet
