@@ -137,10 +137,10 @@ El análisis ambiental es un proceso técnico, sistemático y multidisciplinario
 
 <div align="center">
 
-| Actividad                          | Descripción                                                                                                                                                                              |
-|:-----------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 3.1. Guía general de investigación | Guía con descripción de actividades de investigación aplicada a realizar por cada estudiante.                                                                                            |
-| [Auto-evaluación Módulo 3]()       | A partir de las actividades desarrolladas, cree un informe técnico único detallado (será publicado en el repositorio del curso, para su consulta global) y realice su auto-calificación. |
+| Actividad                                                         | Descripción                                                                                                                                                                              |
+|:------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [3.1. Guía general de investigación](activity/Research/Readme.md) | Guía con descripción de actividades de investigación aplicada a realizar por cada estudiante.                                                                                            |
+| [Auto-evaluación Módulo 3]()                                      | A partir de las actividades desarrolladas, cree un informe técnico único detallado (será publicado en el repositorio del curso, para su consulta global) y realice su auto-calificación. |
 
 </div>
 
