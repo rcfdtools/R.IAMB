@@ -48,6 +48,7 @@ Carto25000_209IVC_CC_2013_gpkg.zip
 https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNTM5MCIsImV4cCI6MTc3MzM0NDI0MCwianRpIjoiY2FydG9fR1BLRy01MzEyIn0.F90QK63KkU4JLiC9rIb3EUpOf0Dy4TWdaFwebkYHTGLHHvYOqPDsPu2w8uDqaSM2Jhdv9UkCOoD3Zl9_LtNCJQ
 
 
+## :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
 
 <div align="center">
 
@@ -60,13 +61,8 @@ https://serviciosgeovisor.igac.gov.co:8080/Geovisor/descargas?cmd=download&token
 
 
 
-## :large_blue_circle: Módulo 3 - Análisis ambiental
+## :large_blue_circle: Módulo 3 - Análisis ambiental aplicado
 
-**Objetivo**: Aplicar los conceptos y habilidades computacionales obtenidas en los módulos 1 y 2, para análisis ambiental utilizando SIG. Cada estudiante investiga y realiza de forma autónoma los análisis requeridos, utilizando como apoyo talleres guía realizados en otros cursos de rcfdtools.
-
-El análisis ambiental es un proceso técnico, sistemático y multidisciplinario que evalúa los efectos que un proyecto, actividad, política pública o plan puede tener sobre el medio ambiente. Su finalidad es prevenir, minimizar o compensar impactos negativos en el entorno natural, social y económico, asegurando que el desarrollo territorial se lleve a cabo de forma sostenible. 
-
-<div align="center">
 
 | Actividad                                                              | Descripción                                    |
 |:-----------------------------------------------------------------------|:-----------------------------------------------|

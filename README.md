@@ -107,7 +107,7 @@ El curso, los diferentes talleres prácticos y las actividades complementarias a
 > En el Módulo 1 No se realiza auto-calificación, las competencias y habilidades aprendidas son evaluadas a través de quices de conocimiento y habilidad. 
 
 
-## :large_blue_circle: Módulo 2 - Características de los estudios ambientales - Línea base
+## :large_blue_circle: Módulo 2 - Estudios ambientales - Línea base
 
 **Objetivo**: Detallar los elementos de línea base que forman parte de un Estudio Ambiental.
 
