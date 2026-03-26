@@ -12,7 +12,7 @@ Keywords: `research` `applied-research` `population` `weather-series` `reservoir
 
 Guía con descripción de actividades de investigación aplicada a realizar por cada estudiante.
 
-<div align="center"><img src="graph/Gemini_Generated_Image_p0cthep0cthep0ct.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/c4b76a216d00c4c1">https://gemini.google.com</a></sub><br><br></div>
+<div align="center"><img src="graph/Gemini_Generated_Image_p0cthep0cthep0ct.jpg" alt="R.SIGE" width="50%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/c4b76a216d00c4c1">https://gemini.google.com</a></sub><br><br></div>
 
 
 ## Objetivos
