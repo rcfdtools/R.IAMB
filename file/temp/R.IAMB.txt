@@ -27,13 +27,9 @@ http://rmcab.ambientebogota.gov.co/home/map
 Módulo 3 - Análisis ambiental aplicado
 
 
-3.2. Tablas de registro climatológico
-(Atmósfera - RegistrosCalidadAireTB, Clima - RegistrosEstMeteorologicaTB)
-https://github.com/rcfdtools/R.LTWB/blob/main/activity/CNEStationDatasetDownload/Readme.md
-https://github.com/rcfdtools/R.LTWB/blob/main/activity/RemoteSensing/Readme.md
-
-3.3. Digitalización de vectores
+3.3. Digitalización de vectores - Perfiles y pendientes ponderadas de cauces
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Digitizing/Readme.md
+
 
 3.4. Estudio geográfico de embalses o reservorios
 https://github.com/rcfdtools/R.SIGE/blob/main/activity/Reservoir/Readme.md
