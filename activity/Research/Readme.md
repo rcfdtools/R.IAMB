@@ -2,7 +2,7 @@
 
 ## :large_blue_circle: Módulo 3 - Estudios ambientales - Análisis aplicado
 
-**Objetivo**: Aplicar los conceptos aprendidos en el _Curso de Impacto Ambiental_ y las habilidades computacionales obtenidas en los módulos 1 y 2 del componente SIG, para realizar el análisis ambiental de la zona de proyecto. Cada estudiante investiga y realiza de forma autónoma los análisis requeridos, utilizando como apoyo talleres guía realizados en otros cursos de [rcfdtools](https://github.com/rcfdtools).
+**Objetivo**: Aplicar los conceptos aprendidos en el _Curso de Impacto Ambiental_ y las habilidades computacionales obtenidas en los _Módulos 1 y 2 del componente SIG_, para realizar el análisis ambiental de la zona de proyecto. Cada estudiante investiga y realiza de forma autónoma los análisis requeridos, utilizando como apoyo talleres guía realizados en otros cursos de [rcfdtools](https://github.com/rcfdtools).
 
 El análisis ambiental es un proceso técnico, sistemático y multidisciplinario que evalúa los efectos que un proyecto, actividad, política pública o plan puede tener sobre el medio ambiente. Su finalidad es prevenir, minimizar o compensar impactos negativos en el entorno natural, social y económico, asegurando que el desarrollo territorial se lleve a cabo de forma sostenible. 
 
