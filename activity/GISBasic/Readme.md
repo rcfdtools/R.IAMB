@@ -38,6 +38,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 | Requerimiento                                                                                       | Descripción                                        |
 |:----------------------------------------------------------------------------------------------------|:---------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                           | QGIS 3.44 o superior.                              |
 | [:notebook:Lectura](https://www.esri.com/es-es/geographic-approach/overview)                        | Resolución de problemas con un enfoque geográfico. |  
 | [:notebook:Lectura](https://www.esri.com/es-es/geographic-approach/case-studies/government)         | Geografía y Gobierno.                              |        
 | [:notebook:Lectura](https://www.esri.com/es-es/what-is-gis/overview)                                | ¿Qué son los SIG?                                  |        
@@ -459,7 +460,7 @@ La georreferenciación es el uso de coordenadas de mapa para asignar una ubicaci
 <div align="center"><img src="graph/ECEF.svg" alt="rcfdtools" width="55%" border="0" /><sub><br>Diagram of Earth Centered, Earth Fixed coordinates in relation to latitude and longitude.<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:ECEF.svg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 
-### 1. ¿Qué es la georrefenciación y qué es un sistema de proyección de coordenadas?[^9]
+### 1. ¿Qué es la georreferenciación y qué es un sistema de proyección de coordenadas?[^9]
 
 La forma que convencionalmente se utiliza para definir la Tierra es el Geoide, qué se define teóricamente a partir del nivel medio de los mares. Debido a su forma irregular y para la definición de una forma geométrica que pueda ser resuelta matemáticamente de forma simple, se utilizan los conceptos de esfera y elipsoide.
 
@@ -492,6 +493,7 @@ Si bien la longitud y la latitud se pueden ubicar en posiciones exactas de la su
 Por encima y por debajo del ecuador, los círculos que definen las líneas paralelas de latitud se vuelven gradualmente más pequeños hasta que se convierten en un solo punto en los Polos Norte y Sur donde convergen los meridianos. Mientras los meridianos convergen hacia los polos, la distancia que representa un grado de longitud disminuye a cero. 
 
 > En el esferoide de Clarke 1866, un grado de longitud en el ecuador equivale a 111,321 kilómetros, mientras que a una latitud de 60° solo equivale a 55,802 kilómetros. Ya que los grados de latitud y longitud no poseen una longitud estándar, no es posible medir distancias o áreas en forma precisa o visualizar datos fácilmente en un mapa plano o una pantalla de ordenador. Utilizar muchas aplicaciones (aunque no todas) de representación cartográfica y análisis SIG a menudo requiere un marco de coordenadas planas más estable, que suministran los sistemas de coordenadas proyectadas. De forma alternativa, algunos de los algoritmos utilizados para los operadores espaciales tienen en cuenta el comportamiento geométrico de los sistemas de coordenadas esféricas (geográficas).
+
 
 #### 1.2. Proyecciones de mapa a través de coordenadas cartesianas
 <sub>Referencia: tomado de https://resources.arcgis.com</sub>
@@ -577,6 +579,8 @@ Las alturas estarán referidas al nivel medio del mar definidas por el mareógra
 
 La proyección cartográfica, que consiste en la representación de la superficie terrestre sobre un plano, mediante un sistema bidimensional de coordenadas rectangulares, que muestra la correspondencia biunívoca entre los puntos de la superficie terrestre (φ, λ) y sus equivalentes sobre un plano de proyección (N, E), se ha establecido para Colombia usando el sistema Gauss – Krüger, el cual consiste en una representación conforme del elipsoide sobre un plano; es decir, que el ángulo formado entre dos líneas sobre la superficie terrestre se mantiene al ser estas proyectadas sobre un plano. Los meridianos y paralelos se interceptan perpendicularmente, pero no son líneas rectas, sino curvas complejas, excepto el meridiano central (de tangencia) y el paralelo de referencia. La escala de representación permanece constante sobre el meridiano central; pero esta varía al alejarse de aquel, introduciendo deformaciones en función de la longitud (λ). Por tal razón, el desarrollo de la proyección se controla mediante husos, que en el caso de Colombia se extienden al lado y lado del meridiano central.
 
+> Siga las indicaciones del instructor, para visualizar en QGIS las propiedades de estos sistemas de proyección.
+
 <div align="center"><img src="graph/SRSGaussKruger.png" alt="rcfdtools" width="60%" border="0" /><sub><br>Sistema de proyección cartográfica Gauss-Krüger<br>Tomado de: <a href="https://www.researchgate.net/figure/Figura-20-Sistema-de-proyeccion-cartografica-Gauss-Kruger_fig9_277276925">https://www.researchgate.net</a></sub><br><br></div>
 
 El sistema de proyección UTM (Universal Transverse Mercator) corresponde con el de Gauss – Krüger, solo que utiliza un factor de escala equivalente a m= 0,9996 para el meridiano central y husos de 6°.
@@ -631,6 +635,8 @@ El establecimiento de las condiciones técnicas mínimas que deben tener los pro
 
 El sistema de proyección cartográfico para Colombia, con un único origen, consiste en una proyección cartográfica [Transversa Mercator Secante](https://en.wikipedia.org/wiki/Transverse_Mercator_projection), cuyos parámetros están establecidos en el literal i Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica.
 
+> Siga las indicaciones del instructor, para visualizar en QGIS las propiedades de estos sistemas de proyección.
+
 <div align="center"><img src="graph/Comparison_of_cylindrical_projections.svg" alt="rcfdtools" width="30%" border="0" /><sub><br> Proyección sobre una superficie cilíndrica con diferentes paralelos<br>Tomado de: <a href="https://commons.wikimedia.org/wiki/File:Comparison_of_cylindrical_projections.svg">https://commons.wikimedia.org</a></sub><br><br></div>
 
 ```
@@ -682,6 +688,7 @@ El elipsoide GRS80 fue definido y adoptado oficialmente por la Asociación Inter
 El WGS84 es un sistema de coordenadas geográficas mundial que permite localizar cualquier punto de la Tierra (sin necesitar otro de referencia) por medio de tres unidades dadas. WGS84 son las siglas en inglés de World Geodetic System 84 que significa Sistema Geodésico Mundial 1984. 
 
 > El Sistema Geodésico Mundial es un estándar para su uso en la cartografía, geodesia y navegación. Cuenta con un estándar de coordenadas de la Tierra, un estándar de referencia de la superficie esférica (el dato o elipsoide de referencia) para los datos de altitud primas, y una superficie equipotencial gravitacional (el geoide) que define el nivel del mar nominal. El origen de coordenadas de WGS84 está destinado a ser ubicado en el centro de la masa de la Tierra, se cree que el error es menos de 2 cm por lo que es en la que se basa el Sistema de Posicionamiento Global (GPS).
+
 
 #### 3.1. EPSG: 4326
 
