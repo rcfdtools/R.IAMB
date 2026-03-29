@@ -192,7 +192,7 @@ Shapefile: en caso de utilizar archivos de formas, la estructura de directorios 
 
 <div align="center"><img src="graph/GDB_AreaReglEspecialProyecto.jpg" alt="rcfdtools" width="80%" border="0" /></div>
 
-**Información vectorial en el Tema Compensación, Inversión 1 % y Contingencias**
+**Información vectorial en el Tema Compensación, Inversión 1 % (Decreto 1076 de 2015) y Contingencias**
 
 <div align="center"><img src="graph/GDB_CompensacionInversion1P.jpg" alt="rcfdtools" width="90%" border="0" /></div>
 
