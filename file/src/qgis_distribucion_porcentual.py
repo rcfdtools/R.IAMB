@@ -25,7 +25,7 @@ new_field_list = [area_field, areapd_field]
 if layer and layer.dataProvider().capabilities() & QgsVectorDataProvider.AddAttributes:
     # Fields creation
     for field in new_field_list:
-        # Check and delete existind required fields
+        # Delete existing calculated fields
         field_index = layer.fields().indexFromName(field[0])
         if field_index != -1:
             with edit(layer):
@@ -58,7 +58,7 @@ if layer and layer.dataProvider().capabilities() & QgsVectorDataProvider.AddAttr
             area = geom.area()/10000 
             total_area += area
             layer.changeAttributeValue(fid, field_index, area)
-        print(f'Total area of the layer is: {total_area} ha')
+        print(f'Total area: {total_area} ha')
         field_index = layer.fields().indexOf(areapd_field[0])
         for feature in layer.getFeatures():
             fid = feature.id()

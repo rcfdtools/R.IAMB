@@ -13,7 +13,7 @@ from qgis.core import QgsField, QgsVectorLayer
 #input_layer_path = 'D:/R.IAMB/file/shp/MunicipiosAreaProyecto.shp' # ● Municipios de Colombia
 #input_layer_path = 'D:/R.IAMB/file/data/DANE/VeredasColombia20260306.shp' # ● Veredas de Colombia
 input_layer_path = 'D:/R.IAMB/file/data/IGAC/GestoresCatastrales20240301/municipioserviciosV.shp' # ● Veredas de Colombia
-overlay_layer_path = 'D:/R.IAMB/file/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProyecto' # ●
+overlay_layer_path = 'D:/R.IAMB/file/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProyecto' # ● Layer used as clip mask
 output_path = 'D:/R.IAMB/file/shp/' # ●
 output_file_clip_name = 'GestoresCatastralesAreaProyecto' # Name without .shp extension, e.g., UCAreaProyecto, SuelosVFAreaProyecto, MunicipiosAreaProyectoClip, VeredaAreaProyecto ●
 dissolve_field = 'gestor_cat' # e.g., SimboloUC, UCS_F, MpCodigo, CODIGO_VER, gestor_cat ●
@@ -23,7 +23,7 @@ output_file_dissolve_path = f'{output_path}{output_file_clip_name}Dissolve.shp'
 output_file_dissolve_path_reprojected = f'{output_path}{output_file_clip_name}Dissolve{crs_target_code}.shp'
 crs_target = QgsCoordinateReferenceSystem(f'EPSG:{crs_target_code}')
 area_field = ['Aha', QVariant.Double]
-areapd_field = ['APD', QVariant.Double] # ● APF correspond to Area Percentual Distribution
+areapd_field = ['APD', QVariant.Double] # ● APD correspond to Area Percentual Distribution
 
 
 # Load the vector layers into QGIS
@@ -70,13 +70,13 @@ else:
             area = geom.area()/10000 
             total_area += area
             layer.changeAttributeValue(fid, field_index, area)
-        print(f'Total area of the layer is: {total_area} ha')
+        print(f'Total area: {total_area} ha')
         field_index = layer.fields().indexOf(areapd_field[0])
         for feature in layer.getFeatures():
             fid = feature.id()
             areadp = (feature[layer.fields().indexFromName(area_field[0])] / total_area) * 100
-            layer.changeAttributeValue(fid, field_index, areadp)        
+            layer.changeAttributeValue(fid, field_index, areadp)  
+        print('Assigned values completed.')
     else:
-        print('Please select a valid polygon layer')
+        print('Please use a valid polygon layer')
     layer.commitChanges()
-    print('Assigned values completed.')   
