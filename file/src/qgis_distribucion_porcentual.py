@@ -1,5 +1,5 @@
 # https://github.com/rcfdtools
-# Area percentual distribution calculator
+# Area percentual distribution calculator - APD
 # This script has to be run in the QGIS Python console
 # Stop editing before run the script
 # Make sure the UC layer is selected in the Layers panel
