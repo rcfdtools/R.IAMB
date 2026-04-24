@@ -41,20 +41,20 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 <div align="center"><img src="graph/SGC_Download2023.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. En QGIS, cree un nuevo mapa de proyecto y guarde como _/map/Geology.qgz_ y establezca el CRS 4686. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_)contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../file/ref/ChronostratChart2023-04SpanishAmer.pdf)[^1]. Rotule a partír de las localizaciones definidas en _UCAnot_ desactivando la visualización del rectángulo envolvente al rótulo.
+2. En QGIS, cree un nuevo mapa de proyecto y guarde como _/map/Geology.qgz_ y establezca el CRS 4686. Agregue al mapa la capa de unidades cronoestratigráficas (_UC_ y _UCAnot_) contenidas en la GDB `/data/SGC/agc2023.gdb/Geologia/` y ajuste la simbología a valores únicos representando el campo de atributos `Simbolo_UC`. Podrá observar que los colores de representación no se ajustan a los definidos en la [Tabla Cronoestratigráfica Internacional](../../file/ref/ChronostratChart2023-04SpanishAmer.pdf)[^1]. Rotule por _TextString_ a partír de las localizaciones definidas en _UCAnot_ desactivando la visualización del rectángulo envolvente al rótulo.
 
 > Opcionalmente, puede abrir el mapa creado en la actividad [CaseStudy](../CaseStudy) y guardar como Geology. 
 
 <div align="center"><img src="graph/ChronostratChart2023-04SpanishAmer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_AddLayer1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Para incorporar en QGIS los estilos contenidos en el archivo _agc2023.style_ del SGC diseñados para ArcGIS, es necesario convertir el archivo .style a formato XML. Desde el menú _Plugins / Manage and Install Plugins..._, instale SLYR (Community Edition).
+3. Para incorporar en QGIS los estilos contenidos en el archivo _agc2023.style_ del SGC diseñados para Esri ArcGIS, es necesario convertir el archivo .style a formato XML. Desde el menú _Plugins / Manage and Install Plugins..._, instale SLYR (Community Edition).
 
 <div align="center"><img src="graph/QGIS_PluginSLYR.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Descargue desde https://github.com/lsgunth/mdbtools-win/archive/master.zip, el gestor de bases de datos _mdbtools_ para Windows y descomprima en la carpeta [/tools/](../../file/tools).
 
-En el panel del Processing Tool o desde las propiedades del proyecto QGIS, acceda a las opciones de configuración y en la pestaña SLYR realice la asociación de ruta a MDB Tools.
+En el panel del _Processing Tool_ o desde _Settings_ de QGIS, acceda a las opciones de configuración y en la pestaña SLYR realice la asociación de ruta a MDB Tools.
 
 <div align="center"><img src="graph/QGIS_MDBTools.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -82,7 +82,7 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC (p.
 
 6. Utilizando la herramienta de geo-procesamiento _Vector overlay / Clip_, recorte el mapa geológico hasta el límite del área de proyecto. Nombre la capa resultante como `/shp/UCAreaProyecto4686.shp`. Simbolice y rotule por _SimboloUC_, podrá observar que para el caso de estudio, existen 16 diferentes unidades cronoestratigráficas y que en la tabla de atributos existen 290 polígonos independientes.
 
-> Para realizar correctamente el recorte, defina en Advanced / Algorithm Setting / Invalid feature filtering / Do not Filter (Better Performance).
+> :bulb: Para realizar correctamente el recorte, defina en Advanced / Algorithm Setting / Invalid feature filtering / Do not Filter (Better Performance).
 
 <div align="center"><img src="graph/QGIS_Clip.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_Clip1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
