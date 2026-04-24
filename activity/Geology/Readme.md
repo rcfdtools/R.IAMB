@@ -82,7 +82,7 @@ Para aplicar un estilo, en la tabla de contenido de clic sobre una de las UC (p.
 
 6. Utilizando la herramienta de geo-procesamiento _Vector overlay / Clip_, recorte el mapa geológico hasta el límite del área de proyecto. Nombre la capa resultante como `/shp/UCAreaProyecto4686.shp`. Simbolice y rotule por _SimboloUC_, podrá observar que para el caso de estudio, existen 16 diferentes unidades cronoestratigráficas y que en la tabla de atributos existen 290 polígonos independientes.
 
-> :bulb: Para realizar correctamente el recorte, defina en Advanced / Algorithm Setting / Invalid feature filtering / Do not Filter (Better Performance).
+> :blue_heart: Para realizar correctamente el recorte, defina en Advanced / Algorithm Setting / Invalid feature filtering / Do not Filter (Better Performance).
 
 <div align="center"><img src="graph/QGIS_Clip.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_Clip1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
