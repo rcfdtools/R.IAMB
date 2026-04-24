@@ -53,7 +53,7 @@ Los Levantamientos Generales de Suelos de los departamentos del Territorio Colom
 
 <div align="center"><img src="graph/ColombiaMapas_Suelos100K.png" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. En QGIS, abra el mapa de proyecto _CaseStudy.qgz_, creado previamente y guarde como _/map/LandSoil.qgz_ y establezca el CRS 9377. Agregue al mapa la capa _SUELOS_CUNDINAMARCA_VF_, ajuste la simbología a valores únicos representando el campo de atributos `UCS_F` y rotule a partir del mismo campo.  
+2. En QGIS, abra el mapa de proyecto _CaseStudy.qgz_, creado previamente, guarde como _/map/LandSoil.qgz_ y establezca el CRS 9377. Agregue al mapa la capa _SUELOS_CUNDINAMARCA_VF_, ajuste la simbología a valores únicos representando el campo de atributos `UCS_F` y rotule a partir del mismo campo.  
 
 <div align="center"><img src="graph/QGIS_AddLayer1.png" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -279,7 +279,7 @@ Para garantizar la operación institucional, el Instituto recibe recursos públi
 
 **Complejos de páramos de Colombia**: esta información corresponde a la actualización de los límites cartográficos de los Complejos de Páramos de Colombia, a escala 1:100.000, con criterios y variables unificados para el país. Las principales variables consideradas para la actualización del límite fueron: Temperatura promedio anual, geo-sistemas de alta montaña, modelos potenciales de presencia de fauna y flora, integridad ecológica e imágenes de satélite de alta resolución.
 
-Desde el portal de datos abiertos del SIAC, descargue la capa de [Páramos delimitados Junio 2020 - SIAC](https://siac-datosabiertos-mads.hub.arcgis.com/datasets/9631ed8c44274baa824e6277276de48f/about), guarde y descomprima en la carpeta [/data/IvAH](../../data/IvAH).
+Desde el portal de datos abiertos del SIAC, descargue la capa de [Páramos delimitados Junio 2020 - SIAC](https://siac-datosabiertos-mads.hub.arcgis.com/datasets/9631ed8c44274baa824e6277276de48f/about), guarde y descomprima en la carpeta [/data/IvAH](../../file/data/IvAH).
 
 <div align="center"><img src="graph/Chrome_SIAC_Download.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
