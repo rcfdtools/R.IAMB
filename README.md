@@ -105,7 +105,7 @@ El curso, los diferentes talleres prácticos y las actividades complementarias a
 
 </div>
 
-> En el Módulo 1 No se realiza autoevaluación, las competencias y habilidades aprendidas son evaluadas a través de quices de conocimiento y habilidad. 
+> En el Módulo 1 no se realiza autoevaluación, las competencias y habilidades aprendidas son evaluadas a través de quices de conocimiento y habilidad. 
 
 
 ## :large_blue_circle: Módulo 2 - Estudios ambientales - Línea base

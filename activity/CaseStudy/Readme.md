@@ -117,7 +117,7 @@ Las cuencas hidrográficas que entregan o desembocan sus aguas superficiales dir
 
 <div align="center"><img src="graph/QGIS_AddLayer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. Para verificar la localización y geo-referenciación correcta de la capa, ejecute el script [qgis_basemaps.py](../../file/src/qgis_basemaps.py) y agregue el mapa base de Google Maps y Google Satellite. Podrá observar que 
+2. Para verificar la localización y geo-referenciación correcta de la capa, ejecute el script [qgis_basemaps.py](../../file/src/qgis_basemaps.py) y agregue el mapa base de Google Maps y Google Satellite. 
 
 <div align="center"><img src="graph/QGIS_XYZMap1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_XYZMap2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
@@ -186,11 +186,11 @@ Guarde y detenga el modo de edición de esta capa.
 
 ## 3. Incorporación a capa ANLA: AreaInfluencia
 
-Luego de definida el Área de Proyecto, es necesario establecer el Área de Influencia que para el caso de estudio corresponderá a todos los polígonos perimetrales o próximos al área de proyecto y su propia área.
+Luego de definida el Área de Proyecto, es necesario establecer el Área de Influencia que para el caso de estudio corresponderá a todos los polígonos perimetrales o sub-zonas hidrográficas próximas al área de proyecto y su propia área, considerando las dinámicas poblacionales regionales y el trasvase de caudal entre cuencas.
 
 El Área o Áreas de Influencia del Proyecto, comprende la definición del área o de las áreas de influencia, de acuerdo con los impactos identificados en cada una de las etapas del proyecto y las características del espacio geográfico. Pueden presentarse áreas de influencia por "Medio", "Componente" o "Grupo de Componentes".
 
-La capa _AreaProyecto_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
+La capa _AreaInfluencia_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
 
 <div align="center"><img src="graph/ANLA_AreaInfluencia.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
