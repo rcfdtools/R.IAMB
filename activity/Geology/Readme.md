@@ -120,7 +120,9 @@ Unidades encontradas
 
 <div align="center"><img src="graph/QGIS_FieldCalculator.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-10. A partir de la capa de recorte, cree un gráfico de barras para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _Q1-l_, correspondiente a _Arcillas, turbas, y arcillas arenosas con niveles delgados de gravas. Localmente, capas de depósitos de diatomeas_, con más de 120k hectáreas.
+10. A partir de la capa de recorte, cree un gráfico de barras o pastel para analizar la distribución de áreas por cada unidad estratigráfica, podrá observar que la clase dominante es _Q1-l_, correspondiente a _Arcillas, turbas, y arcillas arenosas con niveles delgados de gravas. Localmente, capas de depósitos de diatomeas_, con más de 120k hectáreas.
+
+> Para ordenar gráficas de barras en orden descendente, desde el menú _Layer / Create Layer / Create Virtual Layer..._, agregue la capa _UCAreaProyectoDissolve4686.shp_ y reordene los identificadores de objeto con la instrucción SQL = _select * from UCAreaProyectoDissolve4686 order by Aha desc_
 
 <div align="center"><img src="graph/QGIS_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
