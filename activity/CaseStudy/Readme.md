@@ -188,7 +188,7 @@ Guarde y detenga el modo de edición de esta capa.
 
 Luego de definida el Área de Proyecto, es necesario establecer el Área de Influencia que para el caso de estudio corresponderá a todos los polígonos perimetrales o sub-zonas hidrográficas próximas al área de proyecto y su propia área, considerando las dinámicas poblacionales regionales y el trasvase de caudal entre cuencas.
 
-El Área o Áreas de Influencia del Proyecto, comprende la definición del área o de las áreas de influencia, de acuerdo con los impactos identificados en cada una de las etapas del proyecto y las características del espacio geográfico. Pueden presentarse áreas de influencia por "Medio", "Componente" o "Grupo de Componentes".
+El Área o Áreas de Influencia del Proyecto, comprende la definición del área o de las áreas de influencia, de acuerdo con los impactos identificados en cada una de las etapas del proyecto y las características del espacio geográfico. Pueden presentarse áreas de influencia por “Medio”, “Componente” o “Grupo de Componentes”.
 
 La capa _AreaInfluencia_ del modelo de datos ANLA, requiere de los siguientes atributos y contiene un dominio asociado:
 
