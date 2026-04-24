@@ -141,23 +141,23 @@ Dominios: Dom_Geol_Eon, Dom_Geol_Era, Dom_Geol_Per, Dom_Geol_Epo, Dom_Geol_Eda
 
 > Para los dominios Dom_Geol_Epo y Dom_Geol_Eda, solo se ha incluido en las ilustraciones, una muestra de los primeros valores codificados. Consulte la lista completa de valores en el diccionario de datos del ANLA.
 
-1. Agregue el mapa base de Google Terrain y represente en color negro, establezca transparencia de 60% en la capa UC. Agregue al mapa la capa _/gdb/BD_ANLA_MAGNA_NACIONAL.gdb/T_11_GEOLOGIA/UnidadGeologica_ y consulte la tabla de atributos.
+1. Agregue el mapa base de Google Terrain y represente en color negro, establezca opacidad de 60% en la capa UC. Agregue al mapa la capa _/gdb/BD_ANLA_MAGNA_NACIONAL.gdb/T_11_GEOLOGIA/UnidadGeologica_ y consulte la tabla de atributos.
 
 <div align="center"><img src="graph/QGIS_UnidadGeologica1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 Como observa, los nombres de atributos contenidos en la capa _UCAreaProyectoDissolve4686_ del AGC son diferentes a los utilizados por el ANLA, requiriendo las siguientes homologaciones:
 
-| Atributo ANLA  | Atributo AGC     | Homologación                                                                                                                                                                                               |
-|----------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| EON (Real)     | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                       |
-| ERA (Real)     | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                       |
-| PERIODO (Real) | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                       |
-| EPOCA (Real)   | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                       |
-| EDAD (Real)    | Edad             | Holomogación manual debido a que los nombres disponibles en UC no tienen están asociados a códigos de dominio y no tienen correspondencia directa con los nombres o códigos del dominio ANLA Dom_Geol_Eda. |
-| NOMBRE (100)   | Descripcio (255) | Homologación por cambio de nombre de atributo y truncando longitud a 100 caracteres.                                                                                                                       |
-| NOMENCLAT (20) | SimboloUC        | Homologación por cambio de nombre de atributo.                                                                                                                                                             |
+| Atributo ANLA  | Atributo AGC     | Homologación                                                                                                                                                                                          |
+|----------------|------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| EON (Real)     | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                  |
+| ERA (Real)     | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                  |
+| PERIODO (Real) | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                  |
+| EPOCA (Real)   | (No disponible)  | A partir de tabla cronoestratigrafica internacional.                                                                                                                                                  |
+| EDAD (Real)    | Edad             | Holomogación manual debido a que los nombres disponibles en UC no están asociados a códigos de dominio y no tienen correspondencia directa con los nombres o códigos del dominio ANLA Dom_Geol_Eda.   |
+| NOMBRE (100)   | Descripcio (255) | Homologación por cambio de nombre de atributo y truncando longitud a 100 caracteres.                                                                                                                  |
+| NOMENCLAT (20) | SimboloUC        | Homologación por cambio de nombre de atributo.                                                                                                                                                        |
 
-Para la homologación, será necesario manualmente renombrar el campo `Edad` de la capa UC como `EdadTxt`, crear en la capa _UCAreaProyectoDissolve4686_ los diferentes campos de homologación, asignar los valores existentes a los campos `NOMBRE`, `NOMENCLAT` y asignar manualmente los valores de los campos `EON`, `ERA`, `PERIODO` y `EPOCA` a partir de las definiciones contenidas en la [Tabla Cronoestratigráfica Internacional](https://stratigraphy.org/).
+Para la homologación, será necesario manualmente renombrar el campo `Edad` de la capa UC como `EdadTxt`, crear en la capa _UCAreaProyectoDissolve4686_ los diferentes campos de homologación, asignar los valores existentes a los campos `NOMBRE`, `NOMENCLAT` y asignar manualmente los valores de los campos `EON`, `ERA`, `PERIODO` y `EPOCA` a partir de las definiciones contenidas en la [Tabla Cronoestratigráfica Internacional](https://stratigraphy.org/chart/).
 
 Los valores de referencia para homologación se encuentran en la tabla [/table/IAMB_Geology.xlsx](../../file/table/IAMB_Geology.xlsx)
 <div align="center"><img src="graph/IAMB_unidadgeologica_homologador.jpg" alt="rcfdtools" width="100%" border="0" /></div>
@@ -173,7 +173,7 @@ Búsqueda para homologación en https://stratigraphy.org/chart/?language=es
 
 <div align="center"><img src="graph/QGIS_UnidadGeologica_Copy.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-> Manualmente requerirá asignar nuevamente la simbología específica de cada nomenclatura.
+> Manualmente, requerirá asignar nuevamente la simbología específica de cada nomenclatura de la capa _UnidadGeologica_.
 
 
 ## 3. Incorporación a capa ANLA: ContactoGeologico
