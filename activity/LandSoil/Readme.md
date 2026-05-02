@@ -76,7 +76,7 @@ dissolve_field = 'UCS_F'
 
 Cree una gráfica de barras representando las diferentes unidades de suelo, podrá observar que _RLQa_ correspondiente a _Mantos de ceniza volcánica sobre depósitos clásticos hidrogénicos_, es la mayor clase con un área de 41043.27 ha, correspondiente al 6.93 % de la superficie de toda la cuenca en estudio.  
 
-> Para ordenar gráficas de barras en orden descendente, desde el menú _Layer / Create Layer / Create Virtual Layer..._, agregue la capa _SuelosVFAreaProyecto.shp_ y reordene los identificadores de objeto con la instrucción SQL = _select * from SuelosVFAreaProyectoDissolve9377 order by Aha desc_
+> Para ordenar gráficas de barras en orden descendente, desde el menú _Layer / Create Layer / Create Virtual Layer..._, agregue la capa _SuelosVFAreaProyectoDissolve9377.shp_ y reordene los identificadores de objeto con la instrucción SQL = _select * from SuelosVFAreaProyectoDissolve9377 order by Aha desc_
 
 <div align="center"><img src="graph/QGIS_Clip3.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
