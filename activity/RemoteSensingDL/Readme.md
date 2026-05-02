@@ -137,6 +137,7 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 11. En QGIS, y con la herramienta _Raster Miscellaneous / Build Virtual Raster_, cree una imagen compuesta en falso color a partir de las bandas espectrales 4,3,2. Este procedimiento se realiza independiente para las dos imágenes descargadas. Guarde como _/grid/LC09_L2SP_008056_20260227_B4B3B2.vrt_ y /grid/LC09_L2SP_008057_20260227_B4B3B2.vrt. Al finalizar, establezca desde las propiedades de visualización el brillo de las imágenes en 50%.
 
 > En la pestaña _Parameters_, marque la casilla _Place each input file into a separate band_.
+> 
 > En la opción _Input Layers_ de la herramienta _Buil Virtual Raster_, deberá ordenar las bandas en la secuencia B4, B3, B2.
 
 <div align="center"><img src="graph/QGIS_BuildVirtualRaster1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
@@ -147,7 +148,7 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 <div align="center"><img src="graph/QGIS_RasterMerge.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_RasterMerge1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-13. Utilizando la herramienta _Vector Geometry / Buffer_, cree un polígono con aferencia de 1000 metros alrededor del polígono _LayerExtentAreaProyecto9377_, guarde como _/shp/LayerExtentAreaProyecto9377Buffer100m.shp_.
+13. Utilizando la herramienta _Vector Geometry / Buffer_, cree un polígono con aferencia de 1000 metros alrededor del polígono _LayerExtentAreaProyecto9377_, guarde como _/shp/LayerExtentAreaProyecto9377Buffer1000m.shp_.
 
 <div align="center"><img src="graph/QGIS_Buffer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -180,7 +181,7 @@ Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 <div align="center"><img src="graph/QGIS_PluginSentinel2ImageDownloader4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-5. Copie el contenido descargado en la carpeta _/data/Sentinel2/20260226_ y agregue al mapa. Para crear una imagen extendida, también descargue y agregue _T18NXL_20260226T152651_TCI_10m_.
+5. Copie el contenido descargado en la carpeta _/data/Sentinel2/20260226_ y agregue al mapa. Para crear una imagen extendida, también descargue y agregue _T18NXL_20260226T152651_TCI_10m_, incluya nubosidad de hasta el 100% para obtener 4 imágenes.
 
 <div align="center"><img src="graph/QGIS_PluginSentinel2ImageDownloader5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -228,6 +229,8 @@ Corresponde al Modelo Digital de Superficie (incluye elementos de la cobertura t
 ## 4. Modelo digital de pendientes - MDPendiente
 
 Corresponde a la superficie o Modelo Digital de Pendientes, en escala de grises, donde cada celda o pixel contiene el valor de pendiente en porcentaje. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo se debe identificar como _Pendiente_.
+
+> Utilice la herramienta _Raster Terrain Analysis / Fill sinks (Wang & Liu) con Minimum Slope (degrees)_ en 0.01, para ajustar las elevaciones del terreno rellenando zonas de sumidero. Este ajuste es utilizado en procesos de restitución hidrológica de cuencas y puede ser utilizada para mejorar la apariencia del mapa de pendientes. 
 
 1. Con la herramienta _Raster Analysis / Slope_, cree el mapa de pendientes en tasa porcentual. Ajuste la simbología truncando el valor máximo a 100%. Guarde como _/dem/COP30_Slope_9377.tif_.
 
@@ -277,7 +280,7 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 
 ## 6. Análisis de diferencias DEM
 
-:pencil2: Utilizando los conceptos aprendidos en esta actividad, con algebra de mapas (_Raster Analysis / Raster Calculator_) y reclasificación por clases (_Raster Analysis / Reclassify by Table_), realice un análisis de diferencias entre los DEM _Copernicus 30_ y _ASTER GDEM_, para identificar zonas mineras, áreas con remoción en masa, nuevos cuerpos de agua de gran extensión y diferencias de elevación extendidas dentro del área de estudio.
+:pencil2: Utilizando los conceptos aprendidos en esta actividad y a partir de los modelos digitales de elevación originales, con algebra de mapas (_Raster Analysis / Raster Calculator_) y reclasificación por clases (_Raster Analysis / Reclassify by Table_), realice un análisis de diferencias entre los DEM _Copernicus 30_ y _ASTER GDEM_, para identificar zonas mineras, áreas con remoción en masa, nuevos cuerpos de agua de gran extensión y diferencias de elevación extendidas dentro del área de estudio.
 
 
 ## Referencias
