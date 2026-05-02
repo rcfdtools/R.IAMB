@@ -130,6 +130,8 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 
 10. En la carpeta _/data/Landsat9_ descomprima en dos subcarpetas los archivos contenidos en cada comprimido descargado.
 
+> Opcionalmente y utilizando el Plugin SCP / Preprocessing / Image Conversion, podrá realizar las correcciones geométricas, radiométricas y atmosféricas de las imágenes descargadas. Tenga en cuenta que la colección _Nivel 1 (L1) - Top of Atmosphere (TOA) Reflectance_, incluye corrección radiométrica (calibración de sensores) y correcciones geométricas (ortorrectificación) que utilizan puntos de control terrestre (GCPs) y modelos digitales de elevación (DEM). En cuanto al Nivel 2 (L2) - Surface Reflectance (SR) & Temperature (ST), incluye todo el procesamiento de L1, más correcciones atmosféricas.
+
 <div align="center"><img src="graph/Windows_Landsat9Folder.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
 11. En QGIS, y con la herramienta _Raster Miscellaneous / Build Virtual Raster_, cree una imagen compuesta en falso color a partir de las bandas espectrales 4,3,2. Este procedimiento se realiza independiente para las dos imágenes descargadas. Guarde como _/grid/LC09_L2SP_008056_20260227_B4B3B2.vrt_ y /grid/LC09_L2SP_008057_20260227_B4B3B2.vrt. Al finalizar, establezca desde las propiedades de visualización el brillo de las imágenes en 50%.
@@ -283,6 +285,7 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/composite-bands.htm
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm
 * [Download Satellite Data using QGIS | SCP Plugin | Landsat | Sentinel | MODIS](https://www.youtube.com/watch?v=S8nyq_GMpfA)
+* https://www.usgs.gov/faqs/how-do-landsat-collection-2-level-2-products-compare-products-collection-1
 
 
 ##
