@@ -230,7 +230,7 @@ Corresponde al Modelo Digital de Superficie (incluye elementos de la cobertura t
 
 Corresponde a la superficie o Modelo Digital de Pendientes, en escala de grises, donde cada celda o pixel contiene el valor de pendiente en porcentaje. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo se debe identificar como _Pendiente_.
 
-> Utilice la herramienta _Raster Terrain Analysis / Fill sinks (Wang & Liu) con Minimum Slope (degrees)_ en 0.01, para ajustar las elevaciones del terreno rellenando zonas de sumidero. Este ajuste es utilizado en procesos de restitución hidrológica de cuencas y puede ser utilizada para mejorar la apariencia del mapa de pendientes. 
+> Utilice la herramienta _Raster Terrain Analysis / Fill sinks (Wang & Liu) con Minimum Slope (degrees)_ en 0.01, para ajustar las elevaciones del terreno rellenando zonas de sumidero. Este ajuste es utilizado en procesos de restitución hidrológica de cuencas y puede ser utilizada para mejorar la apariencia del mapa de pendientes. Con la herramienta Elevation Profile, analice las diferencias entre las dos superficies.
 
 1. Con la herramienta _Raster Analysis / Slope_, cree el mapa de pendientes en tasa porcentual. Ajuste la simbología truncando el valor máximo a 100%. Guarde como _/dem/COP30_Slope_9377.tif_.
 
