@@ -12,9 +12,9 @@ from qgis.core import QgsField, QgsVectorLayer
 #input_layer_path = 'D:/R.IAMB/file/data/IGAC/SUELOS_CUNDINAMARCA_100K.gdb|layername=SUELOS_CUNDINAMARCA_VF' # ● Mapa de suelos de cundinamarca
 #input_layer_path = 'D:/R.IAMB/file/shp/MunicipiosAreaProyecto.shp' # ● Municipios de Colombia
 #input_layer_path = 'D:/R.IAMB/file/data/DANE/VeredasColombia20260306.shp' # ● Veredas de Colombia
+output_path = 'D:/R.IAMB/file/shp/' # ●
 input_layer_path = 'D:/R.IAMB/file/data/IGAC/GestoresCatastrales20240301/municipioserviciosV.shp' # ● Veredas de Colombia
 overlay_layer_path = 'D:/R.IAMB/file/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProyecto' # ● Layer used as clip mask
-output_path = 'D:/R.IAMB/file/shp/' # ●
 output_file_clip_name = 'GestoresCatastralesAreaProyecto' # Name without .shp extension, e.g., UCAreaProyecto, SuelosVFAreaProyecto, MunicipiosAreaProyectoClip, VeredaAreaProyecto ●
 dissolve_field = 'gestor_cat' # e.g., SimboloUC, UCS_F, MpCodigo, CODIGO_VER, gestor_cat ●
 crs_target_code = '9377' # Define the CRS code for the calculations ●
