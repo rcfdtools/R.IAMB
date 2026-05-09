@@ -63,7 +63,7 @@ Para la delimitación correcta de las subcuencas contenidas en la zona de estudi
 
 > Como observa, la red de drenaje a escala 1:25k del IGAC contiene una representación detallada los vectores requeridos para la delimitación de las cuencas requeridas, sin embargo, existe ausencia de múltiples planchas vigentes. Puede descargar versiones anteriores de las hojas cartográficas en las zonas faltantes, directamente desde https://www.colombiaenmapas.gov.co/. 
 
-3. A partir de las diferentes versiones de las capas de drenajes obtenidas, identifique los ríos principales dentro de la zona de estudio y cree la capa geográfica _[/shp/Drenaje_Profile_9377.shp](../../shp/Drenaje_Profile_9377.zip)_. Identifique los cauces por su nombre y calcule su longitud en metros.
+3. A partir de las diferentes versiones de las capas de drenajes obtenidas, identifique los ríos principales dentro de la zona de estudio y cree la capa geográfica _[/shp/Drenaje_Profile_9377.shp](../../file/shp/Drenaje_Profile_9377.zip)_. Identifique los cauces por su nombre y calcule su longitud en metros.
 
 <div align="center"><img src="graph/QGIS_NewLayer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
