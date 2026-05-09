@@ -63,7 +63,7 @@ Para la delimitación correcta de las subcuencas contenidas en la zona de estudi
 
 > Como observa, la red de drenaje a escala 1:25k del IGAC contiene una representación detallada los vectores requeridos para la delimitación de las cuencas requeridas, sin embargo, existe ausencia de múltiples planchas vigentes. Puede descargar versiones anteriores de las hojas cartográficas en las zonas faltantes, directamente desde https://www.colombiaenmapas.gov.co/. 
 
-3. A partir de las diferentes versiones de las capas de drenajes obtenidas, identifique los ríos principales dentro de la zona de estudio y cree la capa geográfica _[/shp/Drenaje_Profile_9377.shp](../../file/shp/Drenaje_Profile_9377.zip)_. Identifique los cauces por su nombre y calcule su longitud en metros.
+3. A partir de las diferentes versiones de las capas de drenajes obtenidas, identifique los ríos principales dentro de la zona de estudio y cree la capa geográfica _/shp/[Drenaje_Profile_9377.shp](../../file/shp/Drenaje_Profile_9377.zip)_. Identifique los cauces por su nombre y calcule su longitud en metros.
 
 <div align="center"><img src="graph/QGIS_NewLayer.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
@@ -98,11 +98,11 @@ Dentro de la carpeta de proyecto cree un nuevo folder con el nombre _projectionf
 
 <div align="center"><img src="graph/HECHMS_CreateBasinModel.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. En la tabla de contenido localizada a la izquierda, seleccione _HECHMS_v0 / Basin Models / RioBogota_, luego en el menú _GIS – Coordinate System_ seleccione el sistema de proyección de coordenadas _9377.prj_ localizado en el directorio _C:/IAMB/hec/HECHMS/projectionfile_. 
+3. En la tabla de contenido localizada a la izquierda, seleccione _HECHMS_v0 / Basin Models / RioBogota_, luego en el menú _GIS – Coordinate System_ seleccione el sistema de proyección de coordenadas _9377.prj_ localizado en el directorio _C:/IAMB/hec/HECHMS_v0/projectionfile_. 
 
 <div align="center"><img src="graph/HECHMS_CoordinateSystem.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-4. En el menú _Components / Create Component / Terrain Data_, cree el terreno a partir del modelo digital de elevación - DEM Copernicus almacenado en la ruta [/dem/COP30_9377_Buffer500m.tif](../../file/dem), seleccionando unidades verticales en metros, nombrar como _COP30.
+4. En el menú _Components / Create Component / Terrain Data_, cree el terreno a partir del modelo digital de elevación - DEM Copernicus almacenado en la ruta [/dem/COP30_9377_Buffer500m.tif](../../file/dem), seleccionando unidades verticales en metros, nombrar como COP30.
 
 <div align="center"><img src="graph/HECHMS_TerrainData1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/HECHMS_TerrainData2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
@@ -169,7 +169,7 @@ Dando clic derecho en el mapa, desactive el mapa _Flow Acumulation_ y visualice 
 <div align="center"><img src="graph/HECHMS_DelineateElements.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/HECHMS_DelineateElements1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-12. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Export Layers` que le permitirá exportar uno a uno los elementos generados. Exporte las subcuencas y los drenajes obtenidos junto con sus propiedades en la carpeta `/shp/' como _RioBogotaCuencas.shp_ y _RioBogotaDrenajes.shp_.
+12. En la tabla de contenido, seleccione _HECHMS_v0 / Basin Models / RioBogota_ y en el menú _GIS_, seleccione la opción `Export Layers` que le permitirá exportar uno a uno los elementos generados. Exporte las subcuencas y los drenajes obtenidos junto con sus propiedades en la carpeta _/shp/_ como _RioBogotaCuencas.shp_ y _RioBogotaDrenajes.shp_.
 
 <div align="center"><img src="graph/HECHMS_ExportLayers.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/HECHMS_ExportLayers1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
