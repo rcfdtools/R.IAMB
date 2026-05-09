@@ -214,8 +214,6 @@ Dirección de flujo
 * [Guía para la solicitud de autorizaciónde ocupación de cauces - ANLA](https://storymaps.arcgis.com/stories/56ac6a8baf6b413f818a02312bd036dc)
 * https://www.anm.gov.co/sites/default/files/DocumentosAnm/permisos_ambientales.pdf
 * [Ocupación de cauces - Servicio Rest - ANLA](https://portalsig.anla.gov.co/publico/rest/services/REGIONALIZACION/Reporte_AltoMagdalena_2018/MapServer/117)
-* https://www.earthdata.nasa.gov/data/catalog/asf-nisar-dem-1
-* [How to Download and Visualize NASA-ISRO NISAR Data in QGIS | Step-by-Step Tutorial](https://www.youtube.com/watch?v=oRTplHPf_T0)
 
 
 ##

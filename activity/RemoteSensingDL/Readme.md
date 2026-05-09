@@ -289,6 +289,8 @@ En el modelo ANLA, representa la inclinación del terreno, según clasificación
 * https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/clip.htm
 * [Download Satellite Data using QGIS | SCP Plugin | Landsat | Sentinel | MODIS](https://www.youtube.com/watch?v=S8nyq_GMpfA)
 * https://www.usgs.gov/faqs/how-do-landsat-collection-2-level-2-products-compare-products-collection-1
+* https://www.earthdata.nasa.gov/data/catalog/asf-nisar-dem-1
+* [How to Download and Visualize NASA-ISRO NISAR Data in QGIS | Step-by-Step Tutorial](https://www.youtube.com/watch?v=oRTplHPf_T0)
 
 
 ##
