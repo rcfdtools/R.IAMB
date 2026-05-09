@@ -1073,10 +1073,10 @@ Dominios: Dom_Municipio, Dom_Departamento, Dom_Tenencia.
 Parámetros generales
 
 ```
-input_layer_path = 'C:/IAMB/shp/VeredasColombia20260306.shp'
+input_layer_path = 'C:/IAMB/data/IGAC/GestoresCatastrales20240301/municipioserviciosV.shp'
 overlay_layer_path = 'C:/IAMB/gdb/BD_ANLA_MAGNA_NACIONAL.gdb|layername=AreaProyecto'
-output_file_clip_name = 'VeredaAreaProyecto'
-dissolve_field = 'CODIGO_VER'
+output_file_clip_name = 'GestoresCatastralesAreaProyecto'
+dissolve_field = 'gestor_cat'
 ```
 <div align="center"><img src="graph/QGIS_Clip4.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 <div align="center"><img src="graph/QGIS_Clip5.jpg" alt="rcfdtools" width="100%" border="0" /></div>
