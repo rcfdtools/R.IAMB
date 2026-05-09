@@ -203,7 +203,7 @@ Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 Corresponde al Modelo Digital de Superficie (incluye elementos de la cobertura terrestre como por ejemplo cobertura vegetal, edificaciones, etc.), en escala de grises, donde cada celda o pixel contiene el valor de elevación en metros sobre el nivel del mar. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo digital de superficie se debe identificar como _DSM_.
 
-Para este análisis utilizaremos el [DSM satelital de Copernicus](https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM) que incluye edificios, infraestructura y vegetación cuyos datos han sido adquiridos por la [ESA](https://earth.esa.int/) en la missión [TanDEM-X](https://earth.esa.int/eogateway/missions/terrasar-x-and-tandem-x) utilizando la tecnología [Synthetic Aperture Radar (SAR)](https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar).
+Para este análisis utilizaremos el [DSM satelital de Copernicus](https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM) que incluye edificios, infraestructura y vegetación, cuyos datos han sido adquiridos por la [ESA](https://earth.esa.int/) en la missión [TanDEM-X](https://earth.esa.int/eogateway/missions/terrasar-x-and-tandem-x) utilizando la tecnología [Synthetic Aperture Radar (SAR)](https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar).
 
 1. En QGIS, instale el complemento o _Plugin_ _Open Topography_.
 
@@ -225,18 +225,16 @@ Para este análisis utilizaremos el [DSM satelital de Copernicus](https://datasp
 
 <div align="center"><img src="graph/QGIS_FalseHillshade.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-:pencil2:**Tarea:** Descargue, procese y analice para el área de proyecto, los demás DEM disponibles en Open Topography.
+:pencil2:**Tarea:** Descargue, procese y analice para el área de proyecto y con la herramienta _View / Elevation Profile_, los demás DEM disponibles en OpenTopography, explique sus diferencias.
 
 
 ## 4. Modelo digital de pendientes - MDPendiente
 
 Corresponde a la superficie o Modelo Digital de Pendientes, en escala de grises, donde cada celda o pixel contiene el valor de pendiente en porcentaje. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo se debe identificar como _Pendiente_.
 
-> Utilice la herramienta _Raster Terrain Analysis / Fill sinks (Wang & Liu) con Minimum Slope (degrees)_ en 0.01, para ajustar las elevaciones del terreno rellenando zonas de sumidero. Este ajuste es utilizado en procesos de restitución hidrológica de cuencas y puede ser utilizada para mejorar la apariencia del mapa de pendientes. Con la herramienta Elevation Profile, analice las diferencias entre las dos superficies.
+> Utilice la herramienta _Raster Terrain Analysis / Fill sinks (Wang & Liu) con Minimum Slope (degrees)_ en 0.01, para ajustar las elevaciones del terreno rellenando zonas de sumidero en terreno y en canopy. Este ajuste es utilizado en procesos de restitución hidrológica de cuencas y puede ser utilizada para mejorar la apariencia del mapa de pendientes. Con la herramienta _Elevation Profile_ analice y compare el modelo digital de elevación original, el modelo con sumideros rellenados y con la calculadora raster calcule y analice la diferencia de elevación entre estos dos modelos.
 
 1. Con la herramienta _Raster Analysis / Slope_, cree el mapa de pendientes en tasa porcentual. Ajuste la simbología truncando el valor máximo a 100%. Guarde como _/dem/COP30_Slope_9377.tif_.
-
-> Para optimizar el análisis de pendiente puede ejecutar la herramienta _Raster Terrain Analysis / Fill sinks (Wang & Liu)_ que le permitirá rellenar los sumideros en terreno y en canopy de vegetación. Con la herramienta _Elevation Profile_ analice y compare el modelo digital de elevación original, el modelo con sumideros rellenados y con la calculadora raster calcule y analice la diferencia de elevación entre estos dos modelos. 
 
 <div align="center"><img src="graph/QGIS_Slope.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
