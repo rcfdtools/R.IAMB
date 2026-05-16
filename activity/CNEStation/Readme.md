@@ -28,7 +28,7 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 | Requerimiento                                                                                                 | Descripción                                                                                        |
 |:--------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 4.0 o superior.                                                                               |
-| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                            |
+| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                          | Geodatabase ANLA Magna Origen Nacional.                                                            |
 | [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                             |
 | [:round_pushpin:qgis_station_len_years.py](../../file/src/qgis_station_len_years.py)                          | Script en Python para análisis de longitud hipotética de series en estaciones hidroclimatológicas. |
 
@@ -161,6 +161,8 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 ## 2. Creación de catálogo nacional integrado
 
 1. Ingresar al portal _http://dhime.ideam.gov.co/atencionciudadano/_, aceptar los términos y condiciones para descargar información del Banco de Datos del IDEAM, dar clic en la pestaña de recursos y descargar el Catálogo nacional de estaciones en formato Microsoft Excel, el Catálogo nacional de otras entidades y el Glosario de variables. Guarde los archivos de Microsoft Excel _CNE_IDEAM.xls y CNE_OE.xls en el directorio _/data/IDEAM/_.
+
+> El catálogo integrado y sus metadatos puede ser consultados y obtenido directamente desde el portal de [datos.gov.co](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Cat-logo-Nacional-de-Estaciones-del-IDEAM/hp9r-jxuu)
 
 <div align="center"><img src="graph/DHIMERecursos.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
