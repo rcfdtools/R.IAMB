@@ -54,7 +54,7 @@ Para la delimitación correcta de las subcuencas contenidas en la zona de estudi
 
 2. En QGIS, abra el mapa _/map/CaseStudy.qgz_ y guarde como _/map/BasinLimit.qgz_. Cargue las capas de índices de mapas para identificación de hojas cartográficas, drenajes sencillos y corrientes de agua de las diferentes fuentes obtenidas y evalué su precisión a partir de las imágenes satelitales disponibles en los mapas base. 
 
-> Para facilitar el proceso de cargue y análisis, la compilación de los vectores de los drenajes sencillos de Colombia se encuentran publicados en https://github.com/rcfdtools/R.IAMB/releases/tag/DrenajeSencilloIGAC.
+> Para facilitar el proceso de cargue y análisis, la compilación de los vectores de los drenajes sencillos de Colombia se encuentran publicados en https://github.com/rcfdtools/R.IAMB/releases/tag/DrenajeSencilloIGAC. Descomprimir y guardar en _/data/IGAC/Drenaje_Sencillo.gpkg_ 
 
 <div align="center"><img src="graph/QGIS_AddLayer500k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:500k</div><br>
 <div align="center"><img src="graph/QGIS_AddLayer100k.jpg" alt="rcfdtools" width="100%" border="0" />Drenajes IGAC Escala 1:100k</div><br>
