@@ -162,7 +162,9 @@ En la siguiente tabla preliminar desarrollada por [rcfdtools](https://github.com
 
 1. Ingresar al portal _http://dhime.ideam.gov.co/atencionciudadano/_, aceptar los términos y condiciones para descargar información del Banco de Datos del IDEAM, dar clic en la pestaña de recursos y descargar el Catálogo nacional de estaciones en formato Microsoft Excel, el Catálogo nacional de otras entidades y el Glosario de variables. Guarde los archivos de Microsoft Excel _CNE_IDEAM.xls y CNE_OE.xls en el directorio _/data/IDEAM/_.
 
-> El catálogo integrado y sus metadatos puede ser consultados y obtenido directamente desde el portal de [datos.gov.co](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Cat-logo-Nacional-de-Estaciones-del-IDEAM/hp9r-jxuu)
+> El catálogo integrado y sus metadatos puede ser consultados y obtenido directamente desde el portal de [www.datos.gov.co](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Cat-logo-Nacional-de-Estaciones-del-IDEAM/hp9r-jxuu)
+> 
+> Para la identificación de fuente de datos desde el catálogo integrado obtenido de [www.datos.gov.co](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/Cat-logo-Nacional-de-Estaciones-del-IDEAM/hp9r-jxuu) desde el _Field Calculator_ establezca `CNESource = if("Entidad" = 'INSTITUTO DE HIDROLOGÍA METEOROLOGÍA Y ESTUDIOS AMBIENTALES', 'CNE', 'CNE_OE')` 
 
 <div align="center"><img src="graph/DHIMERecursos.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
