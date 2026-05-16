@@ -11,7 +11,8 @@
 from qgis.PyQt.QtCore import QVariant
 from qgis.core import QgsField, edit
 import qgis.utils
-from PyQt5.QtCore import QDate
+from PyQt5.QtCore import QDate # For QGIS 3
+#from PyQt6.QtCore import QDate # For QGIS 4
 
 
 # Get the active layer from Layer panel
