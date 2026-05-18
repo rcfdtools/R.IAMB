@@ -57,7 +57,7 @@ La evaluación del desempeño de los estudiantes valora el cumplimiento de los o
 > **Informe técnico**: solo será válido si en cada una de las capturas de pantalla se observa su código de alumno en el título o nombre de archivo. Para las capturas de pantalla puede utilizar la Herramienta de Recortes o Snipping Tool, las teclas <kbd>Win</kbd>+<kbd>PrtScn</kbd> para guardar capturas de toda la ventana en la carpeta de imágenes, las teclas <kbd>Win</kbd>+<kbd>G</kbd> para obtener capturas desde la Game Bar, o las teclas <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> para capturas instantáneas. Una vez finalizada la elaboración del informe técnico, este debe ser convertido a formato Adobe Acrobat .pdf y adjuntado al Quiz o examen.
 
 
-## Software requerido, repositorio de proyecto y estructura de directorios
+## Software requerido y estructura de directorios
 
 Para el desarrollo del curso y las actividades del proyecto final, son requeridas las siguientes herramientas y estructura de directorios:
 
@@ -70,8 +70,9 @@ Para el desarrollo del curso y las actividades del proyecto final, son requerida
 | [:toolbox:Herramienta](https://qgis.org/)                                                | QGIS 3.44 o superior.                                                                                   |
 | [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/)                 | HEC-HMS 4.13 o superior.                                                                                |
 | [:toolbox:Herramienta](https://www.7-zip.org/)                                           | 7-Zip File Manager (descompresor de archivos).                                                          |
+| [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/)                 | HEC-HMS 4.13 o superior.                                                                                |
 | [:construction_worker:Cuenta de usuario GitHub](https://github.com/)                     | Acceso a recursos y actualizaciones del repositorio público del curso.                                  |
-| [:construction_worker:Usuario USGS](https://ers.cr.usgs.gov/register/contact)            | Cuenta de usuario en el USGS - United States Geological Survey (Satellital images).                     |
+| [:construction_worker:Usuario USGS](https://ers.cr.usgs.gov/register/contact)            | Cuenta de usuario en el USGS - United States Geological Survey (satellital images).                    |
 | [:construction_worker:Usuario Copernicus](https://dataspace.copernicus.eu/)              | Cuenta de usuario en el European Union's Earth observation program (ERA5 data).                         |
 | [:construction_worker:Usuario OpenTopography](https://portal.opentopography.org/newUser) | Cuenta de usuario en OpenTopography (high-resolution topographic data as LiDAR, radar, photogrammetry). |
 | [:package:Estructura de directorios](file/Readme.md)                                     | Estructura requerida para el desarrollo del curso.                                                      |
