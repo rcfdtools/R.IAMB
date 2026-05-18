@@ -70,7 +70,6 @@ Para el desarrollo del curso y las actividades de investigación, son requeridas
 | [:toolbox:Herramienta](https://qgis.org/)                                                | QGIS 3.44 o superior.                                                                                   |
 | [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/)                 | HEC-HMS 4.13 o superior.                                                                                |
 | [:toolbox:Herramienta](https://www.7-zip.org/)                                           | 7-Zip File Manager (descompresor de archivos).                                                          |
-| [:toolbox:Herramienta](https://www.hec.usace.army.mil/software/hec-hms/)                 | HEC-HMS 4.13 o superior.                                                                                |
 | [:construction_worker:Cuenta de usuario GitHub](https://github.com/)                     | Acceso a recursos y actualizaciones del repositorio público del curso.                                  |
 | [:construction_worker:Usuario USGS](https://ers.cr.usgs.gov/register/contact)            | Cuenta de usuario en el USGS - United States Geological Survey (satellital images).                    |
 | [:construction_worker:Usuario Copernicus](https://dataspace.copernicus.eu/)              | Cuenta de usuario en el European Union's Earth observation program (ERA5 data).                         |
