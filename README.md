@@ -57,7 +57,7 @@ La evaluación del desempeño de los estudiantes valora el cumplimiento de los o
 > **Informe técnico**: solo será válido si en cada una de las capturas de pantalla se observa su código de alumno en el título o nombre de archivo. Para las capturas de pantalla puede utilizar la Herramienta de Recortes o Snipping Tool, las teclas <kbd>Win</kbd>+<kbd>PrtScn</kbd> para guardar capturas de toda la ventana en la carpeta de imágenes, las teclas <kbd>Win</kbd>+<kbd>G</kbd> para obtener capturas desde la Game Bar, o las teclas <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> para capturas instantáneas. Una vez finalizada la elaboración del informe técnico, este debe ser convertido a formato Adobe Acrobat .pdf y adjuntado al Quiz o examen.
 
 
-## Software requerido y estructura de directorios
+## Requerimientos y estructura de directorios
 
 Para el desarrollo del curso y las actividades de investigación, son requeridas las siguientes herramientas y estructura de directorios:
 
