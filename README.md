@@ -4,7 +4,7 @@
 # CURSO: _“Sistemas de Información Geográfica aplicados a Estudios Ambientales - IAMB”_
 Keywords: `gis` `environmental-studies` `hazard` `geographic-data` `geographical-information-system` `hazard-detection` `hazard-assessment` `eia` `environmental-impact-assessment` `sig` `anla` `daa` `ica`
 
-Bienvenid@, en este curso, los participantes obtendrán el conocimiento general y particular del uso de los sistemas de información geográfica aplicados al desarrollo de estudios ambientales, mediante la utilización de herramientas de dominio público. Además, desarrollará las habilidades necesarias para diseñar, crear, representar y editar sistemas geográficos, así como el uso avanzado de las funciones de geo-procesamiento, manejo de datos relacionales y automatización usando Python. El desarrollo de los diferentes talleres y clases del curso se ejemplifica a través de un caso de estudio. 
+En este curso, los participantes obtendrán el conocimiento general y particular del uso de los sistemas de información geográfica aplicados al desarrollo de estudios ambientales, mediante la utilización de herramientas de dominio público. Además, desarrollará las habilidades necesarias para diseñar, crear, representar y editar sistemas geográficos, así como el uso avanzado de las funciones de geo-procesamiento, manejo de datos relacionales y automatización usando Python. El desarrollo de los diferentes talleres y clases del curso se ejemplifica a través de un caso de estudio. 
 
 <div align="center"><img src="file/graph/Gemini_Generated_Image_7fazvu7fazvu7faz_rounded.png" alt="R.SIGE" width="50%" border="0" /><sub><br>Generado con: <a href="https://gemini.google.com/app/001434620896d2dc">https://gemini.google.com</a></sub><br><br></div>
 
@@ -20,7 +20,7 @@ Bienvenid@, en este curso, los participantes obtendrán el conocimiento general 
 * Utilizar los componentes geográficos de la herramienta de modelación hidrológica HEC-HMS para la delimitación de cuencas hidrográficas.
 
 
-## Participantes, metodología, requerimientos y evaluación
+## Participantes
 
 Los contenidos presentados en este curso taller, están dirigidos a estudiantes y profesionales de diferentes disciplinas, que requieran aprender y/o fortalecer sus conocimientos en el manejo de herramientas SIG en Estudios ambientales, tales como:
 
