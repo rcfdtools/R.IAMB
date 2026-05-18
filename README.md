@@ -59,7 +59,7 @@ La evaluación del desempeño de los estudiantes valora el cumplimiento de los o
 
 ## Software requerido y estructura de directorios
 
-Para el desarrollo del curso y las actividades del proyecto final, son requeridas las siguientes herramientas y estructura de directorios:
+Para el desarrollo del curso y las actividades de investigación, son requeridas las siguientes herramientas y estructura de directorios:
 
 <div align="center">
 
