@@ -196,7 +196,7 @@ Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
-:pencil2:**Tarea:** Descargue, procese y analice imágenes de años anteriores con cobertura de nubosidad inferior al 20%.
+:pencil2:**Tarea:** Descargue, procese y analice imágenes de años anteriores con cobertura de nubosidad inferior al 20%, p.ej., (yyyymmdd) 20200109, 20240101, 20251122.
 
 
 ## 3. Modelo digital de superficie - DSM
