@@ -112,7 +112,7 @@ Corresponde al mosaico de imágenes de satélite con resolución espacial mayor 
 
 <div align="center"><img src="graph/Chrome_EarthExplorer1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-6. En la pestaña _Datasets_ seleccione _Landsat / Landsat Collection 2 Level-1 / Landsat 8-9 OLI-TIRS C2 L1_.
+6. En la pestaña _Datasets_ seleccione _Landsat / Landsat Collection 2 Level-1 / Landsat 8-9 OLI-TIRS C2 L1_ para obtener Top of Atmosphere (TOA) Reflectance o _Landsat / Landsat Collection 2 Level-2 / Landsat 8-9 OLI-TIRS C2 L2_ para obtener Surface Reflectance (SR) & Temperature (ST).
 
 <div align="center"><img src="graph/Chrome_EarthExplorer2.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
