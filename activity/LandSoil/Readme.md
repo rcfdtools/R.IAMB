@@ -208,6 +208,8 @@ Servicio: https://www.colombiaenmapas.gov.co/?u=0&t=43&servicio=7301
 
 <div align="center"><img src="graph/ColombiaMapas_VocacionUso100K.png" alt="rcfdtools" width="100%" border="0" /></div>
 
+> 💙Para procesar correctamente esta capa utilice la herramienta _Vector Geometry / Fix geometries (Repair method: Structure)_, reproyecte al CRS 9377 y ejecute el script de Python.
+
 :pencil2:**Tarea:** Descargue, procese y analice este mapa para el área de proyecto.
 
 
