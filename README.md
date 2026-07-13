@@ -1,7 +1,7 @@
 <div align="center"><a href="https://github.com/rcfdtools" target="_blank"><img src="https://github.com/rcfdtools/rcfdtools/blob/main/file/graph/rcfdtools_banner.png" alt="rcfdtools" width="100%" border="0" /></a></div>
 <div align="center"><sub><i>COURSE - Geographic Information Systems applied to Environmental Studies - IAMB</i></sub></div>
 
-# CURSO: _“Sistemas de Información Geográfica aplicados a Estudios Ambientales - IAMB”_
+# 🎓CURSO: _“Sistemas de Información Geográfica aplicados a Estudios Ambientales - IAMB”_
 Keywords: `gis` `environmental-studies` `hazard` `geographic-data` `geographical-information-system` `hazard-detection` `hazard-assessment` `eia` `environmental-impact-assessment` `sig` `anla` `daa` `ica`
 
 En este curso, los participantes obtendrán el conocimiento general y particular del uso de los sistemas de información geográfica aplicados al desarrollo de estudios ambientales, mediante la utilización de herramientas de dominio público. Además, desarrollará las habilidades necesarias para diseñar, crear, representar y editar sistemas geográficos, así como el uso avanzado de las funciones de geo-procesamiento, manejo de datos relacionales y automatización usando Python. El desarrollo de los diferentes talleres y clases del curso se ejemplifica a través de un caso de estudio. 
