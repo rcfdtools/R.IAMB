@@ -46,6 +46,7 @@ Se entiende por evaluación del aprendizaje el proceso que valora el logro de lo
 
 La evaluación del desempeño de los estudiantes valora el cumplimiento de los objetivos propuestos y los compromisos adquiridos en la asignatura. Se realiza el seguimiento del avance de cada estudiante a través de la presentación de informes técnicos, verificando tanto los conocimientos adquiridos como las competencias o habilidades desarrolladas.
 
+* [Autopresentación](https://forms.office.com/r/idwtji0pTs): 0%
 * Asistencia: 10%
 * Quices: 40%
 * Examen: 50% 
