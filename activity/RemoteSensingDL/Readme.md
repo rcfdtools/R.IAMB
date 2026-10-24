@@ -82,6 +82,24 @@ Los satélites Spot (Satellite Pour l’Observation de la Terre: Satélite Para 
 
 Sentinel es un proyecto multi-satélite que está siendo desarrollado por la ESA (European Space Agency) en el marco del Programa Copérnico. Las misiones Sentinel incluyen satélites de radar y satélites de imágenes super-espectrales para la vigilancia terrestre, oceánica y atmosférica de la Tierra. La primera versión fue lanzada el 3 de abril de 2014, la versión 6 que incluye radar altimétrico fue lanzada el 21 de noviembre de 2020. La resolución de las imágenes capturadas es de 5 a 300 metros dependiendo de la banda espectral, el modo de captura, y la polarización. https://www.esa.int/Applications/Observing_the_Earth/Copernicus/The_Sentinel_missions
 
+| Band          |  Central Wavelength (nm)  |  Bandwidth (nm)  |  Spatial Resolution (m)  | Description / Primary Use                                                             |
+|---------------|:-------------------------:|:----------------:|:------------------------:|---------------------------------------------------------------------------------------|
+| Band 1 (B01)  |            443            |        20        |            60            | Ultra Blue - Coastal aerosol (atmospheric scattering, coastal/water studies)          |
+| Band 2 (B02)  |            490            |        65        |            10            | Blue (soil/vegetation discrimination, high water penetration)                         |
+| Band 3 (B03)  |            560            |        35        |            10            | Green (vegetation vigor, water turbidity contrast)                                    |
+| Band 4 (B04)  |            665            |        30        |            10            | Red (plant chlorophyll absorption, road/man-made feature mapping)                     |
+| Band 5 (B05)  |            705            |        15        |            20            | Vegetation red edge (leaf chlorophyll content, early stress detection)                |
+| Band 6 (B06)  |            740            |        15        |            20            | Vegetation red edge (vegetation classification and phenology)                         |
+| Band 7 (B07)  |            783            |        20        |            20            | Vegetation red edge (biophysical parameter estimation)                                |
+| Band 8 (B8)   |            842            |       115        |            10            | Broad Near-Infrared / NIR (land cover, biomass, water body delineation)               |
+| Band 8A (B8A) |            865            |        20        |            20            | Narrow Near-Infrared (vegetation characterization, atmospheric correction)            |
+| Band 9 (B09)  |            945            |        20        |            60            | Water vapor (atmospheric absorption and correction)                                   |
+| Band 10 (B10) |           1375            |        30        |            60            | Cirrus (high-altitude cloud detection)                                                |
+| Band 11 (B11) |           1610            |        90        |            20            | Short-Wave Infrared / SWIR 1 (soil/vegetation moisture content, snow/ice distinction) |
+| Band 12 (B12) |           2190            |       180        |            20            | Short-Wave Infrared / SWIR 2 (geological mapping, burn scars, deep moisture analysis) |
+
+* [Sentinel Hub](https://custom-scripts.sentinel-hub.com/custom-scripts/sentinel-2/bands/)
+* [Combinaciones de bandas](https://gisgeography.com/sentinel-2-bands-combinations/)
 
 **d. Ikonos** [^6]
 
