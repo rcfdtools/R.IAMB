@@ -203,6 +203,8 @@ Opcionalmente, puede recortar la imagen hasta el límite de la zona de estudio.
 
 Corresponde al Modelo Digital de Superficie (incluye elementos de la cobertura terrestre como por ejemplo cobertura vegetal, edificaciones, etc.), en escala de grises, donde cada celda o pixel contiene el valor de elevación en metros sobre el nivel del mar. Puede estar en uno de los siguientes formatos (geotiff, img, grid, ecw). En el modelo de datos ANLA, el archivo o modelo digital de superficie se debe identificar como _DSM_.
 
+<div align="center"><img src="graph/Graph_DEM.png" alt="rcfdtools" width="90%" border="0" /><br><sub>Imagen tomada de learn.arcgis.com </sub></div>
+
 Para este análisis utilizaremos el [DSM satelital de Copernicus](https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM) que incluye edificios, infraestructura y vegetación, cuyos datos han sido adquiridos por la [ESA](https://earth.esa.int/) en la missión [TanDEM-X](https://earth.esa.int/eogateway/missions/terrasar-x-and-tandem-x) utilizando la tecnología [Synthetic Aperture Radar (SAR)](https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar).
 
 1. En QGIS, instale el complemento o _Plugin_ _Open Topography_.
