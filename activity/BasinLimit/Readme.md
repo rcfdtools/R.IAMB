@@ -10,9 +10,9 @@ A partir del modelo digital de elevación ESA Copernicus, cree el mapa de rellen
 
 ## Objetivos
 
-* Generar el mapa de direcciones y acumulaciones de flujo.
-* Delimitar cuencas hidrográficas a partir de puntos de estudio.
-* Evaluar la extensión de las subcuencas contenidas en el área de proyecto.
+* Generar el mapa de direcciones y acumulaciones de flujo
+* Delimitar cuencas hidrográficas a partir de puntos de estudio
+* Evaluar la extensión de las subcuencas contenidas en el área de proyecto
 
 
 ## Requerimientos

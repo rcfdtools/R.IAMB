@@ -21,13 +21,13 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 <div align="center">
 
-| Requerimiento                                                                                                 | Descripción                                                                                                          |
-|:--------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
-| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 3.44 o superior.                                                                                                |
-| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                                              |
-| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                               |
-| [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps). |
-| [:round_pushpin:qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py)      | Script en Python recortar, disolver, reproyectar y calcular distribuciones porcentuales de área.                     |
+| Requerimiento                                                                                                                                          | Descripción                                                                                                          |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                                                              | QGIS 3.44 o superior.                                                                                                |
+| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                                                                   | Geodatabase ANLA Magna Origen Nacional.                                                                              |
+| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx)                                          | Diccionario de datos geográficos ANLA.                                                                               |
+| [:round_pushpin:qgis_basemaps.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_basemaps.py)                                       | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps). |
+| [:round_pushpin:qgis_clip_dissolve_reproject_adp.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_clip_dissolve_reproject_adp.py) | Script en Python recortar, disolver, reproyectar y calcular distribuciones porcentuales de área.                     |
 
 </div>
 
@@ -57,7 +57,7 @@ Los Levantamientos Generales de Suelos de los departamentos del Territorio Colom
 
 <div align="center"><img src="graph/QGIS_AddLayer1.png" alt="rcfdtools" width="100%" border="0" /></div>
 
-3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](../../file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, reproyecte y calcule la distribución porcentual de los suelos contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 97 tipos de suelos diferentes. En la tabla de atributos de la capa disuelta y reproyectada, elimine los atributos `AREA`, `SHAPE_Leng` y `SHAPE_Area`.
+3. Utilizando el script de Python [qgis_clip_dissolve_reproject_adp.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_clip_dissolve_reproject_adp.py), recorte, disuelva, reproyecte y calcule la distribución porcentual de los suelos contenidos dentro de la zona de estudio. Podrá observar que dentro del área del proyecto existen 97 tipos de suelos diferentes. En la tabla de atributos de la capa disuelta y reproyectada, elimine los atributos `AREA`, `SHAPE_Leng` y `SHAPE_Area`.
 
 > Antes de ejecutar el script, establezca en Settings / Options / Processing / General / Invalid features filtering / Do not filter.
 

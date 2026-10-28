@@ -25,12 +25,12 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 <div align="center">
 
-| Requerimiento                                                                                                 | Descripción                                                                                        |
-|:--------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 4.0 o superior.                                                                               |
-| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                          | Geodatabase ANLA Magna Origen Nacional.                                                            |
-| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                             |
-| [:round_pushpin:qgis_station_len_years.py](../../file/src/qgis_station_len_years.py)                          | Script en Python para análisis de longitud hipotética de series en estaciones hidroclimatológicas. |
+| Requerimiento                                                                                                                        | Descripción                                                                                        |
+|:-------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                                            | QGIS 4.0 o superior.                                                                               |
+| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                                                 | Geodatabase ANLA Magna Origen Nacional.                                                            |
+| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx)                        | Diccionario de datos geográficos ANLA.                                                             |
+| [:round_pushpin:qgis_station_len_years.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_station_len_years.py)   | Script en Python para análisis de longitud hipotética de series en estaciones hidroclimatológicas. |
 
 </div>
 

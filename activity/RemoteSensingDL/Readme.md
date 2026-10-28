@@ -21,15 +21,15 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 <div align="center">
 
-| Requerimiento                                                                                                 | Descripción                                                                                                          |
-|:--------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
-| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 3.44 o superior.                                                                                                |
-| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                             | Geodatabase ANLA Magna Origen Nacional.                                                                              |
-| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                               |
-| [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps). |
-| [:construction_worker:Usuario USGS](https://ers.cr.usgs.gov/register/contact)                                 | Cuenta de usuario en el USGS - United States Geological Survey (Satellital images).                     |
-| [:construction_worker:Usuario Copernicus](https://dataspace.copernicus.eu/)                                   | Cuenta de usuario en el European Union's Earth observation program (ERA5 data).                         |
-| [:construction_worker:Usuario OpenTopography](https://portal.opentopography.org/newUser)                      | Cuenta de usuario en OpenTopography (high-resolution topographic data as LiDAR, radar, photogrammetry). |
+| Requerimiento                                                                                                     | Descripción                                                                                                          |
+|:------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                         | QGIS 3.44 o superior.                                                                                                |
+| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                              | Geodatabase ANLA Magna Origen Nacional.                                                                              |
+| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx)     | Diccionario de datos geográficos ANLA.                                                                               |
+| [:round_pushpin:qgis_basemaps.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_basemaps.py)  | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps). |
+| [:construction_worker:Usuario USGS](https://ers.cr.usgs.gov/register/contact)                                     | Cuenta de usuario en el USGS - United States Geological Survey (Satellital images).                     |
+| [:construction_worker:Usuario Copernicus](https://dataspace.copernicus.eu/)                                       | Cuenta de usuario en el European Union's Earth observation program (ERA5 data).                         |
+| [:construction_worker:Usuario OpenTopography](https://portal.opentopography.org/newUser)                          | Cuenta de usuario en OpenTopography (high-resolution topographic data as LiDAR, radar, photogrammetry). |
 
 </div>
 

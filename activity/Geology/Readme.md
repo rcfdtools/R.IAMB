@@ -20,16 +20,16 @@ Archivos, actividades previas, lecturas y herramientas requeridas para el desarr
 
 <div align="center">
 
-| Requerimiento                                                                                                 | Descripción                                                                                                                                                                                                               |
-|:--------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [:toolbox:Herramienta](https://qgis.org/)                                                                     | QGIS 3.44 o superior.                                                                                                                                                                                                     |
-| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                          | Geodatabase ANLA Magna Origen Nacional.                                                                                                                                                                                   |
-| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx) | Diccionario de datos geográficos ANLA.                                                                                                                                                                                    |
-| [:date:IAMB_Geology.xlsx](../../file/table/IAMB_Geology.xlsx)                                                 | Tabla para homologación de unidades geológicas.                                                                                                                                                                           |
-| [:round_pushpin:agc2023.gdb](../../file/data/SGC/)                                                            | Atlas Geológico de Colombia 500k, SGC, 2023.                                                                                                                                                                              |
-| [:round_pushpin:qgis_basemaps.py](../../file/src/qgis_basemaps.py)                                            | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps).                                                                                                      |
-| [:round_pushpin:qgis_distribucion_porcentual.py](../../file/src/qgis_distribucion_porcentual.py)              | Script en Python para cálculo de áreas y distribuciones porcentuales.                                                                                                                                                     |
-| [:round_pushpin:qgis_unidadgeologica _homologador.py](../../file/src/qgis_unidadgeologica_homologador.py)     | Script en Python para homologación de atributos de unidades geológicas [ANLA](https://www.anla.gov.co/) a partir de las Unidades Cronoestratigráficas del Atlas Geológico de Colombia del [SGC](https://www.sgc.gov.co/). |
+| Requerimiento                                                                                                                                           | Descripción                                                                                                                                                                                                               |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [:toolbox:Herramienta](https://qgis.org/)                                                                                                               | QGIS 3.44 o superior.                                                                                                                                                                                                     |
+| [:package:magna_origen_nacional.zip](../../file/data/ANLA/magna_origen_nacional.zip)                                                                    | Geodatabase ANLA Magna Origen Nacional.                                                                                                                                                                                   |
+| [:date:diccionario_datos_geograficos_anla.xlsx](../../file/data/ANLA/diccionario_datos_geograficos_anla.xlsx)                                           | Diccionario de datos geográficos ANLA.                                                                                                                                                                                    |
+| [:date:IAMB_Geology.xlsx](../../file/table/IAMB_Geology.xlsx)                                                                                           | Tabla para homologación de unidades geológicas.                                                                                                                                                                           |
+| [:round_pushpin:agc2023.gdb](../../file/data/SGC/)                                                                                                      | Atlas Geológico de Colombia 500k, SGC, 2023.                                                                                                                                                                              |
+| [:round_pushpin:qgis_basemaps.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_basemaps.py)                                        | Script en Python para inclusión de mapas base XYZ en QGIS por [opengeos](https://github.com/opengeos/qgis-basemaps).                                                                                                      |
+| [:round_pushpin:qgis_distribucion_porcentual.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_distribucion_porcentual.py)          | Script en Python para cálculo de áreas y distribuciones porcentuales.                                                                                                                                                     |
+| [:round_pushpin:qgis_unidadgeologica _homologador.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_unidadgeologica_homologador.py) | Script en Python para homologación de atributos de unidades geológicas [ANLA](https://www.anla.gov.co/) a partir de las Unidades Cronoestratigráficas del Atlas Geológico de Colombia del [SGC](https://www.sgc.gov.co/). |
 
 </div>
 
@@ -127,7 +127,7 @@ Unidades encontradas
 
 <div align="center"><img src="graph/QGIS_Chart1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-:pencil2:**Tarea:** A partir del script en Python [qgis_distribucion_porcentual.py](../../file/src/qgis_distribucion_porcentual.py), para cada Unidad Cronoestratigráfica, calcule la distribución porcentual respecto al total del área del proyecto. 
+:pencil2:**Tarea:** A partir del script en Python [qgis_distribucion_porcentual.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_distribucion_porcentual.py), para cada Unidad Cronoestratigráfica, calcule la distribución porcentual respecto al total del área del proyecto. 
 
 
 ## 2. Incorporación a capa ANLA: UnidadGeologica
@@ -168,7 +168,7 @@ Los valores de referencia para homologación se encuentran en la tabla [/table/I
 Búsqueda para homologación en https://stratigraphy.org/chart/?language=es
 <div align="center"><img src="graph/IAMB_unidadgeologica_homologador1.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
-2. Para simplificar el proceso de homologación, utilice el script de Python [/src/qgis_unidadgeologica_homologador.py](../../file/src/qgis_unidadgeologica_homologador.py).
+2. Para simplificar el proceso de homologación, utilice el script de Python [/src/qgis_unidadgeologica_homologador.py](https://github.com/rcfdtools/R.HydroTools/blob/main/file/src/qgis_unidadgeologica_homologador.py).
 
 <div align="center"><img src="graph/QGIS_unidadgeologica_homologador.jpg" alt="rcfdtools" width="100%" border="0" /></div>
 
